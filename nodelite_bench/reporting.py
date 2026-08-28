@@ -151,6 +151,105 @@ def build_matrix(summaries: list[dict[str, Any]]) -> dict[str, Any]:
     return matrix
 
 
+ZERO_START_BENCHMARKS_BY_KIND = {
+    "database_private_layer": {"DBS-007"},
+    "dependency_view": {"DEP-001", "DEP-002", "DEP-003", "DEP-004", "DEP-006", "INS-001"},
+    "home_tmp_xdg": {"FS-005"},
+    "network_ports": {"NET-003"},
+    "node_runtime": {"RUN-003", "RUN-007", "RUN-008", "RUN-009"},
+    "package_manager": {"PM-007", "RUN-005"},
+    "system_toolchain": set(),
+    "task_harness": {"TSK-003"},
+}
+
+ZERO_START_TRANSITION_CLASSES = {"artifact_cold", "network_cold", "process_cold"}
+ZERO_START_EXCLUDED_BENCHMARKS = {"ART-008"}
+
+
+def _zero_start_detail(item: dict[str, Any]) -> dict[str, Any]:
+    return {
+        "benchmark_id": item["benchmark_id"],
+        "scenario_name": item["scenario_name"],
+        "resource_kind": item["resource_kind"],
+        "object_name": item["object_name"],
+        "version_config": item["to_version/config"],
+        "direct_ms": float(item["median_ms"]),
+        "p95_ms": item["p95_ms"],
+        "sample_count": item["sample_count"],
+        "success_count": item["success_count"],
+        "failure_count": item["failure_count"],
+        "workload_origin": item["workload_origin"],
+    }
+
+
+def build_direct_ms(
+    summaries: list[dict[str, Any]],
+    objects: list[dict[str, Any]],
+    environment: dict[str, Any],
+) -> dict[str, Any]:
+    candidates: dict[str, list[dict[str, Any]]] = defaultdict(list)
+    selected: dict[str, list[dict[str, Any]]] = defaultdict(list)
+    for item in summaries:
+        if item.get("median_ms") is None or not item.get("reuse_safe") or item.get("pollution_result") == "fail":
+            continue
+        object_id = str(item["to_object_id"])
+        kind = str(item["resource_kind"])
+        starts_from_zero = item.get("from_object_id") is None
+        is_cold_candidate = (
+            starts_from_zero
+            and item.get("transition_class") in ZERO_START_TRANSITION_CLASSES
+            and item.get("benchmark_id") not in ZERO_START_EXCLUDED_BENCHMARKS
+        )
+        if is_cold_candidate:
+            candidates[object_id].append(item)
+        policy = ZERO_START_BENCHMARKS_BY_KIND.get(kind)
+        if policy is not None:
+            if starts_from_zero and item.get("benchmark_id") in policy:
+                selected[object_id].append(item)
+        elif is_cold_candidate:
+            selected[object_id].append(item)
+
+    direct_ms: dict[str, float] = {}
+    details: dict[str, dict[str, Any]] = {}
+    ambiguous_objects: dict[str, list[dict[str, Any]]] = {}
+    for object_id in sorted(set(candidates) | set(selected)):
+        object_candidates = selected.get(object_id, [])
+        if len(object_candidates) == 1:
+            item = object_candidates[0]
+            direct_ms[object_id] = float(item["median_ms"])
+            details[object_id] = _zero_start_detail(item)
+            continue
+        ambiguity = object_candidates or candidates.get(object_id, [])
+        if ambiguity:
+            ambiguous_objects[object_id] = [_zero_start_detail(item) for item in ambiguity]
+
+    object_ids = {str(item["object_id"]) for item in objects}
+    measured_ids = set(direct_ms)
+    unmeasured_counts = Counter(
+        str(item.get("resource_kind") or "unknown")
+        for item in objects
+        if str(item["object_id"]) not in measured_ids
+    )
+    return {
+        "schema_version": 1,
+        "unit": "ms",
+        "statistic": "median",
+        "definition": "direct_ms[object_id] is the measured time to bring that object from zero to ready; it is not a source-to-target switch cost",
+        "zero_state": "the object is absent, not running, or not materialized",
+        "measurement_environment_id": environment.get("measurement_environment_id"),
+        "object_count": len(object_ids),
+        "measured_object_count": len(direct_ms),
+        "ambiguous_object_count": len(ambiguous_objects),
+        "unmeasured_object_count": len(object_ids - measured_ids),
+        "missing_value_semantics": "missing means unmeasured or not uniquely defined, never zero",
+        "transition_costs_path": "object_cost_matrix.json",
+        "direct_ms": direct_ms,
+        "details": details,
+        "ambiguous_objects": ambiguous_objects,
+        "unmeasured_counts_by_resource_kind": dict(sorted(unmeasured_counts.items())),
+    }
+
+
 def _summary_csv_rows(summaries: list[dict[str, Any]]) -> list[dict[str, Any]]:
     rows = []
     for item in summaries:
@@ -298,10 +397,12 @@ def generate_reports(output: Path, catalog: list[BenchmarkSpec], environment: di
     status = read_json(output / "benchmarks" / "catalog_status.json", {}) or {}
     summaries = build_summaries(observations, objects)
     matrix = build_matrix(summaries)
+    direct_ms_data = build_direct_ms(summaries, object_values, environment)
     rules = invalidation_rules()
     failures = [item for item in observations if str(item.get("benchmark_id", "")).startswith("FAIL-") or item.get("transition_class") == "failure_path"]
     contention = [item for item in observations if str(item.get("benchmark_id", "")).startswith("CON-") or item.get("transition_class") == "contention_path"]
     write_json(output / "costdb" / "object_cost_matrix.json", matrix)
+    write_json(output / "costdb" / "direct_ms.json", direct_ms_data)
     write_json(output / "costdb" / "invalidation_rules.json", rules)
     write_json(output / "costdb" / "resource_summaries.json", summaries)
     write_json(output / "costdb" / "failure_costs.json", failures)
@@ -326,6 +427,9 @@ def generate_reports(output: Path, catalog: list[BenchmarkSpec], environment: di
         "raw_observation_count": len(raw_observations),
         "superseded_observation_count": len(latest_observations) - len(observations),
         "directed_transition_count": len(summaries),
+        "direct_ms_object_count": direct_ms_data["measured_object_count"],
+        "direct_ms_ambiguous_object_count": direct_ms_data["ambiguous_object_count"],
+        "direct_ms_path": "costdb/direct_ms.json",
         "status_counts": dict(sorted(Counter(value.get("status") for value in status.values()).items())),
         "pollution_failure_count": sum(item.get("pollution_result") == "fail" for item in summaries),
         "measurement_environment_id": environment.get("measurement_environment_id"),
