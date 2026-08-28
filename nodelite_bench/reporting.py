@@ -7,7 +7,7 @@ from typing import Any
 
 from .catalog import BenchmarkSpec
 from .runners import INVALIDATIONS
-from .util import read_json, read_jsonl, summarize, write_csv, write_json
+from .util import read_json, read_jsonl, stable_hash, summarize, write_csv, write_json
 
 
 SUMMARY_FIELDS = [
@@ -30,6 +30,8 @@ SUMMARY_FIELDS = [
     "from_object_id",
     "to_object_id",
 ]
+
+DEFAULT_DIRECT_MS_WINDOW_SIZE = 5
 
 
 def _latest_observations(observations: list[dict[str, Any]]) -> list[dict[str, Any]]:
@@ -98,6 +100,19 @@ def build_summaries(observations: list[dict[str, Any]], objects: dict[str, dict[
         stats = summarize(successful)
         from_object = objects.get(from_id, {})
         to_object = objects.get(to_id, {})
+        measurement_id = stable_hash(
+            [
+                {
+                    "measurement_run_id": item.get("measurement_run_id"),
+                    "observation_key": item.get("observation_key"),
+                    "pollution_check": item.get("pollution_check"),
+                    "reuse_safe": item.get("reuse_safe"),
+                    "success": item.get("success"),
+                    "wall_ms": item.get("wall_ms"),
+                }
+                for item in sorted(rows, key=lambda row: str(row.get("observation_key") or ""))
+            ]
+        )
         summaries.append(
             {
                 "benchmark_id": benchmark_id,
@@ -111,6 +126,7 @@ def build_summaries(observations: list[dict[str, Any]], objects: dict[str, dict[
                 "cost_class": cost_class,
                 "scenario_name": scenario_name,
                 "measurement_environment_id": environment_id,
+                "_measurement_id": measurement_id,
                 **stats,
                 "success_count": sum(bool(item.get("success")) for item in rows),
                 "failure_count": sum(not bool(item.get("success")) for item in rows),
@@ -166,14 +182,25 @@ ZERO_START_TRANSITION_CLASSES = {"artifact_cold", "network_cold", "process_cold"
 ZERO_START_EXCLUDED_BENCHMARKS = {"ART-008"}
 
 
-def _zero_start_detail(item: dict[str, Any]) -> dict[str, Any]:
+def append_sliding_window(values: list[float], value: float, window_size: int) -> list[float]:
+    if window_size < 1:
+        raise ValueError("direct_ms window size must be positive")
+    return [*values, float(value)][-window_size:]
+
+
+def _numeric_window(value: Any) -> list[float]:
+    values = value if isinstance(value, list) else [value]
+    return [float(item) for item in values if isinstance(item, (int, float)) and not isinstance(item, bool)]
+
+
+def _zero_start_detail(item: dict[str, Any], value_key: str) -> dict[str, Any]:
     return {
         "benchmark_id": item["benchmark_id"],
         "scenario_name": item["scenario_name"],
         "resource_kind": item["resource_kind"],
         "object_name": item["object_name"],
         "version_config": item["to_version/config"],
-        "direct_ms": float(item["median_ms"]),
+        value_key: float(item["median_ms"]),
         "p95_ms": item["p95_ms"],
         "sample_count": item["sample_count"],
         "success_count": item["success_count"],
@@ -186,7 +213,11 @@ def build_direct_ms(
     summaries: list[dict[str, Any]],
     objects: list[dict[str, Any]],
     environment: dict[str, Any],
+    existing: dict[str, Any] | None = None,
+    window_size: int = DEFAULT_DIRECT_MS_WINDOW_SIZE,
 ) -> dict[str, Any]:
+    if window_size < 1:
+        raise ValueError("direct_ms window size must be positive")
     candidates: dict[str, list[dict[str, Any]]] = defaultdict(list)
     selected: dict[str, list[dict[str, Any]]] = defaultdict(list)
     for item in summaries:
@@ -209,41 +240,86 @@ def build_direct_ms(
         elif is_cold_candidate:
             selected[object_id].append(item)
 
-    direct_ms: dict[str, float] = {}
-    details: dict[str, dict[str, Any]] = {}
+    current_values: dict[str, float] = {}
+    current_details: dict[str, dict[str, Any]] = {}
+    current_measurement_ids: dict[str, str] = {}
     ambiguous_objects: dict[str, list[dict[str, Any]]] = {}
     for object_id in sorted(set(candidates) | set(selected)):
         object_candidates = selected.get(object_id, [])
         if len(object_candidates) == 1:
             item = object_candidates[0]
-            direct_ms[object_id] = float(item["median_ms"])
-            details[object_id] = _zero_start_detail(item)
+            current_values[object_id] = float(item["median_ms"])
+            current_details[object_id] = _zero_start_detail(item, "latest_ms")
+            current_measurement_ids[object_id] = str(item["_measurement_id"])
             continue
         ambiguity = object_candidates or candidates.get(object_id, [])
         if ambiguity:
-            ambiguous_objects[object_id] = [_zero_start_detail(item) for item in ambiguity]
+            ambiguous_objects[object_id] = [_zero_start_detail(item, "candidate_ms") for item in ambiguity]
 
     object_ids = {str(item["object_id"]) for item in objects}
-    measured_ids = set(direct_ms)
+    direct_ms: dict[str, list[float]] = {}
+    measurement_ids: dict[str, list[str]] = {}
+    existing = existing or {}
+    if existing.get("schema_version") == 2:
+        existing_windows = existing.get("direct_ms") if isinstance(existing.get("direct_ms"), dict) else {}
+        existing_measurement_ids = existing.get("measurement_ids") if isinstance(existing.get("measurement_ids"), dict) else {}
+        for object_id, raw_window in existing_windows.items():
+            if object_id not in object_ids:
+                continue
+            values = _numeric_window(raw_window)
+            if not values:
+                continue
+            raw_ids = existing_measurement_ids.get(object_id, [])
+            ids = [str(item) for item in raw_ids] if isinstance(raw_ids, list) else []
+            if len(ids) != len(values):
+                ids = [
+                    stable_hash({"legacy_object_id": object_id, "position": index, "value_ms": value})
+                    for index, value in enumerate(values)
+                ]
+            direct_ms[object_id] = values[-window_size:]
+            measurement_ids[object_id] = ids[-window_size:]
+
+    details: dict[str, dict[str, Any]] = {}
+    for object_id, value in current_values.items():
+        values = direct_ms.get(object_id, [])
+        ids = measurement_ids.get(object_id, [])
+        measurement_id = current_measurement_ids[object_id]
+        if measurement_id not in ids:
+            values = append_sliding_window(values, value, window_size)
+            ids = [*ids, measurement_id][-window_size:]
+        direct_ms[object_id] = values
+        measurement_ids[object_id] = ids
+        details[object_id] = {
+            **current_details[object_id],
+            "latest_ms": values[-1],
+            "window_length": len(values),
+        }
+
+    measured_ids = {object_id for object_id, values in direct_ms.items() if values}
     unmeasured_counts = Counter(
         str(item.get("resource_kind") or "unknown")
         for item in objects
         if str(item["object_id"]) not in measured_ids
     )
     return {
-        "schema_version": 1,
+        "schema_version": 2,
         "unit": "ms",
-        "statistic": "median",
-        "definition": "direct_ms[object_id] is the measured time to bring that object from zero to ready; it is not a source-to-target switch cost",
+        "statistic": "median_per_measurement_batch",
+        "definition": "direct_ms[object_id] is an oldest-to-newest sliding window of measured times to bring that object from zero to ready",
         "zero_state": "the object is absent, not running, or not materialized",
+        "window_size": window_size,
+        "window_order": "oldest_to_newest",
+        "window_policy": "append one median for each new measurement batch and evict the oldest value with FIFO when full",
         "measurement_environment_id": environment.get("measurement_environment_id"),
         "object_count": len(object_ids),
         "measured_object_count": len(direct_ms),
+        "window_value_count": sum(len(values) for values in direct_ms.values()),
         "ambiguous_object_count": len(ambiguous_objects),
         "unmeasured_object_count": len(object_ids - measured_ids),
         "missing_value_semantics": "missing means unmeasured or not uniquely defined, never zero",
         "transition_costs_path": "object_cost_matrix.json",
         "direct_ms": direct_ms,
+        "measurement_ids": measurement_ids,
         "details": details,
         "ambiguous_objects": ambiguous_objects,
         "unmeasured_counts_by_resource_kind": dict(sorted(unmeasured_counts.items())),
@@ -387,7 +463,12 @@ def _cost_table(summaries: list[dict[str, Any]], status: dict[str, Any], object_
     return "\n".join(lines) + "\n"
 
 
-def generate_reports(output: Path, catalog: list[BenchmarkSpec], environment: dict[str, Any]) -> dict[str, Any]:
+def generate_reports(
+    output: Path,
+    catalog: list[BenchmarkSpec],
+    environment: dict[str, Any],
+    direct_ms_window_size: int = DEFAULT_DIRECT_MS_WINDOW_SIZE,
+) -> dict[str, Any]:
     raw_observations = read_jsonl(output / "costdb" / "object_costs.jsonl")
     latest_observations = _latest_observations(raw_observations)
     active_scenarios = read_json(output / "benchmarks" / "active_scenarios.json", {}) or {}
@@ -397,14 +478,25 @@ def generate_reports(output: Path, catalog: list[BenchmarkSpec], environment: di
     status = read_json(output / "benchmarks" / "catalog_status.json", {}) or {}
     summaries = build_summaries(observations, objects)
     matrix = build_matrix(summaries)
-    direct_ms_data = build_direct_ms(summaries, object_values, environment)
+    direct_ms_path = output / "costdb" / "direct_ms.json"
+    existing_direct_ms = read_json(direct_ms_path, {}) or {}
+    direct_ms_data = build_direct_ms(
+        summaries,
+        object_values,
+        environment,
+        existing=existing_direct_ms,
+        window_size=direct_ms_window_size,
+    )
     rules = invalidation_rules()
     failures = [item for item in observations if str(item.get("benchmark_id", "")).startswith("FAIL-") or item.get("transition_class") == "failure_path"]
     contention = [item for item in observations if str(item.get("benchmark_id", "")).startswith("CON-") or item.get("transition_class") == "contention_path"]
     write_json(output / "costdb" / "object_cost_matrix.json", matrix)
-    write_json(output / "costdb" / "direct_ms.json", direct_ms_data)
+    write_json(direct_ms_path, direct_ms_data)
     write_json(output / "costdb" / "invalidation_rules.json", rules)
-    write_json(output / "costdb" / "resource_summaries.json", summaries)
+    write_json(
+        output / "costdb" / "resource_summaries.json",
+        [{key: value for key, value in item.items() if key != "_measurement_id"} for item in summaries],
+    )
     write_json(output / "costdb" / "failure_costs.json", failures)
     write_json(output / "costdb" / "contention_costs.json", contention)
     write_json(output / "benchmarks" / "invalidation_rules.json", rules)
@@ -429,6 +521,8 @@ def generate_reports(output: Path, catalog: list[BenchmarkSpec], environment: di
         "directed_transition_count": len(summaries),
         "direct_ms_object_count": direct_ms_data["measured_object_count"],
         "direct_ms_ambiguous_object_count": direct_ms_data["ambiguous_object_count"],
+        "direct_ms_window_size": direct_ms_data["window_size"],
+        "direct_ms_window_value_count": direct_ms_data["window_value_count"],
         "direct_ms_path": "costdb/direct_ms.json",
         "status_counts": dict(sorted(Counter(value.get("status") for value in status.values()).items())),
         "pollution_failure_count": sum(item.get("pollution_result") == "fail" for item in summaries),

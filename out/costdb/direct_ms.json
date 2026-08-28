@@ -4,7 +4,7 @@
     "system_toolchain:ubuntu24:gcc13:python3.12": [
       {
         "benchmark_id": "NTC-001",
-        "direct_ms": 234.142204,
+        "candidate_ms": 234.142204,
         "failure_count": 0,
         "object_name": "Ubuntu build toolchain",
         "p95_ms": 239.2366341,
@@ -17,7 +17,7 @@
       },
       {
         "benchmark_id": "NTC-002",
-        "direct_ms": 790.082898,
+        "candidate_ms": 790.082898,
         "failure_count": 0,
         "object_name": "Ubuntu build toolchain",
         "p95_ms": 818.5285087,
@@ -30,7 +30,7 @@
       },
       {
         "benchmark_id": "NTC-003",
-        "direct_ms": 116.451607,
+        "candidate_ms": 116.451607,
         "failure_count": 0,
         "object_name": "Ubuntu build toolchain",
         "p95_ms": 123.4965744,
@@ -43,7 +43,7 @@
       },
       {
         "benchmark_id": "NTC-005",
-        "direct_ms": 239.768002,
+        "candidate_ms": 239.768002,
         "failure_count": 0,
         "object_name": "Ubuntu build toolchain",
         "p95_ms": 319.99798979999997,
@@ -56,7 +56,7 @@
       },
       {
         "benchmark_id": "NTC-008",
-        "direct_ms": 120.229123,
+        "candidate_ms": 120.229123,
         "failure_count": 0,
         "object_name": "Ubuntu build toolchain",
         "p95_ms": 122.4268369,
@@ -69,12 +69,12 @@
       }
     ]
   },
-  "definition": "direct_ms[object_id] is the measured time to bring that object from zero to ready; it is not a source-to-target switch cost",
+  "definition": "direct_ms[object_id] is an oldest-to-newest sliding window of measured times to bring that object from zero to ready",
   "details": {
     "artifact_acquisition:benchmark:art-001:default": {
       "benchmark_id": "ART-001",
-      "direct_ms": 42.555879,
       "failure_count": 0,
+      "latest_ms": 42.555879,
       "object_name": "registry packument lookup | DNS/TLS cold、keep-alive、metadata hit",
       "p95_ms": 45.409645,
       "resource_kind": "artifact_acquisition",
@@ -82,12 +82,13 @@
       "scenario_name": "default",
       "success_count": 7,
       "version_config": "v1",
+      "window_length": 1,
       "workload_origin": "synthetic"
     },
     "artifact_acquisition:benchmark:art-002:default": {
       "benchmark_id": "ART-002",
-      "direct_ms": 39.423257,
       "failure_count": 0,
+      "latest_ms": 39.423257,
       "object_name": "registry tarball download | size buckets、retry、timeout、404、5xx",
       "p95_ms": 43.7217749,
       "resource_kind": "artifact_acquisition",
@@ -95,12 +96,13 @@
       "scenario_name": "default",
       "success_count": 7,
       "version_config": "v1",
+      "window_length": 1,
       "workload_origin": "synthetic"
     },
     "artifact_acquisition:benchmark:art-003:default": {
       "benchmark_id": "ART-003",
-      "direct_ms": 313.84354,
       "failure_count": 0,
+      "latest_ms": 313.84354,
       "object_name": "GitHub codeload archive | exact commit、redirect、rate limit",
       "p95_ms": 588.3703425999997,
       "resource_kind": "artifact_acquisition",
@@ -108,12 +110,13 @@
       "scenario_name": "default",
       "success_count": 7,
       "version_config": "v1",
+      "window_length": 1,
       "workload_origin": "synthetic"
     },
     "artifact_acquisition:benchmark:art-004:default": {
       "benchmark_id": "ART-004",
-      "direct_ms": 764.821,
       "failure_count": 0,
+      "latest_ms": 764.821,
       "object_name": "generic Git archive fallback | cached repo、unsupported host、SSH/HTTPS",
       "p95_ms": 1175.4588879999997,
       "resource_kind": "artifact_acquisition",
@@ -121,12 +124,13 @@
       "scenario_name": "default",
       "success_count": 7,
       "version_config": "v1",
+      "window_length": 1,
       "workload_origin": "synthetic"
     },
     "artifact_acquisition:benchmark:art-005:default": {
       "benchmark_id": "ART-005",
-      "direct_ms": 761.638299,
       "failure_count": 0,
+      "latest_ms": 761.638299,
       "object_name": "direct HTTP tarball | immutable/no-integrity/404",
       "p95_ms": 1169.991707,
       "resource_kind": "artifact_acquisition",
@@ -134,12 +138,13 @@
       "scenario_name": "default",
       "success_count": 7,
       "version_config": "v1",
+      "window_length": 1,
       "workload_origin": "synthetic"
     },
     "artifact_acquisition:benchmark:art-006:default": {
       "benchmark_id": "ART-006",
-      "direct_ms": 0.002083,
       "failure_count": 0,
+      "latest_ms": 0.002083,
       "object_name": "browser/Electron binary download | network cold、tool cache、CAS replay",
       "p95_ms": 0.0038060999999999993,
       "resource_kind": "artifact_acquisition",
@@ -147,12 +152,13 @@
       "scenario_name": "default",
       "success_count": 7,
       "version_config": "v1",
+      "window_length": 1,
       "workload_origin": "synthetic"
     },
     "browser_process:chromium:151.0.7922.77:headless": {
       "benchmark_id": "BRW-007",
-      "direct_ms": 281.798033,
       "failure_count": 0,
+      "latest_ms": 281.798033,
       "object_name": "chromium",
       "p95_ms": 384.4800666999999,
       "resource_kind": "browser_process",
@@ -160,12 +166,13 @@
       "scenario_name": "default",
       "success_count": 7,
       "version_config": "151.0.7922.77",
+      "window_length": 1,
       "workload_origin": "real"
     },
     "browser_process:electron:40.10.2:headless": {
       "benchmark_id": "BRW-018",
-      "direct_ms": 483.931135,
       "failure_count": 0,
+      "latest_ms": 483.931135,
       "object_name": "electron",
       "p95_ms": 575.3704138,
       "resource_kind": "browser_process",
@@ -173,12 +180,13 @@
       "scenario_name": "default",
       "success_count": 7,
       "version_config": "40.10.2",
+      "window_length": 1,
       "workload_origin": "real"
     },
     "browser_process:firefox:Mozilla Firefox 153.0.3:headless": {
       "benchmark_id": "BRW-008",
-      "direct_ms": 1872.738363,
       "failure_count": 0,
+      "latest_ms": 1872.738363,
       "object_name": "firefox",
       "p95_ms": 1901.8302079,
       "resource_kind": "browser_process",
@@ -186,12 +194,13 @@
       "scenario_name": "default",
       "success_count": 7,
       "version_config": "Mozilla Firefox 153.0.3",
+      "window_length": 1,
       "workload_origin": "real"
     },
     "browser_profile:chromium:151.0.7922.77:ephemeral": {
       "benchmark_id": "BRW-013",
-      "direct_ms": 5.101571,
       "failure_count": 0,
+      "latest_ms": 5.101571,
       "object_name": "chromium profile",
       "p95_ms": 6.8206185,
       "resource_kind": "browser_profile",
@@ -199,12 +208,13 @@
       "scenario_name": "default",
       "success_count": 7,
       "version_config": "151.0.7922.77",
+      "window_length": 1,
       "workload_origin": "real"
     },
     "build_cache:synthetic:babel:7.28.4": {
       "benchmark_id": "BLD-004",
-      "direct_ms": 240.2496,
       "failure_count": 0,
+      "latest_ms": 240.2496,
       "object_name": "babel",
       "p95_ms": 255.33125049999998,
       "resource_kind": "build_cache",
@@ -212,12 +222,13 @@
       "scenario_name": "babel-cold",
       "success_count": 7,
       "version_config": "7.28.4",
+      "window_length": 1,
       "workload_origin": "synthetic"
     },
     "build_cache:synthetic:bld-016": {
       "benchmark_id": "BLD-016",
-      "direct_ms": 117.210208,
       "failure_count": 0,
+      "latest_ms": 117.210208,
       "object_name": "make/bootstrap/setup | startup、incremental output、cleanup",
       "p95_ms": 121.4112483,
       "resource_kind": "build_cache",
@@ -225,12 +236,13 @@
       "scenario_name": "default",
       "success_count": 7,
       "version_config": "v1",
+      "window_length": 1,
       "workload_origin": "synthetic"
     },
     "build_cache:synthetic:bld-017": {
       "benchmark_id": "BLD-017",
-      "direct_ms": 0.167884,
       "failure_count": 0,
+      "latest_ms": 0.167884,
       "object_name": "generic codegen/generate | cold、output cache、schema/config invalidation",
       "p95_ms": 0.1842613,
       "resource_kind": "build_cache",
@@ -238,12 +250,13 @@
       "scenario_name": "default",
       "success_count": 7,
       "version_config": "v1",
+      "window_length": 1,
       "workload_origin": "synthetic"
     },
     "build_cache:synthetic:esbuild:0.28.2": {
       "benchmark_id": "BLD-006",
-      "direct_ms": 119.640538,
       "failure_count": 0,
+      "latest_ms": 119.640538,
       "object_name": "esbuild",
       "p95_ms": 126.69815949999999,
       "resource_kind": "build_cache",
@@ -251,12 +264,13 @@
       "scenario_name": "esbuild-cold",
       "success_count": 7,
       "version_config": "0.28.2",
+      "window_length": 1,
       "workload_origin": "synthetic"
     },
     "build_cache:synthetic:npm-script": {
       "benchmark_id": "BLD-001",
-      "direct_ms": 251.841551,
       "failure_count": 0,
+      "latest_ms": 251.841551,
       "object_name": "npm script dispatch",
       "p95_ms": 268.7553915,
       "resource_kind": "build_cache",
@@ -264,12 +278,13 @@
       "scenario_name": "default",
       "success_count": 7,
       "version_config": "v1",
+      "window_length": 1,
       "workload_origin": "synthetic"
     },
     "build_cache:synthetic:rollup:4.63.1": {
       "benchmark_id": "BLD-007",
-      "direct_ms": 119.888181,
       "failure_count": 0,
+      "latest_ms": 119.888181,
       "object_name": "rollup",
       "p95_ms": 127.44254430000001,
       "resource_kind": "build_cache",
@@ -277,12 +292,13 @@
       "scenario_name": "rollup-cold",
       "success_count": 7,
       "version_config": "4.63.1",
+      "window_length": 1,
       "workload_origin": "synthetic"
     },
     "build_cache:synthetic:swc:1.16.1": {
       "benchmark_id": "BLD-005",
-      "direct_ms": 116.848473,
       "failure_count": 0,
+      "latest_ms": 116.848473,
       "object_name": "swc",
       "p95_ms": 122.23915,
       "resource_kind": "build_cache",
@@ -290,12 +306,13 @@
       "scenario_name": "swc-cold",
       "success_count": 7,
       "version_config": "1.16.1",
+      "window_length": 1,
       "workload_origin": "synthetic"
     },
     "build_cache:synthetic:typescript:7.0.2": {
       "benchmark_id": "BLD-002",
-      "direct_ms": 525.484661,
       "failure_count": 0,
+      "latest_ms": 525.484661,
       "object_name": "typescript",
       "p95_ms": 555.622042,
       "resource_kind": "build_cache",
@@ -303,12 +320,13 @@
       "scenario_name": "typescript-cold",
       "success_count": 7,
       "version_config": "7.0.2",
+      "window_length": 1,
       "workload_origin": "synthetic"
     },
     "build_cache:synthetic:vite:8.2.2": {
       "benchmark_id": "BLD-009",
-      "direct_ms": 355.514422,
       "failure_count": 0,
+      "latest_ms": 355.514422,
       "object_name": "vite",
       "p95_ms": 437.30761229999996,
       "resource_kind": "build_cache",
@@ -316,12 +334,13 @@
       "scenario_name": "vite-cold",
       "success_count": 7,
       "version_config": "8.2.2",
+      "window_length": 1,
       "workload_origin": "synthetic"
     },
     "build_cache:synthetic:webpack:5.110.1": {
       "benchmark_id": "BLD-008",
-      "direct_ms": 442.626332,
       "failure_count": 0,
+      "latest_ms": 442.626332,
       "object_name": "webpack",
       "p95_ms": 478.14835370000003,
       "resource_kind": "build_cache",
@@ -329,12 +348,13 @@
       "scenario_name": "webpack-cold",
       "success_count": 7,
       "version_config": "5.110.1",
+      "window_length": 1,
       "workload_origin": "synthetic"
     },
     "database_binary:redis:Redis server v=7.0.15 sha=00000000:0 malloc=jemalloc-5.3.0 bits=64 build=e53ff17674aa6190": {
       "benchmark_id": "DB-004",
-      "direct_ms": 15.821804,
       "failure_count": 0,
+      "latest_ms": 15.821804,
       "object_name": "redis",
       "p95_ms": 16.9972349,
       "resource_kind": "database_binary",
@@ -342,12 +362,13 @@
       "scenario_name": "default",
       "success_count": 7,
       "version_config": "Redis server v=7.0.15 sha=00000000:0 malloc=jemalloc-5.3.0 bits=64 build=e53ff17674aa6190",
+      "window_length": 1,
       "workload_origin": "real"
     },
     "database_clean_snapshot:sqlite:python-stdlib:minimal": {
       "benchmark_id": "DBS-005",
-      "direct_ms": 0.44316,
       "failure_count": 0,
+      "latest_ms": 0.44316,
       "object_name": "sqlite clean snapshot",
       "p95_ms": 0.6003291,
       "resource_kind": "database_clean_snapshot",
@@ -355,12 +376,13 @@
       "scenario_name": "default",
       "success_count": 7,
       "version_config": "python-stdlib",
+      "window_length": 1,
       "workload_origin": "real"
     },
     "database_daemon:redis:Redis server v=7.0.15 sha=00000000:0 malloc=jemalloc-5.3.0 bits=64 build=e53ff17674aa6190:default": {
       "benchmark_id": "DBS-001",
-      "direct_ms": 14.710122,
       "failure_count": 0,
+      "latest_ms": 14.710122,
       "object_name": "redis",
       "p95_ms": 18.702115899999995,
       "resource_kind": "database_daemon",
@@ -368,12 +390,13 @@
       "scenario_name": "default",
       "success_count": 7,
       "version_config": "Redis server v=7.0.15 sha=00000000:0 malloc=jemalloc-5.3.0 bits=64 build=e53ff17674aa6190",
+      "window_length": 1,
       "workload_origin": "real"
     },
     "database_private_layer:sqlite:python-stdlib:task": {
       "benchmark_id": "DBS-007",
-      "direct_ms": 0.881304,
       "failure_count": 0,
+      "latest_ms": 0.881304,
       "object_name": "sqlite private layer",
       "p95_ms": 0.9019329,
       "resource_kind": "database_private_layer",
@@ -381,12 +404,13 @@
       "scenario_name": "default",
       "success_count": 7,
       "version_config": "python-stdlib",
+      "window_length": 1,
       "workload_origin": "real"
     },
     "dependency_view:Automattic__mongoose.5f57a5bb:root:f4a039d5d472a10b": {
       "benchmark_id": "INS-001",
-      "direct_ms": 385.908853,
       "failure_count": 0,
+      "latest_ms": 385.908853,
       "object_name": "swesmith/Automattic__mongoose.5f57a5bb:.",
       "p95_ms": 1102.7638464999995,
       "resource_kind": "dependency_view",
@@ -394,12 +418,13 @@
       "scenario_name": "npm-minimal",
       "success_count": 7,
       "version_config": "f4a039d5d472a10b",
+      "window_length": 1,
       "workload_origin": "real"
     },
     "dependency_view:fixture:bun:1.2.18": {
       "benchmark_id": "DEP-006",
-      "direct_ms": 124.284427,
       "failure_count": 0,
+      "latest_ms": 124.284427,
       "object_name": "bun minimal dependency view",
       "p95_ms": 133.8856443,
       "resource_kind": "dependency_view",
@@ -407,12 +432,13 @@
       "scenario_name": "bun-1.2.18",
       "success_count": 7,
       "version_config": "1.2.18",
+      "window_length": 1,
       "workload_origin": "synthetic"
     },
     "dependency_view:fixture:bun:1.3.7": {
       "benchmark_id": "DEP-006",
-      "direct_ms": 122.796593,
       "failure_count": 0,
+      "latest_ms": 122.796593,
       "object_name": "bun minimal dependency view",
       "p95_ms": 133.9116543,
       "resource_kind": "dependency_view",
@@ -420,12 +446,13 @@
       "scenario_name": "bun-1.3.7",
       "success_count": 7,
       "version_config": "1.3.7",
+      "window_length": 1,
       "workload_origin": "synthetic"
     },
     "dependency_view:fixture:npm:10.9.8": {
       "benchmark_id": "DEP-001",
-      "direct_ms": 362.659213,
       "failure_count": 0,
+      "latest_ms": 362.659213,
       "object_name": "npm minimal dependency view",
       "p95_ms": 421.81441369999993,
       "resource_kind": "dependency_view",
@@ -433,12 +460,13 @@
       "scenario_name": "npm-10.9.8",
       "success_count": 7,
       "version_config": "10.9.8",
+      "window_length": 1,
       "workload_origin": "synthetic"
     },
     "dependency_view:fixture:pnpm:10.17.1": {
       "benchmark_id": "DEP-002",
-      "direct_ms": 450.922971,
       "failure_count": 0,
+      "latest_ms": 450.922971,
       "object_name": "pnpm minimal dependency view",
       "p95_ms": 500.4796082,
       "resource_kind": "dependency_view",
@@ -446,12 +474,13 @@
       "scenario_name": "pnpm-10.17.1",
       "success_count": 7,
       "version_config": "10.17.1",
+      "window_length": 1,
       "workload_origin": "synthetic"
     },
     "dependency_view:fixture:pnpm:10.27.0": {
       "benchmark_id": "DEP-002",
-      "direct_ms": 518.416375,
       "failure_count": 0,
+      "latest_ms": 518.416375,
       "object_name": "pnpm minimal dependency view",
       "p95_ms": 557.3508924,
       "resource_kind": "dependency_view",
@@ -459,12 +488,13 @@
       "scenario_name": "pnpm-10.27.0",
       "success_count": 7,
       "version_config": "10.27.0",
+      "window_length": 1,
       "workload_origin": "synthetic"
     },
     "dependency_view:fixture:pnpm:10.28.2": {
       "benchmark_id": "DEP-002",
-      "direct_ms": 528.47482,
       "failure_count": 0,
+      "latest_ms": 528.47482,
       "object_name": "pnpm minimal dependency view",
       "p95_ms": 545.0787699,
       "resource_kind": "dependency_view",
@@ -472,12 +502,13 @@
       "scenario_name": "pnpm-10.28.2",
       "success_count": 7,
       "version_config": "10.28.2",
+      "window_length": 1,
       "workload_origin": "synthetic"
     },
     "dependency_view:fixture:pnpm:10.34.5": {
       "benchmark_id": "DEP-002",
-      "direct_ms": 498.547234,
       "failure_count": 0,
+      "latest_ms": 498.547234,
       "object_name": "pnpm minimal dependency view",
       "p95_ms": 565.98991,
       "resource_kind": "dependency_view",
@@ -485,12 +516,13 @@
       "scenario_name": "pnpm-10.34.5",
       "success_count": 7,
       "version_config": "10.34.5",
+      "window_length": 1,
       "workload_origin": "synthetic"
     },
     "dependency_view:fixture:pnpm:10.4.0": {
       "benchmark_id": "DEP-002",
-      "direct_ms": 455.585319,
       "failure_count": 0,
+      "latest_ms": 455.585319,
       "object_name": "pnpm minimal dependency view",
       "p95_ms": 562.4930087,
       "resource_kind": "dependency_view",
@@ -498,12 +530,13 @@
       "scenario_name": "pnpm-10.4.0",
       "success_count": 7,
       "version_config": "10.4.0",
+      "window_length": 1,
       "workload_origin": "synthetic"
     },
     "dependency_view:fixture:pnpm:11.24.0": {
       "benchmark_id": "DEP-002",
-      "direct_ms": 701.85074,
       "failure_count": 0,
+      "latest_ms": 701.85074,
       "object_name": "pnpm minimal dependency view",
       "p95_ms": 780.7485677999999,
       "resource_kind": "dependency_view",
@@ -511,12 +544,13 @@
       "scenario_name": "pnpm-11.24.0",
       "success_count": 7,
       "version_config": "11.24.0",
+      "window_length": 1,
       "workload_origin": "synthetic"
     },
     "dependency_view:fixture:pnpm:9.12.2": {
       "benchmark_id": "DEP-002",
-      "direct_ms": 544.621931,
       "failure_count": 0,
+      "latest_ms": 544.621931,
       "object_name": "pnpm minimal dependency view",
       "p95_ms": 565.9955354,
       "resource_kind": "dependency_view",
@@ -524,12 +558,13 @@
       "scenario_name": "pnpm-9.12.2",
       "success_count": 7,
       "version_config": "9.12.2",
+      "window_length": 1,
       "workload_origin": "synthetic"
     },
     "dependency_view:fixture:pnpm:9.15.0": {
       "benchmark_id": "DEP-002",
-      "direct_ms": 464.676165,
       "failure_count": 0,
+      "latest_ms": 464.676165,
       "object_name": "pnpm minimal dependency view",
       "p95_ms": 546.2653176,
       "resource_kind": "dependency_view",
@@ -537,12 +572,13 @@
       "scenario_name": "pnpm-9.15.0",
       "success_count": 7,
       "version_config": "9.15.0",
+      "window_length": 1,
       "workload_origin": "synthetic"
     },
     "dependency_view:fixture:pnpm:9.15.4": {
       "benchmark_id": "DEP-002",
-      "direct_ms": 532.538575,
       "failure_count": 0,
+      "latest_ms": 532.538575,
       "object_name": "pnpm minimal dependency view",
       "p95_ms": 613.6625369999999,
       "resource_kind": "dependency_view",
@@ -550,12 +586,13 @@
       "scenario_name": "pnpm-9.15.4",
       "success_count": 7,
       "version_config": "9.15.4",
+      "window_length": 1,
       "workload_origin": "synthetic"
     },
     "dependency_view:fixture:pnpm:9.15.5": {
       "benchmark_id": "DEP-002",
-      "direct_ms": 484.846679,
       "failure_count": 0,
+      "latest_ms": 484.846679,
       "object_name": "pnpm minimal dependency view",
       "p95_ms": 621.6721196999999,
       "resource_kind": "dependency_view",
@@ -563,12 +600,13 @@
       "scenario_name": "pnpm-9.15.5",
       "success_count": 7,
       "version_config": "9.15.5",
+      "window_length": 1,
       "workload_origin": "synthetic"
     },
     "dependency_view:fixture:pnpm:9.4.0": {
       "benchmark_id": "DEP-002",
-      "direct_ms": 482.535883,
       "failure_count": 0,
+      "latest_ms": 482.535883,
       "object_name": "pnpm minimal dependency view",
       "p95_ms": 532.9932864,
       "resource_kind": "dependency_view",
@@ -576,12 +614,13 @@
       "scenario_name": "pnpm-9.4.0",
       "success_count": 7,
       "version_config": "9.4.0",
+      "window_length": 1,
       "workload_origin": "synthetic"
     },
     "dependency_view:fixture:yarn:1.22.21": {
       "benchmark_id": "DEP-003",
-      "direct_ms": 354.483767,
       "failure_count": 0,
+      "latest_ms": 354.483767,
       "object_name": "yarn minimal dependency view",
       "p95_ms": 395.78827429999996,
       "resource_kind": "dependency_view",
@@ -589,12 +628,13 @@
       "scenario_name": "yarn-1.22.21",
       "success_count": 7,
       "version_config": "1.22.21",
+      "window_length": 1,
       "workload_origin": "synthetic"
     },
     "dependency_view:fixture:yarn:1.22.22": {
       "benchmark_id": "DEP-003",
-      "direct_ms": 350.585615,
       "failure_count": 0,
+      "latest_ms": 350.585615,
       "object_name": "yarn minimal dependency view",
       "p95_ms": 388.9235662,
       "resource_kind": "dependency_view",
@@ -602,12 +642,13 @@
       "scenario_name": "yarn-1.22.22",
       "success_count": 7,
       "version_config": "1.22.22",
+      "window_length": 1,
       "workload_origin": "synthetic"
     },
     "dependency_view:fixture:yarn:3.2.3": {
       "benchmark_id": "DEP-004",
-      "direct_ms": 381.055475,
       "failure_count": 0,
+      "latest_ms": 381.055475,
       "object_name": "yarn minimal dependency view",
       "p95_ms": 413.65373089999997,
       "resource_kind": "dependency_view",
@@ -615,12 +656,13 @@
       "scenario_name": "yarn-3.2.3",
       "success_count": 7,
       "version_config": "3.2.3",
+      "window_length": 1,
       "workload_origin": "synthetic"
     },
     "dependency_view:fixture:yarn:3.8.7": {
       "benchmark_id": "DEP-004",
-      "direct_ms": 374.669056,
       "failure_count": 0,
+      "latest_ms": 374.669056,
       "object_name": "yarn minimal dependency view",
       "p95_ms": 395.2645844,
       "resource_kind": "dependency_view",
@@ -628,12 +670,13 @@
       "scenario_name": "yarn-3.8.7",
       "success_count": 7,
       "version_config": "3.8.7",
+      "window_length": 1,
       "workload_origin": "synthetic"
     },
     "dependency_view:fixture:yarn:4.0.2": {
       "benchmark_id": "DEP-004",
-      "direct_ms": 371.878527,
       "failure_count": 0,
+      "latest_ms": 371.878527,
       "object_name": "yarn minimal dependency view",
       "p95_ms": 393.2682829,
       "resource_kind": "dependency_view",
@@ -641,12 +684,13 @@
       "scenario_name": "yarn-4.0.2",
       "success_count": 7,
       "version_config": "4.0.2",
+      "window_length": 1,
       "workload_origin": "synthetic"
     },
     "dependency_view:fixture:yarn:4.10.3": {
       "benchmark_id": "DEP-004",
-      "direct_ms": 369.556735,
       "failure_count": 0,
+      "latest_ms": 369.556735,
       "object_name": "yarn minimal dependency view",
       "p95_ms": 379.44001249999997,
       "resource_kind": "dependency_view",
@@ -654,12 +698,13 @@
       "scenario_name": "yarn-4.10.3",
       "success_count": 7,
       "version_config": "4.10.3",
+      "window_length": 1,
       "workload_origin": "synthetic"
     },
     "dependency_view:fixture:yarn:4.12.0": {
       "benchmark_id": "DEP-004",
-      "direct_ms": 377.344031,
       "failure_count": 0,
+      "latest_ms": 377.344031,
       "object_name": "yarn minimal dependency view",
       "p95_ms": 407.2015331,
       "resource_kind": "dependency_view",
@@ -667,12 +712,13 @@
       "scenario_name": "yarn-4.12.0",
       "success_count": 7,
       "version_config": "4.12.0",
+      "window_length": 1,
       "workload_origin": "synthetic"
     },
     "dependency_view:fixture:yarn:4.9.1": {
       "benchmark_id": "DEP-004",
-      "direct_ms": 369.142926,
       "failure_count": 0,
+      "latest_ms": 369.142926,
       "object_name": "yarn minimal dependency view",
       "p95_ms": 403.7295708,
       "resource_kind": "dependency_view",
@@ -680,12 +726,13 @@
       "scenario_name": "yarn-4.9.1",
       "success_count": 7,
       "version_config": "4.9.1",
+      "window_length": 1,
       "workload_origin": "synthetic"
     },
     "display_service:dbus:host": {
       "benchmark_id": "GUI-003",
-      "direct_ms": 119.437217,
       "failure_count": 0,
+      "latest_ms": 119.437217,
       "object_name": "D-Bus session",
       "p95_ms": 130.7753768,
       "resource_kind": "display_service",
@@ -693,12 +740,13 @@
       "scenario_name": "default",
       "success_count": 7,
       "version_config": "host",
+      "window_length": 1,
       "workload_origin": "synthetic"
     },
     "display_service:xvfb:host": {
       "benchmark_id": "GUI-001",
-      "direct_ms": 5.14766,
       "failure_count": 0,
+      "latest_ms": 5.14766,
       "object_name": "Xvfb",
       "p95_ms": 5.1527078,
       "resource_kind": "display_service",
@@ -706,12 +754,13 @@
       "scenario_name": "default",
       "success_count": 7,
       "version_config": "host",
+      "window_length": 1,
       "workload_origin": "synthetic"
     },
     "filesystem_overlay:directory-copy:ext4": {
       "benchmark_id": "FS-001",
-      "direct_ms": 1.278365,
       "failure_count": 0,
+      "latest_ms": 1.278365,
       "object_name": "directory-copy on ext4",
       "p95_ms": 1.2976351,
       "resource_kind": "filesystem_overlay",
@@ -719,12 +768,13 @@
       "scenario_name": "default",
       "success_count": 7,
       "version_config": "ext4",
+      "window_length": 1,
       "workload_origin": "synthetic"
     },
     "home_tmp_xdg:isolated-template:v1": {
       "benchmark_id": "FS-005",
-      "direct_ms": 14.770302,
       "failure_count": 0,
+      "latest_ms": 14.770302,
       "object_name": "isolated HOME/tmp/XDG",
       "p95_ms": 15.0681505,
       "resource_kind": "home_tmp_xdg",
@@ -732,12 +782,13 @@
       "scenario_name": "default",
       "success_count": 7,
       "version_config": "v1",
+      "window_length": 1,
       "workload_origin": "synthetic"
     },
     "local_registry:benchmark:reg-001:default": {
       "benchmark_id": "REG-001",
-      "direct_ms": 1.631954,
       "failure_count": 0,
+      "latest_ms": 1.631954,
       "object_name": "registry startup-ready | cold/restart/port conflict",
       "p95_ms": 1.9085216999999999,
       "resource_kind": "local_registry",
@@ -745,12 +796,13 @@
       "scenario_name": "default",
       "success_count": 7,
       "version_config": "v1",
+      "window_length": 1,
       "workload_origin": "synthetic"
     },
     "local_registry:benchmark:reg-006:default": {
       "benchmark_id": "REG-006",
-      "direct_ms": 0.000601,
       "failure_count": 0,
+      "latest_ms": 0.000601,
       "object_name": "outbound proxy startup | cold/port conflict",
       "p95_ms": 0.0009749999999999998,
       "resource_kind": "local_registry",
@@ -758,12 +810,13 @@
       "scenario_name": "default",
       "success_count": 7,
       "version_config": "v1",
+      "window_length": 1,
       "workload_origin": "synthetic"
     },
     "native_binary_bundle:synthetic:node-addon:abi109": {
       "benchmark_id": "NAT-001",
-      "direct_ms": 785.841176,
       "failure_count": 0,
+      "latest_ms": 785.841176,
       "object_name": "node-gyp hello addon",
       "p95_ms": 815.7564134,
       "resource_kind": "native_binary_bundle",
@@ -771,12 +824,13 @@
       "scenario_name": "default",
       "success_count": 7,
       "version_config": "1.0.0",
+      "window_length": 1,
       "workload_origin": "synthetic"
     },
     "network_ports:host-loopback:v1": {
       "benchmark_id": "NET-003",
-      "direct_ms": 0.047462,
       "failure_count": 0,
+      "latest_ms": 0.047462,
       "object_name": "host loopback ports",
       "p95_ms": 0.0509774,
       "resource_kind": "network_ports",
@@ -784,12 +838,13 @@
       "scenario_name": "default",
       "success_count": 7,
       "version_config": "v1",
+      "window_length": 1,
       "workload_origin": "synthetic"
     },
     "node_runtime:18.19.1:linux:x86_64:glibc:abi109": {
       "benchmark_id": "RUN-003",
-      "direct_ms": 118.99691,
       "failure_count": 0,
+      "latest_ms": 118.99691,
       "object_name": "Node.js",
       "p95_ms": 134.3744423,
       "resource_kind": "node_runtime",
@@ -797,12 +852,13 @@
       "scenario_name": "node-18",
       "success_count": 7,
       "version_config": "18.19.1",
+      "window_length": 1,
       "workload_origin": "real"
     },
     "node_runtime:20.19.1:linux:x86_64:glibc:abi115": {
       "benchmark_id": "RUN-003",
-      "direct_ms": 119.044761,
       "failure_count": 0,
+      "latest_ms": 119.044761,
       "object_name": "Node.js",
       "p95_ms": 126.01399169999999,
       "resource_kind": "node_runtime",
@@ -810,12 +866,13 @@
       "scenario_name": "node-20",
       "success_count": 7,
       "version_config": "20.19.1",
+      "window_length": 1,
       "workload_origin": "real"
     },
     "node_runtime:22.23.2:linux:x86_64:glibc:abi127": {
       "benchmark_id": "RUN-003",
-      "direct_ms": 123.29248,
       "failure_count": 0,
+      "latest_ms": 123.29248,
       "object_name": "Node.js",
       "p95_ms": 125.8879653,
       "resource_kind": "node_runtime",
@@ -823,12 +880,13 @@
       "scenario_name": "node-22",
       "success_count": 7,
       "version_config": "22.23.2",
+      "window_length": 1,
       "workload_origin": "real"
     },
     "node_runtime:benchmark:run-007:default": {
       "benchmark_id": "RUN-007",
-      "direct_ms": 121.17982,
       "failure_count": 0,
+      "latest_ms": 121.17982,
       "object_name": "Java/JVM | JDK+JVM args | JVM、Gradle daemon attach/switch",
       "p95_ms": 130.9591066,
       "resource_kind": "node_runtime",
@@ -836,12 +894,13 @@
       "scenario_name": "default",
       "success_count": 7,
       "version_config": "v1",
+      "window_length": 1,
       "workload_origin": "synthetic"
     },
     "node_runtime:benchmark:run-008:default": {
       "benchmark_id": "RUN-008",
-      "direct_ms": 122.337677,
       "failure_count": 0,
+      "latest_ms": 122.337677,
       "object_name": "Python | exact+venv/site hash | interpreter、venv switch",
       "p95_ms": 129.26890210000002,
       "resource_kind": "node_runtime",
@@ -849,12 +908,13 @@
       "scenario_name": "default",
       "success_count": 7,
       "version_config": "v1",
+      "window_length": 1,
       "workload_origin": "synthetic"
     },
     "node_runtime:benchmark:run-009:default": {
       "benchmark_id": "RUN-009",
-      "direct_ms": 122.003933,
       "failure_count": 0,
+      "latest_ms": 122.003933,
       "object_name": "shell | bash/dash+env | process、login/non-login",
       "p95_ms": 130.02100439999998,
       "resource_kind": "node_runtime",
@@ -862,12 +922,13 @@
       "scenario_name": "default",
       "success_count": 7,
       "version_config": "v1",
+      "window_length": 1,
       "workload_origin": "synthetic"
     },
     "package_manager:bun:default:1.2.18:linux:x86_64": {
       "benchmark_id": "RUN-005",
-      "direct_ms": 3.375764,
       "failure_count": 0,
+      "latest_ms": 3.375764,
       "object_name": "bun",
       "p95_ms": 3.841855699999999,
       "resource_kind": "package_manager",
@@ -875,12 +936,13 @@
       "scenario_name": "bun-1.2.18",
       "success_count": 7,
       "version_config": "1.2.18",
+      "window_length": 1,
       "workload_origin": "real"
     },
     "package_manager:bun:default:1.3.7:linux:x86_64": {
       "benchmark_id": "RUN-005",
-      "direct_ms": 3.364077,
       "failure_count": 0,
+      "latest_ms": 3.364077,
       "object_name": "bun",
       "p95_ms": 4.5006032,
       "resource_kind": "package_manager",
@@ -888,12 +950,13 @@
       "scenario_name": "bun-1.3.7",
       "success_count": 7,
       "version_config": "1.3.7",
+      "window_length": 1,
       "workload_origin": "real"
     },
     "package_manager:pnpm:default:10.17.1:linux:x86_64": {
       "benchmark_id": "PM-007",
-      "direct_ms": 755.362826,
       "failure_count": 0,
+      "latest_ms": 755.362826,
       "object_name": "pnpm",
       "p95_ms": 814.3422167,
       "resource_kind": "package_manager",
@@ -901,12 +964,13 @@
       "scenario_name": "npx-pnpm-10.17.1",
       "success_count": 7,
       "version_config": "10.17.1",
+      "window_length": 1,
       "workload_origin": "real"
     },
     "project_server:synthetic:http:v1": {
       "benchmark_id": "SRV-001",
-      "direct_ms": 2.092957,
       "failure_count": 0,
+      "latest_ms": 2.092957,
       "object_name": "semantic HTTP fixture",
       "p95_ms": 2.6071459999999997,
       "resource_kind": "project_server",
@@ -914,12 +978,13 @@
       "scenario_name": "default",
       "success_count": 7,
       "version_config": "v1",
+      "window_length": 1,
       "workload_origin": "synthetic"
     },
     "project_server:synthetic:tsserver": {
       "benchmark_id": "BLD-003",
-      "direct_ms": 251.307678,
       "failure_count": 0,
+      "latest_ms": 251.307678,
       "object_name": "tsserver",
       "p95_ms": 318.90555939999996,
       "resource_kind": "project_server",
@@ -927,12 +992,13 @@
       "scenario_name": "default",
       "success_count": 7,
       "version_config": "7.0.2",
+      "window_length": 1,
       "workload_origin": "synthetic"
     },
     "source_overlay:benchmark:src-001:default": {
       "benchmark_id": "SRC-001",
-      "direct_ms": 118.620191,
       "failure_count": 0,
+      "latest_ms": 118.620191,
       "object_name": "global/node | Git clone/fetch | network cold、object hit、shallow/full | PREP/PLAC",
       "p95_ms": 130.0369553,
       "resource_kind": "source_overlay",
@@ -940,12 +1006,13 @@
       "scenario_name": "default",
       "success_count": 7,
       "version_config": "v1",
+      "window_length": 1,
       "workload_origin": "synthetic"
     },
     "source_overlay:benchmark:src-002:default": {
       "benchmark_id": "SRC-002",
-      "direct_ms": 12.589674,
       "failure_count": 0,
+      "latest_ms": 12.589674,
       "object_name": "node | exact commit checkout | object cold/warm、repo size | TRANSITION",
       "p95_ms": 14.081788099999999,
       "resource_kind": "source_overlay",
@@ -953,12 +1020,13 @@
       "scenario_name": "default",
       "success_count": 7,
       "version_config": "v1",
+      "window_length": 1,
       "workload_origin": "synthetic"
     },
     "source_overlay:benchmark:src-003:default": {
       "benchmark_id": "SRC-003",
-      "direct_ms": 11.708522,
       "failure_count": 0,
+      "latest_ms": 11.708522,
       "object_name": "node | worktree create/remove | first/repeated/concurrent | TRANSITION/CLEANUP",
       "p95_ms": 12.1091744,
       "resource_kind": "source_overlay",
@@ -966,12 +1034,13 @@
       "scenario_name": "default",
       "success_count": 7,
       "version_config": "v1",
+      "window_length": 1,
       "workload_origin": "synthetic"
     },
     "source_overlay:benchmark:src-005:default": {
       "benchmark_id": "SRC-005",
-      "direct_ms": 0.000681,
       "failure_count": 0,
+      "latest_ms": 0.000681,
       "object_name": "node | baseline snapshot create/attach | tar/overlay/btrfs/tmpfs | PREP/TRANSITI",
       "p95_ms": 0.0009519999999999998,
       "resource_kind": "source_overlay",
@@ -979,12 +1048,13 @@
       "scenario_name": "default",
       "success_count": 7,
       "version_config": "v1",
+      "window_length": 1,
       "workload_origin": "synthetic"
     },
     "source_overlay:benchmark:src-006:default": {
       "benchmark_id": "SRC-006",
-      "direct_ms": 0.000601,
       "failure_count": 0,
+      "latest_ms": 0.000601,
       "object_name": "task | writable overlay create | tree size/inodes | TRANSITION",
       "p95_ms": 0.0006343000000000001,
       "resource_kind": "source_overlay",
@@ -992,12 +1062,13 @@
       "scenario_name": "default",
       "success_count": 7,
       "version_config": "v1",
+      "window_length": 1,
       "workload_origin": "synthetic"
     },
     "source_overlay:benchmark:src-007:default": {
       "benchmark_id": "SRC-007",
-      "direct_ms": 3.575185,
       "failure_count": 0,
+      "latest_ms": 3.575185,
       "object_name": "task | SWE task patch apply | clean/conflict/large patch | TRANSITION",
       "p95_ms": 4.5469042,
       "resource_kind": "source_overlay",
@@ -1005,12 +1076,13 @@
       "scenario_name": "default",
       "success_count": 7,
       "version_config": "v1",
+      "window_length": 1,
       "workload_origin": "synthetic"
     },
     "source_overlay:benchmark:src-010:default": {
       "benchmark_id": "SRC-010",
-      "direct_ms": 0.000661,
       "failure_count": 0,
+      "latest_ms": 0.000661,
       "object_name": "node/task | dependency root attach | root/nested/two-root profile | TRANSITION",
       "p95_ms": 0.0007017,
       "resource_kind": "source_overlay",
@@ -1018,12 +1090,13 @@
       "scenario_name": "default",
       "success_count": 7,
       "version_config": "v1",
+      "window_length": 1,
       "workload_origin": "synthetic"
     },
     "source_overlay:benchmark:src-011:default": {
       "benchmark_id": "SRC-011",
-      "direct_ms": 0.000501,
       "failure_count": 0,
+      "latest_ms": 0.000501,
       "object_name": "node | repo page-cache effect | logical/physical cold | DIAGNOSTIC",
       "p95_ms": 0.0009916999999999999,
       "resource_kind": "source_overlay",
@@ -1031,12 +1104,13 @@
       "scenario_name": "default",
       "success_count": 7,
       "version_config": "v1",
+      "window_length": 1,
       "workload_origin": "synthetic"
     },
     "task_harness:synthetic:rollout:v1": {
       "benchmark_id": "TSK-003",
-      "direct_ms": 120.28362,
       "failure_count": 0,
+      "latest_ms": 120.28362,
       "object_name": "rollout harness",
       "p95_ms": 131.26146889999998,
       "resource_kind": "task_harness",
@@ -1044,12 +1118,13 @@
       "scenario_name": "default",
       "success_count": 7,
       "version_config": "v1",
+      "window_length": 1,
       "workload_origin": "synthetic"
     },
     "test_transform_cache:synthetic:ava:8.0.1": {
       "benchmark_id": "TST-004",
-      "direct_ms": 556.927064,
       "failure_count": 0,
+      "latest_ms": 556.927064,
       "object_name": "ava",
       "p95_ms": 576.7614212,
       "resource_kind": "test_transform_cache",
@@ -1057,12 +1132,13 @@
       "scenario_name": "ava-cold",
       "success_count": 7,
       "version_config": "8.0.1",
+      "window_length": 1,
       "workload_origin": "synthetic"
     },
     "test_transform_cache:synthetic:jest:30.4.2": {
       "benchmark_id": "TST-001",
-      "direct_ms": 588.237591,
       "failure_count": 0,
+      "latest_ms": 588.237591,
       "object_name": "jest",
       "p95_ms": 619.1476638,
       "resource_kind": "test_transform_cache",
@@ -1070,12 +1146,13 @@
       "scenario_name": "jest-cold",
       "success_count": 7,
       "version_config": "30.4.2",
+      "window_length": 1,
       "workload_origin": "synthetic"
     },
     "test_transform_cache:synthetic:mocha:11.8.0": {
       "benchmark_id": "TST-003",
-      "direct_ms": 119.273592,
       "failure_count": 0,
+      "latest_ms": 119.273592,
       "object_name": "mocha",
       "p95_ms": 120.7319338,
       "resource_kind": "test_transform_cache",
@@ -1083,12 +1160,13 @@
       "scenario_name": "mocha-cold",
       "success_count": 7,
       "version_config": "11.8.0",
+      "window_length": 1,
       "workload_origin": "synthetic"
     },
     "test_transform_cache:synthetic:tst-012": {
       "benchmark_id": "TST-012",
-      "direct_ms": 114.582806,
       "failure_count": 0,
+      "latest_ms": 114.582806,
       "object_name": "worker pool | create/reuse/reset/leak",
       "p95_ms": 117.7835504,
       "resource_kind": "test_transform_cache",
@@ -1096,12 +1174,13 @@
       "scenario_name": "default",
       "success_count": 7,
       "version_config": "v1",
+      "window_length": 1,
       "workload_origin": "synthetic"
     },
     "test_transform_cache:synthetic:tst-014": {
       "benchmark_id": "TST-014",
-      "direct_ms": 677.085911,
       "failure_count": 0,
+      "latest_ms": 677.085911,
       "object_name": "coverage | V8/Istanbul、cold/warm、cleanup",
       "p95_ms": 695.5804896,
       "resource_kind": "test_transform_cache",
@@ -1109,12 +1188,13 @@
       "scenario_name": "default",
       "success_count": 7,
       "version_config": "v1",
+      "window_length": 1,
       "workload_origin": "synthetic"
     },
     "test_transform_cache:synthetic:vitest:4.1.11": {
       "benchmark_id": "TST-002",
-      "direct_ms": 574.836441,
       "failure_count": 0,
+      "latest_ms": 574.836441,
       "object_name": "vitest",
       "p95_ms": 585.198219,
       "resource_kind": "test_transform_cache",
@@ -1122,98 +1202,506 @@
       "scenario_name": "vitest-cold",
       "success_count": 7,
       "version_config": "4.1.11",
+      "window_length": 1,
       "workload_origin": "synthetic"
     }
   },
   "direct_ms": {
-    "artifact_acquisition:benchmark:art-001:default": 42.555879,
-    "artifact_acquisition:benchmark:art-002:default": 39.423257,
-    "artifact_acquisition:benchmark:art-003:default": 313.84354,
-    "artifact_acquisition:benchmark:art-004:default": 764.821,
-    "artifact_acquisition:benchmark:art-005:default": 761.638299,
-    "artifact_acquisition:benchmark:art-006:default": 0.002083,
-    "browser_process:chromium:151.0.7922.77:headless": 281.798033,
-    "browser_process:electron:40.10.2:headless": 483.931135,
-    "browser_process:firefox:Mozilla Firefox 153.0.3:headless": 1872.738363,
-    "browser_profile:chromium:151.0.7922.77:ephemeral": 5.101571,
-    "build_cache:synthetic:babel:7.28.4": 240.2496,
-    "build_cache:synthetic:bld-016": 117.210208,
-    "build_cache:synthetic:bld-017": 0.167884,
-    "build_cache:synthetic:esbuild:0.28.2": 119.640538,
-    "build_cache:synthetic:npm-script": 251.841551,
-    "build_cache:synthetic:rollup:4.63.1": 119.888181,
-    "build_cache:synthetic:swc:1.16.1": 116.848473,
-    "build_cache:synthetic:typescript:7.0.2": 525.484661,
-    "build_cache:synthetic:vite:8.2.2": 355.514422,
-    "build_cache:synthetic:webpack:5.110.1": 442.626332,
-    "database_binary:redis:Redis server v=7.0.15 sha=00000000:0 malloc=jemalloc-5.3.0 bits=64 build=e53ff17674aa6190": 15.821804,
-    "database_clean_snapshot:sqlite:python-stdlib:minimal": 0.44316,
-    "database_daemon:redis:Redis server v=7.0.15 sha=00000000:0 malloc=jemalloc-5.3.0 bits=64 build=e53ff17674aa6190:default": 14.710122,
-    "database_private_layer:sqlite:python-stdlib:task": 0.881304,
-    "dependency_view:Automattic__mongoose.5f57a5bb:root:f4a039d5d472a10b": 385.908853,
-    "dependency_view:fixture:bun:1.2.18": 124.284427,
-    "dependency_view:fixture:bun:1.3.7": 122.796593,
-    "dependency_view:fixture:npm:10.9.8": 362.659213,
-    "dependency_view:fixture:pnpm:10.17.1": 450.922971,
-    "dependency_view:fixture:pnpm:10.27.0": 518.416375,
-    "dependency_view:fixture:pnpm:10.28.2": 528.47482,
-    "dependency_view:fixture:pnpm:10.34.5": 498.547234,
-    "dependency_view:fixture:pnpm:10.4.0": 455.585319,
-    "dependency_view:fixture:pnpm:11.24.0": 701.85074,
-    "dependency_view:fixture:pnpm:9.12.2": 544.621931,
-    "dependency_view:fixture:pnpm:9.15.0": 464.676165,
-    "dependency_view:fixture:pnpm:9.15.4": 532.538575,
-    "dependency_view:fixture:pnpm:9.15.5": 484.846679,
-    "dependency_view:fixture:pnpm:9.4.0": 482.535883,
-    "dependency_view:fixture:yarn:1.22.21": 354.483767,
-    "dependency_view:fixture:yarn:1.22.22": 350.585615,
-    "dependency_view:fixture:yarn:3.2.3": 381.055475,
-    "dependency_view:fixture:yarn:3.8.7": 374.669056,
-    "dependency_view:fixture:yarn:4.0.2": 371.878527,
-    "dependency_view:fixture:yarn:4.10.3": 369.556735,
-    "dependency_view:fixture:yarn:4.12.0": 377.344031,
-    "dependency_view:fixture:yarn:4.9.1": 369.142926,
-    "display_service:dbus:host": 119.437217,
-    "display_service:xvfb:host": 5.14766,
-    "filesystem_overlay:directory-copy:ext4": 1.278365,
-    "home_tmp_xdg:isolated-template:v1": 14.770302,
-    "local_registry:benchmark:reg-001:default": 1.631954,
-    "local_registry:benchmark:reg-006:default": 0.000601,
-    "native_binary_bundle:synthetic:node-addon:abi109": 785.841176,
-    "network_ports:host-loopback:v1": 0.047462,
-    "node_runtime:18.19.1:linux:x86_64:glibc:abi109": 118.99691,
-    "node_runtime:20.19.1:linux:x86_64:glibc:abi115": 119.044761,
-    "node_runtime:22.23.2:linux:x86_64:glibc:abi127": 123.29248,
-    "node_runtime:benchmark:run-007:default": 121.17982,
-    "node_runtime:benchmark:run-008:default": 122.337677,
-    "node_runtime:benchmark:run-009:default": 122.003933,
-    "package_manager:bun:default:1.2.18:linux:x86_64": 3.375764,
-    "package_manager:bun:default:1.3.7:linux:x86_64": 3.364077,
-    "package_manager:pnpm:default:10.17.1:linux:x86_64": 755.362826,
-    "project_server:synthetic:http:v1": 2.092957,
-    "project_server:synthetic:tsserver": 251.307678,
-    "source_overlay:benchmark:src-001:default": 118.620191,
-    "source_overlay:benchmark:src-002:default": 12.589674,
-    "source_overlay:benchmark:src-003:default": 11.708522,
-    "source_overlay:benchmark:src-005:default": 0.000681,
-    "source_overlay:benchmark:src-006:default": 0.000601,
-    "source_overlay:benchmark:src-007:default": 3.575185,
-    "source_overlay:benchmark:src-010:default": 0.000661,
-    "source_overlay:benchmark:src-011:default": 0.000501,
-    "task_harness:synthetic:rollout:v1": 120.28362,
-    "test_transform_cache:synthetic:ava:8.0.1": 556.927064,
-    "test_transform_cache:synthetic:jest:30.4.2": 588.237591,
-    "test_transform_cache:synthetic:mocha:11.8.0": 119.273592,
-    "test_transform_cache:synthetic:tst-012": 114.582806,
-    "test_transform_cache:synthetic:tst-014": 677.085911,
-    "test_transform_cache:synthetic:vitest:4.1.11": 574.836441
+    "artifact_acquisition:benchmark:art-001:default": [
+      42.555879
+    ],
+    "artifact_acquisition:benchmark:art-002:default": [
+      39.423257
+    ],
+    "artifact_acquisition:benchmark:art-003:default": [
+      313.84354
+    ],
+    "artifact_acquisition:benchmark:art-004:default": [
+      764.821
+    ],
+    "artifact_acquisition:benchmark:art-005:default": [
+      761.638299
+    ],
+    "artifact_acquisition:benchmark:art-006:default": [
+      0.002083
+    ],
+    "browser_process:chromium:151.0.7922.77:headless": [
+      281.798033
+    ],
+    "browser_process:electron:40.10.2:headless": [
+      483.931135
+    ],
+    "browser_process:firefox:Mozilla Firefox 153.0.3:headless": [
+      1872.738363
+    ],
+    "browser_profile:chromium:151.0.7922.77:ephemeral": [
+      5.101571
+    ],
+    "build_cache:synthetic:babel:7.28.4": [
+      240.2496
+    ],
+    "build_cache:synthetic:bld-016": [
+      117.210208
+    ],
+    "build_cache:synthetic:bld-017": [
+      0.167884
+    ],
+    "build_cache:synthetic:esbuild:0.28.2": [
+      119.640538
+    ],
+    "build_cache:synthetic:npm-script": [
+      251.841551
+    ],
+    "build_cache:synthetic:rollup:4.63.1": [
+      119.888181
+    ],
+    "build_cache:synthetic:swc:1.16.1": [
+      116.848473
+    ],
+    "build_cache:synthetic:typescript:7.0.2": [
+      525.484661
+    ],
+    "build_cache:synthetic:vite:8.2.2": [
+      355.514422
+    ],
+    "build_cache:synthetic:webpack:5.110.1": [
+      442.626332
+    ],
+    "database_binary:redis:Redis server v=7.0.15 sha=00000000:0 malloc=jemalloc-5.3.0 bits=64 build=e53ff17674aa6190": [
+      15.821804
+    ],
+    "database_clean_snapshot:sqlite:python-stdlib:minimal": [
+      0.44316
+    ],
+    "database_daemon:redis:Redis server v=7.0.15 sha=00000000:0 malloc=jemalloc-5.3.0 bits=64 build=e53ff17674aa6190:default": [
+      14.710122
+    ],
+    "database_private_layer:sqlite:python-stdlib:task": [
+      0.881304
+    ],
+    "dependency_view:Automattic__mongoose.5f57a5bb:root:f4a039d5d472a10b": [
+      385.908853
+    ],
+    "dependency_view:fixture:bun:1.2.18": [
+      124.284427
+    ],
+    "dependency_view:fixture:bun:1.3.7": [
+      122.796593
+    ],
+    "dependency_view:fixture:npm:10.9.8": [
+      362.659213
+    ],
+    "dependency_view:fixture:pnpm:10.17.1": [
+      450.922971
+    ],
+    "dependency_view:fixture:pnpm:10.27.0": [
+      518.416375
+    ],
+    "dependency_view:fixture:pnpm:10.28.2": [
+      528.47482
+    ],
+    "dependency_view:fixture:pnpm:10.34.5": [
+      498.547234
+    ],
+    "dependency_view:fixture:pnpm:10.4.0": [
+      455.585319
+    ],
+    "dependency_view:fixture:pnpm:11.24.0": [
+      701.85074
+    ],
+    "dependency_view:fixture:pnpm:9.12.2": [
+      544.621931
+    ],
+    "dependency_view:fixture:pnpm:9.15.0": [
+      464.676165
+    ],
+    "dependency_view:fixture:pnpm:9.15.4": [
+      532.538575
+    ],
+    "dependency_view:fixture:pnpm:9.15.5": [
+      484.846679
+    ],
+    "dependency_view:fixture:pnpm:9.4.0": [
+      482.535883
+    ],
+    "dependency_view:fixture:yarn:1.22.21": [
+      354.483767
+    ],
+    "dependency_view:fixture:yarn:1.22.22": [
+      350.585615
+    ],
+    "dependency_view:fixture:yarn:3.2.3": [
+      381.055475
+    ],
+    "dependency_view:fixture:yarn:3.8.7": [
+      374.669056
+    ],
+    "dependency_view:fixture:yarn:4.0.2": [
+      371.878527
+    ],
+    "dependency_view:fixture:yarn:4.10.3": [
+      369.556735
+    ],
+    "dependency_view:fixture:yarn:4.12.0": [
+      377.344031
+    ],
+    "dependency_view:fixture:yarn:4.9.1": [
+      369.142926
+    ],
+    "display_service:dbus:host": [
+      119.437217
+    ],
+    "display_service:xvfb:host": [
+      5.14766
+    ],
+    "filesystem_overlay:directory-copy:ext4": [
+      1.278365
+    ],
+    "home_tmp_xdg:isolated-template:v1": [
+      14.770302
+    ],
+    "local_registry:benchmark:reg-001:default": [
+      1.631954
+    ],
+    "local_registry:benchmark:reg-006:default": [
+      0.000601
+    ],
+    "native_binary_bundle:synthetic:node-addon:abi109": [
+      785.841176
+    ],
+    "network_ports:host-loopback:v1": [
+      0.047462
+    ],
+    "node_runtime:18.19.1:linux:x86_64:glibc:abi109": [
+      118.99691
+    ],
+    "node_runtime:20.19.1:linux:x86_64:glibc:abi115": [
+      119.044761
+    ],
+    "node_runtime:22.23.2:linux:x86_64:glibc:abi127": [
+      123.29248
+    ],
+    "node_runtime:benchmark:run-007:default": [
+      121.17982
+    ],
+    "node_runtime:benchmark:run-008:default": [
+      122.337677
+    ],
+    "node_runtime:benchmark:run-009:default": [
+      122.003933
+    ],
+    "package_manager:bun:default:1.2.18:linux:x86_64": [
+      3.375764
+    ],
+    "package_manager:bun:default:1.3.7:linux:x86_64": [
+      3.364077
+    ],
+    "package_manager:pnpm:default:10.17.1:linux:x86_64": [
+      755.362826
+    ],
+    "project_server:synthetic:http:v1": [
+      2.092957
+    ],
+    "project_server:synthetic:tsserver": [
+      251.307678
+    ],
+    "source_overlay:benchmark:src-001:default": [
+      118.620191
+    ],
+    "source_overlay:benchmark:src-002:default": [
+      12.589674
+    ],
+    "source_overlay:benchmark:src-003:default": [
+      11.708522
+    ],
+    "source_overlay:benchmark:src-005:default": [
+      0.000681
+    ],
+    "source_overlay:benchmark:src-006:default": [
+      0.000601
+    ],
+    "source_overlay:benchmark:src-007:default": [
+      3.575185
+    ],
+    "source_overlay:benchmark:src-010:default": [
+      0.000661
+    ],
+    "source_overlay:benchmark:src-011:default": [
+      0.000501
+    ],
+    "task_harness:synthetic:rollout:v1": [
+      120.28362
+    ],
+    "test_transform_cache:synthetic:ava:8.0.1": [
+      556.927064
+    ],
+    "test_transform_cache:synthetic:jest:30.4.2": [
+      588.237591
+    ],
+    "test_transform_cache:synthetic:mocha:11.8.0": [
+      119.273592
+    ],
+    "test_transform_cache:synthetic:tst-012": [
+      114.582806
+    ],
+    "test_transform_cache:synthetic:tst-014": [
+      677.085911
+    ],
+    "test_transform_cache:synthetic:vitest:4.1.11": [
+      574.836441
+    ]
   },
   "measured_object_count": 81,
   "measurement_environment_id": "env:7a9cda66bc6b151a7886",
+  "measurement_ids": {
+    "artifact_acquisition:benchmark:art-001:default": [
+      "c042b0354452f817fa1b9ab1a3d0019dfc2012bae02fcc97d90ccdd645044a57"
+    ],
+    "artifact_acquisition:benchmark:art-002:default": [
+      "b8ad635eb07bb7a8132d34c5b2ffefa3848f24c3d65514bc801605bcbe3e7833"
+    ],
+    "artifact_acquisition:benchmark:art-003:default": [
+      "d082ef4c211c00e16074801c54e862d80a3af5ab23962ea8a968749113203396"
+    ],
+    "artifact_acquisition:benchmark:art-004:default": [
+      "621d57715811ed12e632652443e3f4ce018d648f5d497a8c81df44e80f865aaa"
+    ],
+    "artifact_acquisition:benchmark:art-005:default": [
+      "5c3a02c314417625d29278ff8801889718f0ca6884dc3518474d29160f9b9911"
+    ],
+    "artifact_acquisition:benchmark:art-006:default": [
+      "20dd858609e7d8a0cc29055764d246e835d7475a27e5a7ac2d34471322052206"
+    ],
+    "browser_process:chromium:151.0.7922.77:headless": [
+      "549a29fa1c1097dfcfd1f72fba6340e963edc517706ed17002ba17eedffe51ed"
+    ],
+    "browser_process:electron:40.10.2:headless": [
+      "9f763989076f651a6114d8e64fb0850abedea61ee2b56e83498fae0d9849ce05"
+    ],
+    "browser_process:firefox:Mozilla Firefox 153.0.3:headless": [
+      "498fdb342dd60dd75fc7403244cfdf059c9a5a9eab6755d456b7fc39fb36dd61"
+    ],
+    "browser_profile:chromium:151.0.7922.77:ephemeral": [
+      "eb0cdb30088ad0f081cc02d943b133d6d3ef3fca5d95bc924549d525cebf6068"
+    ],
+    "build_cache:synthetic:babel:7.28.4": [
+      "43ba5f9fbe30a9af28c989c30b6dae061b21304b5c2c50f4f5d0456196865ed7"
+    ],
+    "build_cache:synthetic:bld-016": [
+      "68b6ad9546ec068af74966074f56d58d64577718af79e97301332a168e54c0dd"
+    ],
+    "build_cache:synthetic:bld-017": [
+      "284f612c22f8cbda9241e54034914f6a33d6a2fb3aece86d1060e7dec5497ab3"
+    ],
+    "build_cache:synthetic:esbuild:0.28.2": [
+      "68b87b3ea6b6be96ece09fd9d141c22800cc9205fdc225139252be5938813522"
+    ],
+    "build_cache:synthetic:npm-script": [
+      "b5a693213f7d17072ca18c246159b7cafdefa5f765c66c26fed12dd5ec9605b5"
+    ],
+    "build_cache:synthetic:rollup:4.63.1": [
+      "f5045d9d261bce0825fcb95e6c68212cc0e438b8d447787e7f605d5ae0e116af"
+    ],
+    "build_cache:synthetic:swc:1.16.1": [
+      "73ae60963e58c022627279cfe65f54c46263b9f9e90a4f7c7789d37f10818a3b"
+    ],
+    "build_cache:synthetic:typescript:7.0.2": [
+      "bfc35fea44ed9fc34fc22b38df570c2616fcfc860333a479e88b143b76528b05"
+    ],
+    "build_cache:synthetic:vite:8.2.2": [
+      "a1ace72dda3ba9e2ef3a8dbb22cbfa281d1e9f6a661eed62f78b9f5a83556a07"
+    ],
+    "build_cache:synthetic:webpack:5.110.1": [
+      "7beb90d26dcb582cb2bd1d4ff54003c3d6e719cca9321b30b5704e4f3b9ae4e6"
+    ],
+    "database_binary:redis:Redis server v=7.0.15 sha=00000000:0 malloc=jemalloc-5.3.0 bits=64 build=e53ff17674aa6190": [
+      "9565c8a43152fc2dcbe075e00ac3588edd0236870f683a23bc04084f528f183d"
+    ],
+    "database_clean_snapshot:sqlite:python-stdlib:minimal": [
+      "689355f48cd1b48b33e45ada05b0715c70b8af5a57e89e75eb9121d1e3f550b9"
+    ],
+    "database_daemon:redis:Redis server v=7.0.15 sha=00000000:0 malloc=jemalloc-5.3.0 bits=64 build=e53ff17674aa6190:default": [
+      "f44e84c7085a30db0c5db03e4c54f71b9e2da301b34a480efacdc70c5fbd3f20"
+    ],
+    "database_private_layer:sqlite:python-stdlib:task": [
+      "9e0a71cf3f50c25c912a5909c63874cf6b1500ded488a0120a88cf79d7964ad3"
+    ],
+    "dependency_view:Automattic__mongoose.5f57a5bb:root:f4a039d5d472a10b": [
+      "bc7a3c5a9823a23cdd2afbc1831049482616f6a1ca8caa618856bcddeecde9af"
+    ],
+    "dependency_view:fixture:bun:1.2.18": [
+      "de5207740ff2825cb75372aa02bdce7c39f6e748d6d64b00ebab926575b9ae15"
+    ],
+    "dependency_view:fixture:bun:1.3.7": [
+      "033e18d3614983dac1e6338928379825af66580cb914f0389d8514f59d93ce9e"
+    ],
+    "dependency_view:fixture:npm:10.9.8": [
+      "f8817056178ff08a488e50be73e5b2d1ab47685a6d5d4dea1a47eddba103d3b9"
+    ],
+    "dependency_view:fixture:pnpm:10.17.1": [
+      "a02adb4260c8ecace6f7b0866e662d3852598200c5c66ec07cb993a7ce413e33"
+    ],
+    "dependency_view:fixture:pnpm:10.27.0": [
+      "0a31c9ba66f0f8fe2a53cebeef3e1b5bb6ec7da27dcb633bcefaec7e8d6645bb"
+    ],
+    "dependency_view:fixture:pnpm:10.28.2": [
+      "33e3384f9e8050e99dabb93f8d916e8eed97d05c91b9347b0032bc546e8dbf78"
+    ],
+    "dependency_view:fixture:pnpm:10.34.5": [
+      "a1f90b6d97b23589c1631d25e36c71a87ac57defa5296b50b2cb93f1c6f2ae9a"
+    ],
+    "dependency_view:fixture:pnpm:10.4.0": [
+      "b07e26847629c090beb01fbe3b03c44761bc48794ca0aa5d57235a6d10a528b4"
+    ],
+    "dependency_view:fixture:pnpm:11.24.0": [
+      "a10228a0d06b4d8da102fa97d78797db9700a937a1a7cf8e6667c9aafc6329ca"
+    ],
+    "dependency_view:fixture:pnpm:9.12.2": [
+      "5bb515be46213eb351613ef69ff1f566d7b3dc32140fb15ee721b69429450ec0"
+    ],
+    "dependency_view:fixture:pnpm:9.15.0": [
+      "2b9717dd278aae0266bf4c5472836475f0f6f425e2f5ff94a6bb2b2158d4bb4f"
+    ],
+    "dependency_view:fixture:pnpm:9.15.4": [
+      "cfe83ccba5864ca29eb25c05d7fa17b10283aa970ff0384c197794c7cc6b6fbe"
+    ],
+    "dependency_view:fixture:pnpm:9.15.5": [
+      "fd0b4edb83a639939020689017b6898734222b13b0e0138e255a7a899ed33e9c"
+    ],
+    "dependency_view:fixture:pnpm:9.4.0": [
+      "fe1fa435b49c8226ae35e3df10ac796489471eb4a4656afeff7d2c9029760dac"
+    ],
+    "dependency_view:fixture:yarn:1.22.21": [
+      "89bdec9920cee21708fdd1ad6599987a121bc3eea19c98b51f21198bc8f3f5cf"
+    ],
+    "dependency_view:fixture:yarn:1.22.22": [
+      "05eb3a7e8d134f7de3dd2241e129bfef6d13ded3d3d1eca2b02d448aba191d0f"
+    ],
+    "dependency_view:fixture:yarn:3.2.3": [
+      "cb12a59e3a5c2b0998f6a4f4e31a23625ac4dc2463665f02ee244017974c0b81"
+    ],
+    "dependency_view:fixture:yarn:3.8.7": [
+      "772c4a558e50f852f55a1bdabbf4aa9a84eedaaec7b7a0aa1b82d0ddb265bee6"
+    ],
+    "dependency_view:fixture:yarn:4.0.2": [
+      "4b6d6580bf5212b8d35807297e1d91e7f88fb14726c298653bd1bfbcb8b09fad"
+    ],
+    "dependency_view:fixture:yarn:4.10.3": [
+      "ccd32ae2b867db1dc99b30d8e5615fb11e2cd4dd0d68565204f6021d33e67272"
+    ],
+    "dependency_view:fixture:yarn:4.12.0": [
+      "489971334b0ba5250c6c8abdc2d45cf2da818bd170b12d9ec83f44a96993384c"
+    ],
+    "dependency_view:fixture:yarn:4.9.1": [
+      "2068310d8bbc673dd3f3226394b75cd2d69436b3c64f97a32228345a28d4257e"
+    ],
+    "display_service:dbus:host": [
+      "1dba5406e2cf4f5647a9fe7eed0f8652db89fe991fbc80850b845887f803803d"
+    ],
+    "display_service:xvfb:host": [
+      "3d598c7c79691b1d566361cac8377b4ec1fbc3b38d9670a4511d2052501d255f"
+    ],
+    "filesystem_overlay:directory-copy:ext4": [
+      "ed9e55c56a074e7b29a7edd8c024b0c23c5a63261f241d90518906797d1c15e9"
+    ],
+    "home_tmp_xdg:isolated-template:v1": [
+      "e9f0442fc912ea9d67cc746c604635760f51552e8c70868ec18d40d0107a9bd3"
+    ],
+    "local_registry:benchmark:reg-001:default": [
+      "45d6b6e892f0977efadf3108f984dc8a2225f7accec4d26ae169c12585de0d6a"
+    ],
+    "local_registry:benchmark:reg-006:default": [
+      "b23e6e29384c4c037d6c0806f6c66e7ab00eceee6eb3eae1603d00e2b8e37bf9"
+    ],
+    "native_binary_bundle:synthetic:node-addon:abi109": [
+      "8a6eaad7da7628575941f4127ce9755b8444f7ee250a125fee6a24e6d5ec2ae3"
+    ],
+    "network_ports:host-loopback:v1": [
+      "c69ea0a1ff025d471db7b3da05d8dda9035268c0c0ea69c789e923bfaafb5352"
+    ],
+    "node_runtime:18.19.1:linux:x86_64:glibc:abi109": [
+      "041950be8f7461772f63ea46ab4ac71ae9188e21ebf23f347d7a72d5dbea945d"
+    ],
+    "node_runtime:20.19.1:linux:x86_64:glibc:abi115": [
+      "47298a2acbe79c464970564cbd2db6dc4ca15bfd75ae7a6fafd54d944e48113f"
+    ],
+    "node_runtime:22.23.2:linux:x86_64:glibc:abi127": [
+      "41547439d1f1bcdb1452a57b34b3c2fda0a1afec28e6abf250bfc27111051798"
+    ],
+    "node_runtime:benchmark:run-007:default": [
+      "ec8282ae0accd000926bd86ebca9443f40424742fc57f52b06fc81ad7bc4d569"
+    ],
+    "node_runtime:benchmark:run-008:default": [
+      "f928bd7d146354a1ebd2baf8b89b6ab87451ab52c1587277e9d853576d662362"
+    ],
+    "node_runtime:benchmark:run-009:default": [
+      "42c0d0f3692091be45cdbb0ebea2a5802f47c42ccd824d6ab186b4fbf92b7915"
+    ],
+    "package_manager:bun:default:1.2.18:linux:x86_64": [
+      "7c9b660065329e17011a554f7570c1f6fb5b06825a25ef84563142353b0dcebe"
+    ],
+    "package_manager:bun:default:1.3.7:linux:x86_64": [
+      "dbbbd7a8a28892e1abd8dfeaa80f22d57de12d62bab97f8495dccd7ad16858d8"
+    ],
+    "package_manager:pnpm:default:10.17.1:linux:x86_64": [
+      "ba850c0f687d630615bb84d44b84a7c2f9625bc1d8b796051c5ae8e8ad10b281"
+    ],
+    "project_server:synthetic:http:v1": [
+      "38b8dd7c67d14da06f48b054f889dfa46b0486d8e07381f675a0748653b398a5"
+    ],
+    "project_server:synthetic:tsserver": [
+      "5eb757c6f63fafdeabadaf538b0948315bfe943d9745ec887b210890d6294613"
+    ],
+    "source_overlay:benchmark:src-001:default": [
+      "1f8e4406df577aa88b00a8be080e190c7ece204441792d6abb0e53169357448a"
+    ],
+    "source_overlay:benchmark:src-002:default": [
+      "7b5af4ef9ba89a29efabaf23c4b154042effd1a37d43223556768eac02276cbf"
+    ],
+    "source_overlay:benchmark:src-003:default": [
+      "0bc0141f82e12371f9dc5984801f9efee9134c3b50163ab8a19d9d106b33b502"
+    ],
+    "source_overlay:benchmark:src-005:default": [
+      "be14756ac9ef480419e21aade58d4e0dac23b6413281451f2f4f253c58279902"
+    ],
+    "source_overlay:benchmark:src-006:default": [
+      "17831c41ae12682694e5961aa9f9834b374134fad32c1e13b049593fa9fec8ec"
+    ],
+    "source_overlay:benchmark:src-007:default": [
+      "5e1022eb43f9fd528566b8c236b8e6997106b38f39d3a074456b4ad6e22d2596"
+    ],
+    "source_overlay:benchmark:src-010:default": [
+      "6c13c5d83f281350bf34b598882a2315e1f9b4ae3024c4706cb5b7f3a1dd2d4f"
+    ],
+    "source_overlay:benchmark:src-011:default": [
+      "1cd4f273b077768022ea9e8294c6ea7e34546bf70273da0e0998a1d4486e3b29"
+    ],
+    "task_harness:synthetic:rollout:v1": [
+      "81496a616dfff93ca93ffa523ff69cef85a1ed377053372e9d11ba6956bda747"
+    ],
+    "test_transform_cache:synthetic:ava:8.0.1": [
+      "22a19c36a9ae7ec7e83368b0f280cbcc63f2c7be65fa3fc8c55cadbc11592396"
+    ],
+    "test_transform_cache:synthetic:jest:30.4.2": [
+      "d1b7d61566dfac4d05e2f6509376190b829cc0dffb36d06285404d008180ad99"
+    ],
+    "test_transform_cache:synthetic:mocha:11.8.0": [
+      "e82ca3094db0ad67d8016d6ba935c816f50df4a260dfd0568d2e869e5ba2ad47"
+    ],
+    "test_transform_cache:synthetic:tst-012": [
+      "e73c833ec3b7c2d791d5b88485e136936476c89b0647461bdb30be353e9d6452"
+    ],
+    "test_transform_cache:synthetic:tst-014": [
+      "a7ad1565707714c3f3d9b0e34609baadabe30be40dcdc62ffe04346f8620eef2"
+    ],
+    "test_transform_cache:synthetic:vitest:4.1.11": [
+      "c5f0141a84953c013cc13529c943bb2f2730bfe472d51612d27595d800475fd4"
+    ]
+  },
   "missing_value_semantics": "missing means unmeasured or not uniquely defined, never zero",
   "object_count": 33114,
-  "schema_version": 1,
-  "statistic": "median",
+  "schema_version": 2,
+  "statistic": "median_per_measurement_batch",
   "transition_costs_path": "object_cost_matrix.json",
   "unit": "ms",
   "unmeasured_counts_by_resource_kind": {
@@ -1247,5 +1735,9 @@
     "test_transform_cache": 74
   },
   "unmeasured_object_count": 33033,
+  "window_order": "oldest_to_newest",
+  "window_policy": "append one median for each new measurement batch and evict the oldest value with FIFO when full",
+  "window_size": 5,
+  "window_value_count": 81,
   "zero_state": "the object is absent, not running, or not materialized"
 }

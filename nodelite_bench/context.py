@@ -3,6 +3,7 @@ from __future__ import annotations
 import json
 import os
 import sys
+import uuid
 from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Any
@@ -67,6 +68,7 @@ class RunContext:
         self.samples = samples
         self.warmups = warmups
         self.force = force
+        self.measurement_run_id = f"run:{uuid.uuid4().hex}"
         self.inventory = read_json(output / "inventory.json", {})
         self.objects = self.inventory.get("objects", [])
         self.object_by_id = {item["object_id"]: item for item in self.objects}
@@ -149,6 +151,7 @@ class RunContext:
             "cost_class": scenario.cost_class,
             "state_before": scenario.state_before,
             "sample_index": sample_index,
+            "measurement_run_id": self.measurement_run_id,
             "measurement_environment_id": self.environment_id,
             "wall_ms": metrics.get("wall_ms"),
             "ready_ms": metrics.get("ready_ms"),

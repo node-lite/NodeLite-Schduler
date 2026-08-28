@@ -5,6 +5,8 @@
   "direct_ms_ambiguous_object_count": 1,
   "direct_ms_object_count": 81,
   "direct_ms_path": "costdb/direct_ms.json",
+  "direct_ms_window_size": 5,
+  "direct_ms_window_value_count": 81,
   "directed_transition_count": 736,
   "measurement_environment_id": "env:7a9cda66bc6b151a7886",
   "object_count": 33114,

@@ -9,7 +9,7 @@ from . import __version__
 from .catalog import GROUP_BY_PREFIX, catalog_by_id, load_catalog
 from .context import RunContext
 from .inventory import build_inventory
-from .reporting import generate_reports
+from .reporting import DEFAULT_DIRECT_MS_WINDOW_SIZE, generate_reports
 from .runners import run_specs
 from .util import environment_record, read_json, write_json
 
@@ -27,6 +27,12 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument("--profiles", type=Path, default=profiles)
     parser.add_argument("--ctdp-out", type=Path, default=ctdp_out)
     parser.add_argument("--out", type=Path, default=repo / "out")
+    parser.add_argument(
+        "--direct-ms-window-size",
+        type=int,
+        default=DEFAULT_DIRECT_MS_WINDOW_SIZE,
+        help="maximum values retained per object in the direct_ms FIFO window",
+    )
     subparsers = parser.add_subparsers(dest="command", required=True)
     subparsers.add_parser("inventory")
     run = subparsers.add_parser("run")
@@ -57,6 +63,8 @@ def _ensure_inventory(args: argparse.Namespace) -> dict:
 def main(argv: list[str] | None = None) -> int:
     parser = build_parser()
     args = parser.parse_args(argv)
+    if args.direct_ms_window_size < 1:
+        parser.error("--direct-ms-window-size must be positive")
     repo = Path(__file__).resolve().parents[1]
     args.out = args.out.resolve()
     args.out.mkdir(parents=True, exist_ok=True)
@@ -69,7 +77,8 @@ def main(argv: list[str] | None = None) -> int:
         print(json.dumps({"catalog_count": len(catalog), "profile_coverage": f"{inventory['profile_coverage_count']}/{inventory['profile_input_count']}", "object_count": len(inventory["objects"])}, indent=2))
         return 0
     if args.command == "report":
-        print(json.dumps(generate_reports(args.out, catalog, environment), indent=2, sort_keys=True))
+        result = generate_reports(args.out, catalog, environment, args.direct_ms_window_size)
+        print(json.dumps(result, indent=2, sort_keys=True))
         return 0
     if args.command == "run":
         specs = [item for item in catalog if item.group == args.group]
@@ -85,7 +94,7 @@ def main(argv: list[str] | None = None) -> int:
         totals = run_specs(context, specs, retry_failed=args.retry_failed)
     finally:
         context.close()
-    result = generate_reports(args.out, catalog, environment)
+    result = generate_reports(args.out, catalog, environment, args.direct_ms_window_size)
     print(json.dumps({"run": totals, "report": result}, indent=2, sort_keys=True))
     return 0 if totals["failed"] == 0 else 1
 
