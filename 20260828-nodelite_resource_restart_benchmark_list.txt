@@ -1,0 +1,471 @@
+NodeLite / SWE-smith Resource Transition Benchmark Checklist
+==============================================================================
+目标：为 Task-Resource Graph 的 edge weight 提供真实测量数据。
+原则：测的是“从资源状态 A 切到 B 的实际代价”，不仅是软件名称是否相同。
+数据基础：js ts benchmark任务统计(3).xlsx 的 84 项软件 + CTDP 已有 dependency/CAS 设计 + 为调度补充的环境状态资源。
+
+优先级定义：
+  P0 = 必测：有独立进程/daemon、明显冷启动、重要缓存/状态、或版本切换会造成显著失效。
+  P1 = 建议测：主要是 cache/native artifact/toolchain/命令级切换；可能影响 invalidation cost。
+  P2 = 不单独测“重启”：纯库/无独立进程；记录版本即可，成本跟随 Node/浏览器/数据库父资源。
+
+每个 P0/P1 Resource 至少记录以下字段：
+  - exact_version / compatibility_key
+  - cold_start_ms（完全冷状态）
+  - warm_start_or_attach_ms（已有 binary/cache/process 时）
+  - switch_ms（同类不同版本 A→B）
+  - reset_ms / cleanup_ms（Task A 结束后恢复可安全复用状态）
+  - invalidation_ms（版本/ABI/config 变化导致 dependency/build cache 失效后的代价）
+  - ready_ms（启动后真正可服务的时间）
+  - rss_mb / peak_rss_mb
+  - disk_bytes / cache_bytes
+  - network_bytes_on_cold / network_bytes_on_warm
+  - can_persist_across_tasks
+  - reset_method
+  - isolation_or_pollution_test
+  - evidence/source
+
+特别要同时记录的兼容维度：Node ABI、OS/arch/libc、PM版本、repo@commit、lockfile hash、config hash。
+
+[A] 从统计表来的 84 项软件/包
+------------------------------------------------------------------------------
+
+### P0
+Node.js | SWE-smith evidence tasks=2882
+  类型: Runtime
+  版本/兼容Key: exact Node version + NODE_MODULE_VERSION/ABI + OS + arch + libc
+  测试: binary switch; new process startup; warm process reuse if any; native-addon invalidation caused by ABI change
+npm | SWE-smith evidence tasks=784
+  类型: Package manager
+  版本/兼容Key: npm version + Node version + lockfile version
+  测试: CLI startup; native cache warm/cold; node_modules materialization; version-switch invalidation
+Vite | SWE-smith evidence tasks=937
+  类型: Dev/build server
+  版本/兼容Key: Vite version + Node version + config hash + depview hash
+  测试: dev-server cold start; server reuse/reset; dependency optimization cache (.vite) warm/cold; config-change invalidation
+Mocha | SWE-smith evidence tasks=180
+  类型: Test runner
+  版本/兼容Key: Mocha version + Node version + loader/config hash
+  测试: runner startup; worker/process creation if used; cache/loader warm effect
+pnpm | SWE-smith evidence tasks=356
+  类型: Package manager
+  版本/兼容Key: pnpm version + Node version + lockfile version + store format
+  测试: CLI startup; store warm/cold; node_modules/link materialization; version-switch invalidation
+Jest | SWE-smith evidence tasks=517
+  类型: Test runner
+  版本/兼容Key: Jest version + Node version + transform config/cache key
+  测试: runner/worker startup; transform cache warm/cold; worker pool reuse/reset
+MongoDB | SWE-smith evidence tasks=447
+  类型: Database service
+  版本/兼容Key: MongoDB exact version + storage engine + config hash + auth mode
+  测试: daemon cold start/readiness; clean reset; connection reset; clean snapshot restore; process reuse safety
+Ubuntu / Debian | SWE-smith evidence tasks=187
+  类型: Base system/rootfs
+  版本/兼容Key: distro + exact version + rootfs/image digest + apt package-set hash
+  测试: rootfs prepare/mount/switch; page-cache warm/cold; system library compatibility
+Vitest | SWE-smith evidence tasks=270
+  类型: Test runner / Vite server
+  版本/兼容Key: Vitest version + Vite/Node versions + config hash
+  测试: runner/server startup; worker pool; transform cache warm/cold; reuse/reset
+Yarn Classic | SWE-smith evidence tasks=71
+  类型: Package manager
+  版本/兼容Key: Yarn 1 exact version + Node version + yarn.lock semantics
+  测试: CLI startup; global cache warm/cold; node_modules materialization; version switch
+Firefox | SWE-smith evidence tasks=30
+  类型: Browser process
+  版本/兼容Key: Firefox exact version/revision + OS/arch + launch flags/profile config
+  测试: binary cold start; warm process/new context/profile; reset/cleanup; RSS; cache/profile invalidation
+Xvfb | SWE-smith evidence tasks=1
+  类型: Display service
+  版本/兼容Key: Xvfb/Xorg version + display config + screen size/depth
+  测试: daemon start/readiness; reuse; display reset; pollution/isolation cost
+Chromium | SWE-smith evidence tasks=38
+  类型: Browser process
+  版本/兼容Key: Chromium exact revision/version + OS/arch + flags + extensions + GPU mode
+  测试: cold start; warm process + new BrowserContext; context reset; profile/cache reset; RSS
+Webpack | SWE-smith evidence tasks=64
+  类型: Build/watch server
+  版本/兼容Key: Webpack version + Node version + config hash + depview hash
+  测试: watch/dev-server startup; filesystem cache warm/cold; compiler reuse/reset
+PostgreSQL | SWE-smith evidence tasks=107
+  类型: Database service
+  版本/兼容Key: PostgreSQL exact version + extensions + config hash + auth mode
+  测试: daemon cold start/readiness; connection reset; schema/db reset; clean data-dir snapshot restore
+Bun | SWE-smith evidence tasks=27
+  类型: Runtime + package manager
+  版本/兼容Key: Bun exact version + OS/arch + lockfile/cache format
+  测试: runtime startup; PM CLI startup; global cache warm/cold; dependency materialization; version switch
+Electron | SWE-smith evidence tasks=33
+  类型: Application runtime/process
+  版本/兼容Key: Electron exact version + Chromium/Node ABI + OS/arch + app config
+  测试: binary/app cold start; window/renderer/main-process startup; process reset; binary cache; process reuse initially unsafe
+Deno | SWE-smith evidence tasks=1
+  类型: Runtime/package ecosystem
+  版本/兼容Key: Deno exact version + OS/arch + cache state
+  测试: runtime startup; dependency cache warm/cold; version switch; compile cache invalidation
+WebKit | SWE-smith evidence tasks=4
+  类型: Browser process
+  版本/兼容Key: WebKit/Playwright revision + OS/arch + launch flags
+  测试: cold browser start; warm process/context; reset; RSS
+Next.js | SWE-smith evidence tasks=4
+  类型: App/dev server
+  版本/兼容Key: Next.js version + Node version + config hash + depview hash
+  测试: next dev/server cold start; .next/cache warm/cold; server reset; build invalidation
+Redis | SWE-smith evidence tasks=7
+  类型: Database/cache service
+  版本/兼容Key: Redis exact version + config + persistence mode
+  测试: daemon start/readiness; FLUSH/reset; connection reset; snapshot restore; reuse safety
+Turborepo | SWE-smith evidence tasks=16
+  类型: Build orchestrator/cache
+  版本/兼容Key: Turborepo version + Node version + repo/config hash
+  测试: daemon/process startup if version uses one; local cache warm/cold; task graph cache invalidation
+MySQL | SWE-smith evidence tasks=6
+  类型: Database service
+  版本/兼容Key: MySQL exact version + engine/config/auth/plugins
+  测试: daemon cold start/readiness; connection/transaction reset; clean datadir snapshot restore
+Nx | SWE-smith evidence tasks=5
+  类型: Build orchestrator/daemon
+  版本/兼容Key: Nx version + Node version + workspace config
+  测试: Nx daemon startup/reset; local cache warm/cold; project graph cache invalidation
+Java / Gradle | SWE-smith evidence tasks=0
+  类型: Runtime + build daemon
+  版本/兼容Key: JDK version + Gradle version + daemon/JVM args + project hash
+  测试: JVM startup; Gradle daemon cold/warm; dependency/cache warm; daemon version switch
+AVA | SWE-smith evidence tasks=0
+  类型: Test runner
+  版本/兼容Key: AVA version + Node version + config
+  测试: runner/worker startup; process pool; cache if any
+D-Bus | SWE-smith evidence tasks=0
+  类型: System IPC service
+  版本/兼容Key: dbus-daemon version + session/system config
+  测试: daemon/session bus startup; reset; socket/session isolation; Electron/browser dependency
+Yarn Berry | SWE-smith evidence tasks=0
+  类型: Package manager
+  版本/兼容Key: Yarn Berry exact version + Node version + linker mode + cache format
+  测试: CLI startup; zip/global cache warm; PnP/node_modules materialization; version/linker switch
+
+### P1
+TypeScript | SWE-smith evidence tasks=5209
+  类型: Node package / compiler
+  版本/兼容Key: typescript version + tsconfig hash + Node version
+  测试: tsc/tsserver cold start; incremental cache hit/miss; .tsbuildinfo invalidation; tsserver restart if used
+Bash / sh | SWE-smith evidence tasks=1
+  类型: Shell
+  版本/兼容Key: shell implementation/version + env/PATH
+  测试: shell process spawn; environment reset; usually very small but measure once
+nvm | SWE-smith evidence tasks=0
+  类型: Runtime selector
+  版本/兼容Key: nvm version + target Node version
+  测试: Node version switch via nvm vs direct PATH switch; no daemon restart
+canvas | SWE-smith evidence tasks=808
+  类型: Native Node addon
+  版本/兼容Key: canvas version + Node ABI + OS + arch + libc + native libs
+  测试: native addon load; prebuild reuse; rebuild time after ABI/platform change
+Git | SWE-smith evidence tasks=94
+  类型: Source/version-control tool
+  版本/兼容Key: Git version + repo@commit + object-store state
+  测试: clone/fetch/checkout/worktree creation; repo snapshot/CoW reset; Git executable startup is negligible
+esbuild | SWE-smith evidence tasks=329
+  类型: Native build tool
+  版本/兼容Key: esbuild version + platform binary + Node version + config hash
+  测试: service/native binary startup; transform/build cache warm/cold; platform binary switch
+SWC | SWE-smith evidence tasks=326
+  类型: Native compiler addon
+  版本/兼容Key: SWC version + Node ABI + OS + arch + libc
+  测试: native binding load/prebuild reuse; rebuild/download on incompatibility; transform cache
+Babel | SWE-smith evidence tasks=175
+  类型: Compiler/transpiler
+  版本/兼容Key: Babel/core version + Node version + config hash
+  测试: transform cold/warm; Babel cache invalidation; usually no persistent process
+Python | SWE-smith evidence tasks=7
+  类型: Runtime/toolchain
+  版本/兼容Key: Python exact version + env/site-packages hash
+  测试: interpreter process startup; venv switch; tool subprocess cost; usually lower priority
+jq | SWE-smith evidence tasks=2
+  类型: System CLI
+  版本/兼容Key: jq version
+  测试: command process startup only; measure once if desired
+GTK | SWE-smith evidence tasks=0
+  类型: System GUI runtime libs
+  版本/兼容Key: GTK version + distro/arch
+  测试: library compatibility/load/page-cache; no standalone process; affects Electron/browser startup
+pkg-config | SWE-smith evidence tasks=0
+  类型: Native build CLI
+  版本/兼容Key: pkg-config version + .pc search path
+  测试: command startup + lookup; mostly compatibility key for native builds
+curl | SWE-smith evidence tasks=42
+  类型: System CLI
+  版本/兼容Key: curl + libcurl/OpenSSL versions
+  测试: command spawn and TLS init; normally tiny; track external-download path
+GCC / G++ | SWE-smith evidence tasks=0
+  类型: Native compiler toolchain
+  版本/兼容Key: gcc/g++ exact version + target arch + libc
+  测试: compiler process spawn; full native rebuild time; object/cache reuse; version change invalidation
+Playwright | SWE-smith evidence tasks=0
+  类型: Browser automation driver
+  版本/兼容Key: Playwright package version + browser revisions + Node version
+  测试: driver startup; browser download/cache; browser process handled separately; protocol compatibility
+Rust / Cargo | SWE-smith evidence tasks=22
+  类型: Native toolchain
+  版本/兼容Key: rustc/cargo version + target triple + Cargo.lock/cache
+  测试: compiler/cargo startup; registry/git cache warm; native build/rebuild time
+WebGL | SWE-smith evidence tasks=8
+  类型: Graphics context/state
+  版本/兼容Key: browser/GPU backend + driver + flags
+  测试: context creation/reset; shader/cache warm effect; GPU/SwiftShader compatibility
+make | SWE-smith evidence tasks=0
+  类型: Build tool
+  版本/兼容Key: make version + Makefile/config hash
+  测试: command startup small; incremental build reuse and invalidation cost
+protobuf / protoc | SWE-smith evidence tasks=14
+  类型: Codegen toolchain
+  版本/兼容Key: protoc exact version + plugin versions + schema hash
+  测试: CLI startup; codegen time; generated-output cache/invalidation
+GnuPG | SWE-smith evidence tasks=0
+  类型: System CLI / keyring state
+  版本/兼容Key: gpg version + keyring/config
+  测试: process startup; keyring load; usually not scheduler-important
+wget | SWE-smith evidence tasks=0
+  类型: System CLI
+  版本/兼容Key: wget version + TLS backend
+  测试: command startup; external-download path
+build-essential | SWE-smith evidence tasks=0
+  类型: System toolchain bundle
+  版本/兼容Key: apt package-set versions
+  测试: not a process; rootfs/toolchain compatibility; installation/preparation cost only
+SQLite | SWE-smith evidence tasks=1
+  类型: Embedded database/file state
+  版本/兼容Key: SQLite library/CLI version + DB schema/snapshot hash
+  测试: no daemon; DB-file clone/reset; connection reopen; baseline snapshot restore
+Lerna | SWE-smith evidence tasks=6
+  类型: Monorepo CLI
+  版本/兼容Key: Lerna version + Node version + workspace config
+  测试: CLI startup; bootstrap/task orchestration; package graph cache if any
+Prisma | SWE-smith evidence tasks=0
+  类型: DB client + native engine
+  版本/兼容Key: Prisma version + engine version + Node ABI/platform + schema hash
+  测试: query-engine/library load; engine binary download/cache; generate/migrate time; possible engine process restart depending version
+Clang | SWE-smith evidence tasks=0
+  类型: Native compiler toolchain
+  版本/兼容Key: clang/LLVM exact version + target + libc
+  测试: compiler startup; native rebuild; ccache/object cache invalidation
+Corepack | SWE-smith evidence tasks=0
+  类型: PM selector/bootstrap
+  版本/兼容Key: Corepack version + activated PM/version
+  测试: PM activation/switch overhead; no long-lived process
+node-gyp | SWE-smith evidence tasks=0
+  类型: Native addon build system
+  版本/兼容Key: node-gyp version + Node ABI + Python + compiler toolchain
+  测试: configure/build cold time; rebuild on ABI/toolchain switch; build cache
+CMake | SWE-smith evidence tasks=0
+  类型: Native build generator
+  版本/兼容Key: CMake version + generator + toolchain file
+  测试: configure/generate time; build-dir cache invalidation; version switch
+Ninja | SWE-smith evidence tasks=0
+  类型: Native build tool
+  版本/兼容Key: Ninja version + build graph hash
+  测试: process startup tiny; incremental build time/cache
+OpenSSL | SWE-smith evidence tasks=1
+  类型: System crypto library/CLI
+  版本/兼容Key: OpenSSL exact version + ABI + distro
+  测试: library compatibility/page cache; CLI spawn; can invalidate native packages/TLS behavior
+sharp | SWE-smith evidence tasks=0
+  类型: Native Node addon
+  版本/兼容Key: sharp/libvips version + Node ABI + OS/arch/libc
+  测试: native binary/prebuild load; download/build on switch; cache/rebuild time
+Yarn PnP | SWE-smith evidence tasks=0
+  类型: Dependency-view mode
+  版本/兼容Key: Yarn version + .pnp.cjs/data hash + unplugged state
+  测试: PnP loader/view switch; unplugged/native package materialization; invalidation on lock/config change
+ca-certificates | SWE-smith evidence tasks=0
+  类型: System trust store
+  版本/兼容Key: ca-certificates package version + trust-store hash
+  测试: no process; TLS compatibility; rootfs switch/invalidation only
+
+### P2
+Mongoose | SWE-smith evidence tasks=603
+  类型: Node library / DB client
+  版本/兼容Key: mongoose version + Node version + MongoDB compatibility
+  测试: no independent process; follow Node process and MongoDB connection lifecycle
+jsdom | SWE-smith evidence tasks=223
+  类型: DOM library
+  版本/兼容Key: jsdom version + Node version
+  测试: no independent process; follow Node; measure only if initialization dominates
+Redux | SWE-smith evidence tasks=185
+  类型: Node/browser library
+  版本/兼容Key: Redux version
+  测试: no independent process; no restart benchmark
+fetch | SWE-smith evidence tasks=82
+  类型: HTTP API/library
+  版本/兼容Key: Node version / implementation
+  测试: no independent process; follow Node/network stack
+axios | SWE-smith evidence tasks=86
+  类型: HTTP library
+  版本/兼容Key: axios version + Node version
+  测试: no independent process; no restart benchmark
+GraphQL | SWE-smith evidence tasks=61
+  类型: Node library
+  版本/兼容Key: graphql package version + Node version
+  测试: no independent process; no restart benchmark
+Zod | SWE-smith evidence tasks=4
+  类型: Node library
+  版本/兼容Key: Zod version
+  测试: no independent process
+ProseMirror | SWE-smith evidence tasks=52
+  类型: Editor library
+  版本/兼容Key: ProseMirror package versions
+  测试: no independent process; follow browser/DOM
+node-fetch | SWE-smith evidence tasks=26
+  类型: HTTP library
+  版本/兼容Key: node-fetch version + Node version
+  测试: no independent process
+happy-dom | SWE-smith evidence tasks=32
+  类型: DOM library
+  版本/兼容Key: happy-dom version + Node version
+  测试: no independent process
+ESLint parser | SWE-smith evidence tasks=1
+  类型: Parser library
+  版本/兼容Key: parser/version + Node version + config
+  测试: no independent process; optional parser cache only
+Monaco | SWE-smith evidence tasks=3
+  类型: Editor/browser library
+  版本/兼容Key: Monaco version + browser/DOM environment
+  测试: no independent process; bundle/cache only
+undici | SWE-smith evidence tasks=16
+  类型: HTTP library
+  版本/兼容Key: undici version + Node version
+  测试: no independent process; connection pools live only inside Node process
+CodeMirror | SWE-smith evidence tasks=0
+  类型: Editor/browser library
+  版本/兼容Key: CodeMirror version + browser/DOM environment
+  测试: no independent process
+MobX | SWE-smith evidence tasks=1
+  类型: Node/browser library
+  版本/兼容Key: MobX version
+  测试: no independent process
+Pinia | SWE-smith evidence tasks=0
+  类型: Browser/state library
+  版本/兼容Key: Pinia version
+  测试: no independent process
+Drizzle | SWE-smith evidence tasks=0
+  类型: DB ORM/library
+  版本/兼容Key: Drizzle version + DB backend
+  测试: no independent process; migration/codegen only if invoked
+supertest | SWE-smith evidence tasks=0
+  类型: Test HTTP library
+  版本/兼容Key: supertest version + Node version
+  测试: no independent process; follows app/server process
+Sequelize | SWE-smith evidence tasks=0
+  类型: DB ORM/library
+  版本/兼容Key: Sequelize version + DB backend
+  测试: no independent process; follows Node + DB daemon
+TypeORM | SWE-smith evidence tasks=0
+  类型: DB ORM/library
+  版本/兼容Key: TypeORM version + DB backend
+  测试: no independent process; follows Node + DB daemon
+Vuex | SWE-smith evidence tasks=0
+  类型: Browser/state library
+  版本/兼容Key: Vuex version
+  测试: no independent process
+Zustand | SWE-smith evidence tasks=0
+  类型: Node/browser library
+  版本/兼容Key: Zustand version
+  测试: no independent process
+
+[B] 表格之外，但 Resource Graph 必须补充的资源状态
+------------------------------------------------------------------------------
+R001 | Repo baseline / repo@commit | P0
+  版本/兼容Key: repo full name + full commit + submodule SHAs
+  测试: clone/fetch bytes/time; checkout/worktree/CoW creation; reset to clean source; page-cache warm/cold
+R002 | Source writable overlay | P0
+  版本/兼容Key: repo baseline + overlay backend
+  测试: discard/reset time; dirty-file count/bytes; cleanup correctness; pollution risk
+R003 | Dependency view (node_modules / pnpm links / PnP) | P0
+  版本/兼容Key: resolved lock hash + PM/version + Node ABI + OS/arch/libc + install flags
+  测试: cold materialization; warm mount/link; switch time; invalidation/rebuild time; disk/RSS
+R004 | Raw package CAS | P1
+  版本/兼容Key: artifact integrity/content hash
+  测试: cold network fetch vs local CAS serve; cache hit latency; bytes saved; no restart
+R005 | PM-native cache/store | P0
+  版本/兼容Key: PM family/version + cache format + platform
+  测试: cold vs warm install/fetch; cache switching; cache validation; disk size
+R006 | Native addon/build output bundle | P0
+  版本/兼容Key: package versions + Node ABI + OS/arch/libc + compiler/toolchain hash
+  测试: cold compile/download vs warm reuse; invalidation on ABI/toolchain change
+R007 | Build cache bundle | P0
+  版本/兼容Key: repo@commit + depview hash + tool/config/env hash
+  测试: cold build vs warm build; cache attach; invalidation/rebuild time
+R008 | Test transform cache bundle | P0
+  版本/兼容Key: repo@commit + depview + Jest/Vitest/Babel/SWC configs
+  测试: cold tests vs warm transform cache; worker pool reuse; invalidation
+R009 | Browser profile/cache state | P0
+  版本/兼容Key: browser version + flags + profile policy
+  测试: profile create/reset/delete; HTTP cache reuse; pollution test; should normally be task-private or carefully reset
+R010 | BrowserContext | P0
+  版本/兼容Key: browser process compatibility key + context options
+  测试: new context time; close/reset time; isolation correctness; warm process benefit
+R011 | Clean database snapshot | P0
+  版本/兼容Key: DB version + schema/migration hash + seed/config hash
+  测试: snapshot clone/CoW restore; reset time; size; correctness
+R012 | Database task-private data layer | P0
+  版本/兼容Key: clean snapshot + task/rollout
+  测试: discard/reset time; open-handle cleanup; pollution check
+R013 | Project application/server process | P0
+  版本/兼容Key: repo@commit + depview + command + env + ports
+  测试: cold server start/readiness; graceful reset/restart; port cleanup; RSS; reuse only if semantics allow
+R014 | Network namespace / ports / proxy state | P0
+  版本/兼容Key: network mode + DNS/proxy/port policy
+  测试: namespace setup/reset; port allocation; stale socket cleanup; external-network policy switch
+R015 | HOME / tmp / XDG caches | P0
+  版本/兼容Key: environment/profile + cache policy
+  测试: reset/discard time; size; pollution risk; selective cache retention benefit
+R016 | OS page cache / filesystem cache | P1
+  版本/兼容Key: node + rootfs/fileset
+  测试: cold vs warm file read/startup; page-cache benefit; do not treat as logically isolated resource
+R017 | Filesystem backend / mount layer | P0
+  版本/兼容Key: overlayfs/tmpfs/btrfs/zfs/ext4 + mount options
+  测试: mount/clone/unmount/reset time; CoW cost; inode/dentry cache effect
+R018 | Host CPU architecture | P1
+  版本/兼容Key: x86_64/arm64 + CPU feature set
+  测试: compatibility dimension, not restart; affects native artifacts
+R019 | libc / system ABI | P1
+  版本/兼容Key: glibc/musl exact version
+  测试: compatibility dimension; switch implies rootfs/native binary change
+R020 | Linux kernel / host kernel features | P1
+  版本/兼容Key: kernel version + namespace/seccomp/cgroup capabilities
+  测试: compatibility/host placement dimension; normally not switched per task
+R021 | CPU node-local warmed resource set | P0
+  版本/兼容Key: worker/node ID + resource fingerprints
+  测试: placement benefit: which runtime/cache/daemon/browser is already warm on this CPU node
+
+[C] 第一版给 edge weight 时最值得先实测的最小集合
+------------------------------------------------------------------------------
+01. Node.js（含 ABI 切换带来的 invalidation）
+02. npm / pnpm / Yarn Classic / Yarn Berry / Bun（CLI + native cache + dependency view）
+03. Repo baseline / source overlay
+04. Dependency view（node_modules / pnpm links / Yarn PnP）
+05. Vite / Next.js / Webpack / Nx / Turborepo（只在对应项目真实启动 daemon/dev/watch 时）
+06. Jest / Vitest / Mocha / AVA（runner/worker + transform cache）
+07. Chromium / Firefox / WebKit（binary + process + BrowserContext）
+08. Electron（binary + app process）
+09. Xvfb + D-Bus
+10. MongoDB / PostgreSQL / MySQL / Redis（binary + daemon + clean snapshot + reset）
+11. SQLite（baseline DB file + reset）
+12. canvas / sharp / SWC / esbuild / Prisma engine / node-gyp output（native ABI artifact）
+13. Ubuntu/Debian rootfs + libc + arch + system toolchain bundle
+14. Build cache / test transform cache
+15. HOME/tmp/XDG cache reset
+16. Network namespace/ports reset
+
+[D] 不要误算进 edge 的项目
+------------------------------------------------------------------------------
+1. 纯 JS 库（axios、Redux、Zod、GraphQL、Mongoose、Sequelize、TypeORM、Zustand 等）没有独立进程，通常不要给独立 restart weight。
+2. Node 20→22 的 executable 选择本身通常很便宜；真正昂贵的是它导致 native addon / dependency view / build cache 失效，所以 weight 应主要记在被失效的 Resource 上。
+3. 已全局共享、所有 CPU node 都可等价命中的 Raw CAS/rootfs/binary，不应因为“两个 Task 都用它”就重复给很大调度收益；只有 node-local warm state 或会被切换/失效的状态才强影响顺序。
+4. task-private 源码、HOME/tmp、DB写数据、BrowserContext/profile 通常不是“复用收益”，而是 CleanupCost / RiskPenalty。
+
+[E] 推荐最终 transition cost 分解
+------------------------------------------------------------------------------
+TransitionCost(A->B) = SwitchCost + ResetCost + ReloadCost + InvalidationCost + CleanupCost + RiskPenalty
+ReuseBenefit(A->B) = ColdCost(B) - TransitionCost(A->B)
+第一版 greedy scheduler 直接选择 ReuseBenefit 最大且安全约束满足的下一 Task/Profile。
