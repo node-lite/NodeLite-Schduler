@@ -1,0 +1,1319 @@
+{
+  "ART-001": [
+    "env:7a9cda66bc6b151a7886|ART-001|default|cold|artifact_acquisition:benchmark:art-001:default|network_cold"
+  ],
+  "ART-002": [
+    "env:7a9cda66bc6b151a7886|ART-002|default|cold|artifact_acquisition:benchmark:art-002:default|network_cold"
+  ],
+  "ART-003": [
+    "env:7a9cda66bc6b151a7886|ART-003|default|cold|artifact_acquisition:benchmark:art-003:default|network_cold"
+  ],
+  "ART-004": [
+    "env:7a9cda66bc6b151a7886|ART-004|default|cold|artifact_acquisition:benchmark:art-004:default|network_cold"
+  ],
+  "ART-005": [
+    "env:7a9cda66bc6b151a7886|ART-005|default|cold|artifact_acquisition:benchmark:art-005:default|network_cold"
+  ],
+  "ART-006": [
+    "env:7a9cda66bc6b151a7886|ART-006|default|cold|artifact_acquisition:benchmark:art-006:default|artifact_cold"
+  ],
+  "ART-007": [],
+  "ART-008": [
+    "env:7a9cda66bc6b151a7886|ART-008|default|cold|artifact_acquisition:benchmark:art-008:default|network_cold"
+  ],
+  "BLD-001": [
+    "env:7a9cda66bc6b151a7886|BLD-001|default|cold|build_cache:synthetic:npm-script|process_cold"
+  ],
+  "BLD-002": [
+    "env:7a9cda66bc6b151a7886|BLD-002|typescript-cold|cold|build_cache:synthetic:typescript:7.0.2|artifact_cold",
+    "env:7a9cda66bc6b151a7886|BLD-002|typescript-hit|build_cache:synthetic:typescript:7.0.2|build_cache:synthetic:typescript:7.0.2|exact_hit",
+    "env:7a9cda66bc6b151a7886|BLD-002|typescript-source-change|build_cache:synthetic:typescript:7.0.2|build_cache:synthetic:typescript:7.0.2|incompatible_switch"
+  ],
+  "BLD-003": [
+    "env:7a9cda66bc6b151a7886|BLD-003|default|cold|project_server:synthetic:tsserver|process_cold"
+  ],
+  "BLD-004": [
+    "env:7a9cda66bc6b151a7886|BLD-004|babel-cold|cold|build_cache:synthetic:babel:7.28.4|artifact_cold",
+    "env:7a9cda66bc6b151a7886|BLD-004|babel-hit|build_cache:synthetic:babel:7.28.4|build_cache:synthetic:babel:7.28.4|exact_hit",
+    "env:7a9cda66bc6b151a7886|BLD-004|babel-source-change|build_cache:synthetic:babel:7.28.4|build_cache:synthetic:babel:7.28.4|incompatible_switch"
+  ],
+  "BLD-005": [
+    "env:7a9cda66bc6b151a7886|BLD-005|swc-cold|cold|build_cache:synthetic:swc:1.16.1|artifact_cold",
+    "env:7a9cda66bc6b151a7886|BLD-005|swc-hit|build_cache:synthetic:swc:1.16.1|build_cache:synthetic:swc:1.16.1|exact_hit",
+    "env:7a9cda66bc6b151a7886|BLD-005|swc-source-change|build_cache:synthetic:swc:1.16.1|build_cache:synthetic:swc:1.16.1|incompatible_switch"
+  ],
+  "BLD-006": [
+    "env:7a9cda66bc6b151a7886|BLD-006|esbuild-cold|cold|build_cache:synthetic:esbuild:0.28.2|artifact_cold",
+    "env:7a9cda66bc6b151a7886|BLD-006|esbuild-hit|build_cache:synthetic:esbuild:0.28.2|build_cache:synthetic:esbuild:0.28.2|exact_hit",
+    "env:7a9cda66bc6b151a7886|BLD-006|esbuild-source-change|build_cache:synthetic:esbuild:0.28.2|build_cache:synthetic:esbuild:0.28.2|incompatible_switch"
+  ],
+  "BLD-007": [
+    "env:7a9cda66bc6b151a7886|BLD-007|rollup-cold|cold|build_cache:synthetic:rollup:4.63.1|artifact_cold",
+    "env:7a9cda66bc6b151a7886|BLD-007|rollup-hit|build_cache:synthetic:rollup:4.63.1|build_cache:synthetic:rollup:4.63.1|exact_hit",
+    "env:7a9cda66bc6b151a7886|BLD-007|rollup-source-change|build_cache:synthetic:rollup:4.63.1|build_cache:synthetic:rollup:4.63.1|incompatible_switch"
+  ],
+  "BLD-008": [
+    "env:7a9cda66bc6b151a7886|BLD-008|webpack-cold|cold|build_cache:synthetic:webpack:5.110.1|artifact_cold",
+    "env:7a9cda66bc6b151a7886|BLD-008|webpack-hit|build_cache:synthetic:webpack:5.110.1|build_cache:synthetic:webpack:5.110.1|exact_hit",
+    "env:7a9cda66bc6b151a7886|BLD-008|webpack-source-change|build_cache:synthetic:webpack:5.110.1|build_cache:synthetic:webpack:5.110.1|incompatible_switch"
+  ],
+  "BLD-009": [
+    "env:7a9cda66bc6b151a7886|BLD-009|vite-cold|cold|build_cache:synthetic:vite:8.2.2|artifact_cold",
+    "env:7a9cda66bc6b151a7886|BLD-009|vite-hit|build_cache:synthetic:vite:8.2.2|build_cache:synthetic:vite:8.2.2|exact_hit",
+    "env:7a9cda66bc6b151a7886|BLD-009|vite-source-change|build_cache:synthetic:vite:8.2.2|build_cache:synthetic:vite:8.2.2|incompatible_switch"
+  ],
+  "BLD-010": [],
+  "BLD-011": [],
+  "BLD-012": [],
+  "BLD-013": [],
+  "BLD-014": [],
+  "BLD-015": [],
+  "BLD-016": [
+    "env:7a9cda66bc6b151a7886|BLD-016|default|cold|build_cache:synthetic:bld-016|artifact_cold"
+  ],
+  "BLD-017": [
+    "env:7a9cda66bc6b151a7886|BLD-017|default|cold|build_cache:synthetic:bld-017|artifact_cold"
+  ],
+  "BLD-018": [],
+  "BLD-019": [],
+  "BLD-020": [
+    "env:7a9cda66bc6b151a7886|BLD-020|default|build_cache:synthetic:typescript:attach|build_cache:synthetic:typescript:attach|exact_hit"
+  ],
+  "BLD-021": [
+    "env:7a9cda66bc6b151a7886|BLD-021|default|build_cache:synthetic:typescript:invalidate|build_cache:synthetic:typescript:invalidate|incompatible_switch"
+  ],
+  "BLD-022": [
+    "env:7a9cda66bc6b151a7886|BLD-022|default|project_server:synthetic:vite-watch|project_server:synthetic:vite-watch|dirty_reset"
+  ],
+  "BRW-001": [
+    "env:7a9cda66bc6b151a7886|BRW-001|default|browser_binary:chromium:151.0.7922.77:linux:x86_64|browser_binary:chromium:151.0.7922.77:linux:x86_64|exact_hit"
+  ],
+  "BRW-002": [
+    "env:7a9cda66bc6b151a7886|BRW-002|default|browser_binary:firefox:Mozilla Firefox 153.0.3:linux:x86_64|browser_binary:firefox:Mozilla Firefox 153.0.3:linux:x86_64|exact_hit"
+  ],
+  "BRW-003": [],
+  "BRW-004": [
+    "env:7a9cda66bc6b151a7886|BRW-004|default|browser_binary:electron:40.10.2:linux:x86_64|browser_binary:electron:40.10.2:linux:x86_64|exact_hit"
+  ],
+  "BRW-005": [
+    "env:7a9cda66bc6b151a7886|BRW-005|electron-cas-replay|browser_binary:electron:40.10.2:linux:x86_64|browser_binary:electron:40.10.2:linux:x86_64|artifact_cold"
+  ],
+  "BRW-006": [
+    "env:7a9cda66bc6b151a7886|BRW-006|default|browser_process:chromium:151.0.7922.77:headless|browser_process:chromium:151.0.7922.77:headless|exact_hit"
+  ],
+  "BRW-007": [
+    "env:7a9cda66bc6b151a7886|BRW-007|default|cold|browser_process:chromium:151.0.7922.77:headless|process_cold"
+  ],
+  "BRW-008": [
+    "env:7a9cda66bc6b151a7886|BRW-008|default|cold|browser_process:firefox:Mozilla Firefox 153.0.3:headless|process_cold"
+  ],
+  "BRW-009": [],
+  "BRW-010": [
+    "env:7a9cda66bc6b151a7886|BRW-010|default|browser_process:chromium:151.0.7922.77:headless|browser_process:chromium:151.0.7922.77:headless|exact_hit"
+  ],
+  "BRW-011": [
+    "env:7a9cda66bc6b151a7886|BRW-011|default|browser_context:chromium:151.0.7922.77:default|browser_context:chromium:151.0.7922.77:default|compatible_reuse"
+  ],
+  "BRW-012": [
+    "env:7a9cda66bc6b151a7886|BRW-012|default|browser_context:chromium:151.0.7922.77:default|browser_context:chromium:151.0.7922.77:default|dirty_reset"
+  ],
+  "BRW-013": [
+    "env:7a9cda66bc6b151a7886|BRW-013|default|cold|browser_profile:chromium:151.0.7922.77:ephemeral|artifact_cold"
+  ],
+  "BRW-014": [
+    "env:7a9cda66bc6b151a7886|BRW-014|default|browser_profile:chromium:151.0.7922.77:ephemeral|browser_profile:chromium:151.0.7922.77:ephemeral|dirty_reset"
+  ],
+  "BRW-015": [
+    "env:7a9cda66bc6b151a7886|BRW-015|default|browser_context:chromium:151.0.7922.77:default|browser_context:chromium:151.0.7922.77:default|compatible_reuse"
+  ],
+  "BRW-016": [
+    "env:7a9cda66bc6b151a7886|BRW-016|flags-switch|browser_process:chromium:151.0.7922.77:headless|browser_process:chromium:151.0.7922.77:headless|incompatible_switch"
+  ],
+  "BRW-017": [
+    "env:7a9cda66bc6b151a7886|BRW-017|default|browser_process:chromium:151.0.7922.77:headless|browser_process:chromium:151.0.7922.77:headless|dirty_reset"
+  ],
+  "BRW-018": [
+    "env:7a9cda66bc6b151a7886|BRW-018|default|cold|browser_process:electron:40.10.2:headless|process_cold"
+  ],
+  "BRW-019": [
+    "env:7a9cda66bc6b151a7886|BRW-019|default|browser_process:electron:40.10.2:headless|browser_process:electron:40.10.2:headless|dirty_reset"
+  ],
+  "CAS-001": [
+    "env:7a9cda66bc6b151a7886|CAS-001|default|raw_cas:benchmark:cas-001:default|raw_cas:benchmark:cas-001:default|exact_hit"
+  ],
+  "CAS-002": [
+    "env:7a9cda66bc6b151a7886|CAS-002|default|raw_cas:benchmark:cas-002:default|raw_cas:benchmark:cas-002:default|exact_hit"
+  ],
+  "CAS-003": [
+    "env:7a9cda66bc6b151a7886|CAS-003|default|raw_cas:benchmark:cas-003:default|raw_cas:benchmark:cas-003:default|exact_hit"
+  ],
+  "CAS-004": [
+    "env:7a9cda66bc6b151a7886|CAS-004|default|raw_cas:benchmark:cas-004:default|raw_cas:benchmark:cas-004:default|exact_hit"
+  ],
+  "CAS-005": [
+    "env:7a9cda66bc6b151a7886|CAS-005|default|raw_cas:benchmark:cas-005:default|raw_cas:benchmark:cas-005:default|exact_hit"
+  ],
+  "CAS-006": [
+    "env:7a9cda66bc6b151a7886|CAS-006|default|raw_cas:benchmark:cas-006:default|raw_cas:benchmark:cas-006:default|exact_hit"
+  ],
+  "CAS-007": [
+    "env:7a9cda66bc6b151a7886|CAS-007|default|raw_cas:benchmark:cas-007:default|raw_cas:benchmark:cas-007:default|exact_hit"
+  ],
+  "CAS-008": [
+    "env:7a9cda66bc6b151a7886|CAS-008|default|raw_cas:benchmark:cas-008:default|raw_cas:benchmark:cas-008:default|exact_hit"
+  ],
+  "CAS-009": [
+    "env:7a9cda66bc6b151a7886|CAS-009|default|cold|raw_cas:benchmark:cas-009:default|failure_path"
+  ],
+  "CAS-010": [
+    "env:7a9cda66bc6b151a7886|CAS-010|default|raw_cas:benchmark:cas-010:default|raw_cas:benchmark:cas-010:default|exact_hit"
+  ],
+  "CON-001": [
+    "env:7a9cda66bc6b151a7886|CON-001|default|cold|contention:synthetic:con-001|contention_path"
+  ],
+  "CON-002": [
+    "env:7a9cda66bc6b151a7886|CON-002|default|cold|contention:synthetic:con-002|contention_path"
+  ],
+  "CON-003": [
+    "env:7a9cda66bc6b151a7886|CON-003|default|cold|contention:synthetic:con-003|contention_path"
+  ],
+  "CON-004": [
+    "env:7a9cda66bc6b151a7886|CON-004|default|cold|contention:synthetic:con-004|contention_path"
+  ],
+  "CON-005": [
+    "env:7a9cda66bc6b151a7886|CON-005|default|cold|contention:synthetic:con-005|contention_path"
+  ],
+  "CON-006": [
+    "env:7a9cda66bc6b151a7886|CON-006|default|cold|contention:synthetic:con-006|contention_path"
+  ],
+  "CON-007": [
+    "env:7a9cda66bc6b151a7886|CON-007|default|cold|contention:synthetic:con-007|contention_path"
+  ],
+  "CON-008": [
+    "env:7a9cda66bc6b151a7886|CON-008|default|cold|contention:synthetic:con-008|contention_path"
+  ],
+  "CON-009": [
+    "env:7a9cda66bc6b151a7886|CON-009|default|cold|contention:synthetic:con-009|contention_path"
+  ],
+  "CON-010": [
+    "env:7a9cda66bc6b151a7886|CON-010|default|cold|contention:synthetic:con-010|contention_path"
+  ],
+  "CTL-001": [
+    "env:7a9cda66bc6b151a7886|CTL-001|default|control_plane:benchmark:ctl-001:default|control_plane:benchmark:ctl-001:default|exact_hit"
+  ],
+  "CTL-002": [
+    "env:7a9cda66bc6b151a7886|CTL-002|default|control_plane:benchmark:ctl-002:default|control_plane:benchmark:ctl-002:default|exact_hit"
+  ],
+  "CTL-003": [
+    "env:7a9cda66bc6b151a7886|CTL-003|default|control_plane:benchmark:ctl-003:default|control_plane:benchmark:ctl-003:default|exact_hit"
+  ],
+  "CTL-004": [
+    "env:7a9cda66bc6b151a7886|CTL-004|default|control_plane:benchmark:ctl-004:default|control_plane:benchmark:ctl-004:default|exact_hit"
+  ],
+  "CTL-005": [
+    "env:7a9cda66bc6b151a7886|CTL-005|default|control_plane:benchmark:ctl-005:default|control_plane:benchmark:ctl-005:default|exact_hit"
+  ],
+  "CTL-006": [
+    "env:7a9cda66bc6b151a7886|CTL-006|default|control_plane:benchmark:ctl-006:default|control_plane:benchmark:ctl-006:default|exact_hit"
+  ],
+  "CTL-007": [
+    "env:7a9cda66bc6b151a7886|CTL-007|default|control_plane:benchmark:ctl-007:default|control_plane:benchmark:ctl-007:default|exact_hit"
+  ],
+  "CTL-008": [
+    "env:7a9cda66bc6b151a7886|CTL-008|default|control_plane:benchmark:ctl-008:default|control_plane:benchmark:ctl-008:default|exact_hit"
+  ],
+  "CTL-009": [
+    "env:7a9cda66bc6b151a7886|CTL-009|default|control_plane:benchmark:ctl-009:default|control_plane:benchmark:ctl-009:default|exact_hit"
+  ],
+  "CTL-010": [
+    "env:7a9cda66bc6b151a7886|CTL-010|default|control_plane:benchmark:ctl-010:default|control_plane:benchmark:ctl-010:default|exact_hit"
+  ],
+  "CTL-011": [
+    "env:7a9cda66bc6b151a7886|CTL-011|default|control_plane:benchmark:ctl-011:default|control_plane:benchmark:ctl-011:default|exact_hit"
+  ],
+  "CTL-012": [
+    "env:7a9cda66bc6b151a7886|CTL-012|default|control_plane:benchmark:ctl-012:default|control_plane:benchmark:ctl-012:default|exact_hit"
+  ],
+  "DB-001": [],
+  "DB-002": [],
+  "DB-003": [],
+  "DB-004": [
+    "env:7a9cda66bc6b151a7886|DB-004|default|cold|database_binary:redis:Redis server v=7.0.15 sha=00000000:0 malloc=jemalloc-5.3.0 bits=64 build=e53ff17674aa6190|process_cold"
+  ],
+  "DB-005": [
+    "env:7a9cda66bc6b151a7886|DB-005|default|database_binary:sqlite:python-stdlib|database_binary:sqlite:python-stdlib|exact_hit"
+  ],
+  "DB-006": [],
+  "DBS-001": [
+    "env:7a9cda66bc6b151a7886|DBS-001|default|cold|database_daemon:redis:Redis server v=7.0.15 sha=00000000:0 malloc=jemalloc-5.3.0 bits=64 build=e53ff17674aa6190:default|process_cold"
+  ],
+  "DBS-002": [
+    "env:7a9cda66bc6b151a7886|DBS-002|default|database_daemon:redis:Redis server v=7.0.15 sha=00000000:0 malloc=jemalloc-5.3.0 bits=64 build=e53ff17674aa6190:default|database_daemon:redis:Redis server v=7.0.15 sha=00000000:0 malloc=jemalloc-5.3.0 bits=64 build=e53ff17674aa6190:default|exact_hit"
+  ],
+  "DBS-003": [
+    "env:7a9cda66bc6b151a7886|DBS-003|default|database_daemon:redis:Redis server v=7.0.15 sha=00000000:0 malloc=jemalloc-5.3.0 bits=64 build=e53ff17674aa6190:default|database_daemon:redis:Redis server v=7.0.15 sha=00000000:0 malloc=jemalloc-5.3.0 bits=64 build=e53ff17674aa6190:default|compatible_reuse"
+  ],
+  "DBS-004": [
+    "env:7a9cda66bc6b151a7886|DBS-004|default|database_daemon:redis:Redis server v=7.0.15 sha=00000000:0 malloc=jemalloc-5.3.0 bits=64 build=e53ff17674aa6190:default|database_daemon:redis:Redis server v=7.0.15 sha=00000000:0 malloc=jemalloc-5.3.0 bits=64 build=e53ff17674aa6190:default|dirty_reset"
+  ],
+  "DBS-005": [
+    "env:7a9cda66bc6b151a7886|DBS-005|default|cold|database_clean_snapshot:sqlite:python-stdlib:minimal|artifact_cold"
+  ],
+  "DBS-006": [
+    "env:7a9cda66bc6b151a7886|DBS-006|default|database_clean_snapshot:sqlite:python-stdlib:minimal|database_clean_snapshot:sqlite:python-stdlib:minimal|compatible_reuse"
+  ],
+  "DBS-007": [
+    "env:7a9cda66bc6b151a7886|DBS-007|default|cold|database_private_layer:sqlite:python-stdlib:task|artifact_cold"
+  ],
+  "DBS-008": [
+    "env:7a9cda66bc6b151a7886|DBS-008|default|database_private_layer:sqlite:python-stdlib:task|database_private_layer:sqlite:python-stdlib:task|dirty_reset"
+  ],
+  "DBS-009": [
+    "env:7a9cda66bc6b151a7886|DBS-009|default|cold|database_private_layer:sqlite:python-stdlib:task|artifact_cold"
+  ],
+  "DBS-010": [
+    "env:7a9cda66bc6b151a7886|DBS-010|default|cold|database_private_layer:sqlite:python-stdlib:task|artifact_cold"
+  ],
+  "DBS-011": [
+    "env:7a9cda66bc6b151a7886|DBS-011|default|database_daemon:redis:Redis server v=7.0.15 sha=00000000:0 malloc=jemalloc-5.3.0 bits=64 build=e53ff17674aa6190:default|database_daemon:redis:Redis server v=7.0.15 sha=00000000:0 malloc=jemalloc-5.3.0 bits=64 build=e53ff17674aa6190:default|compatible_reuse"
+  ],
+  "DBS-012": [],
+  "DBS-013": [
+    "env:7a9cda66bc6b151a7886|DBS-013|default|database_daemon:redis:Redis server v=7.0.15 sha=00000000:0 malloc=jemalloc-5.3.0 bits=64 build=e53ff17674aa6190:default|database_daemon:redis:Redis server v=7.0.15 sha=00000000:0 malloc=jemalloc-5.3.0 bits=64 build=e53ff17674aa6190:default|dirty_reset"
+  ],
+  "DEP-001": [
+    "env:7a9cda66bc6b151a7886|DEP-001|npm-10.9.8|cold|dependency_view:fixture:npm:10.9.8|artifact_cold"
+  ],
+  "DEP-002": [
+    "env:7a9cda66bc6b151a7886|DEP-002|pnpm-10.17.1|cold|dependency_view:fixture:pnpm:10.17.1|artifact_cold",
+    "env:7a9cda66bc6b151a7886|DEP-002|pnpm-10.27.0|cold|dependency_view:fixture:pnpm:10.27.0|artifact_cold",
+    "env:7a9cda66bc6b151a7886|DEP-002|pnpm-10.28.2|cold|dependency_view:fixture:pnpm:10.28.2|artifact_cold",
+    "env:7a9cda66bc6b151a7886|DEP-002|pnpm-10.34.5|cold|dependency_view:fixture:pnpm:10.34.5|artifact_cold",
+    "env:7a9cda66bc6b151a7886|DEP-002|pnpm-10.4.0|cold|dependency_view:fixture:pnpm:10.4.0|artifact_cold",
+    "env:7a9cda66bc6b151a7886|DEP-002|pnpm-11.24.0|cold|dependency_view:fixture:pnpm:11.24.0|artifact_cold",
+    "env:7a9cda66bc6b151a7886|DEP-002|pnpm-9.12.2|cold|dependency_view:fixture:pnpm:9.12.2|artifact_cold",
+    "env:7a9cda66bc6b151a7886|DEP-002|pnpm-9.15.0|cold|dependency_view:fixture:pnpm:9.15.0|artifact_cold",
+    "env:7a9cda66bc6b151a7886|DEP-002|pnpm-9.15.4|cold|dependency_view:fixture:pnpm:9.15.4|artifact_cold",
+    "env:7a9cda66bc6b151a7886|DEP-002|pnpm-9.15.5|cold|dependency_view:fixture:pnpm:9.15.5|artifact_cold",
+    "env:7a9cda66bc6b151a7886|DEP-002|pnpm-9.4.0|cold|dependency_view:fixture:pnpm:9.4.0|artifact_cold"
+  ],
+  "DEP-003": [
+    "env:7a9cda66bc6b151a7886|DEP-003|yarn-1.22.21|cold|dependency_view:fixture:yarn:1.22.21|artifact_cold",
+    "env:7a9cda66bc6b151a7886|DEP-003|yarn-1.22.22|cold|dependency_view:fixture:yarn:1.22.22|artifact_cold"
+  ],
+  "DEP-004": [
+    "env:7a9cda66bc6b151a7886|DEP-004|yarn-3.2.3|cold|dependency_view:fixture:yarn:3.2.3|artifact_cold",
+    "env:7a9cda66bc6b151a7886|DEP-004|yarn-3.8.7|cold|dependency_view:fixture:yarn:3.8.7|artifact_cold",
+    "env:7a9cda66bc6b151a7886|DEP-004|yarn-4.0.2|cold|dependency_view:fixture:yarn:4.0.2|artifact_cold",
+    "env:7a9cda66bc6b151a7886|DEP-004|yarn-4.10.3|cold|dependency_view:fixture:yarn:4.10.3|artifact_cold",
+    "env:7a9cda66bc6b151a7886|DEP-004|yarn-4.12.0|cold|dependency_view:fixture:yarn:4.12.0|artifact_cold",
+    "env:7a9cda66bc6b151a7886|DEP-004|yarn-4.9.1|cold|dependency_view:fixture:yarn:4.9.1|artifact_cold"
+  ],
+  "DEP-005": [
+    "env:7a9cda66bc6b151a7886|DEP-005|yarn-3.2.3|cold|dependency_view:fixture:yarn:3.2.3|compatible_reuse",
+    "env:7a9cda66bc6b151a7886|DEP-005|yarn-3.8.7|cold|dependency_view:fixture:yarn:3.8.7|compatible_reuse",
+    "env:7a9cda66bc6b151a7886|DEP-005|yarn-4.0.2|cold|dependency_view:fixture:yarn:4.0.2|compatible_reuse",
+    "env:7a9cda66bc6b151a7886|DEP-005|yarn-4.10.3|cold|dependency_view:fixture:yarn:4.10.3|compatible_reuse",
+    "env:7a9cda66bc6b151a7886|DEP-005|yarn-4.12.0|cold|dependency_view:fixture:yarn:4.12.0|compatible_reuse",
+    "env:7a9cda66bc6b151a7886|DEP-005|yarn-4.9.1|cold|dependency_view:fixture:yarn:4.9.1|compatible_reuse"
+  ],
+  "DEP-006": [
+    "env:7a9cda66bc6b151a7886|DEP-006|bun-1.2.18|cold|dependency_view:fixture:bun:1.2.18|artifact_cold",
+    "env:7a9cda66bc6b151a7886|DEP-006|bun-1.3.7|cold|dependency_view:fixture:bun:1.3.7|artifact_cold"
+  ],
+  "DEP-007": [
+    "env:7a9cda66bc6b151a7886|DEP-007|require-validation|dependency_view:Automattic__mongoose.5f57a5bb:root:f4a039d5d472a10b|dependency_view:Automattic__mongoose.5f57a5bb:root:f4a039d5d472a10b|exact_hit"
+  ],
+  "DEP-008": [
+    "env:7a9cda66bc6b151a7886|DEP-008|default|dependency_view:Automattic__mongoose.5f57a5bb:root:f4a039d5d472a10b|dependency_view:Automattic__mongoose.5f57a5bb:root:f4a039d5d472a10b|compatible_reuse"
+  ],
+  "DEP-009": [
+    "env:7a9cda66bc6b151a7886|DEP-009|npm-to-pnpm|dependency_view:fixture:npm:switch-source|dependency_view:fixture:pnpm:switch-target|incompatible_switch"
+  ],
+  "DEP-010": [
+    "env:7a9cda66bc6b151a7886|DEP-010|default|dependency_view:Automattic__mongoose.5f57a5bb:root:f4a039d5d472a10b|dependency_view:Automattic__mongoose.5f57a5bb:root:f4a039d5d472a10b|dirty_reset"
+  ],
+  "DEP-011": [
+    "env:7a9cda66bc6b151a7886|DEP-011|entries-306|cold|dependency_view:Automattic__mongoose.5f57a5bb:root:f4a039d5d472a10b|artifact_cold"
+  ],
+  "DEP-012": [
+    "env:7a9cda66bc6b151a7886|DEP-012|entries-914|cold|dependency_view:Automattic__mongoose.5f57a5bb:root:f4a039d5d472a10b|artifact_cold"
+  ],
+  "DEP-013": [
+    "env:7a9cda66bc6b151a7886|DEP-013|patch-apply|cold|dependency_view:Automattic__mongoose.5f57a5bb:root:f4a039d5d472a10b|artifact_cold"
+  ],
+  "DEP-014": [
+    "env:7a9cda66bc6b151a7886|DEP-014|git|cold|dependency_view:Automattic__mongoose.5f57a5bb:root:f4a039d5d472a10b|artifact_cold"
+  ],
+  "DEP-015": [
+    "env:7a9cda66bc6b151a7886|DEP-015|http_tarball|cold|dependency_view:Automattic__mongoose.5f57a5bb:root:f4a039d5d472a10b|artifact_cold"
+  ],
+  "DEP-016": [
+    "env:7a9cda66bc6b151a7886|DEP-016|default|dependency_view:Automattic__mongoose.5f57a5bb:root:f4a039d5d472a10b|dependency_view:Automattic__mongoose.5f57a5bb:root:f4a039d5d472a10b|compatible_reuse"
+  ],
+  "DEP-017": [],
+  "DEP-018": [
+    "env:7a9cda66bc6b151a7886|DEP-018|require-validation|dependency_view:Automattic__mongoose.5f57a5bb:root:f4a039d5d472a10b|dependency_view:Automattic__mongoose.5f57a5bb:root:f4a039d5d472a10b|exact_hit"
+  ],
+  "DEP-019": [
+    "env:7a9cda66bc6b151a7886|DEP-019|default|cold|dependency_view:Automattic__mongoose.5f57a5bb:root:f4a039d5d472a10b|contention_path"
+  ],
+  "DEP-020": [
+    "env:7a9cda66bc6b151a7886|DEP-020|default|dependency_view:Automattic__mongoose.5f57a5bb:root:f4a039d5d472a10b|dependency_view:Automattic__mongoose.5f57a5bb:root:f4a039d5d472a10b|exact_hit"
+  ],
+  "FAIL-001": [
+    "env:7a9cda66bc6b151a7886|FAIL-001|default|cold|failure_recovery:synthetic:fail-001|failure_path"
+  ],
+  "FAIL-002": [
+    "env:7a9cda66bc6b151a7886|FAIL-002|default|cold|failure_recovery:synthetic:fail-002|failure_path"
+  ],
+  "FAIL-003": [
+    "env:7a9cda66bc6b151a7886|FAIL-003|default|cold|failure_recovery:synthetic:fail-003|failure_path"
+  ],
+  "FAIL-004": [
+    "env:7a9cda66bc6b151a7886|FAIL-004|default|cold|failure_recovery:synthetic:fail-004|failure_path"
+  ],
+  "FAIL-005": [
+    "env:7a9cda66bc6b151a7886|FAIL-005|default|cold|failure_recovery:synthetic:fail-005|failure_path"
+  ],
+  "FAIL-006": [
+    "env:7a9cda66bc6b151a7886|FAIL-006|default|cold|failure_recovery:synthetic:fail-006|failure_path"
+  ],
+  "FAIL-007": [
+    "env:7a9cda66bc6b151a7886|FAIL-007|default|cold|failure_recovery:synthetic:fail-007|failure_path"
+  ],
+  "FAIL-008": [
+    "env:7a9cda66bc6b151a7886|FAIL-008|default|cold|failure_recovery:synthetic:fail-008|failure_path"
+  ],
+  "FAIL-009": [
+    "env:7a9cda66bc6b151a7886|FAIL-009|default|cold|failure_recovery:synthetic:fail-009|failure_path"
+  ],
+  "FAIL-010": [],
+  "FAIL-011": [],
+  "FAIL-012": [
+    "env:7a9cda66bc6b151a7886|FAIL-012|default|cold|failure_recovery:synthetic:fail-012|failure_path"
+  ],
+  "FAIL-013": [
+    "env:7a9cda66bc6b151a7886|FAIL-013|default|cold|failure_recovery:synthetic:fail-013|failure_path"
+  ],
+  "FAIL-014": [
+    "env:7a9cda66bc6b151a7886|FAIL-014|default|cold|failure_recovery:synthetic:fail-014|failure_path"
+  ],
+  "FS-001": [
+    "env:7a9cda66bc6b151a7886|FS-001|default|cold|filesystem_overlay:directory-copy:ext4|artifact_cold"
+  ],
+  "FS-002": [
+    "env:7a9cda66bc6b151a7886|FS-002|default|filesystem_overlay:directory-copy:ext4|filesystem_overlay:directory-copy:ext4|compatible_reuse"
+  ],
+  "FS-003": [
+    "env:7a9cda66bc6b151a7886|FS-003|default|filesystem_overlay:directory-copy:ext4|filesystem_overlay:directory-copy:ext4|dirty_reset"
+  ],
+  "FS-004": [
+    "env:7a9cda66bc6b151a7886|FS-004|default|filesystem_overlay:directory-copy:ext4|filesystem_overlay:directory-copy:ext4|exact_hit"
+  ],
+  "FS-005": [
+    "env:7a9cda66bc6b151a7886|FS-005|default|cold|home_tmp_xdg:isolated-template:v1|artifact_cold"
+  ],
+  "FS-006": [
+    "env:7a9cda66bc6b151a7886|FS-006|default|home_tmp_xdg:isolated-template:v1|home_tmp_xdg:isolated-template:v1|dirty_reset"
+  ],
+  "FS-007": [
+    "env:7a9cda66bc6b151a7886|FS-007|default|home_tmp_xdg:isolated-template:v1|home_tmp_xdg:isolated-template:v1|dirty_reset"
+  ],
+  "FS-008": [
+    "env:7a9cda66bc6b151a7886|FS-008|default|home_tmp_xdg:isolated-template:v1|home_tmp_xdg:isolated-template:v1|dirty_reset"
+  ],
+  "FS-009": [
+    "env:7a9cda66bc6b151a7886|FS-009|default|cold|home_tmp_xdg:isolated-template:v1|artifact_cold"
+  ],
+  "FS-010": [
+    "env:7a9cda66bc6b151a7886|FS-010|default|filesystem_overlay:directory-copy:ext4|filesystem_overlay:directory-copy:ext4|exact_hit"
+  ],
+  "GUI-001": [
+    "env:7a9cda66bc6b151a7886|GUI-001|default|cold|display_service:xvfb:host|process_cold"
+  ],
+  "GUI-002": [
+    "env:7a9cda66bc6b151a7886|GUI-002|default|display_service:xvfb:host|display_service:xvfb:host|dirty_reset"
+  ],
+  "GUI-003": [
+    "env:7a9cda66bc6b151a7886|GUI-003|default|cold|display_service:dbus:host|process_cold"
+  ],
+  "GUI-004": [
+    "env:7a9cda66bc6b151a7886|GUI-004|default|display_service:benchmark:gui-004:default|display_service:benchmark:gui-004:default|exact_hit"
+  ],
+  "GUI-005": [
+    "env:7a9cda66bc6b151a7886|GUI-005|default|browser_process:chromium:151.0.7922.77:headless|browser_process:chromium:151.0.7922.77:headless|compatible_reuse"
+  ],
+  "GUI-006": [
+    "env:7a9cda66bc6b151a7886|GUI-006|default|browser_process:chromium:151.0.7922.77:headless|browser_process:chromium:151.0.7922.77:headless|compatible_reuse"
+  ],
+  "INS-001": [
+    "env:7a9cda66bc6b151a7886|INS-001|npm-minimal|cold|dependency_view:Automattic__mongoose.5f57a5bb:root:f4a039d5d472a10b|artifact_cold"
+  ],
+  "INS-002": [
+    "env:7a9cda66bc6b151a7886|INS-002|npm-minimal|cold|dependency_view:Automattic__mongoose.5f57a5bb:root:f4a039d5d472a10b|artifact_cold"
+  ],
+  "INS-003": [
+    "env:7a9cda66bc6b151a7886|INS-003|npm-minimal|cold|dependency_view:Automattic__mongoose.5f57a5bb:root:f4a039d5d472a10b|artifact_cold"
+  ],
+  "INS-004": [
+    "env:7a9cda66bc6b151a7886|INS-004|preinstall|cold|dependency_view:Automattic__mongoose.5f57a5bb:root:f4a039d5d472a10b|artifact_cold"
+  ],
+  "INS-005": [
+    "env:7a9cda66bc6b151a7886|INS-005|install|cold|dependency_view:Automattic__mongoose.5f57a5bb:root:f4a039d5d472a10b|artifact_cold"
+  ],
+  "INS-006": [
+    "env:7a9cda66bc6b151a7886|INS-006|postinstall|cold|dependency_view:Automattic__mongoose.5f57a5bb:root:f4a039d5d472a10b|artifact_cold"
+  ],
+  "INS-007": [
+    "env:7a9cda66bc6b151a7886|INS-007|prepare|cold|dependency_view:Automattic__mongoose.5f57a5bb:root:f4a039d5d472a10b|artifact_cold"
+  ],
+  "INS-008": [
+    "env:7a9cda66bc6b151a7886|INS-008|peer-conflict|cold|dependency_view:Automattic__mongoose.5f57a5bb:root:f4a039d5d472a10b|failure_path"
+  ],
+  "INS-009": [
+    "env:7a9cda66bc6b151a7886|INS-009|default|cold|dependency_view:Automattic__mongoose.5f57a5bb:root:f4a039d5d472a10b|dirty_reset"
+  ],
+  "INS-010": [
+    "env:7a9cda66bc6b151a7886|INS-010|npm-minimal|dependency_view:Automattic__mongoose.5f57a5bb:root:f4a039d5d472a10b|dependency_view:Automattic__mongoose.5f57a5bb:root:f4a039d5d472a10b|exact_hit"
+  ],
+  "NAT-001": [
+    "env:7a9cda66bc6b151a7886|NAT-001|default|cold|native_binary_bundle:synthetic:node-addon:abi109|artifact_cold"
+  ],
+  "NAT-002": [
+    "env:7a9cda66bc6b151a7886|NAT-002|default|native_binary_bundle:synthetic:node-addon:abi109|native_binary_bundle:synthetic:node-addon:abi109|exact_hit"
+  ],
+  "NAT-003": [],
+  "NAT-004": [
+    "env:7a9cda66bc6b151a7886|NAT-004|default|native_binary_bundle:synthetic:@swc_core:1.16.1:abi127|native_binary_bundle:synthetic:@swc_core:1.16.1:abi127|exact_hit"
+  ],
+  "NAT-005": [
+    "env:7a9cda66bc6b151a7886|NAT-005|default|native_binary_bundle:synthetic:esbuild:0.28.2:abi127|native_binary_bundle:synthetic:esbuild:0.28.2:abi127|exact_hit"
+  ],
+  "NAT-006": [
+    "env:7a9cda66bc6b151a7886|NAT-006|default|native_binary_bundle:synthetic:sharp:0.35.4:abi127|native_binary_bundle:synthetic:sharp:0.35.4:abi127|exact_hit"
+  ],
+  "NAT-007": [
+    "env:7a9cda66bc6b151a7886|NAT-007|default|native_binary_bundle:synthetic:sqlite3:6.0.1:abi127|native_binary_bundle:synthetic:sqlite3:6.0.1:abi127|exact_hit"
+  ],
+  "NAT-008": [],
+  "NAT-009": [],
+  "NAT-010": [
+    "env:7a9cda66bc6b151a7886|NAT-010|default|native_binary_bundle:synthetic:node-addon:abi109|native_binary_bundle:synthetic:node-addon:abi127|incompatible_switch"
+  ],
+  "NET-001": [],
+  "NET-002": [],
+  "NET-003": [
+    "env:7a9cda66bc6b151a7886|NET-003|default|cold|network_ports:host-loopback:v1|compatible_reuse"
+  ],
+  "NET-004": [
+    "env:7a9cda66bc6b151a7886|NET-004|default|network_ports:host-loopback:v1|network_ports:host-loopback:v1|dirty_reset"
+  ],
+  "NET-005": [
+    "env:7a9cda66bc6b151a7886|NET-005|default|network_ports:host-loopback:v1|network_ports:host-loopback:v1|compatible_reuse"
+  ],
+  "NET-006": [
+    "env:7a9cda66bc6b151a7886|NET-006|default|network_ports:host-loopback:v1|network_ports:host-loopback:v1|compatible_reuse"
+  ],
+  "NET-007": [
+    "env:7a9cda66bc6b151a7886|NET-007|default|cold|network_ports:host-loopback:v1|network_cold"
+  ],
+  "NET-008": [
+    "env:7a9cda66bc6b151a7886|NET-008|default|network_ports:host-loopback:v1|network_ports:host-loopback:v1|dirty_reset"
+  ],
+  "NET-009": [
+    "env:7a9cda66bc6b151a7886|NET-009|default|network_ports:host-loopback:v1|network_ports:host-loopback:v1|dirty_reset"
+  ],
+  "NET-010": [
+    "env:7a9cda66bc6b151a7886|NET-010|default|network_ports:host-loopback:v1|network_ports:host-loopback:v1|exact_hit"
+  ],
+  "NTC-001": [
+    "env:7a9cda66bc6b151a7886|NTC-001|default|cold|system_toolchain:ubuntu24:gcc13:python3.12|artifact_cold"
+  ],
+  "NTC-002": [
+    "env:7a9cda66bc6b151a7886|NTC-002|default|cold|system_toolchain:ubuntu24:gcc13:python3.12|artifact_cold"
+  ],
+  "NTC-003": [
+    "env:7a9cda66bc6b151a7886|NTC-003|default|cold|system_toolchain:ubuntu24:gcc13:python3.12|artifact_cold"
+  ],
+  "NTC-004": [],
+  "NTC-005": [
+    "env:7a9cda66bc6b151a7886|NTC-005|default|cold|system_toolchain:ubuntu24:gcc13:python3.12|artifact_cold"
+  ],
+  "NTC-006": [],
+  "NTC-007": [],
+  "NTC-008": [
+    "env:7a9cda66bc6b151a7886|NTC-008|default|cold|system_toolchain:ubuntu24:gcc13:python3.12|process_cold"
+  ],
+  "NTC-009": [
+    "env:7a9cda66bc6b151a7886|NTC-009|default|system_toolchain:ubuntu24:gcc13:python3.12|system_toolchain:ubuntu24:gcc13:python3.12|exact_hit"
+  ],
+  "NTC-010": [
+    "env:7a9cda66bc6b151a7886|NTC-010|default|system_toolchain:ubuntu24:gcc13:python3.12|system_toolchain:ubuntu24:gcc13:python3.12|exact_hit"
+  ],
+  "NTC-011": [],
+  "NTC-012": [
+    "env:7a9cda66bc6b151a7886|NTC-012|default|system_toolchain:ubuntu24:gcc13:python3.12|system_toolchain:ubuntu24:gcc13:python3.12|dirty_reset"
+  ],
+  "PM-001": [
+    "env:7a9cda66bc6b151a7886|PM-001|npm-10.9.8|package_manager:npm:default:10.9.8:linux:x86_64|package_manager:npm:default:10.9.8:linux:x86_64|exact_hit"
+  ],
+  "PM-002": [
+    "env:7a9cda66bc6b151a7886|PM-002|pnpm-10.17.1|package_manager:pnpm:default:10.17.1:linux:x86_64|package_manager:pnpm:default:10.17.1:linux:x86_64|exact_hit",
+    "env:7a9cda66bc6b151a7886|PM-002|pnpm-10.27.0|package_manager:pnpm:default:10.27.0:linux:x86_64|package_manager:pnpm:default:10.27.0:linux:x86_64|exact_hit",
+    "env:7a9cda66bc6b151a7886|PM-002|pnpm-10.28.2|package_manager:pnpm:default:10.28.2:linux:x86_64|package_manager:pnpm:default:10.28.2:linux:x86_64|exact_hit",
+    "env:7a9cda66bc6b151a7886|PM-002|pnpm-10.34.5|package_manager:pnpm:default:10.34.5:linux:x86_64|package_manager:pnpm:default:10.34.5:linux:x86_64|exact_hit",
+    "env:7a9cda66bc6b151a7886|PM-002|pnpm-10.4.0|package_manager:pnpm:default:10.4.0:linux:x86_64|package_manager:pnpm:default:10.4.0:linux:x86_64|exact_hit",
+    "env:7a9cda66bc6b151a7886|PM-002|pnpm-11.24.0|package_manager:pnpm:default:11.24.0:linux:x86_64|package_manager:pnpm:default:11.24.0:linux:x86_64|exact_hit",
+    "env:7a9cda66bc6b151a7886|PM-002|pnpm-9.12.2|package_manager:pnpm:default:9.12.2:linux:x86_64|package_manager:pnpm:default:9.12.2:linux:x86_64|exact_hit",
+    "env:7a9cda66bc6b151a7886|PM-002|pnpm-9.15.0|package_manager:pnpm:default:9.15.0:linux:x86_64|package_manager:pnpm:default:9.15.0:linux:x86_64|exact_hit",
+    "env:7a9cda66bc6b151a7886|PM-002|pnpm-9.15.4|package_manager:pnpm:default:9.15.4:linux:x86_64|package_manager:pnpm:default:9.15.4:linux:x86_64|exact_hit",
+    "env:7a9cda66bc6b151a7886|PM-002|pnpm-9.15.5|package_manager:pnpm:default:9.15.5:linux:x86_64|package_manager:pnpm:default:9.15.5:linux:x86_64|exact_hit",
+    "env:7a9cda66bc6b151a7886|PM-002|pnpm-9.4.0|package_manager:pnpm:default:9.4.0:linux:x86_64|package_manager:pnpm:default:9.4.0:linux:x86_64|exact_hit"
+  ],
+  "PM-003": [
+    "env:7a9cda66bc6b151a7886|PM-003|yarn-1.22.21|package_manager:yarn:classic:1.22.21:linux:x86_64|package_manager:yarn:classic:1.22.21:linux:x86_64|exact_hit",
+    "env:7a9cda66bc6b151a7886|PM-003|yarn-1.22.22|package_manager:yarn:classic:1.22.22:linux:x86_64|package_manager:yarn:classic:1.22.22:linux:x86_64|exact_hit"
+  ],
+  "PM-004": [
+    "env:7a9cda66bc6b151a7886|PM-004|yarn-3.2.3|package_manager:yarn:berry:3.2.3:linux:x86_64|package_manager:yarn:berry:3.2.3:linux:x86_64|exact_hit",
+    "env:7a9cda66bc6b151a7886|PM-004|yarn-3.8.7|package_manager:yarn:berry:3.8.7:linux:x86_64|package_manager:yarn:berry:3.8.7:linux:x86_64|exact_hit",
+    "env:7a9cda66bc6b151a7886|PM-004|yarn-4.0.2|package_manager:yarn:berry:4.0.2:linux:x86_64|package_manager:yarn:berry:4.0.2:linux:x86_64|exact_hit",
+    "env:7a9cda66bc6b151a7886|PM-004|yarn-4.10.3|package_manager:yarn:berry:4.10.3:linux:x86_64|package_manager:yarn:berry:4.10.3:linux:x86_64|exact_hit",
+    "env:7a9cda66bc6b151a7886|PM-004|yarn-4.12.0|package_manager:yarn:berry:4.12.0:linux:x86_64|package_manager:yarn:berry:4.12.0:linux:x86_64|exact_hit",
+    "env:7a9cda66bc6b151a7886|PM-004|yarn-4.9.1|package_manager:yarn:berry:4.9.1:linux:x86_64|package_manager:yarn:berry:4.9.1:linux:x86_64|exact_hit"
+  ],
+  "PM-005": [
+    "env:7a9cda66bc6b151a7886|PM-005|bun-1.2.18|package_manager:bun:default:1.2.18:linux:x86_64|package_manager:bun:default:1.2.18:linux:x86_64|exact_hit",
+    "env:7a9cda66bc6b151a7886|PM-005|bun-1.3.7|package_manager:bun:default:1.3.7:linux:x86_64|package_manager:bun:default:1.3.7:linux:x86_64|exact_hit"
+  ],
+  "PM-006": [],
+  "PM-007": [
+    "env:7a9cda66bc6b151a7886|PM-007|npx-pnpm-10.17.1|cold|package_manager:pnpm:default:10.17.1:linux:x86_64|artifact_cold"
+  ],
+  "PM-008": [
+    "env:7a9cda66bc6b151a7886|PM-008|bun-1.2.18-to-bun-1.2.18|package_manager:bun:default:1.2.18:linux:x86_64|package_manager:bun:default:1.2.18:linux:x86_64|exact_hit",
+    "env:7a9cda66bc6b151a7886|PM-008|bun-1.2.18-to-bun-1.3.7|package_manager:bun:default:1.2.18:linux:x86_64|package_manager:bun:default:1.3.7:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|bun-1.3.7-to-bun-1.2.18|package_manager:bun:default:1.3.7:linux:x86_64|package_manager:bun:default:1.2.18:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|bun-1.3.7-to-bun-1.3.7|package_manager:bun:default:1.3.7:linux:x86_64|package_manager:bun:default:1.3.7:linux:x86_64|exact_hit",
+    "env:7a9cda66bc6b151a7886|PM-008|npm-10.9.8-to-npm-10.9.8|package_manager:npm:default:10.9.8:linux:x86_64|package_manager:npm:default:10.9.8:linux:x86_64|exact_hit",
+    "env:7a9cda66bc6b151a7886|PM-008|pnpm-10.17.1-to-pnpm-10.17.1|package_manager:pnpm:default:10.17.1:linux:x86_64|package_manager:pnpm:default:10.17.1:linux:x86_64|exact_hit",
+    "env:7a9cda66bc6b151a7886|PM-008|pnpm-10.17.1-to-pnpm-10.27.0|package_manager:pnpm:default:10.17.1:linux:x86_64|package_manager:pnpm:default:10.27.0:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|pnpm-10.17.1-to-pnpm-10.28.2|package_manager:pnpm:default:10.17.1:linux:x86_64|package_manager:pnpm:default:10.28.2:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|pnpm-10.17.1-to-pnpm-10.34.5|package_manager:pnpm:default:10.17.1:linux:x86_64|package_manager:pnpm:default:10.34.5:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|pnpm-10.17.1-to-pnpm-10.4.0|package_manager:pnpm:default:10.17.1:linux:x86_64|package_manager:pnpm:default:10.4.0:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|pnpm-10.17.1-to-pnpm-11.24.0|package_manager:pnpm:default:10.17.1:linux:x86_64|package_manager:pnpm:default:11.24.0:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|pnpm-10.17.1-to-pnpm-9.12.2|package_manager:pnpm:default:10.17.1:linux:x86_64|package_manager:pnpm:default:9.12.2:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|pnpm-10.17.1-to-pnpm-9.15.0|package_manager:pnpm:default:10.17.1:linux:x86_64|package_manager:pnpm:default:9.15.0:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|pnpm-10.17.1-to-pnpm-9.15.4|package_manager:pnpm:default:10.17.1:linux:x86_64|package_manager:pnpm:default:9.15.4:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|pnpm-10.17.1-to-pnpm-9.15.5|package_manager:pnpm:default:10.17.1:linux:x86_64|package_manager:pnpm:default:9.15.5:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|pnpm-10.17.1-to-pnpm-9.4.0|package_manager:pnpm:default:10.17.1:linux:x86_64|package_manager:pnpm:default:9.4.0:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|pnpm-10.27.0-to-pnpm-10.17.1|package_manager:pnpm:default:10.27.0:linux:x86_64|package_manager:pnpm:default:10.17.1:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|pnpm-10.27.0-to-pnpm-10.27.0|package_manager:pnpm:default:10.27.0:linux:x86_64|package_manager:pnpm:default:10.27.0:linux:x86_64|exact_hit",
+    "env:7a9cda66bc6b151a7886|PM-008|pnpm-10.27.0-to-pnpm-10.28.2|package_manager:pnpm:default:10.27.0:linux:x86_64|package_manager:pnpm:default:10.28.2:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|pnpm-10.27.0-to-pnpm-10.34.5|package_manager:pnpm:default:10.27.0:linux:x86_64|package_manager:pnpm:default:10.34.5:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|pnpm-10.27.0-to-pnpm-10.4.0|package_manager:pnpm:default:10.27.0:linux:x86_64|package_manager:pnpm:default:10.4.0:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|pnpm-10.27.0-to-pnpm-11.24.0|package_manager:pnpm:default:10.27.0:linux:x86_64|package_manager:pnpm:default:11.24.0:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|pnpm-10.27.0-to-pnpm-9.12.2|package_manager:pnpm:default:10.27.0:linux:x86_64|package_manager:pnpm:default:9.12.2:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|pnpm-10.27.0-to-pnpm-9.15.0|package_manager:pnpm:default:10.27.0:linux:x86_64|package_manager:pnpm:default:9.15.0:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|pnpm-10.27.0-to-pnpm-9.15.4|package_manager:pnpm:default:10.27.0:linux:x86_64|package_manager:pnpm:default:9.15.4:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|pnpm-10.27.0-to-pnpm-9.15.5|package_manager:pnpm:default:10.27.0:linux:x86_64|package_manager:pnpm:default:9.15.5:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|pnpm-10.27.0-to-pnpm-9.4.0|package_manager:pnpm:default:10.27.0:linux:x86_64|package_manager:pnpm:default:9.4.0:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|pnpm-10.28.2-to-pnpm-10.17.1|package_manager:pnpm:default:10.28.2:linux:x86_64|package_manager:pnpm:default:10.17.1:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|pnpm-10.28.2-to-pnpm-10.27.0|package_manager:pnpm:default:10.28.2:linux:x86_64|package_manager:pnpm:default:10.27.0:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|pnpm-10.28.2-to-pnpm-10.28.2|package_manager:pnpm:default:10.28.2:linux:x86_64|package_manager:pnpm:default:10.28.2:linux:x86_64|exact_hit",
+    "env:7a9cda66bc6b151a7886|PM-008|pnpm-10.28.2-to-pnpm-10.34.5|package_manager:pnpm:default:10.28.2:linux:x86_64|package_manager:pnpm:default:10.34.5:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|pnpm-10.28.2-to-pnpm-10.4.0|package_manager:pnpm:default:10.28.2:linux:x86_64|package_manager:pnpm:default:10.4.0:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|pnpm-10.28.2-to-pnpm-11.24.0|package_manager:pnpm:default:10.28.2:linux:x86_64|package_manager:pnpm:default:11.24.0:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|pnpm-10.28.2-to-pnpm-9.12.2|package_manager:pnpm:default:10.28.2:linux:x86_64|package_manager:pnpm:default:9.12.2:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|pnpm-10.28.2-to-pnpm-9.15.0|package_manager:pnpm:default:10.28.2:linux:x86_64|package_manager:pnpm:default:9.15.0:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|pnpm-10.28.2-to-pnpm-9.15.4|package_manager:pnpm:default:10.28.2:linux:x86_64|package_manager:pnpm:default:9.15.4:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|pnpm-10.28.2-to-pnpm-9.15.5|package_manager:pnpm:default:10.28.2:linux:x86_64|package_manager:pnpm:default:9.15.5:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|pnpm-10.28.2-to-pnpm-9.4.0|package_manager:pnpm:default:10.28.2:linux:x86_64|package_manager:pnpm:default:9.4.0:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|pnpm-10.34.5-to-pnpm-10.17.1|package_manager:pnpm:default:10.34.5:linux:x86_64|package_manager:pnpm:default:10.17.1:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|pnpm-10.34.5-to-pnpm-10.27.0|package_manager:pnpm:default:10.34.5:linux:x86_64|package_manager:pnpm:default:10.27.0:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|pnpm-10.34.5-to-pnpm-10.28.2|package_manager:pnpm:default:10.34.5:linux:x86_64|package_manager:pnpm:default:10.28.2:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|pnpm-10.34.5-to-pnpm-10.34.5|package_manager:pnpm:default:10.34.5:linux:x86_64|package_manager:pnpm:default:10.34.5:linux:x86_64|exact_hit",
+    "env:7a9cda66bc6b151a7886|PM-008|pnpm-10.34.5-to-pnpm-10.4.0|package_manager:pnpm:default:10.34.5:linux:x86_64|package_manager:pnpm:default:10.4.0:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|pnpm-10.34.5-to-pnpm-11.24.0|package_manager:pnpm:default:10.34.5:linux:x86_64|package_manager:pnpm:default:11.24.0:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|pnpm-10.34.5-to-pnpm-9.12.2|package_manager:pnpm:default:10.34.5:linux:x86_64|package_manager:pnpm:default:9.12.2:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|pnpm-10.34.5-to-pnpm-9.15.0|package_manager:pnpm:default:10.34.5:linux:x86_64|package_manager:pnpm:default:9.15.0:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|pnpm-10.34.5-to-pnpm-9.15.4|package_manager:pnpm:default:10.34.5:linux:x86_64|package_manager:pnpm:default:9.15.4:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|pnpm-10.34.5-to-pnpm-9.15.5|package_manager:pnpm:default:10.34.5:linux:x86_64|package_manager:pnpm:default:9.15.5:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|pnpm-10.34.5-to-pnpm-9.4.0|package_manager:pnpm:default:10.34.5:linux:x86_64|package_manager:pnpm:default:9.4.0:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|pnpm-10.4.0-to-pnpm-10.17.1|package_manager:pnpm:default:10.4.0:linux:x86_64|package_manager:pnpm:default:10.17.1:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|pnpm-10.4.0-to-pnpm-10.27.0|package_manager:pnpm:default:10.4.0:linux:x86_64|package_manager:pnpm:default:10.27.0:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|pnpm-10.4.0-to-pnpm-10.28.2|package_manager:pnpm:default:10.4.0:linux:x86_64|package_manager:pnpm:default:10.28.2:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|pnpm-10.4.0-to-pnpm-10.34.5|package_manager:pnpm:default:10.4.0:linux:x86_64|package_manager:pnpm:default:10.34.5:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|pnpm-10.4.0-to-pnpm-10.4.0|package_manager:pnpm:default:10.4.0:linux:x86_64|package_manager:pnpm:default:10.4.0:linux:x86_64|exact_hit",
+    "env:7a9cda66bc6b151a7886|PM-008|pnpm-10.4.0-to-pnpm-11.24.0|package_manager:pnpm:default:10.4.0:linux:x86_64|package_manager:pnpm:default:11.24.0:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|pnpm-10.4.0-to-pnpm-9.12.2|package_manager:pnpm:default:10.4.0:linux:x86_64|package_manager:pnpm:default:9.12.2:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|pnpm-10.4.0-to-pnpm-9.15.0|package_manager:pnpm:default:10.4.0:linux:x86_64|package_manager:pnpm:default:9.15.0:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|pnpm-10.4.0-to-pnpm-9.15.4|package_manager:pnpm:default:10.4.0:linux:x86_64|package_manager:pnpm:default:9.15.4:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|pnpm-10.4.0-to-pnpm-9.15.5|package_manager:pnpm:default:10.4.0:linux:x86_64|package_manager:pnpm:default:9.15.5:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|pnpm-10.4.0-to-pnpm-9.4.0|package_manager:pnpm:default:10.4.0:linux:x86_64|package_manager:pnpm:default:9.4.0:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|pnpm-11.24.0-to-pnpm-10.17.1|package_manager:pnpm:default:11.24.0:linux:x86_64|package_manager:pnpm:default:10.17.1:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|pnpm-11.24.0-to-pnpm-10.27.0|package_manager:pnpm:default:11.24.0:linux:x86_64|package_manager:pnpm:default:10.27.0:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|pnpm-11.24.0-to-pnpm-10.28.2|package_manager:pnpm:default:11.24.0:linux:x86_64|package_manager:pnpm:default:10.28.2:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|pnpm-11.24.0-to-pnpm-10.34.5|package_manager:pnpm:default:11.24.0:linux:x86_64|package_manager:pnpm:default:10.34.5:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|pnpm-11.24.0-to-pnpm-10.4.0|package_manager:pnpm:default:11.24.0:linux:x86_64|package_manager:pnpm:default:10.4.0:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|pnpm-11.24.0-to-pnpm-11.24.0|package_manager:pnpm:default:11.24.0:linux:x86_64|package_manager:pnpm:default:11.24.0:linux:x86_64|exact_hit",
+    "env:7a9cda66bc6b151a7886|PM-008|pnpm-11.24.0-to-pnpm-9.12.2|package_manager:pnpm:default:11.24.0:linux:x86_64|package_manager:pnpm:default:9.12.2:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|pnpm-11.24.0-to-pnpm-9.15.0|package_manager:pnpm:default:11.24.0:linux:x86_64|package_manager:pnpm:default:9.15.0:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|pnpm-11.24.0-to-pnpm-9.15.4|package_manager:pnpm:default:11.24.0:linux:x86_64|package_manager:pnpm:default:9.15.4:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|pnpm-11.24.0-to-pnpm-9.15.5|package_manager:pnpm:default:11.24.0:linux:x86_64|package_manager:pnpm:default:9.15.5:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|pnpm-11.24.0-to-pnpm-9.4.0|package_manager:pnpm:default:11.24.0:linux:x86_64|package_manager:pnpm:default:9.4.0:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|pnpm-9.12.2-to-pnpm-10.17.1|package_manager:pnpm:default:9.12.2:linux:x86_64|package_manager:pnpm:default:10.17.1:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|pnpm-9.12.2-to-pnpm-10.27.0|package_manager:pnpm:default:9.12.2:linux:x86_64|package_manager:pnpm:default:10.27.0:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|pnpm-9.12.2-to-pnpm-10.28.2|package_manager:pnpm:default:9.12.2:linux:x86_64|package_manager:pnpm:default:10.28.2:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|pnpm-9.12.2-to-pnpm-10.34.5|package_manager:pnpm:default:9.12.2:linux:x86_64|package_manager:pnpm:default:10.34.5:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|pnpm-9.12.2-to-pnpm-10.4.0|package_manager:pnpm:default:9.12.2:linux:x86_64|package_manager:pnpm:default:10.4.0:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|pnpm-9.12.2-to-pnpm-11.24.0|package_manager:pnpm:default:9.12.2:linux:x86_64|package_manager:pnpm:default:11.24.0:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|pnpm-9.12.2-to-pnpm-9.12.2|package_manager:pnpm:default:9.12.2:linux:x86_64|package_manager:pnpm:default:9.12.2:linux:x86_64|exact_hit",
+    "env:7a9cda66bc6b151a7886|PM-008|pnpm-9.12.2-to-pnpm-9.15.0|package_manager:pnpm:default:9.12.2:linux:x86_64|package_manager:pnpm:default:9.15.0:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|pnpm-9.12.2-to-pnpm-9.15.4|package_manager:pnpm:default:9.12.2:linux:x86_64|package_manager:pnpm:default:9.15.4:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|pnpm-9.12.2-to-pnpm-9.15.5|package_manager:pnpm:default:9.12.2:linux:x86_64|package_manager:pnpm:default:9.15.5:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|pnpm-9.12.2-to-pnpm-9.4.0|package_manager:pnpm:default:9.12.2:linux:x86_64|package_manager:pnpm:default:9.4.0:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|pnpm-9.15.0-to-pnpm-10.17.1|package_manager:pnpm:default:9.15.0:linux:x86_64|package_manager:pnpm:default:10.17.1:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|pnpm-9.15.0-to-pnpm-10.27.0|package_manager:pnpm:default:9.15.0:linux:x86_64|package_manager:pnpm:default:10.27.0:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|pnpm-9.15.0-to-pnpm-10.28.2|package_manager:pnpm:default:9.15.0:linux:x86_64|package_manager:pnpm:default:10.28.2:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|pnpm-9.15.0-to-pnpm-10.34.5|package_manager:pnpm:default:9.15.0:linux:x86_64|package_manager:pnpm:default:10.34.5:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|pnpm-9.15.0-to-pnpm-10.4.0|package_manager:pnpm:default:9.15.0:linux:x86_64|package_manager:pnpm:default:10.4.0:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|pnpm-9.15.0-to-pnpm-11.24.0|package_manager:pnpm:default:9.15.0:linux:x86_64|package_manager:pnpm:default:11.24.0:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|pnpm-9.15.0-to-pnpm-9.12.2|package_manager:pnpm:default:9.15.0:linux:x86_64|package_manager:pnpm:default:9.12.2:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|pnpm-9.15.0-to-pnpm-9.15.0|package_manager:pnpm:default:9.15.0:linux:x86_64|package_manager:pnpm:default:9.15.0:linux:x86_64|exact_hit",
+    "env:7a9cda66bc6b151a7886|PM-008|pnpm-9.15.0-to-pnpm-9.15.4|package_manager:pnpm:default:9.15.0:linux:x86_64|package_manager:pnpm:default:9.15.4:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|pnpm-9.15.0-to-pnpm-9.15.5|package_manager:pnpm:default:9.15.0:linux:x86_64|package_manager:pnpm:default:9.15.5:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|pnpm-9.15.0-to-pnpm-9.4.0|package_manager:pnpm:default:9.15.0:linux:x86_64|package_manager:pnpm:default:9.4.0:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|pnpm-9.15.4-to-pnpm-10.17.1|package_manager:pnpm:default:9.15.4:linux:x86_64|package_manager:pnpm:default:10.17.1:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|pnpm-9.15.4-to-pnpm-10.27.0|package_manager:pnpm:default:9.15.4:linux:x86_64|package_manager:pnpm:default:10.27.0:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|pnpm-9.15.4-to-pnpm-10.28.2|package_manager:pnpm:default:9.15.4:linux:x86_64|package_manager:pnpm:default:10.28.2:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|pnpm-9.15.4-to-pnpm-10.34.5|package_manager:pnpm:default:9.15.4:linux:x86_64|package_manager:pnpm:default:10.34.5:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|pnpm-9.15.4-to-pnpm-10.4.0|package_manager:pnpm:default:9.15.4:linux:x86_64|package_manager:pnpm:default:10.4.0:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|pnpm-9.15.4-to-pnpm-11.24.0|package_manager:pnpm:default:9.15.4:linux:x86_64|package_manager:pnpm:default:11.24.0:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|pnpm-9.15.4-to-pnpm-9.12.2|package_manager:pnpm:default:9.15.4:linux:x86_64|package_manager:pnpm:default:9.12.2:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|pnpm-9.15.4-to-pnpm-9.15.0|package_manager:pnpm:default:9.15.4:linux:x86_64|package_manager:pnpm:default:9.15.0:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|pnpm-9.15.4-to-pnpm-9.15.4|package_manager:pnpm:default:9.15.4:linux:x86_64|package_manager:pnpm:default:9.15.4:linux:x86_64|exact_hit",
+    "env:7a9cda66bc6b151a7886|PM-008|pnpm-9.15.4-to-pnpm-9.15.5|package_manager:pnpm:default:9.15.4:linux:x86_64|package_manager:pnpm:default:9.15.5:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|pnpm-9.15.4-to-pnpm-9.4.0|package_manager:pnpm:default:9.15.4:linux:x86_64|package_manager:pnpm:default:9.4.0:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|pnpm-9.15.5-to-pnpm-10.17.1|package_manager:pnpm:default:9.15.5:linux:x86_64|package_manager:pnpm:default:10.17.1:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|pnpm-9.15.5-to-pnpm-10.27.0|package_manager:pnpm:default:9.15.5:linux:x86_64|package_manager:pnpm:default:10.27.0:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|pnpm-9.15.5-to-pnpm-10.28.2|package_manager:pnpm:default:9.15.5:linux:x86_64|package_manager:pnpm:default:10.28.2:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|pnpm-9.15.5-to-pnpm-10.34.5|package_manager:pnpm:default:9.15.5:linux:x86_64|package_manager:pnpm:default:10.34.5:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|pnpm-9.15.5-to-pnpm-10.4.0|package_manager:pnpm:default:9.15.5:linux:x86_64|package_manager:pnpm:default:10.4.0:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|pnpm-9.15.5-to-pnpm-11.24.0|package_manager:pnpm:default:9.15.5:linux:x86_64|package_manager:pnpm:default:11.24.0:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|pnpm-9.15.5-to-pnpm-9.12.2|package_manager:pnpm:default:9.15.5:linux:x86_64|package_manager:pnpm:default:9.12.2:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|pnpm-9.15.5-to-pnpm-9.15.0|package_manager:pnpm:default:9.15.5:linux:x86_64|package_manager:pnpm:default:9.15.0:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|pnpm-9.15.5-to-pnpm-9.15.4|package_manager:pnpm:default:9.15.5:linux:x86_64|package_manager:pnpm:default:9.15.4:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|pnpm-9.15.5-to-pnpm-9.15.5|package_manager:pnpm:default:9.15.5:linux:x86_64|package_manager:pnpm:default:9.15.5:linux:x86_64|exact_hit",
+    "env:7a9cda66bc6b151a7886|PM-008|pnpm-9.15.5-to-pnpm-9.4.0|package_manager:pnpm:default:9.15.5:linux:x86_64|package_manager:pnpm:default:9.4.0:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|pnpm-9.4.0-to-pnpm-10.17.1|package_manager:pnpm:default:9.4.0:linux:x86_64|package_manager:pnpm:default:10.17.1:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|pnpm-9.4.0-to-pnpm-10.27.0|package_manager:pnpm:default:9.4.0:linux:x86_64|package_manager:pnpm:default:10.27.0:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|pnpm-9.4.0-to-pnpm-10.28.2|package_manager:pnpm:default:9.4.0:linux:x86_64|package_manager:pnpm:default:10.28.2:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|pnpm-9.4.0-to-pnpm-10.34.5|package_manager:pnpm:default:9.4.0:linux:x86_64|package_manager:pnpm:default:10.34.5:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|pnpm-9.4.0-to-pnpm-10.4.0|package_manager:pnpm:default:9.4.0:linux:x86_64|package_manager:pnpm:default:10.4.0:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|pnpm-9.4.0-to-pnpm-11.24.0|package_manager:pnpm:default:9.4.0:linux:x86_64|package_manager:pnpm:default:11.24.0:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|pnpm-9.4.0-to-pnpm-9.12.2|package_manager:pnpm:default:9.4.0:linux:x86_64|package_manager:pnpm:default:9.12.2:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|pnpm-9.4.0-to-pnpm-9.15.0|package_manager:pnpm:default:9.4.0:linux:x86_64|package_manager:pnpm:default:9.15.0:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|pnpm-9.4.0-to-pnpm-9.15.4|package_manager:pnpm:default:9.4.0:linux:x86_64|package_manager:pnpm:default:9.15.4:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|pnpm-9.4.0-to-pnpm-9.15.5|package_manager:pnpm:default:9.4.0:linux:x86_64|package_manager:pnpm:default:9.15.5:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|pnpm-9.4.0-to-pnpm-9.4.0|package_manager:pnpm:default:9.4.0:linux:x86_64|package_manager:pnpm:default:9.4.0:linux:x86_64|exact_hit",
+    "env:7a9cda66bc6b151a7886|PM-008|yarn-3.2.3-to-yarn-3.2.3|package_manager:yarn:berry:3.2.3:linux:x86_64|package_manager:yarn:berry:3.2.3:linux:x86_64|exact_hit",
+    "env:7a9cda66bc6b151a7886|PM-008|yarn-3.2.3-to-yarn-3.8.7|package_manager:yarn:berry:3.2.3:linux:x86_64|package_manager:yarn:berry:3.8.7:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|yarn-3.2.3-to-yarn-4.0.2|package_manager:yarn:berry:3.2.3:linux:x86_64|package_manager:yarn:berry:4.0.2:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|yarn-3.2.3-to-yarn-4.10.3|package_manager:yarn:berry:3.2.3:linux:x86_64|package_manager:yarn:berry:4.10.3:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|yarn-3.2.3-to-yarn-4.12.0|package_manager:yarn:berry:3.2.3:linux:x86_64|package_manager:yarn:berry:4.12.0:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|yarn-3.2.3-to-yarn-4.9.1|package_manager:yarn:berry:3.2.3:linux:x86_64|package_manager:yarn:berry:4.9.1:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|yarn-3.2.3-to-yarn-1.22.21|package_manager:yarn:berry:3.2.3:linux:x86_64|package_manager:yarn:classic:1.22.21:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|yarn-3.2.3-to-yarn-1.22.22|package_manager:yarn:berry:3.2.3:linux:x86_64|package_manager:yarn:classic:1.22.22:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|yarn-3.8.7-to-yarn-3.2.3|package_manager:yarn:berry:3.8.7:linux:x86_64|package_manager:yarn:berry:3.2.3:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|yarn-3.8.7-to-yarn-3.8.7|package_manager:yarn:berry:3.8.7:linux:x86_64|package_manager:yarn:berry:3.8.7:linux:x86_64|exact_hit",
+    "env:7a9cda66bc6b151a7886|PM-008|yarn-3.8.7-to-yarn-4.0.2|package_manager:yarn:berry:3.8.7:linux:x86_64|package_manager:yarn:berry:4.0.2:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|yarn-3.8.7-to-yarn-4.10.3|package_manager:yarn:berry:3.8.7:linux:x86_64|package_manager:yarn:berry:4.10.3:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|yarn-3.8.7-to-yarn-4.12.0|package_manager:yarn:berry:3.8.7:linux:x86_64|package_manager:yarn:berry:4.12.0:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|yarn-3.8.7-to-yarn-4.9.1|package_manager:yarn:berry:3.8.7:linux:x86_64|package_manager:yarn:berry:4.9.1:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|yarn-3.8.7-to-yarn-1.22.21|package_manager:yarn:berry:3.8.7:linux:x86_64|package_manager:yarn:classic:1.22.21:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|yarn-3.8.7-to-yarn-1.22.22|package_manager:yarn:berry:3.8.7:linux:x86_64|package_manager:yarn:classic:1.22.22:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|yarn-4.0.2-to-yarn-3.2.3|package_manager:yarn:berry:4.0.2:linux:x86_64|package_manager:yarn:berry:3.2.3:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|yarn-4.0.2-to-yarn-3.8.7|package_manager:yarn:berry:4.0.2:linux:x86_64|package_manager:yarn:berry:3.8.7:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|yarn-4.0.2-to-yarn-4.0.2|package_manager:yarn:berry:4.0.2:linux:x86_64|package_manager:yarn:berry:4.0.2:linux:x86_64|exact_hit",
+    "env:7a9cda66bc6b151a7886|PM-008|yarn-4.0.2-to-yarn-4.10.3|package_manager:yarn:berry:4.0.2:linux:x86_64|package_manager:yarn:berry:4.10.3:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|yarn-4.0.2-to-yarn-4.12.0|package_manager:yarn:berry:4.0.2:linux:x86_64|package_manager:yarn:berry:4.12.0:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|yarn-4.0.2-to-yarn-4.9.1|package_manager:yarn:berry:4.0.2:linux:x86_64|package_manager:yarn:berry:4.9.1:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|yarn-4.0.2-to-yarn-1.22.21|package_manager:yarn:berry:4.0.2:linux:x86_64|package_manager:yarn:classic:1.22.21:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|yarn-4.0.2-to-yarn-1.22.22|package_manager:yarn:berry:4.0.2:linux:x86_64|package_manager:yarn:classic:1.22.22:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|yarn-4.10.3-to-yarn-3.2.3|package_manager:yarn:berry:4.10.3:linux:x86_64|package_manager:yarn:berry:3.2.3:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|yarn-4.10.3-to-yarn-3.8.7|package_manager:yarn:berry:4.10.3:linux:x86_64|package_manager:yarn:berry:3.8.7:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|yarn-4.10.3-to-yarn-4.0.2|package_manager:yarn:berry:4.10.3:linux:x86_64|package_manager:yarn:berry:4.0.2:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|yarn-4.10.3-to-yarn-4.10.3|package_manager:yarn:berry:4.10.3:linux:x86_64|package_manager:yarn:berry:4.10.3:linux:x86_64|exact_hit",
+    "env:7a9cda66bc6b151a7886|PM-008|yarn-4.10.3-to-yarn-4.12.0|package_manager:yarn:berry:4.10.3:linux:x86_64|package_manager:yarn:berry:4.12.0:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|yarn-4.10.3-to-yarn-4.9.1|package_manager:yarn:berry:4.10.3:linux:x86_64|package_manager:yarn:berry:4.9.1:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|yarn-4.10.3-to-yarn-1.22.21|package_manager:yarn:berry:4.10.3:linux:x86_64|package_manager:yarn:classic:1.22.21:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|yarn-4.10.3-to-yarn-1.22.22|package_manager:yarn:berry:4.10.3:linux:x86_64|package_manager:yarn:classic:1.22.22:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|yarn-4.12.0-to-yarn-3.2.3|package_manager:yarn:berry:4.12.0:linux:x86_64|package_manager:yarn:berry:3.2.3:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|yarn-4.12.0-to-yarn-3.8.7|package_manager:yarn:berry:4.12.0:linux:x86_64|package_manager:yarn:berry:3.8.7:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|yarn-4.12.0-to-yarn-4.0.2|package_manager:yarn:berry:4.12.0:linux:x86_64|package_manager:yarn:berry:4.0.2:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|yarn-4.12.0-to-yarn-4.10.3|package_manager:yarn:berry:4.12.0:linux:x86_64|package_manager:yarn:berry:4.10.3:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|yarn-4.12.0-to-yarn-4.12.0|package_manager:yarn:berry:4.12.0:linux:x86_64|package_manager:yarn:berry:4.12.0:linux:x86_64|exact_hit",
+    "env:7a9cda66bc6b151a7886|PM-008|yarn-4.12.0-to-yarn-4.9.1|package_manager:yarn:berry:4.12.0:linux:x86_64|package_manager:yarn:berry:4.9.1:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|yarn-4.12.0-to-yarn-1.22.21|package_manager:yarn:berry:4.12.0:linux:x86_64|package_manager:yarn:classic:1.22.21:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|yarn-4.12.0-to-yarn-1.22.22|package_manager:yarn:berry:4.12.0:linux:x86_64|package_manager:yarn:classic:1.22.22:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|yarn-4.9.1-to-yarn-3.2.3|package_manager:yarn:berry:4.9.1:linux:x86_64|package_manager:yarn:berry:3.2.3:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|yarn-4.9.1-to-yarn-3.8.7|package_manager:yarn:berry:4.9.1:linux:x86_64|package_manager:yarn:berry:3.8.7:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|yarn-4.9.1-to-yarn-4.0.2|package_manager:yarn:berry:4.9.1:linux:x86_64|package_manager:yarn:berry:4.0.2:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|yarn-4.9.1-to-yarn-4.10.3|package_manager:yarn:berry:4.9.1:linux:x86_64|package_manager:yarn:berry:4.10.3:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|yarn-4.9.1-to-yarn-4.12.0|package_manager:yarn:berry:4.9.1:linux:x86_64|package_manager:yarn:berry:4.12.0:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|yarn-4.9.1-to-yarn-4.9.1|package_manager:yarn:berry:4.9.1:linux:x86_64|package_manager:yarn:berry:4.9.1:linux:x86_64|exact_hit",
+    "env:7a9cda66bc6b151a7886|PM-008|yarn-4.9.1-to-yarn-1.22.21|package_manager:yarn:berry:4.9.1:linux:x86_64|package_manager:yarn:classic:1.22.21:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|yarn-4.9.1-to-yarn-1.22.22|package_manager:yarn:berry:4.9.1:linux:x86_64|package_manager:yarn:classic:1.22.22:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|yarn-1.22.21-to-yarn-3.2.3|package_manager:yarn:classic:1.22.21:linux:x86_64|package_manager:yarn:berry:3.2.3:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|yarn-1.22.21-to-yarn-3.8.7|package_manager:yarn:classic:1.22.21:linux:x86_64|package_manager:yarn:berry:3.8.7:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|yarn-1.22.21-to-yarn-4.0.2|package_manager:yarn:classic:1.22.21:linux:x86_64|package_manager:yarn:berry:4.0.2:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|yarn-1.22.21-to-yarn-4.10.3|package_manager:yarn:classic:1.22.21:linux:x86_64|package_manager:yarn:berry:4.10.3:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|yarn-1.22.21-to-yarn-4.12.0|package_manager:yarn:classic:1.22.21:linux:x86_64|package_manager:yarn:berry:4.12.0:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|yarn-1.22.21-to-yarn-4.9.1|package_manager:yarn:classic:1.22.21:linux:x86_64|package_manager:yarn:berry:4.9.1:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|yarn-1.22.21-to-yarn-1.22.21|package_manager:yarn:classic:1.22.21:linux:x86_64|package_manager:yarn:classic:1.22.21:linux:x86_64|exact_hit",
+    "env:7a9cda66bc6b151a7886|PM-008|yarn-1.22.21-to-yarn-1.22.22|package_manager:yarn:classic:1.22.21:linux:x86_64|package_manager:yarn:classic:1.22.22:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|yarn-1.22.22-to-yarn-3.2.3|package_manager:yarn:classic:1.22.22:linux:x86_64|package_manager:yarn:berry:3.2.3:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|yarn-1.22.22-to-yarn-3.8.7|package_manager:yarn:classic:1.22.22:linux:x86_64|package_manager:yarn:berry:3.8.7:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|yarn-1.22.22-to-yarn-4.0.2|package_manager:yarn:classic:1.22.22:linux:x86_64|package_manager:yarn:berry:4.0.2:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|yarn-1.22.22-to-yarn-4.10.3|package_manager:yarn:classic:1.22.22:linux:x86_64|package_manager:yarn:berry:4.10.3:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|yarn-1.22.22-to-yarn-4.12.0|package_manager:yarn:classic:1.22.22:linux:x86_64|package_manager:yarn:berry:4.12.0:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|yarn-1.22.22-to-yarn-4.9.1|package_manager:yarn:classic:1.22.22:linux:x86_64|package_manager:yarn:berry:4.9.1:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|yarn-1.22.22-to-yarn-1.22.21|package_manager:yarn:classic:1.22.22:linux:x86_64|package_manager:yarn:classic:1.22.21:linux:x86_64|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PM-008|yarn-1.22.22-to-yarn-1.22.22|package_manager:yarn:classic:1.22.22:linux:x86_64|package_manager:yarn:classic:1.22.22:linux:x86_64|exact_hit"
+  ],
+  "PMC-001": [
+    "env:7a9cda66bc6b151a7886|PMC-001|npm-10.9.8|pm_native_cache:npm:default:10.9.8|pm_native_cache:npm:default:10.9.8|exact_hit",
+    "env:7a9cda66bc6b151a7886|PMC-001|npm-unknown|pm_native_cache:npm:default:unknown|pm_native_cache:npm:default:unknown|exact_hit"
+  ],
+  "PMC-002": [
+    "env:7a9cda66bc6b151a7886|PMC-002|pnpm-10.17.1|pm_native_cache:pnpm:default:10.17.1|pm_native_cache:pnpm:default:10.17.1|exact_hit",
+    "env:7a9cda66bc6b151a7886|PMC-002|pnpm-10.27.0|pm_native_cache:pnpm:default:10.27.0|pm_native_cache:pnpm:default:10.27.0|exact_hit",
+    "env:7a9cda66bc6b151a7886|PMC-002|pnpm-10.28.2|pm_native_cache:pnpm:default:10.28.2|pm_native_cache:pnpm:default:10.28.2|exact_hit",
+    "env:7a9cda66bc6b151a7886|PMC-002|pnpm-10.34.5|pm_native_cache:pnpm:default:10.34.5|pm_native_cache:pnpm:default:10.34.5|exact_hit",
+    "env:7a9cda66bc6b151a7886|PMC-002|pnpm-10.4.0|pm_native_cache:pnpm:default:10.4.0|pm_native_cache:pnpm:default:10.4.0|exact_hit",
+    "env:7a9cda66bc6b151a7886|PMC-002|pnpm-11.24.0|pm_native_cache:pnpm:default:11.24.0|pm_native_cache:pnpm:default:11.24.0|exact_hit",
+    "env:7a9cda66bc6b151a7886|PMC-002|pnpm-9.12.2|pm_native_cache:pnpm:default:9.12.2|pm_native_cache:pnpm:default:9.12.2|exact_hit",
+    "env:7a9cda66bc6b151a7886|PMC-002|pnpm-9.15.0|pm_native_cache:pnpm:default:9.15.0|pm_native_cache:pnpm:default:9.15.0|exact_hit",
+    "env:7a9cda66bc6b151a7886|PMC-002|pnpm-9.15.4|pm_native_cache:pnpm:default:9.15.4|pm_native_cache:pnpm:default:9.15.4|exact_hit",
+    "env:7a9cda66bc6b151a7886|PMC-002|pnpm-9.15.5|pm_native_cache:pnpm:default:9.15.5|pm_native_cache:pnpm:default:9.15.5|exact_hit",
+    "env:7a9cda66bc6b151a7886|PMC-002|pnpm-9.4.0|pm_native_cache:pnpm:default:9.4.0|pm_native_cache:pnpm:default:9.4.0|exact_hit"
+  ],
+  "PMC-003": [
+    "env:7a9cda66bc6b151a7886|PMC-003|yarn-1.22.21|pm_native_cache:yarn:classic:1.22.21|pm_native_cache:yarn:classic:1.22.21|exact_hit",
+    "env:7a9cda66bc6b151a7886|PMC-003|yarn-1.22.22|pm_native_cache:yarn:classic:1.22.22|pm_native_cache:yarn:classic:1.22.22|exact_hit"
+  ],
+  "PMC-004": [
+    "env:7a9cda66bc6b151a7886|PMC-004|yarn-3.2.3|pm_native_cache:yarn:berry:3.2.3|pm_native_cache:yarn:berry:3.2.3|exact_hit",
+    "env:7a9cda66bc6b151a7886|PMC-004|yarn-3.8.7|pm_native_cache:yarn:berry:3.8.7|pm_native_cache:yarn:berry:3.8.7|exact_hit",
+    "env:7a9cda66bc6b151a7886|PMC-004|yarn-4.0.2|pm_native_cache:yarn:berry:4.0.2|pm_native_cache:yarn:berry:4.0.2|exact_hit",
+    "env:7a9cda66bc6b151a7886|PMC-004|yarn-4.10.3|pm_native_cache:yarn:berry:4.10.3|pm_native_cache:yarn:berry:4.10.3|exact_hit",
+    "env:7a9cda66bc6b151a7886|PMC-004|yarn-4.12.0|pm_native_cache:yarn:berry:4.12.0|pm_native_cache:yarn:berry:4.12.0|exact_hit",
+    "env:7a9cda66bc6b151a7886|PMC-004|yarn-4.9.1|pm_native_cache:yarn:berry:4.9.1|pm_native_cache:yarn:berry:4.9.1|exact_hit"
+  ],
+  "PMC-005": [
+    "env:7a9cda66bc6b151a7886|PMC-005|bun-1.2.18|pm_native_cache:bun:default:1.2.18|pm_native_cache:bun:default:1.2.18|exact_hit",
+    "env:7a9cda66bc6b151a7886|PMC-005|bun-1.3.7|pm_native_cache:bun:default:1.3.7|pm_native_cache:bun:default:1.3.7|exact_hit"
+  ],
+  "PMC-006": [
+    "env:7a9cda66bc6b151a7886|PMC-006|default|pm_native_cache:bun:default:1.2.18|pm_native_cache:bun:default:1.2.18|exact_hit"
+  ],
+  "PMC-007": [
+    "env:7a9cda66bc6b151a7886|PMC-007|1.2.18-to-1.2.18|pm_native_cache:bun:default:1.2.18|pm_native_cache:bun:default:1.2.18|exact_hit",
+    "env:7a9cda66bc6b151a7886|PMC-007|1.2.18-to-1.3.7|pm_native_cache:bun:default:1.2.18|pm_native_cache:bun:default:1.3.7|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|1.3.7-to-1.2.18|pm_native_cache:bun:default:1.3.7|pm_native_cache:bun:default:1.2.18|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|1.3.7-to-1.3.7|pm_native_cache:bun:default:1.3.7|pm_native_cache:bun:default:1.3.7|exact_hit",
+    "env:7a9cda66bc6b151a7886|PMC-007|10.9.8-to-10.9.8|pm_native_cache:npm:default:10.9.8|pm_native_cache:npm:default:10.9.8|exact_hit",
+    "env:7a9cda66bc6b151a7886|PMC-007|10.9.8-to-unknown|pm_native_cache:npm:default:10.9.8|pm_native_cache:npm:default:unknown|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|unknown-to-10.9.8|pm_native_cache:npm:default:unknown|pm_native_cache:npm:default:10.9.8|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|unknown-to-unknown|pm_native_cache:npm:default:unknown|pm_native_cache:npm:default:unknown|exact_hit",
+    "env:7a9cda66bc6b151a7886|PMC-007|10.17.1-to-10.17.1|pm_native_cache:pnpm:default:10.17.1|pm_native_cache:pnpm:default:10.17.1|exact_hit",
+    "env:7a9cda66bc6b151a7886|PMC-007|10.17.1-to-10.27.0|pm_native_cache:pnpm:default:10.17.1|pm_native_cache:pnpm:default:10.27.0|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|10.17.1-to-10.28.2|pm_native_cache:pnpm:default:10.17.1|pm_native_cache:pnpm:default:10.28.2|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|10.17.1-to-10.34.5|pm_native_cache:pnpm:default:10.17.1|pm_native_cache:pnpm:default:10.34.5|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|10.17.1-to-10.4.0|pm_native_cache:pnpm:default:10.17.1|pm_native_cache:pnpm:default:10.4.0|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|10.17.1-to-11.24.0|pm_native_cache:pnpm:default:10.17.1|pm_native_cache:pnpm:default:11.24.0|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|10.17.1-to-9.12.2|pm_native_cache:pnpm:default:10.17.1|pm_native_cache:pnpm:default:9.12.2|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|10.17.1-to-9.15.0|pm_native_cache:pnpm:default:10.17.1|pm_native_cache:pnpm:default:9.15.0|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|10.17.1-to-9.15.4|pm_native_cache:pnpm:default:10.17.1|pm_native_cache:pnpm:default:9.15.4|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|10.17.1-to-9.15.5|pm_native_cache:pnpm:default:10.17.1|pm_native_cache:pnpm:default:9.15.5|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|10.17.1-to-9.4.0|pm_native_cache:pnpm:default:10.17.1|pm_native_cache:pnpm:default:9.4.0|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|10.27.0-to-10.17.1|pm_native_cache:pnpm:default:10.27.0|pm_native_cache:pnpm:default:10.17.1|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|10.27.0-to-10.27.0|pm_native_cache:pnpm:default:10.27.0|pm_native_cache:pnpm:default:10.27.0|exact_hit",
+    "env:7a9cda66bc6b151a7886|PMC-007|10.27.0-to-10.28.2|pm_native_cache:pnpm:default:10.27.0|pm_native_cache:pnpm:default:10.28.2|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|10.27.0-to-10.34.5|pm_native_cache:pnpm:default:10.27.0|pm_native_cache:pnpm:default:10.34.5|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|10.27.0-to-10.4.0|pm_native_cache:pnpm:default:10.27.0|pm_native_cache:pnpm:default:10.4.0|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|10.27.0-to-11.24.0|pm_native_cache:pnpm:default:10.27.0|pm_native_cache:pnpm:default:11.24.0|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|10.27.0-to-9.12.2|pm_native_cache:pnpm:default:10.27.0|pm_native_cache:pnpm:default:9.12.2|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|10.27.0-to-9.15.0|pm_native_cache:pnpm:default:10.27.0|pm_native_cache:pnpm:default:9.15.0|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|10.27.0-to-9.15.4|pm_native_cache:pnpm:default:10.27.0|pm_native_cache:pnpm:default:9.15.4|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|10.27.0-to-9.15.5|pm_native_cache:pnpm:default:10.27.0|pm_native_cache:pnpm:default:9.15.5|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|10.27.0-to-9.4.0|pm_native_cache:pnpm:default:10.27.0|pm_native_cache:pnpm:default:9.4.0|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|10.28.2-to-10.17.1|pm_native_cache:pnpm:default:10.28.2|pm_native_cache:pnpm:default:10.17.1|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|10.28.2-to-10.27.0|pm_native_cache:pnpm:default:10.28.2|pm_native_cache:pnpm:default:10.27.0|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|10.28.2-to-10.28.2|pm_native_cache:pnpm:default:10.28.2|pm_native_cache:pnpm:default:10.28.2|exact_hit",
+    "env:7a9cda66bc6b151a7886|PMC-007|10.28.2-to-10.34.5|pm_native_cache:pnpm:default:10.28.2|pm_native_cache:pnpm:default:10.34.5|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|10.28.2-to-10.4.0|pm_native_cache:pnpm:default:10.28.2|pm_native_cache:pnpm:default:10.4.0|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|10.28.2-to-11.24.0|pm_native_cache:pnpm:default:10.28.2|pm_native_cache:pnpm:default:11.24.0|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|10.28.2-to-9.12.2|pm_native_cache:pnpm:default:10.28.2|pm_native_cache:pnpm:default:9.12.2|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|10.28.2-to-9.15.0|pm_native_cache:pnpm:default:10.28.2|pm_native_cache:pnpm:default:9.15.0|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|10.28.2-to-9.15.4|pm_native_cache:pnpm:default:10.28.2|pm_native_cache:pnpm:default:9.15.4|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|10.28.2-to-9.15.5|pm_native_cache:pnpm:default:10.28.2|pm_native_cache:pnpm:default:9.15.5|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|10.28.2-to-9.4.0|pm_native_cache:pnpm:default:10.28.2|pm_native_cache:pnpm:default:9.4.0|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|10.34.5-to-10.17.1|pm_native_cache:pnpm:default:10.34.5|pm_native_cache:pnpm:default:10.17.1|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|10.34.5-to-10.27.0|pm_native_cache:pnpm:default:10.34.5|pm_native_cache:pnpm:default:10.27.0|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|10.34.5-to-10.28.2|pm_native_cache:pnpm:default:10.34.5|pm_native_cache:pnpm:default:10.28.2|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|10.34.5-to-10.34.5|pm_native_cache:pnpm:default:10.34.5|pm_native_cache:pnpm:default:10.34.5|exact_hit",
+    "env:7a9cda66bc6b151a7886|PMC-007|10.34.5-to-10.4.0|pm_native_cache:pnpm:default:10.34.5|pm_native_cache:pnpm:default:10.4.0|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|10.34.5-to-11.24.0|pm_native_cache:pnpm:default:10.34.5|pm_native_cache:pnpm:default:11.24.0|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|10.34.5-to-9.12.2|pm_native_cache:pnpm:default:10.34.5|pm_native_cache:pnpm:default:9.12.2|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|10.34.5-to-9.15.0|pm_native_cache:pnpm:default:10.34.5|pm_native_cache:pnpm:default:9.15.0|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|10.34.5-to-9.15.4|pm_native_cache:pnpm:default:10.34.5|pm_native_cache:pnpm:default:9.15.4|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|10.34.5-to-9.15.5|pm_native_cache:pnpm:default:10.34.5|pm_native_cache:pnpm:default:9.15.5|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|10.34.5-to-9.4.0|pm_native_cache:pnpm:default:10.34.5|pm_native_cache:pnpm:default:9.4.0|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|10.4.0-to-10.17.1|pm_native_cache:pnpm:default:10.4.0|pm_native_cache:pnpm:default:10.17.1|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|10.4.0-to-10.27.0|pm_native_cache:pnpm:default:10.4.0|pm_native_cache:pnpm:default:10.27.0|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|10.4.0-to-10.28.2|pm_native_cache:pnpm:default:10.4.0|pm_native_cache:pnpm:default:10.28.2|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|10.4.0-to-10.34.5|pm_native_cache:pnpm:default:10.4.0|pm_native_cache:pnpm:default:10.34.5|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|10.4.0-to-10.4.0|pm_native_cache:pnpm:default:10.4.0|pm_native_cache:pnpm:default:10.4.0|exact_hit",
+    "env:7a9cda66bc6b151a7886|PMC-007|10.4.0-to-11.24.0|pm_native_cache:pnpm:default:10.4.0|pm_native_cache:pnpm:default:11.24.0|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|10.4.0-to-9.12.2|pm_native_cache:pnpm:default:10.4.0|pm_native_cache:pnpm:default:9.12.2|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|10.4.0-to-9.15.0|pm_native_cache:pnpm:default:10.4.0|pm_native_cache:pnpm:default:9.15.0|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|10.4.0-to-9.15.4|pm_native_cache:pnpm:default:10.4.0|pm_native_cache:pnpm:default:9.15.4|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|10.4.0-to-9.15.5|pm_native_cache:pnpm:default:10.4.0|pm_native_cache:pnpm:default:9.15.5|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|10.4.0-to-9.4.0|pm_native_cache:pnpm:default:10.4.0|pm_native_cache:pnpm:default:9.4.0|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|11.24.0-to-10.17.1|pm_native_cache:pnpm:default:11.24.0|pm_native_cache:pnpm:default:10.17.1|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|11.24.0-to-10.27.0|pm_native_cache:pnpm:default:11.24.0|pm_native_cache:pnpm:default:10.27.0|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|11.24.0-to-10.28.2|pm_native_cache:pnpm:default:11.24.0|pm_native_cache:pnpm:default:10.28.2|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|11.24.0-to-10.34.5|pm_native_cache:pnpm:default:11.24.0|pm_native_cache:pnpm:default:10.34.5|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|11.24.0-to-10.4.0|pm_native_cache:pnpm:default:11.24.0|pm_native_cache:pnpm:default:10.4.0|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|11.24.0-to-11.24.0|pm_native_cache:pnpm:default:11.24.0|pm_native_cache:pnpm:default:11.24.0|exact_hit",
+    "env:7a9cda66bc6b151a7886|PMC-007|11.24.0-to-9.12.2|pm_native_cache:pnpm:default:11.24.0|pm_native_cache:pnpm:default:9.12.2|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|11.24.0-to-9.15.0|pm_native_cache:pnpm:default:11.24.0|pm_native_cache:pnpm:default:9.15.0|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|11.24.0-to-9.15.4|pm_native_cache:pnpm:default:11.24.0|pm_native_cache:pnpm:default:9.15.4|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|11.24.0-to-9.15.5|pm_native_cache:pnpm:default:11.24.0|pm_native_cache:pnpm:default:9.15.5|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|11.24.0-to-9.4.0|pm_native_cache:pnpm:default:11.24.0|pm_native_cache:pnpm:default:9.4.0|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|9.12.2-to-10.17.1|pm_native_cache:pnpm:default:9.12.2|pm_native_cache:pnpm:default:10.17.1|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|9.12.2-to-10.27.0|pm_native_cache:pnpm:default:9.12.2|pm_native_cache:pnpm:default:10.27.0|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|9.12.2-to-10.28.2|pm_native_cache:pnpm:default:9.12.2|pm_native_cache:pnpm:default:10.28.2|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|9.12.2-to-10.34.5|pm_native_cache:pnpm:default:9.12.2|pm_native_cache:pnpm:default:10.34.5|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|9.12.2-to-10.4.0|pm_native_cache:pnpm:default:9.12.2|pm_native_cache:pnpm:default:10.4.0|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|9.12.2-to-11.24.0|pm_native_cache:pnpm:default:9.12.2|pm_native_cache:pnpm:default:11.24.0|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|9.12.2-to-9.12.2|pm_native_cache:pnpm:default:9.12.2|pm_native_cache:pnpm:default:9.12.2|exact_hit",
+    "env:7a9cda66bc6b151a7886|PMC-007|9.12.2-to-9.15.0|pm_native_cache:pnpm:default:9.12.2|pm_native_cache:pnpm:default:9.15.0|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|9.12.2-to-9.15.4|pm_native_cache:pnpm:default:9.12.2|pm_native_cache:pnpm:default:9.15.4|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|9.12.2-to-9.15.5|pm_native_cache:pnpm:default:9.12.2|pm_native_cache:pnpm:default:9.15.5|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|9.12.2-to-9.4.0|pm_native_cache:pnpm:default:9.12.2|pm_native_cache:pnpm:default:9.4.0|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|9.15.0-to-10.17.1|pm_native_cache:pnpm:default:9.15.0|pm_native_cache:pnpm:default:10.17.1|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|9.15.0-to-10.27.0|pm_native_cache:pnpm:default:9.15.0|pm_native_cache:pnpm:default:10.27.0|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|9.15.0-to-10.28.2|pm_native_cache:pnpm:default:9.15.0|pm_native_cache:pnpm:default:10.28.2|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|9.15.0-to-10.34.5|pm_native_cache:pnpm:default:9.15.0|pm_native_cache:pnpm:default:10.34.5|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|9.15.0-to-10.4.0|pm_native_cache:pnpm:default:9.15.0|pm_native_cache:pnpm:default:10.4.0|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|9.15.0-to-11.24.0|pm_native_cache:pnpm:default:9.15.0|pm_native_cache:pnpm:default:11.24.0|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|9.15.0-to-9.12.2|pm_native_cache:pnpm:default:9.15.0|pm_native_cache:pnpm:default:9.12.2|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|9.15.0-to-9.15.0|pm_native_cache:pnpm:default:9.15.0|pm_native_cache:pnpm:default:9.15.0|exact_hit",
+    "env:7a9cda66bc6b151a7886|PMC-007|9.15.0-to-9.15.4|pm_native_cache:pnpm:default:9.15.0|pm_native_cache:pnpm:default:9.15.4|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|9.15.0-to-9.15.5|pm_native_cache:pnpm:default:9.15.0|pm_native_cache:pnpm:default:9.15.5|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|9.15.0-to-9.4.0|pm_native_cache:pnpm:default:9.15.0|pm_native_cache:pnpm:default:9.4.0|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|9.15.4-to-10.17.1|pm_native_cache:pnpm:default:9.15.4|pm_native_cache:pnpm:default:10.17.1|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|9.15.4-to-10.27.0|pm_native_cache:pnpm:default:9.15.4|pm_native_cache:pnpm:default:10.27.0|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|9.15.4-to-10.28.2|pm_native_cache:pnpm:default:9.15.4|pm_native_cache:pnpm:default:10.28.2|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|9.15.4-to-10.34.5|pm_native_cache:pnpm:default:9.15.4|pm_native_cache:pnpm:default:10.34.5|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|9.15.4-to-10.4.0|pm_native_cache:pnpm:default:9.15.4|pm_native_cache:pnpm:default:10.4.0|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|9.15.4-to-11.24.0|pm_native_cache:pnpm:default:9.15.4|pm_native_cache:pnpm:default:11.24.0|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|9.15.4-to-9.12.2|pm_native_cache:pnpm:default:9.15.4|pm_native_cache:pnpm:default:9.12.2|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|9.15.4-to-9.15.0|pm_native_cache:pnpm:default:9.15.4|pm_native_cache:pnpm:default:9.15.0|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|9.15.4-to-9.15.4|pm_native_cache:pnpm:default:9.15.4|pm_native_cache:pnpm:default:9.15.4|exact_hit",
+    "env:7a9cda66bc6b151a7886|PMC-007|9.15.4-to-9.15.5|pm_native_cache:pnpm:default:9.15.4|pm_native_cache:pnpm:default:9.15.5|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|9.15.4-to-9.4.0|pm_native_cache:pnpm:default:9.15.4|pm_native_cache:pnpm:default:9.4.0|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|9.15.5-to-10.17.1|pm_native_cache:pnpm:default:9.15.5|pm_native_cache:pnpm:default:10.17.1|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|9.15.5-to-10.27.0|pm_native_cache:pnpm:default:9.15.5|pm_native_cache:pnpm:default:10.27.0|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|9.15.5-to-10.28.2|pm_native_cache:pnpm:default:9.15.5|pm_native_cache:pnpm:default:10.28.2|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|9.15.5-to-10.34.5|pm_native_cache:pnpm:default:9.15.5|pm_native_cache:pnpm:default:10.34.5|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|9.15.5-to-10.4.0|pm_native_cache:pnpm:default:9.15.5|pm_native_cache:pnpm:default:10.4.0|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|9.15.5-to-11.24.0|pm_native_cache:pnpm:default:9.15.5|pm_native_cache:pnpm:default:11.24.0|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|9.15.5-to-9.12.2|pm_native_cache:pnpm:default:9.15.5|pm_native_cache:pnpm:default:9.12.2|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|9.15.5-to-9.15.0|pm_native_cache:pnpm:default:9.15.5|pm_native_cache:pnpm:default:9.15.0|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|9.15.5-to-9.15.4|pm_native_cache:pnpm:default:9.15.5|pm_native_cache:pnpm:default:9.15.4|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|9.15.5-to-9.15.5|pm_native_cache:pnpm:default:9.15.5|pm_native_cache:pnpm:default:9.15.5|exact_hit",
+    "env:7a9cda66bc6b151a7886|PMC-007|9.15.5-to-9.4.0|pm_native_cache:pnpm:default:9.15.5|pm_native_cache:pnpm:default:9.4.0|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|9.4.0-to-10.17.1|pm_native_cache:pnpm:default:9.4.0|pm_native_cache:pnpm:default:10.17.1|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|9.4.0-to-10.27.0|pm_native_cache:pnpm:default:9.4.0|pm_native_cache:pnpm:default:10.27.0|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|9.4.0-to-10.28.2|pm_native_cache:pnpm:default:9.4.0|pm_native_cache:pnpm:default:10.28.2|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|9.4.0-to-10.34.5|pm_native_cache:pnpm:default:9.4.0|pm_native_cache:pnpm:default:10.34.5|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|9.4.0-to-10.4.0|pm_native_cache:pnpm:default:9.4.0|pm_native_cache:pnpm:default:10.4.0|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|9.4.0-to-11.24.0|pm_native_cache:pnpm:default:9.4.0|pm_native_cache:pnpm:default:11.24.0|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|9.4.0-to-9.12.2|pm_native_cache:pnpm:default:9.4.0|pm_native_cache:pnpm:default:9.12.2|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|9.4.0-to-9.15.0|pm_native_cache:pnpm:default:9.4.0|pm_native_cache:pnpm:default:9.15.0|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|9.4.0-to-9.15.4|pm_native_cache:pnpm:default:9.4.0|pm_native_cache:pnpm:default:9.15.4|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|9.4.0-to-9.15.5|pm_native_cache:pnpm:default:9.4.0|pm_native_cache:pnpm:default:9.15.5|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|9.4.0-to-9.4.0|pm_native_cache:pnpm:default:9.4.0|pm_native_cache:pnpm:default:9.4.0|exact_hit",
+    "env:7a9cda66bc6b151a7886|PMC-007|3.2.3-to-3.2.3|pm_native_cache:yarn:berry:3.2.3|pm_native_cache:yarn:berry:3.2.3|exact_hit",
+    "env:7a9cda66bc6b151a7886|PMC-007|3.2.3-to-3.8.7|pm_native_cache:yarn:berry:3.2.3|pm_native_cache:yarn:berry:3.8.7|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|3.2.3-to-4.0.2|pm_native_cache:yarn:berry:3.2.3|pm_native_cache:yarn:berry:4.0.2|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|3.2.3-to-4.10.3|pm_native_cache:yarn:berry:3.2.3|pm_native_cache:yarn:berry:4.10.3|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|3.2.3-to-4.12.0|pm_native_cache:yarn:berry:3.2.3|pm_native_cache:yarn:berry:4.12.0|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|3.2.3-to-4.9.1|pm_native_cache:yarn:berry:3.2.3|pm_native_cache:yarn:berry:4.9.1|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|3.2.3-to-1.22.21|pm_native_cache:yarn:berry:3.2.3|pm_native_cache:yarn:classic:1.22.21|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|3.2.3-to-1.22.22|pm_native_cache:yarn:berry:3.2.3|pm_native_cache:yarn:classic:1.22.22|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|3.8.7-to-3.2.3|pm_native_cache:yarn:berry:3.8.7|pm_native_cache:yarn:berry:3.2.3|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|3.8.7-to-3.8.7|pm_native_cache:yarn:berry:3.8.7|pm_native_cache:yarn:berry:3.8.7|exact_hit",
+    "env:7a9cda66bc6b151a7886|PMC-007|3.8.7-to-4.0.2|pm_native_cache:yarn:berry:3.8.7|pm_native_cache:yarn:berry:4.0.2|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|3.8.7-to-4.10.3|pm_native_cache:yarn:berry:3.8.7|pm_native_cache:yarn:berry:4.10.3|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|3.8.7-to-4.12.0|pm_native_cache:yarn:berry:3.8.7|pm_native_cache:yarn:berry:4.12.0|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|3.8.7-to-4.9.1|pm_native_cache:yarn:berry:3.8.7|pm_native_cache:yarn:berry:4.9.1|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|3.8.7-to-1.22.21|pm_native_cache:yarn:berry:3.8.7|pm_native_cache:yarn:classic:1.22.21|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|3.8.7-to-1.22.22|pm_native_cache:yarn:berry:3.8.7|pm_native_cache:yarn:classic:1.22.22|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|4.0.2-to-3.2.3|pm_native_cache:yarn:berry:4.0.2|pm_native_cache:yarn:berry:3.2.3|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|4.0.2-to-3.8.7|pm_native_cache:yarn:berry:4.0.2|pm_native_cache:yarn:berry:3.8.7|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|4.0.2-to-4.0.2|pm_native_cache:yarn:berry:4.0.2|pm_native_cache:yarn:berry:4.0.2|exact_hit",
+    "env:7a9cda66bc6b151a7886|PMC-007|4.0.2-to-4.10.3|pm_native_cache:yarn:berry:4.0.2|pm_native_cache:yarn:berry:4.10.3|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|4.0.2-to-4.12.0|pm_native_cache:yarn:berry:4.0.2|pm_native_cache:yarn:berry:4.12.0|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|4.0.2-to-4.9.1|pm_native_cache:yarn:berry:4.0.2|pm_native_cache:yarn:berry:4.9.1|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|4.0.2-to-1.22.21|pm_native_cache:yarn:berry:4.0.2|pm_native_cache:yarn:classic:1.22.21|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|4.0.2-to-1.22.22|pm_native_cache:yarn:berry:4.0.2|pm_native_cache:yarn:classic:1.22.22|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|4.10.3-to-3.2.3|pm_native_cache:yarn:berry:4.10.3|pm_native_cache:yarn:berry:3.2.3|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|4.10.3-to-3.8.7|pm_native_cache:yarn:berry:4.10.3|pm_native_cache:yarn:berry:3.8.7|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|4.10.3-to-4.0.2|pm_native_cache:yarn:berry:4.10.3|pm_native_cache:yarn:berry:4.0.2|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|4.10.3-to-4.10.3|pm_native_cache:yarn:berry:4.10.3|pm_native_cache:yarn:berry:4.10.3|exact_hit",
+    "env:7a9cda66bc6b151a7886|PMC-007|4.10.3-to-4.12.0|pm_native_cache:yarn:berry:4.10.3|pm_native_cache:yarn:berry:4.12.0|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|4.10.3-to-4.9.1|pm_native_cache:yarn:berry:4.10.3|pm_native_cache:yarn:berry:4.9.1|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|4.10.3-to-1.22.21|pm_native_cache:yarn:berry:4.10.3|pm_native_cache:yarn:classic:1.22.21|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|4.10.3-to-1.22.22|pm_native_cache:yarn:berry:4.10.3|pm_native_cache:yarn:classic:1.22.22|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|4.12.0-to-3.2.3|pm_native_cache:yarn:berry:4.12.0|pm_native_cache:yarn:berry:3.2.3|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|4.12.0-to-3.8.7|pm_native_cache:yarn:berry:4.12.0|pm_native_cache:yarn:berry:3.8.7|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|4.12.0-to-4.0.2|pm_native_cache:yarn:berry:4.12.0|pm_native_cache:yarn:berry:4.0.2|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|4.12.0-to-4.10.3|pm_native_cache:yarn:berry:4.12.0|pm_native_cache:yarn:berry:4.10.3|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|4.12.0-to-4.12.0|pm_native_cache:yarn:berry:4.12.0|pm_native_cache:yarn:berry:4.12.0|exact_hit",
+    "env:7a9cda66bc6b151a7886|PMC-007|4.12.0-to-4.9.1|pm_native_cache:yarn:berry:4.12.0|pm_native_cache:yarn:berry:4.9.1|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|4.12.0-to-1.22.21|pm_native_cache:yarn:berry:4.12.0|pm_native_cache:yarn:classic:1.22.21|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|4.12.0-to-1.22.22|pm_native_cache:yarn:berry:4.12.0|pm_native_cache:yarn:classic:1.22.22|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|4.9.1-to-3.2.3|pm_native_cache:yarn:berry:4.9.1|pm_native_cache:yarn:berry:3.2.3|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|4.9.1-to-3.8.7|pm_native_cache:yarn:berry:4.9.1|pm_native_cache:yarn:berry:3.8.7|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|4.9.1-to-4.0.2|pm_native_cache:yarn:berry:4.9.1|pm_native_cache:yarn:berry:4.0.2|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|4.9.1-to-4.10.3|pm_native_cache:yarn:berry:4.9.1|pm_native_cache:yarn:berry:4.10.3|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|4.9.1-to-4.12.0|pm_native_cache:yarn:berry:4.9.1|pm_native_cache:yarn:berry:4.12.0|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|4.9.1-to-4.9.1|pm_native_cache:yarn:berry:4.9.1|pm_native_cache:yarn:berry:4.9.1|exact_hit",
+    "env:7a9cda66bc6b151a7886|PMC-007|4.9.1-to-1.22.21|pm_native_cache:yarn:berry:4.9.1|pm_native_cache:yarn:classic:1.22.21|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|4.9.1-to-1.22.22|pm_native_cache:yarn:berry:4.9.1|pm_native_cache:yarn:classic:1.22.22|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|1.22.21-to-3.2.3|pm_native_cache:yarn:classic:1.22.21|pm_native_cache:yarn:berry:3.2.3|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|1.22.21-to-3.8.7|pm_native_cache:yarn:classic:1.22.21|pm_native_cache:yarn:berry:3.8.7|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|1.22.21-to-4.0.2|pm_native_cache:yarn:classic:1.22.21|pm_native_cache:yarn:berry:4.0.2|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|1.22.21-to-4.10.3|pm_native_cache:yarn:classic:1.22.21|pm_native_cache:yarn:berry:4.10.3|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|1.22.21-to-4.12.0|pm_native_cache:yarn:classic:1.22.21|pm_native_cache:yarn:berry:4.12.0|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|1.22.21-to-4.9.1|pm_native_cache:yarn:classic:1.22.21|pm_native_cache:yarn:berry:4.9.1|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|1.22.21-to-1.22.21|pm_native_cache:yarn:classic:1.22.21|pm_native_cache:yarn:classic:1.22.21|exact_hit",
+    "env:7a9cda66bc6b151a7886|PMC-007|1.22.21-to-1.22.22|pm_native_cache:yarn:classic:1.22.21|pm_native_cache:yarn:classic:1.22.22|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|1.22.22-to-3.2.3|pm_native_cache:yarn:classic:1.22.22|pm_native_cache:yarn:berry:3.2.3|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|1.22.22-to-3.8.7|pm_native_cache:yarn:classic:1.22.22|pm_native_cache:yarn:berry:3.8.7|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|1.22.22-to-4.0.2|pm_native_cache:yarn:classic:1.22.22|pm_native_cache:yarn:berry:4.0.2|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|1.22.22-to-4.10.3|pm_native_cache:yarn:classic:1.22.22|pm_native_cache:yarn:berry:4.10.3|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|1.22.22-to-4.12.0|pm_native_cache:yarn:classic:1.22.22|pm_native_cache:yarn:berry:4.12.0|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|1.22.22-to-4.9.1|pm_native_cache:yarn:classic:1.22.22|pm_native_cache:yarn:berry:4.9.1|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|1.22.22-to-1.22.21|pm_native_cache:yarn:classic:1.22.22|pm_native_cache:yarn:classic:1.22.21|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|PMC-007|1.22.22-to-1.22.22|pm_native_cache:yarn:classic:1.22.22|pm_native_cache:yarn:classic:1.22.22|exact_hit"
+  ],
+  "PMC-008": [],
+  "PMC-009": [
+    "env:7a9cda66bc6b151a7886|PMC-009|default|pm_native_cache:bun:default:1.2.18|pm_native_cache:bun:default:1.2.18|contention_path"
+  ],
+  "PRE-001": [
+    "env:7a9cda66bc6b151a7886|PRE-001|default|discovery_resolution:benchmark:pre-001:default|discovery_resolution:benchmark:pre-001:default|exact_hit"
+  ],
+  "PRE-002": [
+    "env:7a9cda66bc6b151a7886|PRE-002|default|discovery_resolution:benchmark:pre-002:default|discovery_resolution:benchmark:pre-002:default|exact_hit"
+  ],
+  "PRE-003": [
+    "env:7a9cda66bc6b151a7886|PRE-003|default|discovery_resolution:benchmark:pre-003:default|discovery_resolution:benchmark:pre-003:default|exact_hit"
+  ],
+  "PRE-004": [
+    "env:7a9cda66bc6b151a7886|PRE-004|default|discovery_resolution:benchmark:pre-004:default|discovery_resolution:benchmark:pre-004:default|exact_hit"
+  ],
+  "PRE-005": [
+    "env:7a9cda66bc6b151a7886|PRE-005|default|discovery_resolution:benchmark:pre-005:default|discovery_resolution:benchmark:pre-005:default|exact_hit"
+  ],
+  "PRE-006": [
+    "env:7a9cda66bc6b151a7886|PRE-006|default|discovery_resolution:benchmark:pre-006:default|discovery_resolution:benchmark:pre-006:default|exact_hit"
+  ],
+  "PRE-007": [
+    "env:7a9cda66bc6b151a7886|PRE-007|default|discovery_resolution:benchmark:pre-007:default|discovery_resolution:benchmark:pre-007:default|exact_hit"
+  ],
+  "PRE-008": [
+    "env:7a9cda66bc6b151a7886|PRE-008|default|discovery_resolution:benchmark:pre-008:default|discovery_resolution:benchmark:pre-008:default|exact_hit"
+  ],
+  "PRE-009": [],
+  "PRE-010": [],
+  "PRE-011": [],
+  "PRE-012": [],
+  "PRE-013": [],
+  "PRE-014": [
+    "env:7a9cda66bc6b151a7886|PRE-014|default|discovery_resolution:benchmark:pre-014:default|discovery_resolution:benchmark:pre-014:default|exact_hit"
+  ],
+  "PRE-015": [
+    "env:7a9cda66bc6b151a7886|PRE-015|default|discovery_resolution:benchmark:pre-015:default|discovery_resolution:benchmark:pre-015:default|exact_hit"
+  ],
+  "PRE-016": [
+    "env:7a9cda66bc6b151a7886|PRE-016|default|discovery_resolution:benchmark:pre-016:default|discovery_resolution:benchmark:pre-016:default|exact_hit"
+  ],
+  "PRE-017": [
+    "env:7a9cda66bc6b151a7886|PRE-017|default|discovery_resolution:benchmark:pre-017:default|discovery_resolution:benchmark:pre-017:default|exact_hit"
+  ],
+  "PRE-018": [
+    "env:7a9cda66bc6b151a7886|PRE-018|default|discovery_resolution:benchmark:pre-018:default|discovery_resolution:benchmark:pre-018:default|exact_hit"
+  ],
+  "PRE-019": [],
+  "PRE-020": [
+    "env:7a9cda66bc6b151a7886|PRE-020|default|discovery_resolution:benchmark:pre-020:default|discovery_resolution:benchmark:pre-020:default|exact_hit"
+  ],
+  "PRE-021": [
+    "env:7a9cda66bc6b151a7886|PRE-021|default|discovery_resolution:benchmark:pre-021:default|discovery_resolution:benchmark:pre-021:default|exact_hit"
+  ],
+  "PRE-022": [
+    "env:7a9cda66bc6b151a7886|PRE-022|default|discovery_resolution:benchmark:pre-022:default|discovery_resolution:benchmark:pre-022:default|exact_hit"
+  ],
+  "PRE-023": [
+    "env:7a9cda66bc6b151a7886|PRE-023|default|discovery_resolution:benchmark:pre-023:default|discovery_resolution:benchmark:pre-023:default|exact_hit"
+  ],
+  "PRE-024": [
+    "env:7a9cda66bc6b151a7886|PRE-024|default|discovery_resolution:benchmark:pre-024:default|discovery_resolution:benchmark:pre-024:default|exact_hit"
+  ],
+  "REG-001": [
+    "env:7a9cda66bc6b151a7886|REG-001|default|cold|local_registry:benchmark:reg-001:default|process_cold"
+  ],
+  "REG-002": [
+    "env:7a9cda66bc6b151a7886|REG-002|default|local_registry:benchmark:reg-002:default|local_registry:benchmark:reg-002:default|exact_hit"
+  ],
+  "REG-003": [
+    "env:7a9cda66bc6b151a7886|REG-003|default|local_registry:benchmark:reg-003:default|local_registry:benchmark:reg-003:default|exact_hit"
+  ],
+  "REG-004": [
+    "env:7a9cda66bc6b151a7886|REG-004|default|local_registry:benchmark:reg-004:default|local_registry:benchmark:reg-004:default|exact_hit"
+  ],
+  "REG-005": [
+    "env:7a9cda66bc6b151a7886|REG-005|default|local_registry:benchmark:reg-005:default|local_registry:benchmark:reg-005:default|exact_hit"
+  ],
+  "REG-006": [
+    "env:7a9cda66bc6b151a7886|REG-006|default|cold|local_registry:benchmark:reg-006:default|process_cold"
+  ],
+  "REG-007": [
+    "env:7a9cda66bc6b151a7886|REG-007|default|cold|local_registry:benchmark:reg-007:default|failure_path"
+  ],
+  "REG-008": [
+    "env:7a9cda66bc6b151a7886|REG-008|default|cold|local_registry:benchmark:reg-008:default|failure_path"
+  ],
+  "REG-009": [
+    "env:7a9cda66bc6b151a7886|REG-009|default|cold|local_registry:benchmark:reg-009:default|failure_path"
+  ],
+  "RUN-001": [
+    "env:7a9cda66bc6b151a7886|RUN-001|node-18|cold|node_runtime:18.19.1:linux:x86_64:glibc:abi109|process_cold",
+    "env:7a9cda66bc6b151a7886|RUN-001|node-20|cold|node_runtime:20.19.1:linux:x86_64:glibc:abi115|process_cold",
+    "env:7a9cda66bc6b151a7886|RUN-001|node-22|cold|node_runtime:22.23.2:linux:x86_64:glibc:abi127|process_cold"
+  ],
+  "RUN-002": [
+    "env:7a9cda66bc6b151a7886|RUN-002|node-18|node_runtime:18.19.1:linux:x86_64:glibc:abi109|node_runtime:18.19.1:linux:x86_64:glibc:abi109|exact_hit",
+    "env:7a9cda66bc6b151a7886|RUN-002|node-20|node_runtime:20.19.1:linux:x86_64:glibc:abi115|node_runtime:20.19.1:linux:x86_64:glibc:abi115|exact_hit",
+    "env:7a9cda66bc6b151a7886|RUN-002|node-22|node_runtime:22.23.2:linux:x86_64:glibc:abi127|node_runtime:22.23.2:linux:x86_64:glibc:abi127|exact_hit"
+  ],
+  "RUN-003": [
+    "env:7a9cda66bc6b151a7886|RUN-003|node-18|cold|node_runtime:18.19.1:linux:x86_64:glibc:abi109|process_cold",
+    "env:7a9cda66bc6b151a7886|RUN-003|node-20|cold|node_runtime:20.19.1:linux:x86_64:glibc:abi115|process_cold",
+    "env:7a9cda66bc6b151a7886|RUN-003|node-22|cold|node_runtime:22.23.2:linux:x86_64:glibc:abi127|process_cold"
+  ],
+  "RUN-004": [
+    "env:7a9cda66bc6b151a7886|RUN-004|18-to-18|node_runtime:18.19.1:linux:x86_64:glibc:abi109|node_runtime:18.19.1:linux:x86_64:glibc:abi109|exact_hit",
+    "env:7a9cda66bc6b151a7886|RUN-004|18-to-20|node_runtime:18.19.1:linux:x86_64:glibc:abi109|node_runtime:20.19.1:linux:x86_64:glibc:abi115|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|RUN-004|18-to-22|node_runtime:18.19.1:linux:x86_64:glibc:abi109|node_runtime:22.23.2:linux:x86_64:glibc:abi127|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|RUN-004|20-to-18|node_runtime:20.19.1:linux:x86_64:glibc:abi115|node_runtime:18.19.1:linux:x86_64:glibc:abi109|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|RUN-004|20-to-20|node_runtime:20.19.1:linux:x86_64:glibc:abi115|node_runtime:20.19.1:linux:x86_64:glibc:abi115|exact_hit",
+    "env:7a9cda66bc6b151a7886|RUN-004|20-to-22|node_runtime:20.19.1:linux:x86_64:glibc:abi115|node_runtime:22.23.2:linux:x86_64:glibc:abi127|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|RUN-004|22-to-18|node_runtime:22.23.2:linux:x86_64:glibc:abi127|node_runtime:18.19.1:linux:x86_64:glibc:abi109|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|RUN-004|22-to-20|node_runtime:22.23.2:linux:x86_64:glibc:abi127|node_runtime:20.19.1:linux:x86_64:glibc:abi115|incompatible_switch",
+    "env:7a9cda66bc6b151a7886|RUN-004|22-to-22|node_runtime:22.23.2:linux:x86_64:glibc:abi127|node_runtime:22.23.2:linux:x86_64:glibc:abi127|exact_hit"
+  ],
+  "RUN-005": [
+    "env:7a9cda66bc6b151a7886|RUN-005|bun-1.2.18|cold|package_manager:bun:default:1.2.18:linux:x86_64|process_cold",
+    "env:7a9cda66bc6b151a7886|RUN-005|bun-1.3.7|cold|package_manager:bun:default:1.3.7:linux:x86_64|process_cold"
+  ],
+  "RUN-006": [],
+  "RUN-007": [
+    "env:7a9cda66bc6b151a7886|RUN-007|default|cold|node_runtime:benchmark:run-007:default|process_cold"
+  ],
+  "RUN-008": [
+    "env:7a9cda66bc6b151a7886|RUN-008|default|cold|node_runtime:benchmark:run-008:default|process_cold"
+  ],
+  "RUN-009": [
+    "env:7a9cda66bc6b151a7886|RUN-009|default|cold|node_runtime:benchmark:run-009:default|process_cold"
+  ],
+  "RUN-010": [
+    "env:7a9cda66bc6b151a7886|RUN-010|default|home_tmp_xdg:benchmark:run-010:default|home_tmp_xdg:benchmark:run-010:default|exact_hit"
+  ],
+  "SRC-001": [
+    "env:7a9cda66bc6b151a7886|SRC-001|default|cold|source_overlay:benchmark:src-001:default|artifact_cold"
+  ],
+  "SRC-002": [
+    "env:7a9cda66bc6b151a7886|SRC-002|default|cold|source_overlay:benchmark:src-002:default|artifact_cold"
+  ],
+  "SRC-003": [
+    "env:7a9cda66bc6b151a7886|SRC-003|default|cold|source_overlay:benchmark:src-003:default|artifact_cold"
+  ],
+  "SRC-004": [],
+  "SRC-005": [
+    "env:7a9cda66bc6b151a7886|SRC-005|default|cold|source_overlay:benchmark:src-005:default|artifact_cold"
+  ],
+  "SRC-006": [
+    "env:7a9cda66bc6b151a7886|SRC-006|default|cold|source_overlay:benchmark:src-006:default|artifact_cold"
+  ],
+  "SRC-007": [
+    "env:7a9cda66bc6b151a7886|SRC-007|default|cold|source_overlay:benchmark:src-007:default|artifact_cold"
+  ],
+  "SRC-008": [
+    "env:7a9cda66bc6b151a7886|SRC-008|default|source_overlay:benchmark:src-008:default|source_overlay:benchmark:src-008:default|dirty_reset"
+  ],
+  "SRC-009": [
+    "env:7a9cda66bc6b151a7886|SRC-009|default|source_overlay:benchmark:src-009:default|source_overlay:benchmark:src-009:default|dirty_reset"
+  ],
+  "SRC-010": [
+    "env:7a9cda66bc6b151a7886|SRC-010|default|cold|source_overlay:benchmark:src-010:default|artifact_cold"
+  ],
+  "SRC-011": [
+    "env:7a9cda66bc6b151a7886|SRC-011|default|cold|source_overlay:benchmark:src-011:default|artifact_cold"
+  ],
+  "SRC-012": [
+    "env:7a9cda66bc6b151a7886|SRC-012|default|source_overlay:benchmark:src-012:default|source_overlay:benchmark:src-012:default|dirty_reset"
+  ],
+  "SRC-013": [
+    "env:7a9cda66bc6b151a7886|SRC-013|default|source_overlay:benchmark:src-013:default|source_overlay:benchmark:src-013:default|dirty_reset"
+  ],
+  "SRV-001": [
+    "env:7a9cda66bc6b151a7886|SRV-001|default|cold|project_server:synthetic:http:v1|process_cold"
+  ],
+  "SRV-002": [
+    "env:7a9cda66bc6b151a7886|SRV-002|default|project_server:synthetic:http:v1|project_server:synthetic:http:v1|exact_hit"
+  ],
+  "SRV-003": [
+    "env:7a9cda66bc6b151a7886|SRV-003|default|project_server:synthetic:http:v1|project_server:synthetic:http:v1|exact_hit"
+  ],
+  "SRV-004": [
+    "env:7a9cda66bc6b151a7886|SRV-004|default|project_server:synthetic:http:v1|project_server:synthetic:http:v1|compatible_reuse"
+  ],
+  "SRV-005": [
+    "env:7a9cda66bc6b151a7886|SRV-005|default|project_server:synthetic:http:v1|project_server:synthetic:http:v1|incompatible_switch"
+  ],
+  "SRV-006": [
+    "env:7a9cda66bc6b151a7886|SRV-006|default|project_server:synthetic:http:v1|project_server:synthetic:http:v1|incompatible_switch"
+  ],
+  "SRV-007": [
+    "env:7a9cda66bc6b151a7886|SRV-007|default|project_server:synthetic:http:v1|project_server:synthetic:http:v1|dirty_reset"
+  ],
+  "SRV-008": [
+    "env:7a9cda66bc6b151a7886|SRV-008|default|project_server:synthetic:http:v1|project_server:synthetic:http:v1|dirty_reset"
+  ],
+  "SRV-009": [
+    "env:7a9cda66bc6b151a7886|SRV-009|default|project_server:synthetic:http:v1|project_server:synthetic:http:v1|compatible_reuse"
+  ],
+  "SRV-010": [
+    "env:7a9cda66bc6b151a7886|SRV-010|default|project_server:synthetic:http:v1|project_server:synthetic:http:v1|compatible_reuse"
+  ],
+  "SYS-001": [],
+  "SYS-002": [],
+  "SYS-003": [],
+  "SYS-004": [],
+  "SYS-005": [],
+  "SYS-006": [],
+  "SYS-007": [
+    "env:7a9cda66bc6b151a7886|SYS-007|default|rootfs:host:ubuntu24|rootfs:host:ubuntu24|exact_hit"
+  ],
+  "SYS-008": [
+    "env:7a9cda66bc6b151a7886|SYS-008|default|rootfs:host:ubuntu24|rootfs:host:ubuntu24|exact_hit"
+  ],
+  "SYS-009": [],
+  "SYS-010": [
+    "env:7a9cda66bc6b151a7886|SYS-010|default|rootfs:host:ubuntu24|rootfs:host:ubuntu24|exact_hit"
+  ],
+  "SYS-011": [
+    "env:7a9cda66bc6b151a7886|SYS-011|default|rootfs:host:ubuntu24|rootfs:host:ubuntu24|exact_hit"
+  ],
+  "TSK-001": [
+    "env:7a9cda66bc6b151a7886|TSK-001|default|cold|task_harness:synthetic:rollout:v1|artifact_cold"
+  ],
+  "TSK-002": [
+    "env:7a9cda66bc6b151a7886|TSK-002|default|cold|task_harness:synthetic:rollout:v1|artifact_cold"
+  ],
+  "TSK-003": [
+    "env:7a9cda66bc6b151a7886|TSK-003|default|cold|task_harness:synthetic:rollout:v1|process_cold"
+  ],
+  "TSK-004": [
+    "env:7a9cda66bc6b151a7886|TSK-004|default|cold|task_harness:synthetic:rollout:v1|process_cold"
+  ],
+  "TSK-005": [
+    "env:7a9cda66bc6b151a7886|TSK-005|default|cold|task_harness:synthetic:rollout:v1|artifact_cold"
+  ],
+  "TSK-006": [
+    "env:7a9cda66bc6b151a7886|TSK-006|default|task_harness:synthetic:rollout:v1|task_harness:synthetic:rollout:v1|dirty_reset"
+  ],
+  "TSK-007": [
+    "env:7a9cda66bc6b151a7886|TSK-007|default|task_harness:synthetic:rollout:v1|task_harness:synthetic:rollout:v1|dirty_reset"
+  ],
+  "TSK-008": [
+    "env:7a9cda66bc6b151a7886|TSK-008|default|task_harness:synthetic:rollout:v1|task_harness:synthetic:rollout:v1|dirty_reset"
+  ],
+  "TSK-009": [
+    "env:7a9cda66bc6b151a7886|TSK-009|default|task_harness:synthetic:rollout:v1|task_harness:synthetic:rollout:v1|dirty_reset"
+  ],
+  "TSK-010": [
+    "env:7a9cda66bc6b151a7886|TSK-010|default|task_harness:synthetic:rollout:v1|task_harness:synthetic:rollout:v1|dirty_reset"
+  ],
+  "TSK-011": [
+    "env:7a9cda66bc6b151a7886|TSK-011|default|task_harness:synthetic:rollout:v1|task_harness:synthetic:rollout:v1|dirty_reset"
+  ],
+  "TSK-012": [
+    "env:7a9cda66bc6b151a7886|TSK-012|default|task_harness:synthetic:rollout:v1|task_harness:synthetic:rollout:v1|exact_hit"
+  ],
+  "TSK-013": [
+    "env:7a9cda66bc6b151a7886|TSK-013|default|task_harness:synthetic:rollout:v1|task_harness:synthetic:rollout:v1|compatible_reuse"
+  ],
+  "TSK-014": [
+    "env:7a9cda66bc6b151a7886|TSK-014|default|task_harness:synthetic:rollout:v1|task_harness:synthetic:rollout:v1|exact_hit"
+  ],
+  "TST-001": [
+    "env:7a9cda66bc6b151a7886|TST-001|jest-cold|cold|test_transform_cache:synthetic:jest:30.4.2|process_cold",
+    "env:7a9cda66bc6b151a7886|TST-001|jest-hit|test_transform_cache:synthetic:jest:30.4.2|test_transform_cache:synthetic:jest:30.4.2|exact_hit"
+  ],
+  "TST-002": [
+    "env:7a9cda66bc6b151a7886|TST-002|vitest-cold|cold|test_transform_cache:synthetic:vitest:4.1.11|process_cold",
+    "env:7a9cda66bc6b151a7886|TST-002|vitest-hit|test_transform_cache:synthetic:vitest:4.1.11|test_transform_cache:synthetic:vitest:4.1.11|exact_hit"
+  ],
+  "TST-003": [
+    "env:7a9cda66bc6b151a7886|TST-003|mocha-cold|cold|test_transform_cache:synthetic:mocha:11.8.0|process_cold",
+    "env:7a9cda66bc6b151a7886|TST-003|mocha-hit|test_transform_cache:synthetic:mocha:11.8.0|test_transform_cache:synthetic:mocha:11.8.0|exact_hit"
+  ],
+  "TST-004": [
+    "env:7a9cda66bc6b151a7886|TST-004|ava-cold|cold|test_transform_cache:synthetic:ava:8.0.1|process_cold",
+    "env:7a9cda66bc6b151a7886|TST-004|ava-hit|test_transform_cache:synthetic:ava:8.0.1|test_transform_cache:synthetic:ava:8.0.1|exact_hit"
+  ],
+  "TST-005": [],
+  "TST-006": [],
+  "TST-007": [],
+  "TST-008": [],
+  "TST-009": [],
+  "TST-010": [],
+  "TST-011": [
+    "env:7a9cda66bc6b151a7886|TST-011|default|test_transform_cache:synthetic:tst-011|test_transform_cache:synthetic:tst-011|exact_hit"
+  ],
+  "TST-012": [
+    "env:7a9cda66bc6b151a7886|TST-012|default|cold|test_transform_cache:synthetic:tst-012|process_cold"
+  ],
+  "TST-013": [
+    "env:7a9cda66bc6b151a7886|TST-013|default|cold|test_transform_cache:synthetic:tst-013|exact_hit"
+  ],
+  "TST-014": [
+    "env:7a9cda66bc6b151a7886|TST-014|default|cold|test_transform_cache:synthetic:tst-014|artifact_cold"
+  ],
+  "TST-015": [
+    "env:7a9cda66bc6b151a7886|TST-015|default|cold|test_transform_cache:synthetic:tst-015|failure_path"
+  ],
+  "TST-016": [
+    "env:7a9cda66bc6b151a7886|TST-016|default|cold|test_transform_cache:synthetic:tst-016|compatible_reuse"
+  ]
+}

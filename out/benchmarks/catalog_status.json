@@ -1,0 +1,2377 @@
+{
+  "ART-001": {
+    "benchmark_id": "ART-001",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "ART-002": {
+    "benchmark_id": "ART-002",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "ART-003": {
+    "benchmark_id": "ART-003",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "ART-004": {
+    "benchmark_id": "ART-004",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "ART-005": {
+    "benchmark_id": "ART-005",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "ART-006": {
+    "benchmark_id": "ART-006",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "ART-007": {
+    "benchmark_id": "ART-007",
+    "reason": "system package network measurement requires an isolated apt rootfs",
+    "status": "manual_review"
+  },
+  "ART-008": {
+    "benchmark_id": "ART-008",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "BLD-001": {
+    "benchmark_id": "BLD-001",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "BLD-002": {
+    "benchmark_id": "BLD-002",
+    "failed_samples": 0,
+    "reason": "3 scenario(s) measured",
+    "scenario_count": 3,
+    "status": "measured",
+    "successful_samples": 21
+  },
+  "BLD-003": {
+    "benchmark_id": "BLD-003",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "BLD-004": {
+    "benchmark_id": "BLD-004",
+    "failed_samples": 0,
+    "reason": "3 scenario(s) measured",
+    "scenario_count": 3,
+    "status": "measured",
+    "successful_samples": 21
+  },
+  "BLD-005": {
+    "benchmark_id": "BLD-005",
+    "failed_samples": 0,
+    "reason": "3 scenario(s) measured",
+    "scenario_count": 3,
+    "status": "measured",
+    "successful_samples": 21
+  },
+  "BLD-006": {
+    "benchmark_id": "BLD-006",
+    "failed_samples": 0,
+    "reason": "3 scenario(s) measured",
+    "scenario_count": 3,
+    "status": "measured",
+    "successful_samples": 21
+  },
+  "BLD-007": {
+    "benchmark_id": "BLD-007",
+    "failed_samples": 0,
+    "reason": "3 scenario(s) measured",
+    "scenario_count": 3,
+    "status": "measured",
+    "successful_samples": 21
+  },
+  "BLD-008": {
+    "benchmark_id": "BLD-008",
+    "failed_samples": 0,
+    "reason": "3 scenario(s) measured",
+    "scenario_count": 3,
+    "status": "measured",
+    "successful_samples": 21
+  },
+  "BLD-009": {
+    "benchmark_id": "BLD-009",
+    "failed_samples": 0,
+    "reason": "3 scenario(s) measured",
+    "scenario_count": 3,
+    "status": "measured",
+    "successful_samples": 21
+  },
+  "BLD-010": {
+    "benchmark_id": "BLD-010",
+    "reason": "Next.js fixture was not materialized in the first host run",
+    "status": "unsupported"
+  },
+  "BLD-011": {
+    "benchmark_id": "BLD-011",
+    "reason": "Nx daemon fixture was not materialized in the first host run",
+    "status": "unsupported"
+  },
+  "BLD-012": {
+    "benchmark_id": "BLD-012",
+    "reason": "Turborepo fixture was not materialized in the first host run",
+    "status": "unsupported"
+  },
+  "BLD-013": {
+    "benchmark_id": "BLD-013",
+    "reason": "Gulp/Grunt watch fixture was not materialized in the first host run",
+    "status": "unsupported"
+  },
+  "BLD-014": {
+    "benchmark_id": "BLD-014",
+    "reason": "Lerna/preconstruct/manypkg fixture was not materialized in the first host run",
+    "status": "unsupported"
+  },
+  "BLD-015": {
+    "benchmark_id": "BLD-015",
+    "reason": "Changesets/Rush fixture was not materialized in the first host run",
+    "status": "unsupported"
+  },
+  "BLD-016": {
+    "benchmark_id": "BLD-016",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "BLD-017": {
+    "benchmark_id": "BLD-017",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "BLD-018": {
+    "benchmark_id": "BLD-018",
+    "reason": "protoc is not installed",
+    "status": "unsupported"
+  },
+  "BLD-019": {
+    "benchmark_id": "BLD-019",
+    "reason": "Prisma engine fixture is not installed",
+    "status": "unsupported"
+  },
+  "BLD-020": {
+    "benchmark_id": "BLD-020",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "BLD-021": {
+    "benchmark_id": "BLD-021",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "BLD-022": {
+    "benchmark_id": "BLD-022",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "BRW-001": {
+    "benchmark_id": "BRW-001",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "BRW-002": {
+    "benchmark_id": "BRW-002",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "BRW-003": {
+    "benchmark_id": "BRW-003",
+    "reason": "WebKit binary is not installed",
+    "status": "unsupported"
+  },
+  "BRW-004": {
+    "benchmark_id": "BRW-004",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "BRW-005": {
+    "benchmark_id": "BRW-005",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "BRW-006": {
+    "benchmark_id": "BRW-006",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "BRW-007": {
+    "benchmark_id": "BRW-007",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "BRW-008": {
+    "benchmark_id": "BRW-008",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "BRW-009": {
+    "benchmark_id": "BRW-009",
+    "reason": "WebKit binary is not installed",
+    "status": "unsupported"
+  },
+  "BRW-010": {
+    "benchmark_id": "BRW-010",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "BRW-011": {
+    "benchmark_id": "BRW-011",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "BRW-012": {
+    "benchmark_id": "BRW-012",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "BRW-013": {
+    "benchmark_id": "BRW-013",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "BRW-014": {
+    "benchmark_id": "BRW-014",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "BRW-015": {
+    "benchmark_id": "BRW-015",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "BRW-016": {
+    "benchmark_id": "BRW-016",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "BRW-017": {
+    "benchmark_id": "BRW-017",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "BRW-018": {
+    "benchmark_id": "BRW-018",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "BRW-019": {
+    "benchmark_id": "BRW-019",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "CAS-001": {
+    "benchmark_id": "CAS-001",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "CAS-002": {
+    "benchmark_id": "CAS-002",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "CAS-003": {
+    "benchmark_id": "CAS-003",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "CAS-004": {
+    "benchmark_id": "CAS-004",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "CAS-005": {
+    "benchmark_id": "CAS-005",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "CAS-006": {
+    "benchmark_id": "CAS-006",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "CAS-007": {
+    "benchmark_id": "CAS-007",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "CAS-008": {
+    "benchmark_id": "CAS-008",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "CAS-009": {
+    "benchmark_id": "CAS-009",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "CAS-010": {
+    "benchmark_id": "CAS-010",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "CON-001": {
+    "benchmark_id": "CON-001",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "CON-002": {
+    "benchmark_id": "CON-002",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "CON-003": {
+    "benchmark_id": "CON-003",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "CON-004": {
+    "benchmark_id": "CON-004",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "CON-005": {
+    "benchmark_id": "CON-005",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "CON-006": {
+    "benchmark_id": "CON-006",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "CON-007": {
+    "benchmark_id": "CON-007",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "CON-008": {
+    "benchmark_id": "CON-008",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "CON-009": {
+    "benchmark_id": "CON-009",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "CON-010": {
+    "benchmark_id": "CON-010",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "CTL-001": {
+    "benchmark_id": "CTL-001",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "CTL-002": {
+    "benchmark_id": "CTL-002",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "CTL-003": {
+    "benchmark_id": "CTL-003",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "CTL-004": {
+    "benchmark_id": "CTL-004",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "CTL-005": {
+    "benchmark_id": "CTL-005",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "CTL-006": {
+    "benchmark_id": "CTL-006",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "CTL-007": {
+    "benchmark_id": "CTL-007",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "CTL-008": {
+    "benchmark_id": "CTL-008",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "CTL-009": {
+    "benchmark_id": "CTL-009",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "CTL-010": {
+    "benchmark_id": "CTL-010",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "CTL-011": {
+    "benchmark_id": "CTL-011",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "CTL-012": {
+    "benchmark_id": "CTL-012",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "DB-001": {
+    "benchmark_id": "DB-001",
+    "reason": "MongoDB binary is not installed and Docker daemon access is denied",
+    "status": "unsupported"
+  },
+  "DB-002": {
+    "benchmark_id": "DB-002",
+    "reason": "PostgreSQL binary is not installed and Docker daemon access is denied",
+    "status": "unsupported"
+  },
+  "DB-003": {
+    "benchmark_id": "DB-003",
+    "reason": "MySQL binary is not installed and Docker daemon access is denied",
+    "status": "unsupported"
+  },
+  "DB-004": {
+    "benchmark_id": "DB-004",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "DB-005": {
+    "benchmark_id": "DB-005",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "DB-006": {
+    "benchmark_id": "DB-006",
+    "reason": "mongodb-memory-server binary cache is not installed",
+    "status": "unsupported"
+  },
+  "DBS-001": {
+    "benchmark_id": "DBS-001",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "DBS-002": {
+    "benchmark_id": "DBS-002",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "DBS-003": {
+    "benchmark_id": "DBS-003",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "DBS-004": {
+    "benchmark_id": "DBS-004",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "DBS-005": {
+    "benchmark_id": "DBS-005",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "DBS-006": {
+    "benchmark_id": "DBS-006",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "DBS-007": {
+    "benchmark_id": "DBS-007",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "DBS-008": {
+    "benchmark_id": "DBS-008",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "DBS-009": {
+    "benchmark_id": "DBS-009",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "DBS-010": {
+    "benchmark_id": "DBS-010",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "DBS-011": {
+    "benchmark_id": "DBS-011",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "DBS-012": {
+    "benchmark_id": "DBS-012",
+    "reason": "only one measurable DB daemon version (Redis 7.0.15) is installed",
+    "status": "unsupported"
+  },
+  "DBS-013": {
+    "benchmark_id": "DBS-013",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "DEP-001": {
+    "benchmark_id": "DEP-001",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "DEP-002": {
+    "benchmark_id": "DEP-002",
+    "failed_samples": 0,
+    "reason": "11 scenario(s) measured",
+    "scenario_count": 11,
+    "status": "measured",
+    "successful_samples": 77
+  },
+  "DEP-003": {
+    "benchmark_id": "DEP-003",
+    "failed_samples": 0,
+    "reason": "2 scenario(s) measured",
+    "scenario_count": 2,
+    "status": "measured",
+    "successful_samples": 14
+  },
+  "DEP-004": {
+    "benchmark_id": "DEP-004",
+    "failed_samples": 0,
+    "reason": "6 scenario(s) measured",
+    "scenario_count": 6,
+    "status": "measured",
+    "successful_samples": 42
+  },
+  "DEP-005": {
+    "benchmark_id": "DEP-005",
+    "failed_samples": 0,
+    "reason": "6 scenario(s) measured",
+    "scenario_count": 6,
+    "status": "measured",
+    "successful_samples": 42
+  },
+  "DEP-006": {
+    "benchmark_id": "DEP-006",
+    "failed_samples": 0,
+    "reason": "2 scenario(s) measured",
+    "scenario_count": 2,
+    "status": "measured",
+    "successful_samples": 14
+  },
+  "DEP-007": {
+    "benchmark_id": "DEP-007",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "DEP-008": {
+    "benchmark_id": "DEP-008",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "DEP-009": {
+    "benchmark_id": "DEP-009",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "DEP-010": {
+    "benchmark_id": "DEP-010",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "DEP-011": {
+    "benchmark_id": "DEP-011",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "DEP-012": {
+    "benchmark_id": "DEP-012",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "DEP-013": {
+    "benchmark_id": "DEP-013",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "DEP-014": {
+    "benchmark_id": "DEP-014",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "DEP-015": {
+    "benchmark_id": "DEP-015",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "DEP-016": {
+    "benchmark_id": "DEP-016",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "DEP-017": {
+    "benchmark_id": "DEP-017",
+    "reason": "no semantically valid runner is available in the current measurement environment",
+    "status": "unsupported"
+  },
+  "DEP-018": {
+    "benchmark_id": "DEP-018",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "DEP-019": {
+    "benchmark_id": "DEP-019",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "DEP-020": {
+    "benchmark_id": "DEP-020",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "FAIL-001": {
+    "benchmark_id": "FAIL-001",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "FAIL-002": {
+    "benchmark_id": "FAIL-002",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "FAIL-003": {
+    "benchmark_id": "FAIL-003",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "FAIL-004": {
+    "benchmark_id": "FAIL-004",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "FAIL-005": {
+    "benchmark_id": "FAIL-005",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "FAIL-006": {
+    "benchmark_id": "FAIL-006",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "FAIL-007": {
+    "benchmark_id": "FAIL-007",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "FAIL-008": {
+    "benchmark_id": "FAIL-008",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "FAIL-009": {
+    "benchmark_id": "FAIL-009",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "FAIL-010": {
+    "benchmark_id": "FAIL-010",
+    "reason": "safe isolated disk/inode quota is unavailable; filling the shared 44 TB filesystem is prohibited",
+    "status": "blocked"
+  },
+  "FAIL-011": {
+    "benchmark_id": "FAIL-011",
+    "reason": "isolated writable cgroup/OOM fixture is unavailable",
+    "status": "blocked"
+  },
+  "FAIL-012": {
+    "benchmark_id": "FAIL-012",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "FAIL-013": {
+    "benchmark_id": "FAIL-013",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "FAIL-014": {
+    "benchmark_id": "FAIL-014",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "FS-001": {
+    "benchmark_id": "FS-001",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "FS-002": {
+    "benchmark_id": "FS-002",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "FS-003": {
+    "benchmark_id": "FS-003",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "FS-004": {
+    "benchmark_id": "FS-004",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "FS-005": {
+    "benchmark_id": "FS-005",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "FS-006": {
+    "benchmark_id": "FS-006",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "FS-007": {
+    "benchmark_id": "FS-007",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "FS-008": {
+    "benchmark_id": "FS-008",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "FS-009": {
+    "benchmark_id": "FS-009",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "FS-010": {
+    "benchmark_id": "FS-010",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "GUI-001": {
+    "benchmark_id": "GUI-001",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "GUI-002": {
+    "benchmark_id": "GUI-002",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "GUI-003": {
+    "benchmark_id": "GUI-003",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "GUI-004": {
+    "benchmark_id": "GUI-004",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "GUI-005": {
+    "benchmark_id": "GUI-005",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "GUI-006": {
+    "benchmark_id": "GUI-006",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "INS-001": {
+    "benchmark_id": "INS-001",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "INS-002": {
+    "benchmark_id": "INS-002",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "INS-003": {
+    "benchmark_id": "INS-003",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "INS-004": {
+    "benchmark_id": "INS-004",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "INS-005": {
+    "benchmark_id": "INS-005",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "INS-006": {
+    "benchmark_id": "INS-006",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "INS-007": {
+    "benchmark_id": "INS-007",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "INS-008": {
+    "benchmark_id": "INS-008",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "INS-009": {
+    "benchmark_id": "INS-009",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "INS-010": {
+    "benchmark_id": "INS-010",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "NAT-001": {
+    "benchmark_id": "NAT-001",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "NAT-002": {
+    "benchmark_id": "NAT-002",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "NAT-003": {
+    "benchmark_id": "NAT-003",
+    "reason": "canvas native binding fixture is not installed",
+    "status": "unsupported"
+  },
+  "NAT-004": {
+    "benchmark_id": "NAT-004",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "NAT-005": {
+    "benchmark_id": "NAT-005",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "NAT-006": {
+    "benchmark_id": "NAT-006",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "NAT-007": {
+    "benchmark_id": "NAT-007",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "NAT-008": {
+    "benchmark_id": "NAT-008",
+    "reason": "Prisma engine fixture is not installed",
+    "status": "unsupported"
+  },
+  "NAT-009": {
+    "benchmark_id": "NAT-009",
+    "reason": "native gRPC binding fixture is not installed",
+    "status": "unsupported"
+  },
+  "NAT-010": {
+    "benchmark_id": "NAT-010",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "NET-001": {
+    "benchmark_id": "NET-001",
+    "reason": "unshare(CLONE_NEWNET) is denied by the host",
+    "status": "blocked"
+  },
+  "NET-002": {
+    "benchmark_id": "NET-002",
+    "reason": "unshare(CLONE_NEWNET) is denied by the host",
+    "status": "blocked"
+  },
+  "NET-003": {
+    "benchmark_id": "NET-003",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "NET-004": {
+    "benchmark_id": "NET-004",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "NET-005": {
+    "benchmark_id": "NET-005",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "NET-006": {
+    "benchmark_id": "NET-006",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "NET-007": {
+    "benchmark_id": "NET-007",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "NET-008": {
+    "benchmark_id": "NET-008",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "NET-009": {
+    "benchmark_id": "NET-009",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "NET-010": {
+    "benchmark_id": "NET-010",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "NTC-001": {
+    "benchmark_id": "NTC-001",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "NTC-002": {
+    "benchmark_id": "NTC-002",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "NTC-003": {
+    "benchmark_id": "NTC-003",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "NTC-004": {
+    "benchmark_id": "NTC-004",
+    "reason": "Clang/LLVM executable is not installed",
+    "status": "unsupported"
+  },
+  "NTC-005": {
+    "benchmark_id": "NTC-005",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "NTC-006": {
+    "benchmark_id": "NTC-006",
+    "reason": "Ninja executable is not installed",
+    "status": "unsupported"
+  },
+  "NTC-007": {
+    "benchmark_id": "NTC-007",
+    "reason": "Rust/Cargo toolchain is not installed",
+    "status": "unsupported"
+  },
+  "NTC-008": {
+    "benchmark_id": "NTC-008",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "NTC-009": {
+    "benchmark_id": "NTC-009",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "NTC-010": {
+    "benchmark_id": "NTC-010",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "NTC-011": {
+    "benchmark_id": "NTC-011",
+    "reason": "ccache/sccache executable is not installed",
+    "status": "unsupported"
+  },
+  "NTC-012": {
+    "benchmark_id": "NTC-012",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "PM-001": {
+    "benchmark_id": "PM-001",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "PM-002": {
+    "benchmark_id": "PM-002",
+    "failed_samples": 0,
+    "reason": "11 scenario(s) measured",
+    "scenario_count": 11,
+    "status": "measured",
+    "successful_samples": 77
+  },
+  "PM-003": {
+    "benchmark_id": "PM-003",
+    "failed_samples": 0,
+    "reason": "2 scenario(s) measured",
+    "scenario_count": 2,
+    "status": "measured",
+    "successful_samples": 14
+  },
+  "PM-004": {
+    "benchmark_id": "PM-004",
+    "failed_samples": 0,
+    "reason": "6 scenario(s) measured",
+    "scenario_count": 6,
+    "status": "measured",
+    "successful_samples": 42
+  },
+  "PM-005": {
+    "benchmark_id": "PM-005",
+    "failed_samples": 0,
+    "reason": "2 scenario(s) measured",
+    "scenario_count": 2,
+    "status": "measured",
+    "successful_samples": 14
+  },
+  "PM-006": {
+    "benchmark_id": "PM-006",
+    "reason": "Corepack executable is not installed",
+    "status": "unsupported"
+  },
+  "PM-007": {
+    "benchmark_id": "PM-007",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "PM-008": {
+    "benchmark_id": "PM-008",
+    "failed_samples": 0,
+    "reason": "190 scenario(s) measured",
+    "scenario_count": 190,
+    "status": "measured",
+    "successful_samples": 1330
+  },
+  "PMC-001": {
+    "benchmark_id": "PMC-001",
+    "failed_samples": 0,
+    "reason": "2 scenario(s) measured",
+    "scenario_count": 2,
+    "status": "measured",
+    "successful_samples": 14
+  },
+  "PMC-002": {
+    "benchmark_id": "PMC-002",
+    "failed_samples": 0,
+    "reason": "11 scenario(s) measured",
+    "scenario_count": 11,
+    "status": "measured",
+    "successful_samples": 77
+  },
+  "PMC-003": {
+    "benchmark_id": "PMC-003",
+    "failed_samples": 0,
+    "reason": "2 scenario(s) measured",
+    "scenario_count": 2,
+    "status": "measured",
+    "successful_samples": 14
+  },
+  "PMC-004": {
+    "benchmark_id": "PMC-004",
+    "failed_samples": 0,
+    "reason": "6 scenario(s) measured",
+    "scenario_count": 6,
+    "status": "measured",
+    "successful_samples": 42
+  },
+  "PMC-005": {
+    "benchmark_id": "PMC-005",
+    "failed_samples": 0,
+    "reason": "2 scenario(s) measured",
+    "scenario_count": 2,
+    "status": "measured",
+    "successful_samples": 14
+  },
+  "PMC-006": {
+    "benchmark_id": "PMC-006",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "PMC-007": {
+    "benchmark_id": "PMC-007",
+    "failed_samples": 0,
+    "reason": "193 scenario(s) measured",
+    "scenario_count": 193,
+    "status": "measured",
+    "successful_samples": 1351
+  },
+  "PMC-008": {
+    "benchmark_id": "PMC-008",
+    "reason": "no isolated quota filesystem for eviction/near-full measurement",
+    "status": "unsupported"
+  },
+  "PMC-009": {
+    "benchmark_id": "PMC-009",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "PRE-001": {
+    "benchmark_id": "PRE-001",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "PRE-002": {
+    "benchmark_id": "PRE-002",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "PRE-003": {
+    "benchmark_id": "PRE-003",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "PRE-004": {
+    "benchmark_id": "PRE-004",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "PRE-005": {
+    "benchmark_id": "PRE-005",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "PRE-006": {
+    "benchmark_id": "PRE-006",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "PRE-007": {
+    "benchmark_id": "PRE-007",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "PRE-008": {
+    "benchmark_id": "PRE-008",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "PRE-009": {
+    "benchmark_id": "PRE-009",
+    "reason": "exact npm lock-only resolution needs per-profile temporary checkouts and is not reconstructed by this host fixture",
+    "status": "manual_review"
+  },
+  "PRE-010": {
+    "benchmark_id": "PRE-010",
+    "reason": "exact pnpm lock-only resolution needs per-profile temporary checkouts and is not reconstructed by this host fixture",
+    "status": "manual_review"
+  },
+  "PRE-011": {
+    "benchmark_id": "PRE-011",
+    "reason": "exact Yarn Classic resolution needs per-profile temporary checkouts and is not reconstructed by this host fixture",
+    "status": "manual_review"
+  },
+  "PRE-012": {
+    "benchmark_id": "PRE-012",
+    "reason": "exact Yarn Berry update-lockfile needs project-local config replay and per-profile temporary checkouts",
+    "status": "manual_review"
+  },
+  "PRE-013": {
+    "benchmark_id": "PRE-013",
+    "reason": "exact Bun resolution needs project-local Bun lock semantics replay",
+    "status": "manual_review"
+  },
+  "PRE-014": {
+    "benchmark_id": "PRE-014",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "PRE-015": {
+    "benchmark_id": "PRE-015",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "PRE-016": {
+    "benchmark_id": "PRE-016",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "PRE-017": {
+    "benchmark_id": "PRE-017",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "PRE-018": {
+    "benchmark_id": "PRE-018",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "PRE-019": {
+    "benchmark_id": "PRE-019",
+    "reason": "Bun text/binary lock parser variants need dedicated fixture corpus",
+    "status": "manual_review"
+  },
+  "PRE-020": {
+    "benchmark_id": "PRE-020",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "PRE-021": {
+    "benchmark_id": "PRE-021",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "PRE-022": {
+    "benchmark_id": "PRE-022",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "PRE-023": {
+    "benchmark_id": "PRE-023",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "PRE-024": {
+    "benchmark_id": "PRE-024",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "REG-001": {
+    "benchmark_id": "REG-001",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "REG-002": {
+    "benchmark_id": "REG-002",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "REG-003": {
+    "benchmark_id": "REG-003",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "REG-004": {
+    "benchmark_id": "REG-004",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "REG-005": {
+    "benchmark_id": "REG-005",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "REG-006": {
+    "benchmark_id": "REG-006",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "REG-007": {
+    "benchmark_id": "REG-007",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "REG-008": {
+    "benchmark_id": "REG-008",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "REG-009": {
+    "benchmark_id": "REG-009",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "RUN-001": {
+    "benchmark_id": "RUN-001",
+    "failed_samples": 0,
+    "reason": "3 scenario(s) measured",
+    "scenario_count": 3,
+    "status": "measured",
+    "successful_samples": 21
+  },
+  "RUN-002": {
+    "benchmark_id": "RUN-002",
+    "failed_samples": 0,
+    "reason": "3 scenario(s) measured",
+    "scenario_count": 3,
+    "status": "measured",
+    "successful_samples": 21
+  },
+  "RUN-003": {
+    "benchmark_id": "RUN-003",
+    "failed_samples": 0,
+    "reason": "3 scenario(s) measured",
+    "scenario_count": 3,
+    "status": "measured",
+    "successful_samples": 21
+  },
+  "RUN-004": {
+    "benchmark_id": "RUN-004",
+    "failed_samples": 0,
+    "reason": "9 scenario(s) measured",
+    "scenario_count": 9,
+    "status": "measured",
+    "successful_samples": 63
+  },
+  "RUN-005": {
+    "benchmark_id": "RUN-005",
+    "failed_samples": 0,
+    "reason": "2 scenario(s) measured",
+    "scenario_count": 2,
+    "status": "measured",
+    "successful_samples": 14
+  },
+  "RUN-006": {
+    "benchmark_id": "RUN-006",
+    "reason": "Deno executable/cache is not installed",
+    "status": "unsupported"
+  },
+  "RUN-007": {
+    "benchmark_id": "RUN-007",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "RUN-008": {
+    "benchmark_id": "RUN-008",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "RUN-009": {
+    "benchmark_id": "RUN-009",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "RUN-010": {
+    "benchmark_id": "RUN-010",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "SRC-001": {
+    "benchmark_id": "SRC-001",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "SRC-002": {
+    "benchmark_id": "SRC-002",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "SRC-003": {
+    "benchmark_id": "SRC-003",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "SRC-004": {
+    "benchmark_id": "SRC-004",
+    "reason": "the 64-profile CTDP source snapshots contain no checked-out Git submodule repositories",
+    "status": "not_applicable"
+  },
+  "SRC-005": {
+    "benchmark_id": "SRC-005",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "SRC-006": {
+    "benchmark_id": "SRC-006",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "SRC-007": {
+    "benchmark_id": "SRC-007",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "SRC-008": {
+    "benchmark_id": "SRC-008",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "SRC-009": {
+    "benchmark_id": "SRC-009",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "SRC-010": {
+    "benchmark_id": "SRC-010",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "SRC-011": {
+    "benchmark_id": "SRC-011",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "SRC-012": {
+    "benchmark_id": "SRC-012",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "SRC-013": {
+    "benchmark_id": "SRC-013",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "SRV-001": {
+    "benchmark_id": "SRV-001",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "SRV-002": {
+    "benchmark_id": "SRV-002",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "SRV-003": {
+    "benchmark_id": "SRV-003",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "SRV-004": {
+    "benchmark_id": "SRV-004",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "SRV-005": {
+    "benchmark_id": "SRV-005",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "SRV-006": {
+    "benchmark_id": "SRV-006",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "SRV-007": {
+    "benchmark_id": "SRV-007",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "SRV-008": {
+    "benchmark_id": "SRV-008",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "SRV-009": {
+    "benchmark_id": "SRV-009",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "SRV-010": {
+    "benchmark_id": "SRV-010",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "SYS-001": {
+    "benchmark_id": "SYS-001",
+    "reason": "Docker daemon access is denied; image acquisition cannot be measured on this host",
+    "status": "blocked"
+  },
+  "SYS-002": {
+    "benchmark_id": "SYS-002",
+    "reason": "Docker daemon access is denied; rootfs unpack/snapshot cannot be measured",
+    "status": "blocked"
+  },
+  "SYS-003": {
+    "benchmark_id": "SYS-003",
+    "reason": "mount/container privileges are unavailable for rootfs attach",
+    "status": "blocked"
+  },
+  "SYS-004": {
+    "benchmark_id": "SYS-004",
+    "reason": "mount/container privileges are unavailable for rootfs unmount/reset",
+    "status": "blocked"
+  },
+  "SYS-005": {
+    "benchmark_id": "SYS-005",
+    "reason": "apt index refresh mutates shared host package state and root/container isolation is unavailable",
+    "status": "blocked"
+  },
+  "SYS-006": {
+    "benchmark_id": "SYS-006",
+    "reason": "apt install mutates shared host package state and root/container isolation is unavailable",
+    "status": "blocked"
+  },
+  "SYS-007": {
+    "benchmark_id": "SYS-007",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "SYS-008": {
+    "benchmark_id": "SYS-008",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "SYS-009": {
+    "benchmark_id": "SYS-009",
+    "reason": "no glibc/musl rootfs pair and Docker daemon access is denied",
+    "status": "blocked"
+  },
+  "SYS-010": {
+    "benchmark_id": "SYS-010",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "SYS-011": {
+    "benchmark_id": "SYS-011",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "TSK-001": {
+    "benchmark_id": "TSK-001",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "TSK-002": {
+    "benchmark_id": "TSK-002",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "TSK-003": {
+    "benchmark_id": "TSK-003",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "TSK-004": {
+    "benchmark_id": "TSK-004",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "TSK-005": {
+    "benchmark_id": "TSK-005",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "TSK-006": {
+    "benchmark_id": "TSK-006",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "TSK-007": {
+    "benchmark_id": "TSK-007",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "TSK-008": {
+    "benchmark_id": "TSK-008",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "TSK-009": {
+    "benchmark_id": "TSK-009",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "TSK-010": {
+    "benchmark_id": "TSK-010",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "TSK-011": {
+    "benchmark_id": "TSK-011",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "TSK-012": {
+    "benchmark_id": "TSK-012",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "TSK-013": {
+    "benchmark_id": "TSK-013",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "TSK-014": {
+    "benchmark_id": "TSK-014",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "TST-001": {
+    "benchmark_id": "TST-001",
+    "failed_samples": 0,
+    "reason": "2 scenario(s) measured",
+    "scenario_count": 2,
+    "status": "measured",
+    "successful_samples": 14
+  },
+  "TST-002": {
+    "benchmark_id": "TST-002",
+    "failed_samples": 0,
+    "reason": "2 scenario(s) measured",
+    "scenario_count": 2,
+    "status": "measured",
+    "successful_samples": 14
+  },
+  "TST-003": {
+    "benchmark_id": "TST-003",
+    "failed_samples": 0,
+    "reason": "2 scenario(s) measured",
+    "scenario_count": 2,
+    "status": "measured",
+    "successful_samples": 14
+  },
+  "TST-004": {
+    "benchmark_id": "TST-004",
+    "failed_samples": 0,
+    "reason": "2 scenario(s) measured",
+    "scenario_count": 2,
+    "status": "measured",
+    "successful_samples": 14
+  },
+  "TST-005": {
+    "benchmark_id": "TST-005",
+    "reason": "Karma launcher fixture is not installed",
+    "status": "unsupported"
+  },
+  "TST-006": {
+    "benchmark_id": "TST-006",
+    "reason": "Nightwatch/WebDriver fixture is not installed",
+    "status": "unsupported"
+  },
+  "TST-007": {
+    "benchmark_id": "TST-007",
+    "reason": "Cypress binary cache is empty",
+    "status": "unsupported"
+  },
+  "TST-008": {
+    "benchmark_id": "TST-008",
+    "reason": "Playwright driver/browser cache is empty",
+    "status": "unsupported"
+  },
+  "TST-009": {
+    "benchmark_id": "TST-009",
+    "reason": "Puppeteer driver fixture is not installed",
+    "status": "unsupported"
+  },
+  "TST-010": {
+    "benchmark_id": "TST-010",
+    "reason": "Selenium/WebDriver fixture is not installed",
+    "status": "unsupported"
+  },
+  "TST-011": {
+    "benchmark_id": "TST-011",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "TST-012": {
+    "benchmark_id": "TST-012",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "TST-013": {
+    "benchmark_id": "TST-013",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "TST-014": {
+    "benchmark_id": "TST-014",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "TST-015": {
+    "benchmark_id": "TST-015",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  },
+  "TST-016": {
+    "benchmark_id": "TST-016",
+    "failed_samples": 0,
+    "reason": "1 scenario(s) measured",
+    "scenario_count": 1,
+    "status": "measured",
+    "successful_samples": 7
+  }
+}

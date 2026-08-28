@@ -1,0 +1,4923 @@
+[
+  {
+    "benchmark_id": "PMC-009",
+    "cache_hit": true,
+    "cleanup_ms": 0,
+    "cost_class": "TRANSITION",
+    "details": {
+      "concurrency": 8,
+      "entries": 18272
+    },
+    "error": null,
+    "exit_code": 0,
+    "files_created": 0,
+    "from_object_id": "pm_native_cache:bun:default:1.2.18",
+    "inodes_created": 0,
+    "invalidates": [],
+    "invalidation_ms": 0,
+    "measurement_environment_id": "env:7a9cda66bc6b151a7886",
+    "network_bytes": 0,
+    "observation_key": "env:7a9cda66bc6b151a7886|PMC-009|default|pm_native_cache:bun:default:1.2.18|pm_native_cache:bun:default:1.2.18|contention_path|0",
+    "peak_rss_mb": null,
+    "pollution_check": "pass",
+    "read_bytes": 0,
+    "ready_ms": 120.219657,
+    "reset_ms": 0,
+    "resource_kind": "pm_native_cache",
+    "reuse_safe": true,
+    "rss_mb": null,
+    "sample_index": 0,
+    "scenario_name": "default",
+    "schema_version": 1,
+    "state_before": "contention_path",
+    "success": true,
+    "switch_ms": 0,
+    "system_cpu_ms": 155.50200000001269,
+    "timed_out": false,
+    "to_object_id": "pm_native_cache:bun:default:1.2.18",
+    "transition_class": "contention_path",
+    "user_cpu_ms": 120.76400000000831,
+    "wall_ms": 120.219657,
+    "workload_origin": "real",
+    "write_bytes": 0
+  },
+  {
+    "benchmark_id": "PMC-009",
+    "cache_hit": true,
+    "cleanup_ms": 0,
+    "cost_class": "TRANSITION",
+    "details": {
+      "concurrency": 8,
+      "entries": 18272
+    },
+    "error": null,
+    "exit_code": 0,
+    "files_created": 0,
+    "from_object_id": "pm_native_cache:bun:default:1.2.18",
+    "inodes_created": 0,
+    "invalidates": [],
+    "invalidation_ms": 0,
+    "measurement_environment_id": "env:7a9cda66bc6b151a7886",
+    "network_bytes": 0,
+    "observation_key": "env:7a9cda66bc6b151a7886|PMC-009|default|pm_native_cache:bun:default:1.2.18|pm_native_cache:bun:default:1.2.18|contention_path|1",
+    "peak_rss_mb": null,
+    "pollution_check": "pass",
+    "read_bytes": 0,
+    "ready_ms": 100.656493,
+    "reset_ms": 0,
+    "resource_kind": "pm_native_cache",
+    "reuse_safe": true,
+    "rss_mb": null,
+    "sample_index": 1,
+    "scenario_name": "default",
+    "schema_version": 1,
+    "state_before": "contention_path",
+    "success": true,
+    "switch_ms": 0,
+    "system_cpu_ms": 128.8139999999771,
+    "timed_out": false,
+    "to_object_id": "pm_native_cache:bun:default:1.2.18",
+    "transition_class": "contention_path",
+    "user_cpu_ms": 98.29899999999725,
+    "wall_ms": 100.656493,
+    "workload_origin": "real",
+    "write_bytes": 0
+  },
+  {
+    "benchmark_id": "PMC-009",
+    "cache_hit": true,
+    "cleanup_ms": 0,
+    "cost_class": "TRANSITION",
+    "details": {
+      "concurrency": 8,
+      "entries": 18272
+    },
+    "error": null,
+    "exit_code": 0,
+    "files_created": 0,
+    "from_object_id": "pm_native_cache:bun:default:1.2.18",
+    "inodes_created": 0,
+    "invalidates": [],
+    "invalidation_ms": 0,
+    "measurement_environment_id": "env:7a9cda66bc6b151a7886",
+    "network_bytes": 0,
+    "observation_key": "env:7a9cda66bc6b151a7886|PMC-009|default|pm_native_cache:bun:default:1.2.18|pm_native_cache:bun:default:1.2.18|contention_path|2",
+    "peak_rss_mb": null,
+    "pollution_check": "pass",
+    "read_bytes": 0,
+    "ready_ms": 102.276668,
+    "reset_ms": 0,
+    "resource_kind": "pm_native_cache",
+    "reuse_safe": true,
+    "rss_mb": null,
+    "sample_index": 2,
+    "scenario_name": "default",
+    "schema_version": 1,
+    "state_before": "contention_path",
+    "success": true,
+    "switch_ms": 0,
+    "system_cpu_ms": 122.03899999997248,
+    "timed_out": false,
+    "to_object_id": "pm_native_cache:bun:default:1.2.18",
+    "transition_class": "contention_path",
+    "user_cpu_ms": 108.4430000000225,
+    "wall_ms": 102.276668,
+    "workload_origin": "real",
+    "write_bytes": 0
+  },
+  {
+    "benchmark_id": "PMC-009",
+    "cache_hit": true,
+    "cleanup_ms": 0,
+    "cost_class": "TRANSITION",
+    "details": {
+      "concurrency": 8,
+      "entries": 18272
+    },
+    "error": null,
+    "exit_code": 0,
+    "files_created": 0,
+    "from_object_id": "pm_native_cache:bun:default:1.2.18",
+    "inodes_created": 0,
+    "invalidates": [],
+    "invalidation_ms": 0,
+    "measurement_environment_id": "env:7a9cda66bc6b151a7886",
+    "network_bytes": 0,
+    "observation_key": "env:7a9cda66bc6b151a7886|PMC-009|default|pm_native_cache:bun:default:1.2.18|pm_native_cache:bun:default:1.2.18|contention_path|3",
+    "peak_rss_mb": null,
+    "pollution_check": "pass",
+    "read_bytes": 0,
+    "ready_ms": 94.258722,
+    "reset_ms": 0,
+    "resource_kind": "pm_native_cache",
+    "reuse_safe": true,
+    "rss_mb": null,
+    "sample_index": 3,
+    "scenario_name": "default",
+    "schema_version": 1,
+    "state_before": "contention_path",
+    "success": true,
+    "switch_ms": 0,
+    "system_cpu_ms": 121.1619999999698,
+    "timed_out": false,
+    "to_object_id": "pm_native_cache:bun:default:1.2.18",
+    "transition_class": "contention_path",
+    "user_cpu_ms": 93.42300000000137,
+    "wall_ms": 94.258722,
+    "workload_origin": "real",
+    "write_bytes": 0
+  },
+  {
+    "benchmark_id": "PMC-009",
+    "cache_hit": true,
+    "cleanup_ms": 0,
+    "cost_class": "TRANSITION",
+    "details": {
+      "concurrency": 8,
+      "entries": 18272
+    },
+    "error": null,
+    "exit_code": 0,
+    "files_created": 0,
+    "from_object_id": "pm_native_cache:bun:default:1.2.18",
+    "inodes_created": 0,
+    "invalidates": [],
+    "invalidation_ms": 0,
+    "measurement_environment_id": "env:7a9cda66bc6b151a7886",
+    "network_bytes": 0,
+    "observation_key": "env:7a9cda66bc6b151a7886|PMC-009|default|pm_native_cache:bun:default:1.2.18|pm_native_cache:bun:default:1.2.18|contention_path|4",
+    "peak_rss_mb": null,
+    "pollution_check": "pass",
+    "read_bytes": 0,
+    "ready_ms": 114.437729,
+    "reset_ms": 0,
+    "resource_kind": "pm_native_cache",
+    "reuse_safe": true,
+    "rss_mb": null,
+    "sample_index": 4,
+    "scenario_name": "default",
+    "schema_version": 1,
+    "state_before": "contention_path",
+    "success": true,
+    "switch_ms": 0,
+    "system_cpu_ms": 143.03300000000263,
+    "timed_out": false,
+    "to_object_id": "pm_native_cache:bun:default:1.2.18",
+    "transition_class": "contention_path",
+    "user_cpu_ms": 117.87399999997206,
+    "wall_ms": 114.437729,
+    "workload_origin": "real",
+    "write_bytes": 0
+  },
+  {
+    "benchmark_id": "PMC-009",
+    "cache_hit": true,
+    "cleanup_ms": 0,
+    "cost_class": "TRANSITION",
+    "details": {
+      "concurrency": 8,
+      "entries": 18272
+    },
+    "error": null,
+    "exit_code": 0,
+    "files_created": 0,
+    "from_object_id": "pm_native_cache:bun:default:1.2.18",
+    "inodes_created": 0,
+    "invalidates": [],
+    "invalidation_ms": 0,
+    "measurement_environment_id": "env:7a9cda66bc6b151a7886",
+    "network_bytes": 0,
+    "observation_key": "env:7a9cda66bc6b151a7886|PMC-009|default|pm_native_cache:bun:default:1.2.18|pm_native_cache:bun:default:1.2.18|contention_path|5",
+    "peak_rss_mb": null,
+    "pollution_check": "pass",
+    "read_bytes": 0,
+    "ready_ms": 96.166162,
+    "reset_ms": 0,
+    "resource_kind": "pm_native_cache",
+    "reuse_safe": true,
+    "rss_mb": null,
+    "sample_index": 5,
+    "scenario_name": "default",
+    "schema_version": 1,
+    "state_before": "contention_path",
+    "success": true,
+    "switch_ms": 0,
+    "system_cpu_ms": 117.22000000003163,
+    "timed_out": false,
+    "to_object_id": "pm_native_cache:bun:default:1.2.18",
+    "transition_class": "contention_path",
+    "user_cpu_ms": 98.11300000001211,
+    "wall_ms": 96.166162,
+    "workload_origin": "real",
+    "write_bytes": 0
+  },
+  {
+    "benchmark_id": "PMC-009",
+    "cache_hit": true,
+    "cleanup_ms": 0,
+    "cost_class": "TRANSITION",
+    "details": {
+      "concurrency": 8,
+      "entries": 18272
+    },
+    "error": null,
+    "exit_code": 0,
+    "files_created": 0,
+    "from_object_id": "pm_native_cache:bun:default:1.2.18",
+    "inodes_created": 0,
+    "invalidates": [],
+    "invalidation_ms": 0,
+    "measurement_environment_id": "env:7a9cda66bc6b151a7886",
+    "network_bytes": 0,
+    "observation_key": "env:7a9cda66bc6b151a7886|PMC-009|default|pm_native_cache:bun:default:1.2.18|pm_native_cache:bun:default:1.2.18|contention_path|6",
+    "peak_rss_mb": null,
+    "pollution_check": "pass",
+    "read_bytes": 0,
+    "ready_ms": 109.468441,
+    "reset_ms": 0,
+    "resource_kind": "pm_native_cache",
+    "reuse_safe": true,
+    "rss_mb": null,
+    "sample_index": 6,
+    "scenario_name": "default",
+    "schema_version": 1,
+    "state_before": "contention_path",
+    "success": true,
+    "switch_ms": 0,
+    "system_cpu_ms": 146.2219999999661,
+    "timed_out": false,
+    "to_object_id": "pm_native_cache:bun:default:1.2.18",
+    "transition_class": "contention_path",
+    "user_cpu_ms": 103.4439999999961,
+    "wall_ms": 109.468441,
+    "workload_origin": "real",
+    "write_bytes": 0
+  },
+  {
+    "benchmark_id": "DEP-019",
+    "cache_hit": false,
+    "cleanup_ms": 5.200225,
+    "cost_class": "TRANSITION",
+    "details": {
+      "concurrency": 4
+    },
+    "error": null,
+    "exit_code": 0,
+    "files_created": 0,
+    "from_object_id": null,
+    "inodes_created": 0,
+    "invalidates": [],
+    "invalidation_ms": 0,
+    "measurement_environment_id": "env:7a9cda66bc6b151a7886",
+    "network_bytes": 0,
+    "observation_key": "env:7a9cda66bc6b151a7886|DEP-019|default|cold|dependency_view:Automattic__mongoose.5f57a5bb:root:f4a039d5d472a10b|contention_path|0",
+    "peak_rss_mb": null,
+    "pollution_check": "pass",
+    "read_bytes": 0,
+    "ready_ms": 2096.212512,
+    "reset_ms": 0,
+    "resource_kind": "dependency_view",
+    "reuse_safe": true,
+    "rss_mb": null,
+    "sample_index": 0,
+    "scenario_name": "default",
+    "schema_version": 1,
+    "state_before": "contention_path",
+    "success": true,
+    "switch_ms": 0,
+    "system_cpu_ms": 2928.8249999999607,
+    "timed_out": false,
+    "to_object_id": "dependency_view:Automattic__mongoose.5f57a5bb:root:f4a039d5d472a10b",
+    "transition_class": "contention_path",
+    "user_cpu_ms": 1775.3750000000537,
+    "wall_ms": 2096.212512,
+    "workload_origin": "real",
+    "write_bytes": 0
+  },
+  {
+    "benchmark_id": "DEP-019",
+    "cache_hit": false,
+    "cleanup_ms": 5.460056,
+    "cost_class": "TRANSITION",
+    "details": {
+      "concurrency": 4
+    },
+    "error": null,
+    "exit_code": 0,
+    "files_created": 0,
+    "from_object_id": null,
+    "inodes_created": 0,
+    "invalidates": [],
+    "invalidation_ms": 0,
+    "measurement_environment_id": "env:7a9cda66bc6b151a7886",
+    "network_bytes": 0,
+    "observation_key": "env:7a9cda66bc6b151a7886|DEP-019|default|cold|dependency_view:Automattic__mongoose.5f57a5bb:root:f4a039d5d472a10b|contention_path|1",
+    "peak_rss_mb": null,
+    "pollution_check": "pass",
+    "read_bytes": 0,
+    "ready_ms": 2276.071769,
+    "reset_ms": 0,
+    "resource_kind": "dependency_view",
+    "reuse_safe": true,
+    "rss_mb": null,
+    "sample_index": 1,
+    "scenario_name": "default",
+    "schema_version": 1,
+    "state_before": "contention_path",
+    "success": true,
+    "switch_ms": 0,
+    "system_cpu_ms": 3117.390999999998,
+    "timed_out": false,
+    "to_object_id": "dependency_view:Automattic__mongoose.5f57a5bb:root:f4a039d5d472a10b",
+    "transition_class": "contention_path",
+    "user_cpu_ms": 1881.8180000000098,
+    "wall_ms": 2276.071769,
+    "workload_origin": "real",
+    "write_bytes": 0
+  },
+  {
+    "benchmark_id": "DEP-019",
+    "cache_hit": false,
+    "cleanup_ms": 16.060397000000002,
+    "cost_class": "TRANSITION",
+    "details": {
+      "concurrency": 4
+    },
+    "error": null,
+    "exit_code": 0,
+    "files_created": 0,
+    "from_object_id": null,
+    "inodes_created": 0,
+    "invalidates": [],
+    "invalidation_ms": 0,
+    "measurement_environment_id": "env:7a9cda66bc6b151a7886",
+    "network_bytes": 0,
+    "observation_key": "env:7a9cda66bc6b151a7886|DEP-019|default|cold|dependency_view:Automattic__mongoose.5f57a5bb:root:f4a039d5d472a10b|contention_path|2",
+    "peak_rss_mb": null,
+    "pollution_check": "pass",
+    "read_bytes": 0,
+    "ready_ms": 2508.758304,
+    "reset_ms": 0,
+    "resource_kind": "dependency_view",
+    "reuse_safe": true,
+    "rss_mb": null,
+    "sample_index": 2,
+    "scenario_name": "default",
+    "schema_version": 1,
+    "state_before": "contention_path",
+    "success": true,
+    "switch_ms": 0,
+    "system_cpu_ms": 3659.4550000000936,
+    "timed_out": false,
+    "to_object_id": "dependency_view:Automattic__mongoose.5f57a5bb:root:f4a039d5d472a10b",
+    "transition_class": "contention_path",
+    "user_cpu_ms": 2202.2870000000125,
+    "wall_ms": 2508.758304,
+    "workload_origin": "real",
+    "write_bytes": 0
+  },
+  {
+    "benchmark_id": "DEP-019",
+    "cache_hit": false,
+    "cleanup_ms": 20.31722,
+    "cost_class": "TRANSITION",
+    "details": {
+      "concurrency": 4
+    },
+    "error": null,
+    "exit_code": 0,
+    "files_created": 0,
+    "from_object_id": null,
+    "inodes_created": 0,
+    "invalidates": [],
+    "invalidation_ms": 0,
+    "measurement_environment_id": "env:7a9cda66bc6b151a7886",
+    "network_bytes": 0,
+    "observation_key": "env:7a9cda66bc6b151a7886|DEP-019|default|cold|dependency_view:Automattic__mongoose.5f57a5bb:root:f4a039d5d472a10b|contention_path|3",
+    "peak_rss_mb": null,
+    "pollution_check": "pass",
+    "read_bytes": 0,
+    "ready_ms": 2475.846682,
+    "reset_ms": 0,
+    "resource_kind": "dependency_view",
+    "reuse_safe": true,
+    "rss_mb": null,
+    "sample_index": 3,
+    "scenario_name": "default",
+    "schema_version": 1,
+    "state_before": "contention_path",
+    "success": true,
+    "switch_ms": 0,
+    "system_cpu_ms": 4246.903999999972,
+    "timed_out": false,
+    "to_object_id": "dependency_view:Automattic__mongoose.5f57a5bb:root:f4a039d5d472a10b",
+    "transition_class": "contention_path",
+    "user_cpu_ms": 2343.211999999994,
+    "wall_ms": 2475.846682,
+    "workload_origin": "real",
+    "write_bytes": 0
+  },
+  {
+    "benchmark_id": "DEP-019",
+    "cache_hit": false,
+    "cleanup_ms": 42.953694,
+    "cost_class": "TRANSITION",
+    "details": {
+      "concurrency": 4
+    },
+    "error": null,
+    "exit_code": 0,
+    "files_created": 0,
+    "from_object_id": null,
+    "inodes_created": 0,
+    "invalidates": [],
+    "invalidation_ms": 0,
+    "measurement_environment_id": "env:7a9cda66bc6b151a7886",
+    "network_bytes": 0,
+    "observation_key": "env:7a9cda66bc6b151a7886|DEP-019|default|cold|dependency_view:Automattic__mongoose.5f57a5bb:root:f4a039d5d472a10b|contention_path|4",
+    "peak_rss_mb": null,
+    "pollution_check": "pass",
+    "read_bytes": 0,
+    "ready_ms": 2513.364225,
+    "reset_ms": 0,
+    "resource_kind": "dependency_view",
+    "reuse_safe": true,
+    "rss_mb": null,
+    "sample_index": 4,
+    "scenario_name": "default",
+    "schema_version": 1,
+    "state_before": "contention_path",
+    "success": true,
+    "switch_ms": 0,
+    "system_cpu_ms": 4220.454000000018,
+    "timed_out": false,
+    "to_object_id": "dependency_view:Automattic__mongoose.5f57a5bb:root:f4a039d5d472a10b",
+    "transition_class": "contention_path",
+    "user_cpu_ms": 2402.22,
+    "wall_ms": 2513.364225,
+    "workload_origin": "real",
+    "write_bytes": 0
+  },
+  {
+    "benchmark_id": "DEP-019",
+    "cache_hit": false,
+    "cleanup_ms": 43.431277,
+    "cost_class": "TRANSITION",
+    "details": {
+      "concurrency": 4
+    },
+    "error": null,
+    "exit_code": 0,
+    "files_created": 0,
+    "from_object_id": null,
+    "inodes_created": 0,
+    "invalidates": [],
+    "invalidation_ms": 0,
+    "measurement_environment_id": "env:7a9cda66bc6b151a7886",
+    "network_bytes": 0,
+    "observation_key": "env:7a9cda66bc6b151a7886|DEP-019|default|cold|dependency_view:Automattic__mongoose.5f57a5bb:root:f4a039d5d472a10b|contention_path|5",
+    "peak_rss_mb": null,
+    "pollution_check": "pass",
+    "read_bytes": 0,
+    "ready_ms": 2518.271374,
+    "reset_ms": 0,
+    "resource_kind": "dependency_view",
+    "reuse_safe": true,
+    "rss_mb": null,
+    "sample_index": 5,
+    "scenario_name": "default",
+    "schema_version": 1,
+    "state_before": "contention_path",
+    "success": true,
+    "switch_ms": 0,
+    "system_cpu_ms": 4277.237000000014,
+    "timed_out": false,
+    "to_object_id": "dependency_view:Automattic__mongoose.5f57a5bb:root:f4a039d5d472a10b",
+    "transition_class": "contention_path",
+    "user_cpu_ms": 2410.8249999999884,
+    "wall_ms": 2518.271374,
+    "workload_origin": "real",
+    "write_bytes": 0
+  },
+  {
+    "benchmark_id": "DEP-019",
+    "cache_hit": false,
+    "cleanup_ms": 97.079772,
+    "cost_class": "TRANSITION",
+    "details": {
+      "concurrency": 4
+    },
+    "error": null,
+    "exit_code": 0,
+    "files_created": 0,
+    "from_object_id": null,
+    "inodes_created": 0,
+    "invalidates": [],
+    "invalidation_ms": 0,
+    "measurement_environment_id": "env:7a9cda66bc6b151a7886",
+    "network_bytes": 0,
+    "observation_key": "env:7a9cda66bc6b151a7886|DEP-019|default|cold|dependency_view:Automattic__mongoose.5f57a5bb:root:f4a039d5d472a10b|contention_path|6",
+    "peak_rss_mb": null,
+    "pollution_check": "pass",
+    "read_bytes": 0,
+    "ready_ms": 2594.554988,
+    "reset_ms": 0,
+    "resource_kind": "dependency_view",
+    "reuse_safe": true,
+    "rss_mb": null,
+    "sample_index": 6,
+    "scenario_name": "default",
+    "schema_version": 1,
+    "state_before": "contention_path",
+    "success": true,
+    "switch_ms": 0,
+    "system_cpu_ms": 4339.00200000005,
+    "timed_out": false,
+    "to_object_id": "dependency_view:Automattic__mongoose.5f57a5bb:root:f4a039d5d472a10b",
+    "transition_class": "contention_path",
+    "user_cpu_ms": 2572.545000000048,
+    "wall_ms": 2594.554988,
+    "workload_origin": "real",
+    "write_bytes": 0
+  },
+  {
+    "benchmark_id": "CON-001",
+    "cache_hit": false,
+    "cleanup_ms": 0,
+    "cost_class": "DIAGNOSTIC",
+    "details": {
+      "levels": [
+        {
+          "concurrency": 1,
+          "success": true,
+          "wall_ms": 5.040557
+        },
+        {
+          "concurrency": 2,
+          "success": true,
+          "wall_ms": 10.267517
+        },
+        {
+          "concurrency": 4,
+          "success": true,
+          "wall_ms": 27.764043
+        },
+        {
+          "concurrency": 8,
+          "success": true,
+          "wall_ms": 59.124647
+        }
+      ]
+    },
+    "error": null,
+    "exit_code": 0,
+    "files_created": 0,
+    "from_object_id": null,
+    "inodes_created": 0,
+    "invalidates": [],
+    "invalidation_ms": 0,
+    "measurement_environment_id": "env:7a9cda66bc6b151a7886",
+    "network_bytes": 0,
+    "observation_key": "env:7a9cda66bc6b151a7886|CON-001|default|cold|contention:synthetic:con-001|contention_path|0",
+    "peak_rss_mb": null,
+    "pollution_check": "pass",
+    "read_bytes": 0,
+    "ready_ms": 102.288572,
+    "reset_ms": 0,
+    "resource_kind": "contention",
+    "reuse_safe": true,
+    "rss_mb": null,
+    "sample_index": 0,
+    "scenario_name": "default",
+    "schema_version": 1,
+    "state_before": "contention_path",
+    "success": true,
+    "switch_ms": 0,
+    "system_cpu_ms": 38.952999999992244,
+    "timed_out": false,
+    "to_object_id": "contention:synthetic:con-001",
+    "transition_class": "contention_path",
+    "user_cpu_ms": 85.11100000004035,
+    "wall_ms": 102.288572,
+    "workload_origin": "synthetic",
+    "write_bytes": 0
+  },
+  {
+    "benchmark_id": "CON-001",
+    "cache_hit": false,
+    "cleanup_ms": 0,
+    "cost_class": "DIAGNOSTIC",
+    "details": {
+      "levels": [
+        {
+          "concurrency": 1,
+          "success": true,
+          "wall_ms": 5.690581
+        },
+        {
+          "concurrency": 2,
+          "success": true,
+          "wall_ms": 8.854539
+        },
+        {
+          "concurrency": 4,
+          "success": true,
+          "wall_ms": 19.12543
+        },
+        {
+          "concurrency": 8,
+          "success": true,
+          "wall_ms": 47.480217
+        }
+      ]
+    },
+    "error": null,
+    "exit_code": 0,
+    "files_created": 0,
+    "from_object_id": null,
+    "inodes_created": 0,
+    "invalidates": [],
+    "invalidation_ms": 0,
+    "measurement_environment_id": "env:7a9cda66bc6b151a7886",
+    "network_bytes": 0,
+    "observation_key": "env:7a9cda66bc6b151a7886|CON-001|default|cold|contention:synthetic:con-001|contention_path|1",
+    "peak_rss_mb": null,
+    "pollution_check": "pass",
+    "read_bytes": 0,
+    "ready_ms": 81.231349,
+    "reset_ms": 0,
+    "resource_kind": "contention",
+    "reuse_safe": true,
+    "rss_mb": null,
+    "sample_index": 1,
+    "scenario_name": "default",
+    "schema_version": 1,
+    "state_before": "contention_path",
+    "success": true,
+    "switch_ms": 0,
+    "system_cpu_ms": 23.613000000068496,
+    "timed_out": false,
+    "to_object_id": "contention:synthetic:con-001",
+    "transition_class": "contention_path",
+    "user_cpu_ms": 76.06200000003582,
+    "wall_ms": 81.231349,
+    "workload_origin": "synthetic",
+    "write_bytes": 0
+  },
+  {
+    "benchmark_id": "CON-001",
+    "cache_hit": false,
+    "cleanup_ms": 0,
+    "cost_class": "DIAGNOSTIC",
+    "details": {
+      "levels": [
+        {
+          "concurrency": 1,
+          "success": true,
+          "wall_ms": 6.04643
+        },
+        {
+          "concurrency": 2,
+          "success": true,
+          "wall_ms": 10.365134
+        },
+        {
+          "concurrency": 4,
+          "success": true,
+          "wall_ms": 19.628021
+        },
+        {
+          "concurrency": 8,
+          "success": true,
+          "wall_ms": 41.114244
+        }
+      ]
+    },
+    "error": null,
+    "exit_code": 0,
+    "files_created": 0,
+    "from_object_id": null,
+    "inodes_created": 0,
+    "invalidates": [],
+    "invalidation_ms": 0,
+    "measurement_environment_id": "env:7a9cda66bc6b151a7886",
+    "network_bytes": 0,
+    "observation_key": "env:7a9cda66bc6b151a7886|CON-001|default|cold|contention:synthetic:con-001|contention_path|2",
+    "peak_rss_mb": null,
+    "pollution_check": "pass",
+    "read_bytes": 0,
+    "ready_ms": 77.234992,
+    "reset_ms": 0,
+    "resource_kind": "contention",
+    "reuse_safe": true,
+    "rss_mb": null,
+    "sample_index": 2,
+    "scenario_name": "default",
+    "schema_version": 1,
+    "state_before": "contention_path",
+    "success": true,
+    "switch_ms": 0,
+    "system_cpu_ms": 27.219999999942956,
+    "timed_out": false,
+    "to_object_id": "contention:synthetic:con-001",
+    "transition_class": "contention_path",
+    "user_cpu_ms": 68.34099999997534,
+    "wall_ms": 77.234992,
+    "workload_origin": "synthetic",
+    "write_bytes": 0
+  },
+  {
+    "benchmark_id": "CON-001",
+    "cache_hit": false,
+    "cleanup_ms": 0,
+    "cost_class": "DIAGNOSTIC",
+    "details": {
+      "levels": [
+        {
+          "concurrency": 1,
+          "success": true,
+          "wall_ms": 5.489526
+        },
+        {
+          "concurrency": 2,
+          "success": true,
+          "wall_ms": 12.27201
+        },
+        {
+          "concurrency": 4,
+          "success": true,
+          "wall_ms": 20.992005
+        },
+        {
+          "concurrency": 8,
+          "success": true,
+          "wall_ms": 50.174764
+        }
+      ]
+    },
+    "error": null,
+    "exit_code": 0,
+    "files_created": 0,
+    "from_object_id": null,
+    "inodes_created": 0,
+    "invalidates": [],
+    "invalidation_ms": 0,
+    "measurement_environment_id": "env:7a9cda66bc6b151a7886",
+    "network_bytes": 0,
+    "observation_key": "env:7a9cda66bc6b151a7886|CON-001|default|cold|contention:synthetic:con-001|contention_path|3",
+    "peak_rss_mb": null,
+    "pollution_check": "pass",
+    "read_bytes": 0,
+    "ready_ms": 89.01683,
+    "reset_ms": 0,
+    "resource_kind": "contention",
+    "reuse_safe": true,
+    "rss_mb": null,
+    "sample_index": 3,
+    "scenario_name": "default",
+    "schema_version": 1,
+    "state_before": "contention_path",
+    "success": true,
+    "switch_ms": 0,
+    "system_cpu_ms": 26.48399999998219,
+    "timed_out": false,
+    "to_object_id": "contention:synthetic:con-001",
+    "transition_class": "contention_path",
+    "user_cpu_ms": 84.96000000002368,
+    "wall_ms": 89.01683,
+    "workload_origin": "synthetic",
+    "write_bytes": 0
+  },
+  {
+    "benchmark_id": "CON-001",
+    "cache_hit": false,
+    "cleanup_ms": 0,
+    "cost_class": "DIAGNOSTIC",
+    "details": {
+      "levels": [
+        {
+          "concurrency": 1,
+          "success": true,
+          "wall_ms": 7.419257
+        },
+        {
+          "concurrency": 2,
+          "success": true,
+          "wall_ms": 6.95894
+        },
+        {
+          "concurrency": 4,
+          "success": true,
+          "wall_ms": 30.594947
+        },
+        {
+          "concurrency": 8,
+          "success": true,
+          "wall_ms": 58.070252
+        }
+      ]
+    },
+    "error": null,
+    "exit_code": 0,
+    "files_created": 0,
+    "from_object_id": null,
+    "inodes_created": 0,
+    "invalidates": [],
+    "invalidation_ms": 0,
+    "measurement_environment_id": "env:7a9cda66bc6b151a7886",
+    "network_bytes": 0,
+    "observation_key": "env:7a9cda66bc6b151a7886|CON-001|default|cold|contention:synthetic:con-001|contention_path|4",
+    "peak_rss_mb": null,
+    "pollution_check": "pass",
+    "read_bytes": 0,
+    "ready_ms": 103.128904,
+    "reset_ms": 0,
+    "resource_kind": "contention",
+    "reuse_safe": true,
+    "rss_mb": null,
+    "sample_index": 4,
+    "scenario_name": "default",
+    "schema_version": 1,
+    "state_before": "contention_path",
+    "success": true,
+    "switch_ms": 0,
+    "system_cpu_ms": 29.51600000005783,
+    "timed_out": false,
+    "to_object_id": "contention:synthetic:con-001",
+    "transition_class": "contention_path",
+    "user_cpu_ms": 98.57699999997749,
+    "wall_ms": 103.128904,
+    "workload_origin": "synthetic",
+    "write_bytes": 0
+  },
+  {
+    "benchmark_id": "CON-001",
+    "cache_hit": false,
+    "cleanup_ms": 0,
+    "cost_class": "DIAGNOSTIC",
+    "details": {
+      "levels": [
+        {
+          "concurrency": 1,
+          "success": true,
+          "wall_ms": 5.401213
+        },
+        {
+          "concurrency": 2,
+          "success": true,
+          "wall_ms": 9.138459
+        },
+        {
+          "concurrency": 4,
+          "success": true,
+          "wall_ms": 30.295483
+        },
+        {
+          "concurrency": 8,
+          "success": true,
+          "wall_ms": 54.671889
+        }
+      ]
+    },
+    "error": null,
+    "exit_code": 0,
+    "files_created": 0,
+    "from_object_id": null,
+    "inodes_created": 0,
+    "invalidates": [],
+    "invalidation_ms": 0,
+    "measurement_environment_id": "env:7a9cda66bc6b151a7886",
+    "network_bytes": 0,
+    "observation_key": "env:7a9cda66bc6b151a7886|CON-001|default|cold|contention:synthetic:con-001|contention_path|5",
+    "peak_rss_mb": null,
+    "pollution_check": "pass",
+    "read_bytes": 0,
+    "ready_ms": 99.650771,
+    "reset_ms": 0,
+    "resource_kind": "contention",
+    "reuse_safe": true,
+    "rss_mb": null,
+    "sample_index": 5,
+    "scenario_name": "default",
+    "schema_version": 1,
+    "state_before": "contention_path",
+    "success": true,
+    "switch_ms": 0,
+    "system_cpu_ms": 22.543000000041502,
+    "timed_out": false,
+    "to_object_id": "contention:synthetic:con-001",
+    "transition_class": "contention_path",
+    "user_cpu_ms": 100.70799999999736,
+    "wall_ms": 99.650771,
+    "workload_origin": "synthetic",
+    "write_bytes": 0
+  },
+  {
+    "benchmark_id": "CON-001",
+    "cache_hit": false,
+    "cleanup_ms": 0,
+    "cost_class": "DIAGNOSTIC",
+    "details": {
+      "levels": [
+        {
+          "concurrency": 1,
+          "success": true,
+          "wall_ms": 4.570436
+        },
+        {
+          "concurrency": 2,
+          "success": true,
+          "wall_ms": 8.869671
+        },
+        {
+          "concurrency": 4,
+          "success": true,
+          "wall_ms": 25.11913
+        },
+        {
+          "concurrency": 8,
+          "success": true,
+          "wall_ms": 50.370991
+        }
+      ]
+    },
+    "error": null,
+    "exit_code": 0,
+    "files_created": 0,
+    "from_object_id": null,
+    "inodes_created": 0,
+    "invalidates": [],
+    "invalidation_ms": 0,
+    "measurement_environment_id": "env:7a9cda66bc6b151a7886",
+    "network_bytes": 0,
+    "observation_key": "env:7a9cda66bc6b151a7886|CON-001|default|cold|contention:synthetic:con-001|contention_path|6",
+    "peak_rss_mb": null,
+    "pollution_check": "pass",
+    "read_bytes": 0,
+    "ready_ms": 89.030951,
+    "reset_ms": 0,
+    "resource_kind": "contention",
+    "reuse_safe": true,
+    "rss_mb": null,
+    "sample_index": 6,
+    "scenario_name": "default",
+    "schema_version": 1,
+    "state_before": "contention_path",
+    "success": true,
+    "switch_ms": 0,
+    "system_cpu_ms": 23.5250000000633,
+    "timed_out": false,
+    "to_object_id": "contention:synthetic:con-001",
+    "transition_class": "contention_path",
+    "user_cpu_ms": 87.07499999997026,
+    "wall_ms": 89.030951,
+    "workload_origin": "synthetic",
+    "write_bytes": 0
+  },
+  {
+    "benchmark_id": "CON-002",
+    "cache_hit": false,
+    "cleanup_ms": 0,
+    "cost_class": "DIAGNOSTIC",
+    "details": {
+      "levels": [
+        {
+          "concurrency": 1,
+          "success": true,
+          "wall_ms": 0.384092
+        },
+        {
+          "concurrency": 2,
+          "success": true,
+          "wall_ms": 0.585476
+        },
+        {
+          "concurrency": 4,
+          "success": true,
+          "wall_ms": 1.312155
+        },
+        {
+          "concurrency": 8,
+          "success": true,
+          "wall_ms": 2.11468
+        }
+      ]
+    },
+    "error": null,
+    "exit_code": 0,
+    "files_created": 0,
+    "from_object_id": null,
+    "inodes_created": 0,
+    "invalidates": [],
+    "invalidation_ms": 0,
+    "measurement_environment_id": "env:7a9cda66bc6b151a7886",
+    "network_bytes": 0,
+    "observation_key": "env:7a9cda66bc6b151a7886|CON-002|default|cold|contention:synthetic:con-002|contention_path|0",
+    "peak_rss_mb": null,
+    "pollution_check": "pass",
+    "read_bytes": 0,
+    "ready_ms": 4.433488,
+    "reset_ms": 0,
+    "resource_kind": "contention",
+    "reuse_safe": true,
+    "rss_mb": null,
+    "sample_index": 0,
+    "scenario_name": "default",
+    "schema_version": 1,
+    "state_before": "contention_path",
+    "success": true,
+    "switch_ms": 0,
+    "system_cpu_ms": 5.0210000000561195,
+    "timed_out": false,
+    "to_object_id": "contention:synthetic:con-002",
+    "transition_class": "contention_path",
+    "user_cpu_ms": 2.98099999997703,
+    "wall_ms": 4.433488,
+    "workload_origin": "synthetic",
+    "write_bytes": 0
+  },
+  {
+    "benchmark_id": "CON-002",
+    "cache_hit": false,
+    "cleanup_ms": 0,
+    "cost_class": "DIAGNOSTIC",
+    "details": {
+      "levels": [
+        {
+          "concurrency": 1,
+          "success": true,
+          "wall_ms": 0.273143
+        },
+        {
+          "concurrency": 2,
+          "success": true,
+          "wall_ms": 0.626538
+        },
+        {
+          "concurrency": 4,
+          "success": true,
+          "wall_ms": 1.268149
+        },
+        {
+          "concurrency": 8,
+          "success": true,
+          "wall_ms": 2.249164
+        }
+      ]
+    },
+    "error": null,
+    "exit_code": 0,
+    "files_created": 0,
+    "from_object_id": null,
+    "inodes_created": 0,
+    "invalidates": [],
+    "invalidation_ms": 0,
+    "measurement_environment_id": "env:7a9cda66bc6b151a7886",
+    "network_bytes": 0,
+    "observation_key": "env:7a9cda66bc6b151a7886|CON-002|default|cold|contention:synthetic:con-002|contention_path|1",
+    "peak_rss_mb": null,
+    "pollution_check": "pass",
+    "read_bytes": 0,
+    "ready_ms": 4.448041,
+    "reset_ms": 0,
+    "resource_kind": "contention",
+    "reuse_safe": true,
+    "rss_mb": null,
+    "sample_index": 1,
+    "scenario_name": "default",
+    "schema_version": 1,
+    "state_before": "contention_path",
+    "success": true,
+    "switch_ms": 0,
+    "system_cpu_ms": 5.47099999994316,
+    "timed_out": false,
+    "to_object_id": "contention:synthetic:con-002",
+    "transition_class": "contention_path",
+    "user_cpu_ms": 2.238000000033935,
+    "wall_ms": 4.448041,
+    "workload_origin": "synthetic",
+    "write_bytes": 0
+  },
+  {
+    "benchmark_id": "CON-002",
+    "cache_hit": false,
+    "cleanup_ms": 0,
+    "cost_class": "DIAGNOSTIC",
+    "details": {
+      "levels": [
+        {
+          "concurrency": 1,
+          "success": true,
+          "wall_ms": 0.328437
+        },
+        {
+          "concurrency": 2,
+          "success": true,
+          "wall_ms": 0.564854
+        },
+        {
+          "concurrency": 4,
+          "success": true,
+          "wall_ms": 1.000704
+        },
+        {
+          "concurrency": 8,
+          "success": true,
+          "wall_ms": 2.127239
+        }
+      ]
+    },
+    "error": null,
+    "exit_code": 0,
+    "files_created": 0,
+    "from_object_id": null,
+    "inodes_created": 0,
+    "invalidates": [],
+    "invalidation_ms": 0,
+    "measurement_environment_id": "env:7a9cda66bc6b151a7886",
+    "network_bytes": 0,
+    "observation_key": "env:7a9cda66bc6b151a7886|CON-002|default|cold|contention:synthetic:con-002|contention_path|2",
+    "peak_rss_mb": null,
+    "pollution_check": "pass",
+    "read_bytes": 0,
+    "ready_ms": 4.054556,
+    "reset_ms": 0,
+    "resource_kind": "contention",
+    "reuse_safe": true,
+    "rss_mb": null,
+    "sample_index": 2,
+    "scenario_name": "default",
+    "schema_version": 1,
+    "state_before": "contention_path",
+    "success": true,
+    "switch_ms": 0,
+    "system_cpu_ms": 6.22699999996712,
+    "timed_out": false,
+    "to_object_id": "contention:synthetic:con-002",
+    "transition_class": "contention_path",
+    "user_cpu_ms": 1.0960000000181935,
+    "wall_ms": 4.054556,
+    "workload_origin": "synthetic",
+    "write_bytes": 0
+  },
+  {
+    "benchmark_id": "CON-002",
+    "cache_hit": false,
+    "cleanup_ms": 0,
+    "cost_class": "DIAGNOSTIC",
+    "details": {
+      "levels": [
+        {
+          "concurrency": 1,
+          "success": true,
+          "wall_ms": 0.432644
+        },
+        {
+          "concurrency": 2,
+          "success": true,
+          "wall_ms": 0.752048
+        },
+        {
+          "concurrency": 4,
+          "success": true,
+          "wall_ms": 1.253446
+        },
+        {
+          "concurrency": 8,
+          "success": true,
+          "wall_ms": 2.036201
+        }
+      ]
+    },
+    "error": null,
+    "exit_code": 0,
+    "files_created": 0,
+    "from_object_id": null,
+    "inodes_created": 0,
+    "invalidates": [],
+    "invalidation_ms": 0,
+    "measurement_environment_id": "env:7a9cda66bc6b151a7886",
+    "network_bytes": 0,
+    "observation_key": "env:7a9cda66bc6b151a7886|CON-002|default|cold|contention:synthetic:con-002|contention_path|3",
+    "peak_rss_mb": null,
+    "pollution_check": "pass",
+    "read_bytes": 0,
+    "ready_ms": 4.505537,
+    "reset_ms": 0,
+    "resource_kind": "contention",
+    "reuse_safe": true,
+    "rss_mb": null,
+    "sample_index": 3,
+    "scenario_name": "default",
+    "schema_version": 1,
+    "state_before": "contention_path",
+    "success": true,
+    "switch_ms": 0,
+    "system_cpu_ms": 4.3969999999262654,
+    "timed_out": false,
+    "to_object_id": "contention:synthetic:con-002",
+    "transition_class": "contention_path",
+    "user_cpu_ms": 3.701999999975669,
+    "wall_ms": 4.505537,
+    "workload_origin": "synthetic",
+    "write_bytes": 0
+  },
+  {
+    "benchmark_id": "CON-002",
+    "cache_hit": false,
+    "cleanup_ms": 0,
+    "cost_class": "DIAGNOSTIC",
+    "details": {
+      "levels": [
+        {
+          "concurrency": 1,
+          "success": true,
+          "wall_ms": 0.435068
+        },
+        {
+          "concurrency": 2,
+          "success": true,
+          "wall_ms": 0.675052
+        },
+        {
+          "concurrency": 4,
+          "success": true,
+          "wall_ms": 1.469343
+        },
+        {
+          "concurrency": 8,
+          "success": true,
+          "wall_ms": 1.961428
+        }
+      ]
+    },
+    "error": null,
+    "exit_code": 0,
+    "files_created": 0,
+    "from_object_id": null,
+    "inodes_created": 0,
+    "invalidates": [],
+    "invalidation_ms": 0,
+    "measurement_environment_id": "env:7a9cda66bc6b151a7886",
+    "network_bytes": 0,
+    "observation_key": "env:7a9cda66bc6b151a7886|CON-002|default|cold|contention:synthetic:con-002|contention_path|4",
+    "peak_rss_mb": null,
+    "pollution_check": "pass",
+    "read_bytes": 0,
+    "ready_ms": 4.574452,
+    "reset_ms": 0,
+    "resource_kind": "contention",
+    "reuse_safe": true,
+    "rss_mb": null,
+    "sample_index": 4,
+    "scenario_name": "default",
+    "schema_version": 1,
+    "state_before": "contention_path",
+    "success": true,
+    "switch_ms": 0,
+    "system_cpu_ms": 4.263000000037209,
+    "timed_out": false,
+    "to_object_id": "contention:synthetic:con-002",
+    "transition_class": "contention_path",
+    "user_cpu_ms": 3.6670000000071923,
+    "wall_ms": 4.574452,
+    "workload_origin": "synthetic",
+    "write_bytes": 0
+  },
+  {
+    "benchmark_id": "CON-002",
+    "cache_hit": false,
+    "cleanup_ms": 0,
+    "cost_class": "DIAGNOSTIC",
+    "details": {
+      "levels": [
+        {
+          "concurrency": 1,
+          "success": true,
+          "wall_ms": 0.558275
+        },
+        {
+          "concurrency": 2,
+          "success": true,
+          "wall_ms": 0.72018
+        },
+        {
+          "concurrency": 4,
+          "success": true,
+          "wall_ms": 1.013824
+        },
+        {
+          "concurrency": 8,
+          "success": true,
+          "wall_ms": 1.727864
+        }
+      ]
+    },
+    "error": null,
+    "exit_code": 0,
+    "files_created": 0,
+    "from_object_id": null,
+    "inodes_created": 0,
+    "invalidates": [],
+    "invalidation_ms": 0,
+    "measurement_environment_id": "env:7a9cda66bc6b151a7886",
+    "network_bytes": 0,
+    "observation_key": "env:7a9cda66bc6b151a7886|CON-002|default|cold|contention:synthetic:con-002|contention_path|5",
+    "peak_rss_mb": null,
+    "pollution_check": "pass",
+    "read_bytes": 0,
+    "ready_ms": 4.05063,
+    "reset_ms": 0,
+    "resource_kind": "contention",
+    "reuse_safe": true,
+    "rss_mb": null,
+    "sample_index": 5,
+    "scenario_name": "default",
+    "schema_version": 1,
+    "state_before": "contention_path",
+    "success": true,
+    "switch_ms": 0,
+    "system_cpu_ms": 5.13300000000072,
+    "timed_out": false,
+    "to_object_id": "contention:synthetic:con-002",
+    "transition_class": "contention_path",
+    "user_cpu_ms": 1.5750000000025466,
+    "wall_ms": 4.05063,
+    "workload_origin": "synthetic",
+    "write_bytes": 0
+  },
+  {
+    "benchmark_id": "CON-002",
+    "cache_hit": false,
+    "cleanup_ms": 0,
+    "cost_class": "DIAGNOSTIC",
+    "details": {
+      "levels": [
+        {
+          "concurrency": 1,
+          "success": true,
+          "wall_ms": 0.303319
+        },
+        {
+          "concurrency": 2,
+          "success": true,
+          "wall_ms": 0.56154
+        },
+        {
+          "concurrency": 4,
+          "success": true,
+          "wall_ms": 1.122398
+        },
+        {
+          "concurrency": 8,
+          "success": true,
+          "wall_ms": 1.965925
+        }
+      ]
+    },
+    "error": null,
+    "exit_code": 0,
+    "files_created": 0,
+    "from_object_id": null,
+    "inodes_created": 0,
+    "invalidates": [],
+    "invalidation_ms": 0,
+    "measurement_environment_id": "env:7a9cda66bc6b151a7886",
+    "network_bytes": 0,
+    "observation_key": "env:7a9cda66bc6b151a7886|CON-002|default|cold|contention:synthetic:con-002|contention_path|6",
+    "peak_rss_mb": null,
+    "pollution_check": "pass",
+    "read_bytes": 0,
+    "ready_ms": 3.986192,
+    "reset_ms": 0,
+    "resource_kind": "contention",
+    "reuse_safe": true,
+    "rss_mb": null,
+    "sample_index": 6,
+    "scenario_name": "default",
+    "schema_version": 1,
+    "state_before": "contention_path",
+    "success": true,
+    "switch_ms": 0,
+    "system_cpu_ms": 5.181999999990694,
+    "timed_out": false,
+    "to_object_id": "contention:synthetic:con-002",
+    "transition_class": "contention_path",
+    "user_cpu_ms": 1.6009999999937463,
+    "wall_ms": 3.986192,
+    "workload_origin": "synthetic",
+    "write_bytes": 0
+  },
+  {
+    "benchmark_id": "CON-003",
+    "cache_hit": false,
+    "cleanup_ms": 0,
+    "cost_class": "DIAGNOSTIC",
+    "details": {
+      "levels": [
+        {
+          "concurrency": 1,
+          "success": true,
+          "wall_ms": 5.687236
+        },
+        {
+          "concurrency": 2,
+          "success": true,
+          "wall_ms": 8.403205
+        },
+        {
+          "concurrency": 4,
+          "success": true,
+          "wall_ms": 28.022834
+        },
+        {
+          "concurrency": 8,
+          "success": true,
+          "wall_ms": 105.500532
+        }
+      ]
+    },
+    "error": null,
+    "exit_code": 0,
+    "files_created": 0,
+    "from_object_id": null,
+    "inodes_created": 0,
+    "invalidates": [],
+    "invalidation_ms": 0,
+    "measurement_environment_id": "env:7a9cda66bc6b151a7886",
+    "network_bytes": 0,
+    "observation_key": "env:7a9cda66bc6b151a7886|CON-003|default|cold|contention:synthetic:con-003|contention_path|0",
+    "peak_rss_mb": null,
+    "pollution_check": "pass",
+    "read_bytes": 0,
+    "ready_ms": 147.689512,
+    "reset_ms": 0,
+    "resource_kind": "contention",
+    "reuse_safe": true,
+    "rss_mb": null,
+    "sample_index": 0,
+    "scenario_name": "default",
+    "schema_version": 1,
+    "state_before": "contention_path",
+    "success": true,
+    "switch_ms": 0,
+    "system_cpu_ms": 149.5029999999815,
+    "timed_out": false,
+    "to_object_id": "contention:synthetic:con-003",
+    "transition_class": "contention_path",
+    "user_cpu_ms": 146.21299999998882,
+    "wall_ms": 147.689512,
+    "workload_origin": "synthetic",
+    "write_bytes": 0
+  },
+  {
+    "benchmark_id": "CON-003",
+    "cache_hit": false,
+    "cleanup_ms": 0,
+    "cost_class": "DIAGNOSTIC",
+    "details": {
+      "levels": [
+        {
+          "concurrency": 1,
+          "success": true,
+          "wall_ms": 4.815557
+        },
+        {
+          "concurrency": 2,
+          "success": true,
+          "wall_ms": 7.370172
+        },
+        {
+          "concurrency": 4,
+          "success": true,
+          "wall_ms": 31.637484
+        },
+        {
+          "concurrency": 8,
+          "success": true,
+          "wall_ms": 105.883923
+        }
+      ]
+    },
+    "error": null,
+    "exit_code": 0,
+    "files_created": 0,
+    "from_object_id": null,
+    "inodes_created": 0,
+    "invalidates": [],
+    "invalidation_ms": 0,
+    "measurement_environment_id": "env:7a9cda66bc6b151a7886",
+    "network_bytes": 0,
+    "observation_key": "env:7a9cda66bc6b151a7886|CON-003|default|cold|contention:synthetic:con-003|contention_path|1",
+    "peak_rss_mb": null,
+    "pollution_check": "pass",
+    "read_bytes": 0,
+    "ready_ms": 149.787687,
+    "reset_ms": 0,
+    "resource_kind": "contention",
+    "reuse_safe": true,
+    "rss_mb": null,
+    "sample_index": 1,
+    "scenario_name": "default",
+    "schema_version": 1,
+    "state_before": "contention_path",
+    "success": true,
+    "switch_ms": 0,
+    "system_cpu_ms": 160.85500000008324,
+    "timed_out": false,
+    "to_object_id": "contention:synthetic:con-003",
+    "transition_class": "contention_path",
+    "user_cpu_ms": 140.69000000000642,
+    "wall_ms": 149.787687,
+    "workload_origin": "synthetic",
+    "write_bytes": 0
+  },
+  {
+    "benchmark_id": "CON-003",
+    "cache_hit": false,
+    "cleanup_ms": 0,
+    "cost_class": "DIAGNOSTIC",
+    "details": {
+      "levels": [
+        {
+          "concurrency": 1,
+          "success": true,
+          "wall_ms": 5.507884
+        },
+        {
+          "concurrency": 2,
+          "success": true,
+          "wall_ms": 7.745921
+        },
+        {
+          "concurrency": 4,
+          "success": true,
+          "wall_ms": 24.018545
+        },
+        {
+          "concurrency": 8,
+          "success": true,
+          "wall_ms": 105.157223
+        }
+      ]
+    },
+    "error": null,
+    "exit_code": 0,
+    "files_created": 0,
+    "from_object_id": null,
+    "inodes_created": 0,
+    "invalidates": [],
+    "invalidation_ms": 0,
+    "measurement_environment_id": "env:7a9cda66bc6b151a7886",
+    "network_bytes": 0,
+    "observation_key": "env:7a9cda66bc6b151a7886|CON-003|default|cold|contention:synthetic:con-003|contention_path|2",
+    "peak_rss_mb": null,
+    "pollution_check": "pass",
+    "read_bytes": 0,
+    "ready_ms": 142.509705,
+    "reset_ms": 0,
+    "resource_kind": "contention",
+    "reuse_safe": true,
+    "rss_mb": null,
+    "sample_index": 2,
+    "scenario_name": "default",
+    "schema_version": 1,
+    "state_before": "contention_path",
+    "success": true,
+    "switch_ms": 0,
+    "system_cpu_ms": 162.90199999991728,
+    "timed_out": false,
+    "to_object_id": "contention:synthetic:con-003",
+    "transition_class": "contention_path",
+    "user_cpu_ms": 139.53099999997676,
+    "wall_ms": 142.509705,
+    "workload_origin": "synthetic",
+    "write_bytes": 0
+  },
+  {
+    "benchmark_id": "CON-003",
+    "cache_hit": false,
+    "cleanup_ms": 0,
+    "cost_class": "DIAGNOSTIC",
+    "details": {
+      "levels": [
+        {
+          "concurrency": 1,
+          "success": true,
+          "wall_ms": 4.986155
+        },
+        {
+          "concurrency": 2,
+          "success": true,
+          "wall_ms": 11.953518
+        },
+        {
+          "concurrency": 4,
+          "success": true,
+          "wall_ms": 33.669267
+        },
+        {
+          "concurrency": 8,
+          "success": true,
+          "wall_ms": 137.03543
+        }
+      ]
+    },
+    "error": null,
+    "exit_code": 0,
+    "files_created": 0,
+    "from_object_id": null,
+    "inodes_created": 0,
+    "invalidates": [],
+    "invalidation_ms": 0,
+    "measurement_environment_id": "env:7a9cda66bc6b151a7886",
+    "network_bytes": 0,
+    "observation_key": "env:7a9cda66bc6b151a7886|CON-003|default|cold|contention:synthetic:con-003|contention_path|3",
+    "peak_rss_mb": null,
+    "pollution_check": "pass",
+    "read_bytes": 0,
+    "ready_ms": 187.723121,
+    "reset_ms": 0,
+    "resource_kind": "contention",
+    "reuse_safe": true,
+    "rss_mb": null,
+    "sample_index": 3,
+    "scenario_name": "default",
+    "schema_version": 1,
+    "state_before": "contention_path",
+    "success": true,
+    "switch_ms": 0,
+    "system_cpu_ms": 220.46899999998004,
+    "timed_out": false,
+    "to_object_id": "contention:synthetic:con-003",
+    "transition_class": "contention_path",
+    "user_cpu_ms": 189.1509999999812,
+    "wall_ms": 187.723121,
+    "workload_origin": "synthetic",
+    "write_bytes": 0
+  },
+  {
+    "benchmark_id": "CON-003",
+    "cache_hit": false,
+    "cleanup_ms": 0,
+    "cost_class": "DIAGNOSTIC",
+    "details": {
+      "levels": [
+        {
+          "concurrency": 1,
+          "success": true,
+          "wall_ms": 5.521896
+        },
+        {
+          "concurrency": 2,
+          "success": true,
+          "wall_ms": 7.03118
+        },
+        {
+          "concurrency": 4,
+          "success": true,
+          "wall_ms": 27.772334
+        },
+        {
+          "concurrency": 8,
+          "success": true,
+          "wall_ms": 91.802174
+        }
+      ]
+    },
+    "error": null,
+    "exit_code": 0,
+    "files_created": 0,
+    "from_object_id": null,
+    "inodes_created": 0,
+    "invalidates": [],
+    "invalidation_ms": 0,
+    "measurement_environment_id": "env:7a9cda66bc6b151a7886",
+    "network_bytes": 0,
+    "observation_key": "env:7a9cda66bc6b151a7886|CON-003|default|cold|contention:synthetic:con-003|contention_path|4",
+    "peak_rss_mb": null,
+    "pollution_check": "pass",
+    "read_bytes": 0,
+    "ready_ms": 132.202317,
+    "reset_ms": 0,
+    "resource_kind": "contention",
+    "reuse_safe": true,
+    "rss_mb": null,
+    "sample_index": 4,
+    "scenario_name": "default",
+    "schema_version": 1,
+    "state_before": "contention_path",
+    "success": true,
+    "switch_ms": 0,
+    "system_cpu_ms": 140.11600000003455,
+    "timed_out": false,
+    "to_object_id": "contention:synthetic:con-003",
+    "transition_class": "contention_path",
+    "user_cpu_ms": 132.7980000000366,
+    "wall_ms": 132.202317,
+    "workload_origin": "synthetic",
+    "write_bytes": 0
+  },
+  {
+    "benchmark_id": "CON-003",
+    "cache_hit": false,
+    "cleanup_ms": 0,
+    "cost_class": "DIAGNOSTIC",
+    "details": {
+      "levels": [
+        {
+          "concurrency": 1,
+          "success": true,
+          "wall_ms": 4.835927
+        },
+        {
+          "concurrency": 2,
+          "success": true,
+          "wall_ms": 7.353116
+        },
+        {
+          "concurrency": 4,
+          "success": true,
+          "wall_ms": 29.706001
+        },
+        {
+          "concurrency": 8,
+          "success": true,
+          "wall_ms": 128.620056
+        }
+      ]
+    },
+    "error": null,
+    "exit_code": 0,
+    "files_created": 0,
+    "from_object_id": null,
+    "inodes_created": 0,
+    "invalidates": [],
+    "invalidation_ms": 0,
+    "measurement_environment_id": "env:7a9cda66bc6b151a7886",
+    "network_bytes": 0,
+    "observation_key": "env:7a9cda66bc6b151a7886|CON-003|default|cold|contention:synthetic:con-003|contention_path|5",
+    "peak_rss_mb": null,
+    "pollution_check": "pass",
+    "read_bytes": 0,
+    "ready_ms": 170.592578,
+    "reset_ms": 0,
+    "resource_kind": "contention",
+    "reuse_safe": true,
+    "rss_mb": null,
+    "sample_index": 5,
+    "scenario_name": "default",
+    "schema_version": 1,
+    "state_before": "contention_path",
+    "success": true,
+    "switch_ms": 0,
+    "system_cpu_ms": 184.20099999991635,
+    "timed_out": false,
+    "to_object_id": "contention:synthetic:con-003",
+    "transition_class": "contention_path",
+    "user_cpu_ms": 173.39499999997088,
+    "wall_ms": 170.592578,
+    "workload_origin": "synthetic",
+    "write_bytes": 0
+  },
+  {
+    "benchmark_id": "CON-003",
+    "cache_hit": false,
+    "cleanup_ms": 0,
+    "cost_class": "DIAGNOSTIC",
+    "details": {
+      "levels": [
+        {
+          "concurrency": 1,
+          "success": true,
+          "wall_ms": 4.399357
+        },
+        {
+          "concurrency": 2,
+          "success": true,
+          "wall_ms": 7.633
+        },
+        {
+          "concurrency": 4,
+          "success": true,
+          "wall_ms": 33.727235
+        },
+        {
+          "concurrency": 8,
+          "success": true,
+          "wall_ms": 98.053493
+        }
+      ]
+    },
+    "error": null,
+    "exit_code": 0,
+    "files_created": 0,
+    "from_object_id": null,
+    "inodes_created": 0,
+    "invalidates": [],
+    "invalidation_ms": 0,
+    "measurement_environment_id": "env:7a9cda66bc6b151a7886",
+    "network_bytes": 0,
+    "observation_key": "env:7a9cda66bc6b151a7886|CON-003|default|cold|contention:synthetic:con-003|contention_path|6",
+    "peak_rss_mb": null,
+    "pollution_check": "pass",
+    "read_bytes": 0,
+    "ready_ms": 143.90139,
+    "reset_ms": 0,
+    "resource_kind": "contention",
+    "reuse_safe": true,
+    "rss_mb": null,
+    "sample_index": 6,
+    "scenario_name": "default",
+    "schema_version": 1,
+    "state_before": "contention_path",
+    "success": true,
+    "switch_ms": 0,
+    "system_cpu_ms": 146.6010000000324,
+    "timed_out": false,
+    "to_object_id": "contention:synthetic:con-003",
+    "transition_class": "contention_path",
+    "user_cpu_ms": 140.2259999999842,
+    "wall_ms": 143.90139,
+    "workload_origin": "synthetic",
+    "write_bytes": 0
+  },
+  {
+    "benchmark_id": "CON-004",
+    "cache_hit": false,
+    "cleanup_ms": 0,
+    "cost_class": "DIAGNOSTIC",
+    "details": {
+      "levels": [
+        {
+          "concurrency": 1,
+          "success": true,
+          "wall_ms": 2467.05981
+        },
+        {
+          "concurrency": 2,
+          "success": true,
+          "wall_ms": 2492.544103
+        },
+        {
+          "concurrency": 4,
+          "success": true,
+          "wall_ms": 2560.813214
+        },
+        {
+          "concurrency": 8,
+          "success": true,
+          "wall_ms": 2704.599543
+        }
+      ]
+    },
+    "error": null,
+    "exit_code": 0,
+    "files_created": 0,
+    "from_object_id": null,
+    "inodes_created": 0,
+    "invalidates": [],
+    "invalidation_ms": 0,
+    "measurement_environment_id": "env:7a9cda66bc6b151a7886",
+    "network_bytes": 0,
+    "observation_key": "env:7a9cda66bc6b151a7886|CON-004|default|cold|contention:synthetic:con-004|contention_path|0",
+    "peak_rss_mb": null,
+    "pollution_check": "pass",
+    "read_bytes": 0,
+    "ready_ms": 10225.148961,
+    "reset_ms": 0,
+    "resource_kind": "contention",
+    "reuse_safe": true,
+    "rss_mb": null,
+    "sample_index": 0,
+    "scenario_name": "default",
+    "schema_version": 1,
+    "state_before": "contention_path",
+    "success": true,
+    "switch_ms": 0,
+    "system_cpu_ms": 17731.334999999945,
+    "timed_out": false,
+    "to_object_id": "contention:synthetic:con-004",
+    "transition_class": "contention_path",
+    "user_cpu_ms": 10144.105999999965,
+    "wall_ms": 10225.148961,
+    "workload_origin": "synthetic",
+    "write_bytes": 0
+  },
+  {
+    "benchmark_id": "CON-004",
+    "cache_hit": false,
+    "cleanup_ms": 0,
+    "cost_class": "DIAGNOSTIC",
+    "details": {
+      "levels": [
+        {
+          "concurrency": 1,
+          "success": true,
+          "wall_ms": 2550.906773
+        },
+        {
+          "concurrency": 2,
+          "success": true,
+          "wall_ms": 2629.464321
+        },
+        {
+          "concurrency": 4,
+          "success": true,
+          "wall_ms": 2767.972321
+        },
+        {
+          "concurrency": 8,
+          "success": true,
+          "wall_ms": 3064.045064
+        }
+      ]
+    },
+    "error": null,
+    "exit_code": 0,
+    "files_created": 0,
+    "from_object_id": null,
+    "inodes_created": 0,
+    "invalidates": [],
+    "invalidation_ms": 0,
+    "measurement_environment_id": "env:7a9cda66bc6b151a7886",
+    "network_bytes": 0,
+    "observation_key": "env:7a9cda66bc6b151a7886|CON-004|default|cold|contention:synthetic:con-004|contention_path|1",
+    "peak_rss_mb": null,
+    "pollution_check": "pass",
+    "read_bytes": 0,
+    "ready_ms": 11012.58126,
+    "reset_ms": 0,
+    "resource_kind": "contention",
+    "reuse_safe": true,
+    "rss_mb": null,
+    "sample_index": 1,
+    "scenario_name": "default",
+    "schema_version": 1,
+    "state_before": "contention_path",
+    "success": true,
+    "switch_ms": 0,
+    "system_cpu_ms": 18392.105000000014,
+    "timed_out": false,
+    "to_object_id": "contention:synthetic:con-004",
+    "transition_class": "contention_path",
+    "user_cpu_ms": 11178.034000000025,
+    "wall_ms": 11012.58126,
+    "workload_origin": "synthetic",
+    "write_bytes": 0
+  },
+  {
+    "benchmark_id": "CON-004",
+    "cache_hit": false,
+    "cleanup_ms": 0,
+    "cost_class": "DIAGNOSTIC",
+    "details": {
+      "levels": [
+        {
+          "concurrency": 1,
+          "success": true,
+          "wall_ms": 2707.628388
+        },
+        {
+          "concurrency": 2,
+          "success": true,
+          "wall_ms": 2769.785728
+        },
+        {
+          "concurrency": 4,
+          "success": true,
+          "wall_ms": 2793.763006
+        },
+        {
+          "concurrency": 8,
+          "success": true,
+          "wall_ms": 3112.935057
+        }
+      ]
+    },
+    "error": null,
+    "exit_code": 0,
+    "files_created": 0,
+    "from_object_id": null,
+    "inodes_created": 0,
+    "invalidates": [],
+    "invalidation_ms": 0,
+    "measurement_environment_id": "env:7a9cda66bc6b151a7886",
+    "network_bytes": 0,
+    "observation_key": "env:7a9cda66bc6b151a7886|CON-004|default|cold|contention:synthetic:con-004|contention_path|2",
+    "peak_rss_mb": null,
+    "pollution_check": "pass",
+    "read_bytes": 0,
+    "ready_ms": 11384.247844,
+    "reset_ms": 0,
+    "resource_kind": "contention",
+    "reuse_safe": true,
+    "rss_mb": null,
+    "sample_index": 2,
+    "scenario_name": "default",
+    "schema_version": 1,
+    "state_before": "contention_path",
+    "success": true,
+    "switch_ms": 0,
+    "system_cpu_ms": 18808.14699999996,
+    "timed_out": false,
+    "to_object_id": "contention:synthetic:con-004",
+    "transition_class": "contention_path",
+    "user_cpu_ms": 11537.755000000005,
+    "wall_ms": 11384.247844,
+    "workload_origin": "synthetic",
+    "write_bytes": 0
+  },
+  {
+    "benchmark_id": "CON-004",
+    "cache_hit": false,
+    "cleanup_ms": 0,
+    "cost_class": "DIAGNOSTIC",
+    "details": {
+      "levels": [
+        {
+          "concurrency": 1,
+          "success": true,
+          "wall_ms": 2770.539001
+        },
+        {
+          "concurrency": 2,
+          "success": true,
+          "wall_ms": 2818.949429
+        },
+        {
+          "concurrency": 4,
+          "success": true,
+          "wall_ms": 2839.241121
+        },
+        {
+          "concurrency": 8,
+          "success": true,
+          "wall_ms": 2936.215199
+        }
+      ]
+    },
+    "error": null,
+    "exit_code": 0,
+    "files_created": 0,
+    "from_object_id": null,
+    "inodes_created": 0,
+    "invalidates": [],
+    "invalidation_ms": 0,
+    "measurement_environment_id": "env:7a9cda66bc6b151a7886",
+    "network_bytes": 0,
+    "observation_key": "env:7a9cda66bc6b151a7886|CON-004|default|cold|contention:synthetic:con-004|contention_path|3",
+    "peak_rss_mb": null,
+    "pollution_check": "pass",
+    "read_bytes": 0,
+    "ready_ms": 11365.093014,
+    "reset_ms": 0,
+    "resource_kind": "contention",
+    "reuse_safe": true,
+    "rss_mb": null,
+    "sample_index": 3,
+    "scenario_name": "default",
+    "schema_version": 1,
+    "state_before": "contention_path",
+    "success": true,
+    "switch_ms": 0,
+    "system_cpu_ms": 19016.06499999991,
+    "timed_out": false,
+    "to_object_id": "contention:synthetic:con-004",
+    "transition_class": "contention_path",
+    "user_cpu_ms": 11704.183999999997,
+    "wall_ms": 11365.093014,
+    "workload_origin": "synthetic",
+    "write_bytes": 0
+  },
+  {
+    "benchmark_id": "CON-004",
+    "cache_hit": false,
+    "cleanup_ms": 0,
+    "cost_class": "DIAGNOSTIC",
+    "details": {
+      "levels": [
+        {
+          "concurrency": 1,
+          "success": true,
+          "wall_ms": 2657.928995
+        },
+        {
+          "concurrency": 2,
+          "success": true,
+          "wall_ms": 2751.884517
+        },
+        {
+          "concurrency": 4,
+          "success": true,
+          "wall_ms": 2849.214705
+        },
+        {
+          "concurrency": 8,
+          "success": true,
+          "wall_ms": 3020.999025
+        }
+      ]
+    },
+    "error": null,
+    "exit_code": 0,
+    "files_created": 0,
+    "from_object_id": null,
+    "inodes_created": 0,
+    "invalidates": [],
+    "invalidation_ms": 0,
+    "measurement_environment_id": "env:7a9cda66bc6b151a7886",
+    "network_bytes": 0,
+    "observation_key": "env:7a9cda66bc6b151a7886|CON-004|default|cold|contention:synthetic:con-004|contention_path|4",
+    "peak_rss_mb": null,
+    "pollution_check": "pass",
+    "read_bytes": 0,
+    "ready_ms": 11280.149546,
+    "reset_ms": 0,
+    "resource_kind": "contention",
+    "reuse_safe": true,
+    "rss_mb": null,
+    "sample_index": 4,
+    "scenario_name": "default",
+    "schema_version": 1,
+    "state_before": "contention_path",
+    "success": true,
+    "switch_ms": 0,
+    "system_cpu_ms": 18515.70499999991,
+    "timed_out": false,
+    "to_object_id": "contention:synthetic:con-004",
+    "transition_class": "contention_path",
+    "user_cpu_ms": 11471.224000000006,
+    "wall_ms": 11280.149546,
+    "workload_origin": "synthetic",
+    "write_bytes": 0
+  },
+  {
+    "benchmark_id": "CON-004",
+    "cache_hit": false,
+    "cleanup_ms": 0,
+    "cost_class": "DIAGNOSTIC",
+    "details": {
+      "levels": [
+        {
+          "concurrency": 1,
+          "success": true,
+          "wall_ms": 2815.494759
+        },
+        {
+          "concurrency": 2,
+          "success": true,
+          "wall_ms": 2836.503776
+        },
+        {
+          "concurrency": 4,
+          "success": true,
+          "wall_ms": 2875.521872
+        },
+        {
+          "concurrency": 8,
+          "success": true,
+          "wall_ms": 3151.24176
+        }
+      ]
+    },
+    "error": null,
+    "exit_code": 0,
+    "files_created": 0,
+    "from_object_id": null,
+    "inodes_created": 0,
+    "invalidates": [],
+    "invalidation_ms": 0,
+    "measurement_environment_id": "env:7a9cda66bc6b151a7886",
+    "network_bytes": 0,
+    "observation_key": "env:7a9cda66bc6b151a7886|CON-004|default|cold|contention:synthetic:con-004|contention_path|5",
+    "peak_rss_mb": null,
+    "pollution_check": "pass",
+    "read_bytes": 0,
+    "ready_ms": 11678.916009,
+    "reset_ms": 0,
+    "resource_kind": "contention",
+    "reuse_safe": true,
+    "rss_mb": null,
+    "sample_index": 5,
+    "scenario_name": "default",
+    "schema_version": 1,
+    "state_before": "contention_path",
+    "success": true,
+    "switch_ms": 0,
+    "system_cpu_ms": 19120.99699999999,
+    "timed_out": false,
+    "to_object_id": "contention:synthetic:con-004",
+    "transition_class": "contention_path",
+    "user_cpu_ms": 11900.449000000037,
+    "wall_ms": 11678.916009,
+    "workload_origin": "synthetic",
+    "write_bytes": 0
+  },
+  {
+    "benchmark_id": "CON-004",
+    "cache_hit": false,
+    "cleanup_ms": 0,
+    "cost_class": "DIAGNOSTIC",
+    "details": {
+      "levels": [
+        {
+          "concurrency": 1,
+          "success": true,
+          "wall_ms": 2921.290507
+        },
+        {
+          "concurrency": 2,
+          "success": true,
+          "wall_ms": 3057.371853
+        },
+        {
+          "concurrency": 4,
+          "success": true,
+          "wall_ms": 3252.204431
+        },
+        {
+          "concurrency": 8,
+          "success": true,
+          "wall_ms": 3466.446593
+        }
+      ]
+    },
+    "error": null,
+    "exit_code": 0,
+    "files_created": 0,
+    "from_object_id": null,
+    "inodes_created": 0,
+    "invalidates": [],
+    "invalidation_ms": 0,
+    "measurement_environment_id": "env:7a9cda66bc6b151a7886",
+    "network_bytes": 0,
+    "observation_key": "env:7a9cda66bc6b151a7886|CON-004|default|cold|contention:synthetic:con-004|contention_path|6",
+    "peak_rss_mb": null,
+    "pollution_check": "pass",
+    "read_bytes": 0,
+    "ready_ms": 12697.430219,
+    "reset_ms": 0,
+    "resource_kind": "contention",
+    "reuse_safe": true,
+    "rss_mb": null,
+    "sample_index": 6,
+    "scenario_name": "default",
+    "schema_version": 1,
+    "state_before": "contention_path",
+    "success": true,
+    "switch_ms": 0,
+    "system_cpu_ms": 20203.002000000084,
+    "timed_out": false,
+    "to_object_id": "contention:synthetic:con-004",
+    "transition_class": "contention_path",
+    "user_cpu_ms": 12732.65600000002,
+    "wall_ms": 12697.430219,
+    "workload_origin": "synthetic",
+    "write_bytes": 0
+  },
+  {
+    "benchmark_id": "CON-005",
+    "cache_hit": false,
+    "cleanup_ms": 0,
+    "cost_class": "DIAGNOSTIC",
+    "details": {
+      "levels": [
+        {
+          "concurrency": 1,
+          "success": true,
+          "wall_ms": 1087.128811
+        },
+        {
+          "concurrency": 2,
+          "success": true,
+          "wall_ms": 1069.179692
+        },
+        {
+          "concurrency": 4,
+          "success": true,
+          "wall_ms": 88.533191
+        },
+        {
+          "concurrency": 8,
+          "success": true,
+          "wall_ms": 1140.561121
+        }
+      ]
+    },
+    "error": null,
+    "exit_code": 0,
+    "files_created": 0,
+    "from_object_id": null,
+    "inodes_created": 0,
+    "invalidates": [],
+    "invalidation_ms": 0,
+    "measurement_environment_id": "env:7a9cda66bc6b151a7886",
+    "network_bytes": 0,
+    "observation_key": "env:7a9cda66bc6b151a7886|CON-005|default|cold|contention:synthetic:con-005|contention_path|0",
+    "peak_rss_mb": null,
+    "pollution_check": "pass",
+    "read_bytes": 0,
+    "ready_ms": 3385.642277,
+    "reset_ms": 0,
+    "resource_kind": "contention",
+    "reuse_safe": true,
+    "rss_mb": null,
+    "sample_index": 0,
+    "scenario_name": "default",
+    "schema_version": 1,
+    "state_before": "contention_path",
+    "success": true,
+    "switch_ms": 0,
+    "system_cpu_ms": 5357.024999999908,
+    "timed_out": false,
+    "to_object_id": "contention:synthetic:con-005",
+    "transition_class": "contention_path",
+    "user_cpu_ms": 3415.642999999932,
+    "wall_ms": 3385.642277,
+    "workload_origin": "synthetic",
+    "write_bytes": 0
+  },
+  {
+    "benchmark_id": "CON-005",
+    "cache_hit": false,
+    "cleanup_ms": 0,
+    "cost_class": "DIAGNOSTIC",
+    "details": {
+      "levels": [
+        {
+          "concurrency": 1,
+          "success": true,
+          "wall_ms": 75.167098
+        },
+        {
+          "concurrency": 2,
+          "success": true,
+          "wall_ms": 84.445166
+        },
+        {
+          "concurrency": 4,
+          "success": true,
+          "wall_ms": 1107.803948
+        },
+        {
+          "concurrency": 8,
+          "success": true,
+          "wall_ms": 1104.507938
+        }
+      ]
+    },
+    "error": null,
+    "exit_code": 0,
+    "files_created": 0,
+    "from_object_id": null,
+    "inodes_created": 0,
+    "invalidates": [],
+    "invalidation_ms": 0,
+    "measurement_environment_id": "env:7a9cda66bc6b151a7886",
+    "network_bytes": 0,
+    "observation_key": "env:7a9cda66bc6b151a7886|CON-005|default|cold|contention:synthetic:con-005|contention_path|1",
+    "peak_rss_mb": null,
+    "pollution_check": "pass",
+    "read_bytes": 0,
+    "ready_ms": 2372.082499,
+    "reset_ms": 0,
+    "resource_kind": "contention",
+    "reuse_safe": true,
+    "rss_mb": null,
+    "sample_index": 1,
+    "scenario_name": "default",
+    "schema_version": 1,
+    "state_before": "contention_path",
+    "success": true,
+    "switch_ms": 0,
+    "system_cpu_ms": 3986.362999999983,
+    "timed_out": false,
+    "to_object_id": "contention:synthetic:con-005",
+    "transition_class": "contention_path",
+    "user_cpu_ms": 2341.340999999943,
+    "wall_ms": 2372.082499,
+    "workload_origin": "synthetic",
+    "write_bytes": 0
+  },
+  {
+    "benchmark_id": "CON-005",
+    "cache_hit": false,
+    "cleanup_ms": 0,
+    "cost_class": "DIAGNOSTIC",
+    "details": {
+      "levels": [
+        {
+          "concurrency": 1,
+          "success": true,
+          "wall_ms": 33.045458
+        },
+        {
+          "concurrency": 2,
+          "success": true,
+          "wall_ms": 85.589777
+        },
+        {
+          "concurrency": 4,
+          "success": true,
+          "wall_ms": 1064.761401
+        },
+        {
+          "concurrency": 8,
+          "success": true,
+          "wall_ms": 1107.817433
+        }
+      ]
+    },
+    "error": null,
+    "exit_code": 0,
+    "files_created": 0,
+    "from_object_id": null,
+    "inodes_created": 0,
+    "invalidates": [],
+    "invalidation_ms": 0,
+    "measurement_environment_id": "env:7a9cda66bc6b151a7886",
+    "network_bytes": 0,
+    "observation_key": "env:7a9cda66bc6b151a7886|CON-005|default|cold|contention:synthetic:con-005|contention_path|2",
+    "peak_rss_mb": null,
+    "pollution_check": "pass",
+    "read_bytes": 0,
+    "ready_ms": 2291.424747,
+    "reset_ms": 0,
+    "resource_kind": "contention",
+    "reuse_safe": true,
+    "rss_mb": null,
+    "sample_index": 2,
+    "scenario_name": "default",
+    "schema_version": 1,
+    "state_before": "contention_path",
+    "success": true,
+    "switch_ms": 0,
+    "system_cpu_ms": 3746.4479999999867,
+    "timed_out": false,
+    "to_object_id": "contention:synthetic:con-005",
+    "transition_class": "contention_path",
+    "user_cpu_ms": 2375.19599999996,
+    "wall_ms": 2291.424747,
+    "workload_origin": "synthetic",
+    "write_bytes": 0
+  },
+  {
+    "benchmark_id": "CON-005",
+    "cache_hit": false,
+    "cleanup_ms": 0,
+    "cost_class": "DIAGNOSTIC",
+    "details": {
+      "levels": [
+        {
+          "concurrency": 1,
+          "success": true,
+          "wall_ms": 49.415145
+        },
+        {
+          "concurrency": 2,
+          "success": true,
+          "wall_ms": 1045.385602
+        },
+        {
+          "concurrency": 4,
+          "success": true,
+          "wall_ms": 1069.838347
+        },
+        {
+          "concurrency": 8,
+          "success": true,
+          "wall_ms": 1117.07208
+        }
+      ]
+    },
+    "error": null,
+    "exit_code": 0,
+    "files_created": 0,
+    "from_object_id": null,
+    "inodes_created": 0,
+    "invalidates": [],
+    "invalidation_ms": 0,
+    "measurement_environment_id": "env:7a9cda66bc6b151a7886",
+    "network_bytes": 0,
+    "observation_key": "env:7a9cda66bc6b151a7886|CON-005|default|cold|contention:synthetic:con-005|contention_path|3",
+    "peak_rss_mb": null,
+    "pollution_check": "pass",
+    "read_bytes": 0,
+    "ready_ms": 3281.834041,
+    "reset_ms": 0,
+    "resource_kind": "contention",
+    "reuse_safe": true,
+    "rss_mb": null,
+    "sample_index": 3,
+    "scenario_name": "default",
+    "schema_version": 1,
+    "state_before": "contention_path",
+    "success": true,
+    "switch_ms": 0,
+    "system_cpu_ms": 5443.840000000023,
+    "timed_out": false,
+    "to_object_id": "contention:synthetic:con-005",
+    "transition_class": "contention_path",
+    "user_cpu_ms": 3271.4409999999816,
+    "wall_ms": 3281.834041,
+    "workload_origin": "synthetic",
+    "write_bytes": 0
+  },
+  {
+    "benchmark_id": "CON-005",
+    "cache_hit": false,
+    "cleanup_ms": 0,
+    "cost_class": "DIAGNOSTIC",
+    "details": {
+      "levels": [
+        {
+          "concurrency": 1,
+          "success": true,
+          "wall_ms": 55.079354
+        },
+        {
+          "concurrency": 2,
+          "success": true,
+          "wall_ms": 51.24993
+        },
+        {
+          "concurrency": 4,
+          "success": true,
+          "wall_ms": 70.440045
+        },
+        {
+          "concurrency": 8,
+          "success": true,
+          "wall_ms": 1083.890225
+        }
+      ]
+    },
+    "error": null,
+    "exit_code": 0,
+    "files_created": 0,
+    "from_object_id": null,
+    "inodes_created": 0,
+    "invalidates": [],
+    "invalidation_ms": 0,
+    "measurement_environment_id": "env:7a9cda66bc6b151a7886",
+    "network_bytes": 0,
+    "observation_key": "env:7a9cda66bc6b151a7886|CON-005|default|cold|contention:synthetic:con-005|contention_path|4",
+    "peak_rss_mb": null,
+    "pollution_check": "pass",
+    "read_bytes": 0,
+    "ready_ms": 1260.809091,
+    "reset_ms": 0,
+    "resource_kind": "contention",
+    "reuse_safe": true,
+    "rss_mb": null,
+    "sample_index": 4,
+    "scenario_name": "default",
+    "schema_version": 1,
+    "state_before": "contention_path",
+    "success": true,
+    "switch_ms": 0,
+    "system_cpu_ms": 2037.5780000000532,
+    "timed_out": false,
+    "to_object_id": "contention:synthetic:con-005",
+    "transition_class": "contention_path",
+    "user_cpu_ms": 1262.0769999999766,
+    "wall_ms": 1260.809091,
+    "workload_origin": "synthetic",
+    "write_bytes": 0
+  },
+  {
+    "benchmark_id": "CON-005",
+    "cache_hit": false,
+    "cleanup_ms": 0,
+    "cost_class": "DIAGNOSTIC",
+    "details": {
+      "levels": [
+        {
+          "concurrency": 1,
+          "success": true,
+          "wall_ms": 31.660522
+        },
+        {
+          "concurrency": 2,
+          "success": true,
+          "wall_ms": 47.71356
+        },
+        {
+          "concurrency": 4,
+          "success": true,
+          "wall_ms": 1054.642411
+        },
+        {
+          "concurrency": 8,
+          "success": true,
+          "wall_ms": 1098.27113
+        }
+      ]
+    },
+    "error": null,
+    "exit_code": 0,
+    "files_created": 0,
+    "from_object_id": null,
+    "inodes_created": 0,
+    "invalidates": [],
+    "invalidation_ms": 0,
+    "measurement_environment_id": "env:7a9cda66bc6b151a7886",
+    "network_bytes": 0,
+    "observation_key": "env:7a9cda66bc6b151a7886|CON-005|default|cold|contention:synthetic:con-005|contention_path|5",
+    "peak_rss_mb": null,
+    "pollution_check": "pass",
+    "read_bytes": 0,
+    "ready_ms": 2232.465713,
+    "reset_ms": 0,
+    "resource_kind": "contention",
+    "reuse_safe": true,
+    "rss_mb": null,
+    "sample_index": 5,
+    "scenario_name": "default",
+    "schema_version": 1,
+    "state_before": "contention_path",
+    "success": true,
+    "switch_ms": 0,
+    "system_cpu_ms": 3635.907999999972,
+    "timed_out": false,
+    "to_object_id": "contention:synthetic:con-005",
+    "transition_class": "contention_path",
+    "user_cpu_ms": 2257.116999999994,
+    "wall_ms": 2232.465713,
+    "workload_origin": "synthetic",
+    "write_bytes": 0
+  },
+  {
+    "benchmark_id": "CON-005",
+    "cache_hit": false,
+    "cleanup_ms": 0,
+    "cost_class": "DIAGNOSTIC",
+    "details": {
+      "levels": [
+        {
+          "concurrency": 1,
+          "success": true,
+          "wall_ms": 36.286
+        },
+        {
+          "concurrency": 2,
+          "success": true,
+          "wall_ms": 52.281971
+        },
+        {
+          "concurrency": 4,
+          "success": true,
+          "wall_ms": 1073.753043
+        },
+        {
+          "concurrency": 8,
+          "success": true,
+          "wall_ms": 1092.247843
+        }
+      ]
+    },
+    "error": null,
+    "exit_code": 0,
+    "files_created": 0,
+    "from_object_id": null,
+    "inodes_created": 0,
+    "invalidates": [],
+    "invalidation_ms": 0,
+    "measurement_environment_id": "env:7a9cda66bc6b151a7886",
+    "network_bytes": 0,
+    "observation_key": "env:7a9cda66bc6b151a7886|CON-005|default|cold|contention:synthetic:con-005|contention_path|6",
+    "peak_rss_mb": null,
+    "pollution_check": "pass",
+    "read_bytes": 0,
+    "ready_ms": 2254.711925,
+    "reset_ms": 0,
+    "resource_kind": "contention",
+    "reuse_safe": true,
+    "rss_mb": null,
+    "sample_index": 6,
+    "scenario_name": "default",
+    "schema_version": 1,
+    "state_before": "contention_path",
+    "success": true,
+    "switch_ms": 0,
+    "system_cpu_ms": 3833.3319999999276,
+    "timed_out": false,
+    "to_object_id": "contention:synthetic:con-005",
+    "transition_class": "contention_path",
+    "user_cpu_ms": 2271.744999999896,
+    "wall_ms": 2254.711925,
+    "workload_origin": "synthetic",
+    "write_bytes": 0
+  },
+  {
+    "benchmark_id": "CON-006",
+    "cache_hit": false,
+    "cleanup_ms": 0,
+    "cost_class": "DIAGNOSTIC",
+    "details": {
+      "levels": [
+        {
+          "concurrency": 1,
+          "success": true,
+          "wall_ms": 343.591722
+        },
+        {
+          "concurrency": 2,
+          "success": true,
+          "wall_ms": 361.31026
+        },
+        {
+          "concurrency": 4,
+          "success": true,
+          "wall_ms": 365.04489
+        },
+        {
+          "concurrency": 8,
+          "success": true,
+          "wall_ms": 441.865205
+        }
+      ]
+    },
+    "error": null,
+    "exit_code": 0,
+    "files_created": 0,
+    "from_object_id": null,
+    "inodes_created": 0,
+    "invalidates": [],
+    "invalidation_ms": 0,
+    "measurement_environment_id": "env:7a9cda66bc6b151a7886",
+    "network_bytes": 0,
+    "observation_key": "env:7a9cda66bc6b151a7886|CON-006|default|cold|contention:synthetic:con-006|contention_path|0",
+    "peak_rss_mb": null,
+    "pollution_check": "pass",
+    "read_bytes": 0,
+    "ready_ms": 1511.91969,
+    "reset_ms": 0,
+    "resource_kind": "contention",
+    "reuse_safe": true,
+    "rss_mb": null,
+    "sample_index": 0,
+    "scenario_name": "default",
+    "schema_version": 1,
+    "state_before": "contention_path",
+    "success": true,
+    "switch_ms": 0,
+    "system_cpu_ms": 2361.757000000125,
+    "timed_out": false,
+    "to_object_id": "contention:synthetic:con-006",
+    "transition_class": "contention_path",
+    "user_cpu_ms": 1483.8799999999992,
+    "wall_ms": 1511.91969,
+    "workload_origin": "synthetic",
+    "write_bytes": 0
+  },
+  {
+    "benchmark_id": "CON-006",
+    "cache_hit": false,
+    "cleanup_ms": 0,
+    "cost_class": "DIAGNOSTIC",
+    "details": {
+      "levels": [
+        {
+          "concurrency": 1,
+          "success": true,
+          "wall_ms": 380.385389
+        },
+        {
+          "concurrency": 2,
+          "success": true,
+          "wall_ms": 397.295483
+        },
+        {
+          "concurrency": 4,
+          "success": true,
+          "wall_ms": 398.462158
+        },
+        {
+          "concurrency": 8,
+          "success": true,
+          "wall_ms": 479.477721
+        }
+      ]
+    },
+    "error": null,
+    "exit_code": 0,
+    "files_created": 0,
+    "from_object_id": null,
+    "inodes_created": 0,
+    "invalidates": [],
+    "invalidation_ms": 0,
+    "measurement_environment_id": "env:7a9cda66bc6b151a7886",
+    "network_bytes": 0,
+    "observation_key": "env:7a9cda66bc6b151a7886|CON-006|default|cold|contention:synthetic:con-006|contention_path|1",
+    "peak_rss_mb": null,
+    "pollution_check": "pass",
+    "read_bytes": 0,
+    "ready_ms": 1655.737047,
+    "reset_ms": 0,
+    "resource_kind": "contention",
+    "reuse_safe": true,
+    "rss_mb": null,
+    "sample_index": 1,
+    "scenario_name": "default",
+    "schema_version": 1,
+    "state_before": "contention_path",
+    "success": true,
+    "switch_ms": 0,
+    "system_cpu_ms": 2530.6859999998323,
+    "timed_out": false,
+    "to_object_id": "contention:synthetic:con-006",
+    "transition_class": "contention_path",
+    "user_cpu_ms": 1659.6490000000585,
+    "wall_ms": 1655.737047,
+    "workload_origin": "synthetic",
+    "write_bytes": 0
+  },
+  {
+    "benchmark_id": "CON-006",
+    "cache_hit": false,
+    "cleanup_ms": 0,
+    "cost_class": "DIAGNOSTIC",
+    "details": {
+      "levels": [
+        {
+          "concurrency": 1,
+          "success": true,
+          "wall_ms": 339.553901
+        },
+        {
+          "concurrency": 2,
+          "success": true,
+          "wall_ms": 392.069305
+        },
+        {
+          "concurrency": 4,
+          "success": true,
+          "wall_ms": 479.446403
+        },
+        {
+          "concurrency": 8,
+          "success": true,
+          "wall_ms": 662.497812
+        }
+      ]
+    },
+    "error": null,
+    "exit_code": 0,
+    "files_created": 0,
+    "from_object_id": null,
+    "inodes_created": 0,
+    "invalidates": [],
+    "invalidation_ms": 0,
+    "measurement_environment_id": "env:7a9cda66bc6b151a7886",
+    "network_bytes": 0,
+    "observation_key": "env:7a9cda66bc6b151a7886|CON-006|default|cold|contention:synthetic:con-006|contention_path|2",
+    "peak_rss_mb": null,
+    "pollution_check": "pass",
+    "read_bytes": 0,
+    "ready_ms": 1873.692892,
+    "reset_ms": 0,
+    "resource_kind": "contention",
+    "reuse_safe": true,
+    "rss_mb": null,
+    "sample_index": 2,
+    "scenario_name": "default",
+    "schema_version": 1,
+    "state_before": "contention_path",
+    "success": true,
+    "switch_ms": 0,
+    "system_cpu_ms": 2871.790999999803,
+    "timed_out": false,
+    "to_object_id": "contention:synthetic:con-006",
+    "transition_class": "contention_path",
+    "user_cpu_ms": 1860.3990000000294,
+    "wall_ms": 1873.692892,
+    "workload_origin": "synthetic",
+    "write_bytes": 0
+  },
+  {
+    "benchmark_id": "CON-006",
+    "cache_hit": false,
+    "cleanup_ms": 0,
+    "cost_class": "DIAGNOSTIC",
+    "details": {
+      "levels": [
+        {
+          "concurrency": 1,
+          "success": true,
+          "wall_ms": 550.55706
+        },
+        {
+          "concurrency": 2,
+          "success": true,
+          "wall_ms": 503.094681
+        },
+        {
+          "concurrency": 4,
+          "success": true,
+          "wall_ms": 512.906836
+        },
+        {
+          "concurrency": 8,
+          "success": true,
+          "wall_ms": 552.691158
+        }
+      ]
+    },
+    "error": null,
+    "exit_code": 0,
+    "files_created": 0,
+    "from_object_id": null,
+    "inodes_created": 0,
+    "invalidates": [],
+    "invalidation_ms": 0,
+    "measurement_environment_id": "env:7a9cda66bc6b151a7886",
+    "network_bytes": 0,
+    "observation_key": "env:7a9cda66bc6b151a7886|CON-006|default|cold|contention:synthetic:con-006|contention_path|3",
+    "peak_rss_mb": null,
+    "pollution_check": "pass",
+    "read_bytes": 0,
+    "ready_ms": 2119.411909,
+    "reset_ms": 0,
+    "resource_kind": "contention",
+    "reuse_safe": true,
+    "rss_mb": null,
+    "sample_index": 3,
+    "scenario_name": "default",
+    "schema_version": 1,
+    "state_before": "contention_path",
+    "success": true,
+    "switch_ms": 0,
+    "system_cpu_ms": 3207.8509999998914,
+    "timed_out": false,
+    "to_object_id": "contention:synthetic:con-006",
+    "transition_class": "contention_path",
+    "user_cpu_ms": 2133.393000000069,
+    "wall_ms": 2119.411909,
+    "workload_origin": "synthetic",
+    "write_bytes": 0
+  },
+  {
+    "benchmark_id": "CON-006",
+    "cache_hit": false,
+    "cleanup_ms": 0,
+    "cost_class": "DIAGNOSTIC",
+    "details": {
+      "levels": [
+        {
+          "concurrency": 1,
+          "success": true,
+          "wall_ms": 475.071533
+        },
+        {
+          "concurrency": 2,
+          "success": true,
+          "wall_ms": 412.970025
+        },
+        {
+          "concurrency": 4,
+          "success": true,
+          "wall_ms": 441.525888
+        },
+        {
+          "concurrency": 8,
+          "success": true,
+          "wall_ms": 490.571262
+        }
+      ]
+    },
+    "error": null,
+    "exit_code": 0,
+    "files_created": 0,
+    "from_object_id": null,
+    "inodes_created": 0,
+    "invalidates": [],
+    "invalidation_ms": 0,
+    "measurement_environment_id": "env:7a9cda66bc6b151a7886",
+    "network_bytes": 0,
+    "observation_key": "env:7a9cda66bc6b151a7886|CON-006|default|cold|contention:synthetic:con-006|contention_path|4",
+    "peak_rss_mb": null,
+    "pollution_check": "pass",
+    "read_bytes": 0,
+    "ready_ms": 1820.256536,
+    "reset_ms": 0,
+    "resource_kind": "contention",
+    "reuse_safe": true,
+    "rss_mb": null,
+    "sample_index": 4,
+    "scenario_name": "default",
+    "schema_version": 1,
+    "state_before": "contention_path",
+    "success": true,
+    "switch_ms": 0,
+    "system_cpu_ms": 2731.1090000000604,
+    "timed_out": false,
+    "to_object_id": "contention:synthetic:con-006",
+    "transition_class": "contention_path",
+    "user_cpu_ms": 1824.455999999941,
+    "wall_ms": 1820.256536,
+    "workload_origin": "synthetic",
+    "write_bytes": 0
+  },
+  {
+    "benchmark_id": "CON-006",
+    "cache_hit": false,
+    "cleanup_ms": 0,
+    "cost_class": "DIAGNOSTIC",
+    "details": {
+      "levels": [
+        {
+          "concurrency": 1,
+          "success": true,
+          "wall_ms": 301.666908
+        },
+        {
+          "concurrency": 2,
+          "success": true,
+          "wall_ms": 310.224615
+        },
+        {
+          "concurrency": 4,
+          "success": true,
+          "wall_ms": 290.810763
+        },
+        {
+          "concurrency": 8,
+          "success": true,
+          "wall_ms": 321.168723
+        }
+      ]
+    },
+    "error": null,
+    "exit_code": 0,
+    "files_created": 0,
+    "from_object_id": null,
+    "inodes_created": 0,
+    "invalidates": [],
+    "invalidation_ms": 0,
+    "measurement_environment_id": "env:7a9cda66bc6b151a7886",
+    "network_bytes": 0,
+    "observation_key": "env:7a9cda66bc6b151a7886|CON-006|default|cold|contention:synthetic:con-006|contention_path|5",
+    "peak_rss_mb": null,
+    "pollution_check": "pass",
+    "read_bytes": 0,
+    "ready_ms": 1223.995328,
+    "reset_ms": 0,
+    "resource_kind": "contention",
+    "reuse_safe": true,
+    "rss_mb": null,
+    "sample_index": 5,
+    "scenario_name": "default",
+    "schema_version": 1,
+    "state_before": "contention_path",
+    "success": true,
+    "switch_ms": 0,
+    "system_cpu_ms": 1887.8089999998338,
+    "timed_out": false,
+    "to_object_id": "contention:synthetic:con-006",
+    "transition_class": "contention_path",
+    "user_cpu_ms": 1172.16099999996,
+    "wall_ms": 1223.995328,
+    "workload_origin": "synthetic",
+    "write_bytes": 0
+  },
+  {
+    "benchmark_id": "CON-006",
+    "cache_hit": false,
+    "cleanup_ms": 0,
+    "cost_class": "DIAGNOSTIC",
+    "details": {
+      "levels": [
+        {
+          "concurrency": 1,
+          "success": true,
+          "wall_ms": 181.87614
+        },
+        {
+          "concurrency": 2,
+          "success": true,
+          "wall_ms": 165.606385
+        },
+        {
+          "concurrency": 4,
+          "success": true,
+          "wall_ms": 164.726764
+        },
+        {
+          "concurrency": 8,
+          "success": true,
+          "wall_ms": 215.533913
+        }
+      ]
+    },
+    "error": null,
+    "exit_code": 0,
+    "files_created": 0,
+    "from_object_id": null,
+    "inodes_created": 0,
+    "invalidates": [],
+    "invalidation_ms": 0,
+    "measurement_environment_id": "env:7a9cda66bc6b151a7886",
+    "network_bytes": 0,
+    "observation_key": "env:7a9cda66bc6b151a7886|CON-006|default|cold|contention:synthetic:con-006|contention_path|6",
+    "peak_rss_mb": null,
+    "pollution_check": "pass",
+    "read_bytes": 0,
+    "ready_ms": 727.886457,
+    "reset_ms": 0,
+    "resource_kind": "contention",
+    "reuse_safe": true,
+    "rss_mb": null,
+    "sample_index": 6,
+    "scenario_name": "default",
+    "schema_version": 1,
+    "state_before": "contention_path",
+    "success": true,
+    "switch_ms": 0,
+    "system_cpu_ms": 1178.466999999955,
+    "timed_out": false,
+    "to_object_id": "contention:synthetic:con-006",
+    "transition_class": "contention_path",
+    "user_cpu_ms": 688.3289999999533,
+    "wall_ms": 727.886457,
+    "workload_origin": "synthetic",
+    "write_bytes": 0
+  },
+  {
+    "benchmark_id": "CON-007",
+    "cache_hit": false,
+    "cleanup_ms": 0,
+    "cost_class": "DIAGNOSTIC",
+    "details": {
+      "levels": [
+        {
+          "concurrency": 1,
+          "success": true,
+          "wall_ms": 7.879101
+        },
+        {
+          "concurrency": 2,
+          "success": true,
+          "wall_ms": 143.074985
+        },
+        {
+          "concurrency": 4,
+          "success": true,
+          "wall_ms": 11.291354
+        },
+        {
+          "concurrency": 8,
+          "success": true,
+          "wall_ms": 15.960147
+        }
+      ]
+    },
+    "error": null,
+    "exit_code": 0,
+    "files_created": 0,
+    "from_object_id": null,
+    "inodes_created": 0,
+    "invalidates": [],
+    "invalidation_ms": 0,
+    "measurement_environment_id": "env:7a9cda66bc6b151a7886",
+    "network_bytes": 0,
+    "observation_key": "env:7a9cda66bc6b151a7886|CON-007|default|cold|contention:synthetic:con-007|contention_path|0",
+    "peak_rss_mb": null,
+    "pollution_check": "pass",
+    "read_bytes": 0,
+    "ready_ms": 178.319509,
+    "reset_ms": 0,
+    "resource_kind": "contention",
+    "reuse_safe": true,
+    "rss_mb": null,
+    "sample_index": 0,
+    "scenario_name": "default",
+    "schema_version": 1,
+    "state_before": "contention_path",
+    "success": true,
+    "switch_ms": 0,
+    "system_cpu_ms": 113.85300000006282,
+    "timed_out": false,
+    "to_object_id": "contention:synthetic:con-007",
+    "transition_class": "contention_path",
+    "user_cpu_ms": 56.13900000003014,
+    "wall_ms": 178.319509,
+    "workload_origin": "synthetic",
+    "write_bytes": 0
+  },
+  {
+    "benchmark_id": "CON-007",
+    "cache_hit": false,
+    "cleanup_ms": 0,
+    "cost_class": "DIAGNOSTIC",
+    "details": {
+      "levels": [
+        {
+          "concurrency": 1,
+          "success": true,
+          "wall_ms": 6.867721
+        },
+        {
+          "concurrency": 2,
+          "success": true,
+          "wall_ms": 7.707331
+        },
+        {
+          "concurrency": 4,
+          "success": true,
+          "wall_ms": 149.007851
+        },
+        {
+          "concurrency": 8,
+          "success": true,
+          "wall_ms": 160.246064
+        }
+      ]
+    },
+    "error": null,
+    "exit_code": 0,
+    "files_created": 0,
+    "from_object_id": null,
+    "inodes_created": 0,
+    "invalidates": [],
+    "invalidation_ms": 0,
+    "measurement_environment_id": "env:7a9cda66bc6b151a7886",
+    "network_bytes": 0,
+    "observation_key": "env:7a9cda66bc6b151a7886|CON-007|default|cold|contention:synthetic:con-007|contention_path|1",
+    "peak_rss_mb": null,
+    "pollution_check": "pass",
+    "read_bytes": 0,
+    "ready_ms": 323.984982,
+    "reset_ms": 0,
+    "resource_kind": "contention",
+    "reuse_safe": true,
+    "rss_mb": null,
+    "sample_index": 1,
+    "scenario_name": "default",
+    "schema_version": 1,
+    "state_before": "contention_path",
+    "success": true,
+    "switch_ms": 0,
+    "system_cpu_ms": 235.04099999991013,
+    "timed_out": false,
+    "to_object_id": "contention:synthetic:con-007",
+    "transition_class": "contention_path",
+    "user_cpu_ms": 84.12999999995918,
+    "wall_ms": 323.984982,
+    "workload_origin": "synthetic",
+    "write_bytes": 0
+  },
+  {
+    "benchmark_id": "CON-007",
+    "cache_hit": false,
+    "cleanup_ms": 0,
+    "cost_class": "DIAGNOSTIC",
+    "details": {
+      "levels": [
+        {
+          "concurrency": 1,
+          "success": true,
+          "wall_ms": 7.436181
+        },
+        {
+          "concurrency": 2,
+          "success": true,
+          "wall_ms": 136.656123
+        },
+        {
+          "concurrency": 4,
+          "success": true,
+          "wall_ms": 10.794952
+        },
+        {
+          "concurrency": 8,
+          "success": true,
+          "wall_ms": 346.04008
+        }
+      ]
+    },
+    "error": null,
+    "exit_code": 0,
+    "files_created": 0,
+    "from_object_id": null,
+    "inodes_created": 0,
+    "invalidates": [],
+    "invalidation_ms": 0,
+    "measurement_environment_id": "env:7a9cda66bc6b151a7886",
+    "network_bytes": 0,
+    "observation_key": "env:7a9cda66bc6b151a7886|CON-007|default|cold|contention:synthetic:con-007|contention_path|2",
+    "peak_rss_mb": null,
+    "pollution_check": "pass",
+    "read_bytes": 0,
+    "ready_ms": 501.085937,
+    "reset_ms": 0,
+    "resource_kind": "contention",
+    "reuse_safe": true,
+    "rss_mb": null,
+    "sample_index": 2,
+    "scenario_name": "default",
+    "schema_version": 1,
+    "state_before": "contention_path",
+    "success": true,
+    "switch_ms": 0,
+    "system_cpu_ms": 459.3890000001011,
+    "timed_out": false,
+    "to_object_id": "contention:synthetic:con-007",
+    "transition_class": "contention_path",
+    "user_cpu_ms": 264.4950000000108,
+    "wall_ms": 501.085937,
+    "workload_origin": "synthetic",
+    "write_bytes": 0
+  },
+  {
+    "benchmark_id": "CON-007",
+    "cache_hit": false,
+    "cleanup_ms": 0,
+    "cost_class": "DIAGNOSTIC",
+    "details": {
+      "levels": [
+        {
+          "concurrency": 1,
+          "success": true,
+          "wall_ms": 8.030649
+        },
+        {
+          "concurrency": 2,
+          "success": true,
+          "wall_ms": 144.914759
+        },
+        {
+          "concurrency": 4,
+          "success": true,
+          "wall_ms": 151.437337
+        },
+        {
+          "concurrency": 8,
+          "success": true,
+          "wall_ms": 16.150405
+        }
+      ]
+    },
+    "error": null,
+    "exit_code": 0,
+    "files_created": 0,
+    "from_object_id": null,
+    "inodes_created": 0,
+    "invalidates": [],
+    "invalidation_ms": 0,
+    "measurement_environment_id": "env:7a9cda66bc6b151a7886",
+    "network_bytes": 0,
+    "observation_key": "env:7a9cda66bc6b151a7886|CON-007|default|cold|contention:synthetic:con-007|contention_path|3",
+    "peak_rss_mb": null,
+    "pollution_check": "pass",
+    "read_bytes": 0,
+    "ready_ms": 320.650007,
+    "reset_ms": 0,
+    "resource_kind": "contention",
+    "reuse_safe": true,
+    "rss_mb": null,
+    "sample_index": 3,
+    "scenario_name": "default",
+    "schema_version": 1,
+    "state_before": "contention_path",
+    "success": true,
+    "switch_ms": 0,
+    "system_cpu_ms": 215.64300000000003,
+    "timed_out": false,
+    "to_object_id": "contention:synthetic:con-007",
+    "transition_class": "contention_path",
+    "user_cpu_ms": 97.52099999991515,
+    "wall_ms": 320.650007,
+    "workload_origin": "synthetic",
+    "write_bytes": 0
+  },
+  {
+    "benchmark_id": "CON-007",
+    "cache_hit": false,
+    "cleanup_ms": 0,
+    "cost_class": "DIAGNOSTIC",
+    "details": {
+      "levels": [
+        {
+          "concurrency": 1,
+          "success": true,
+          "wall_ms": 7.361258
+        },
+        {
+          "concurrency": 2,
+          "success": true,
+          "wall_ms": 7.642954
+        },
+        {
+          "concurrency": 4,
+          "success": true,
+          "wall_ms": 8.801686
+        },
+        {
+          "concurrency": 8,
+          "success": true,
+          "wall_ms": 156.565655
+        }
+      ]
+    },
+    "error": null,
+    "exit_code": 0,
+    "files_created": 0,
+    "from_object_id": null,
+    "inodes_created": 0,
+    "invalidates": [],
+    "invalidation_ms": 0,
+    "measurement_environment_id": "env:7a9cda66bc6b151a7886",
+    "network_bytes": 0,
+    "observation_key": "env:7a9cda66bc6b151a7886|CON-007|default|cold|contention:synthetic:con-007|contention_path|4",
+    "peak_rss_mb": null,
+    "pollution_check": "pass",
+    "read_bytes": 0,
+    "ready_ms": 180.527608,
+    "reset_ms": 0,
+    "resource_kind": "contention",
+    "reuse_safe": true,
+    "rss_mb": null,
+    "sample_index": 4,
+    "scenario_name": "default",
+    "schema_version": 1,
+    "state_before": "contention_path",
+    "success": true,
+    "switch_ms": 0,
+    "system_cpu_ms": 123.90400000003865,
+    "timed_out": false,
+    "to_object_id": "contention:synthetic:con-007",
+    "transition_class": "contention_path",
+    "user_cpu_ms": 50.26900000007117,
+    "wall_ms": 180.527608,
+    "workload_origin": "synthetic",
+    "write_bytes": 0
+  },
+  {
+    "benchmark_id": "CON-007",
+    "cache_hit": false,
+    "cleanup_ms": 0,
+    "cost_class": "DIAGNOSTIC",
+    "details": {
+      "levels": [
+        {
+          "concurrency": 1,
+          "success": true,
+          "wall_ms": 7.69344
+        },
+        {
+          "concurrency": 2,
+          "success": true,
+          "wall_ms": 8.918273
+        },
+        {
+          "concurrency": 4,
+          "success": true,
+          "wall_ms": 9.856332
+        },
+        {
+          "concurrency": 8,
+          "success": true,
+          "wall_ms": 166.38397
+        }
+      ]
+    },
+    "error": null,
+    "exit_code": 0,
+    "files_created": 0,
+    "from_object_id": null,
+    "inodes_created": 0,
+    "invalidates": [],
+    "invalidation_ms": 0,
+    "measurement_environment_id": "env:7a9cda66bc6b151a7886",
+    "network_bytes": 0,
+    "observation_key": "env:7a9cda66bc6b151a7886|CON-007|default|cold|contention:synthetic:con-007|contention_path|5",
+    "peak_rss_mb": null,
+    "pollution_check": "pass",
+    "read_bytes": 0,
+    "ready_ms": 192.959067,
+    "reset_ms": 0,
+    "resource_kind": "contention",
+    "reuse_safe": true,
+    "rss_mb": null,
+    "sample_index": 5,
+    "scenario_name": "default",
+    "schema_version": 1,
+    "state_before": "contention_path",
+    "success": true,
+    "switch_ms": 0,
+    "system_cpu_ms": 122.63099999995575,
+    "timed_out": false,
+    "to_object_id": "contention:synthetic:con-007",
+    "transition_class": "contention_path",
+    "user_cpu_ms": 66.58799999991061,
+    "wall_ms": 192.959067,
+    "workload_origin": "synthetic",
+    "write_bytes": 0
+  },
+  {
+    "benchmark_id": "CON-007",
+    "cache_hit": false,
+    "cleanup_ms": 0,
+    "cost_class": "DIAGNOSTIC",
+    "details": {
+      "levels": [
+        {
+          "concurrency": 1,
+          "success": true,
+          "wall_ms": 8.053014
+        },
+        {
+          "concurrency": 2,
+          "success": true,
+          "wall_ms": 146.397522
+        },
+        {
+          "concurrency": 4,
+          "success": true,
+          "wall_ms": 11.807894
+        },
+        {
+          "concurrency": 8,
+          "success": true,
+          "wall_ms": 245.934095
+        }
+      ]
+    },
+    "error": null,
+    "exit_code": 0,
+    "files_created": 0,
+    "from_object_id": null,
+    "inodes_created": 0,
+    "invalidates": [],
+    "invalidation_ms": 0,
+    "measurement_environment_id": "env:7a9cda66bc6b151a7886",
+    "network_bytes": 0,
+    "observation_key": "env:7a9cda66bc6b151a7886|CON-007|default|cold|contention:synthetic:con-007|contention_path|6",
+    "peak_rss_mb": null,
+    "pollution_check": "pass",
+    "read_bytes": 0,
+    "ready_ms": 412.339257,
+    "reset_ms": 0,
+    "resource_kind": "contention",
+    "reuse_safe": true,
+    "rss_mb": null,
+    "sample_index": 6,
+    "scenario_name": "default",
+    "schema_version": 1,
+    "state_before": "contention_path",
+    "success": true,
+    "switch_ms": 0,
+    "system_cpu_ms": 394.7720000001027,
+    "timed_out": false,
+    "to_object_id": "contention:synthetic:con-007",
+    "transition_class": "contention_path",
+    "user_cpu_ms": 189.95000000006712,
+    "wall_ms": 412.339257,
+    "workload_origin": "synthetic",
+    "write_bytes": 0
+  },
+  {
+    "benchmark_id": "CON-008",
+    "cache_hit": false,
+    "cleanup_ms": 0,
+    "cost_class": "DIAGNOSTIC",
+    "details": {
+      "levels": [
+        {
+          "concurrency": 1,
+          "success": true,
+          "wall_ms": 7.065029
+        },
+        {
+          "concurrency": 2,
+          "success": true,
+          "wall_ms": 10.644555
+        },
+        {
+          "concurrency": 4,
+          "success": true,
+          "wall_ms": 20.605746
+        },
+        {
+          "concurrency": 8,
+          "success": true,
+          "wall_ms": 40.646616
+        }
+      ]
+    },
+    "error": null,
+    "exit_code": 0,
+    "files_created": 0,
+    "from_object_id": null,
+    "inodes_created": 0,
+    "invalidates": [],
+    "invalidation_ms": 0,
+    "measurement_environment_id": "env:7a9cda66bc6b151a7886",
+    "network_bytes": 0,
+    "observation_key": "env:7a9cda66bc6b151a7886|CON-008|default|cold|contention:synthetic:con-008|contention_path|0",
+    "peak_rss_mb": null,
+    "pollution_check": "pass",
+    "read_bytes": 0,
+    "ready_ms": 79.039132,
+    "reset_ms": 0,
+    "resource_kind": "contention",
+    "reuse_safe": true,
+    "rss_mb": null,
+    "sample_index": 0,
+    "scenario_name": "default",
+    "schema_version": 1,
+    "state_before": "contention_path",
+    "success": true,
+    "switch_ms": 0,
+    "system_cpu_ms": 2.5789999999688007,
+    "timed_out": false,
+    "to_object_id": "contention:synthetic:con-008",
+    "transition_class": "contention_path",
+    "user_cpu_ms": 77.58299999989049,
+    "wall_ms": 79.039132,
+    "workload_origin": "synthetic",
+    "write_bytes": 0
+  },
+  {
+    "benchmark_id": "CON-008",
+    "cache_hit": false,
+    "cleanup_ms": 0,
+    "cost_class": "DIAGNOSTIC",
+    "details": {
+      "levels": [
+        {
+          "concurrency": 1,
+          "success": true,
+          "wall_ms": 5.356844
+        },
+        {
+          "concurrency": 2,
+          "success": true,
+          "wall_ms": 11.937691
+        },
+        {
+          "concurrency": 4,
+          "success": true,
+          "wall_ms": 23.042932
+        },
+        {
+          "concurrency": 8,
+          "success": true,
+          "wall_ms": 41.737547
+        }
+      ]
+    },
+    "error": null,
+    "exit_code": 0,
+    "files_created": 0,
+    "from_object_id": null,
+    "inodes_created": 0,
+    "invalidates": [],
+    "invalidation_ms": 0,
+    "measurement_environment_id": "env:7a9cda66bc6b151a7886",
+    "network_bytes": 0,
+    "observation_key": "env:7a9cda66bc6b151a7886|CON-008|default|cold|contention:synthetic:con-008|contention_path|1",
+    "peak_rss_mb": null,
+    "pollution_check": "pass",
+    "read_bytes": 0,
+    "ready_ms": 82.149808,
+    "reset_ms": 0,
+    "resource_kind": "contention",
+    "reuse_safe": true,
+    "rss_mb": null,
+    "sample_index": 1,
+    "scenario_name": "default",
+    "schema_version": 1,
+    "state_before": "contention_path",
+    "success": true,
+    "switch_ms": 0,
+    "system_cpu_ms": 0.0,
+    "timed_out": false,
+    "to_object_id": "contention:synthetic:con-008",
+    "transition_class": "contention_path",
+    "user_cpu_ms": 83.43899999999849,
+    "wall_ms": 82.149808,
+    "workload_origin": "synthetic",
+    "write_bytes": 0
+  },
+  {
+    "benchmark_id": "CON-008",
+    "cache_hit": false,
+    "cleanup_ms": 0,
+    "cost_class": "DIAGNOSTIC",
+    "details": {
+      "levels": [
+        {
+          "concurrency": 1,
+          "success": true,
+          "wall_ms": 5.30786
+        },
+        {
+          "concurrency": 2,
+          "success": true,
+          "wall_ms": 11.899032
+        },
+        {
+          "concurrency": 4,
+          "success": true,
+          "wall_ms": 21.656295
+        },
+        {
+          "concurrency": 8,
+          "success": true,
+          "wall_ms": 43.13456
+        }
+      ]
+    },
+    "error": null,
+    "exit_code": 0,
+    "files_created": 0,
+    "from_object_id": null,
+    "inodes_created": 0,
+    "invalidates": [],
+    "invalidation_ms": 0,
+    "measurement_environment_id": "env:7a9cda66bc6b151a7886",
+    "network_bytes": 0,
+    "observation_key": "env:7a9cda66bc6b151a7886|CON-008|default|cold|contention:synthetic:con-008|contention_path|2",
+    "peak_rss_mb": null,
+    "pollution_check": "pass",
+    "read_bytes": 0,
+    "ready_ms": 82.066041,
+    "reset_ms": 0,
+    "resource_kind": "contention",
+    "reuse_safe": true,
+    "rss_mb": null,
+    "sample_index": 2,
+    "scenario_name": "default",
+    "schema_version": 1,
+    "state_before": "contention_path",
+    "success": true,
+    "switch_ms": 0,
+    "system_cpu_ms": 0.4229999999552092,
+    "timed_out": false,
+    "to_object_id": "contention:synthetic:con-008",
+    "transition_class": "contention_path",
+    "user_cpu_ms": 84.38999999998487,
+    "wall_ms": 82.066041,
+    "workload_origin": "synthetic",
+    "write_bytes": 0
+  },
+  {
+    "benchmark_id": "CON-008",
+    "cache_hit": false,
+    "cleanup_ms": 0,
+    "cost_class": "DIAGNOSTIC",
+    "details": {
+      "levels": [
+        {
+          "concurrency": 1,
+          "success": true,
+          "wall_ms": 5.280048
+        },
+        {
+          "concurrency": 2,
+          "success": true,
+          "wall_ms": 10.270118
+        },
+        {
+          "concurrency": 4,
+          "success": true,
+          "wall_ms": 30.696653
+        },
+        {
+          "concurrency": 8,
+          "success": true,
+          "wall_ms": 43.449637
+        }
+      ]
+    },
+    "error": null,
+    "exit_code": 0,
+    "files_created": 0,
+    "from_object_id": null,
+    "inodes_created": 0,
+    "invalidates": [],
+    "invalidation_ms": 0,
+    "measurement_environment_id": "env:7a9cda66bc6b151a7886",
+    "network_bytes": 0,
+    "observation_key": "env:7a9cda66bc6b151a7886|CON-008|default|cold|contention:synthetic:con-008|contention_path|3",
+    "peak_rss_mb": null,
+    "pollution_check": "pass",
+    "read_bytes": 0,
+    "ready_ms": 89.779161,
+    "reset_ms": 0,
+    "resource_kind": "contention",
+    "reuse_safe": true,
+    "rss_mb": null,
+    "sample_index": 3,
+    "scenario_name": "default",
+    "schema_version": 1,
+    "state_before": "contention_path",
+    "success": true,
+    "switch_ms": 0,
+    "system_cpu_ms": 0.0,
+    "timed_out": false,
+    "to_object_id": "contention:synthetic:con-008",
+    "transition_class": "contention_path",
+    "user_cpu_ms": 91.03800000002593,
+    "wall_ms": 89.779161,
+    "workload_origin": "synthetic",
+    "write_bytes": 0
+  },
+  {
+    "benchmark_id": "CON-008",
+    "cache_hit": false,
+    "cleanup_ms": 0,
+    "cost_class": "DIAGNOSTIC",
+    "details": {
+      "levels": [
+        {
+          "concurrency": 1,
+          "success": true,
+          "wall_ms": 5.998025
+        },
+        {
+          "concurrency": 2,
+          "success": true,
+          "wall_ms": 12.867127
+        },
+        {
+          "concurrency": 4,
+          "success": true,
+          "wall_ms": 28.995518
+        },
+        {
+          "concurrency": 8,
+          "success": true,
+          "wall_ms": 53.93448
+        }
+      ]
+    },
+    "error": null,
+    "exit_code": 0,
+    "files_created": 0,
+    "from_object_id": null,
+    "inodes_created": 0,
+    "invalidates": [],
+    "invalidation_ms": 0,
+    "measurement_environment_id": "env:7a9cda66bc6b151a7886",
+    "network_bytes": 0,
+    "observation_key": "env:7a9cda66bc6b151a7886|CON-008|default|cold|contention:synthetic:con-008|contention_path|4",
+    "peak_rss_mb": null,
+    "pollution_check": "pass",
+    "read_bytes": 0,
+    "ready_ms": 101.855882,
+    "reset_ms": 0,
+    "resource_kind": "contention",
+    "reuse_safe": true,
+    "rss_mb": null,
+    "sample_index": 4,
+    "scenario_name": "default",
+    "schema_version": 1,
+    "state_before": "contention_path",
+    "success": true,
+    "switch_ms": 0,
+    "system_cpu_ms": 0.0,
+    "timed_out": false,
+    "to_object_id": "contention:synthetic:con-008",
+    "transition_class": "contention_path",
+    "user_cpu_ms": 103.39599999997517,
+    "wall_ms": 101.855882,
+    "workload_origin": "synthetic",
+    "write_bytes": 0
+  },
+  {
+    "benchmark_id": "CON-008",
+    "cache_hit": false,
+    "cleanup_ms": 0,
+    "cost_class": "DIAGNOSTIC",
+    "details": {
+      "levels": [
+        {
+          "concurrency": 1,
+          "success": true,
+          "wall_ms": 7.228056
+        },
+        {
+          "concurrency": 2,
+          "success": true,
+          "wall_ms": 12.202722
+        },
+        {
+          "concurrency": 4,
+          "success": true,
+          "wall_ms": 20.578014
+        },
+        {
+          "concurrency": 8,
+          "success": true,
+          "wall_ms": 43.749461
+        }
+      ]
+    },
+    "error": null,
+    "exit_code": 0,
+    "files_created": 0,
+    "from_object_id": null,
+    "inodes_created": 0,
+    "invalidates": [],
+    "invalidation_ms": 0,
+    "measurement_environment_id": "env:7a9cda66bc6b151a7886",
+    "network_bytes": 0,
+    "observation_key": "env:7a9cda66bc6b151a7886|CON-008|default|cold|contention:synthetic:con-008|contention_path|5",
+    "peak_rss_mb": null,
+    "pollution_check": "pass",
+    "read_bytes": 0,
+    "ready_ms": 83.840826,
+    "reset_ms": 0,
+    "resource_kind": "contention",
+    "reuse_safe": true,
+    "rss_mb": null,
+    "sample_index": 5,
+    "scenario_name": "default",
+    "schema_version": 1,
+    "state_before": "contention_path",
+    "success": true,
+    "switch_ms": 0,
+    "system_cpu_ms": 0.0,
+    "timed_out": false,
+    "to_object_id": "contention:synthetic:con-008",
+    "transition_class": "contention_path",
+    "user_cpu_ms": 85.18800000001647,
+    "wall_ms": 83.840826,
+    "workload_origin": "synthetic",
+    "write_bytes": 0
+  },
+  {
+    "benchmark_id": "CON-008",
+    "cache_hit": false,
+    "cleanup_ms": 0,
+    "cost_class": "DIAGNOSTIC",
+    "details": {
+      "levels": [
+        {
+          "concurrency": 1,
+          "success": true,
+          "wall_ms": 5.44009
+        },
+        {
+          "concurrency": 2,
+          "success": true,
+          "wall_ms": 11.458446
+        },
+        {
+          "concurrency": 4,
+          "success": true,
+          "wall_ms": 21.36898
+        },
+        {
+          "concurrency": 8,
+          "success": true,
+          "wall_ms": 48.101555
+        }
+      ]
+    },
+    "error": null,
+    "exit_code": 0,
+    "files_created": 0,
+    "from_object_id": null,
+    "inodes_created": 0,
+    "invalidates": [],
+    "invalidation_ms": 0,
+    "measurement_environment_id": "env:7a9cda66bc6b151a7886",
+    "network_bytes": 0,
+    "observation_key": "env:7a9cda66bc6b151a7886|CON-008|default|cold|contention:synthetic:con-008|contention_path|6",
+    "peak_rss_mb": null,
+    "pollution_check": "pass",
+    "read_bytes": 0,
+    "ready_ms": 86.42113,
+    "reset_ms": 0,
+    "resource_kind": "contention",
+    "reuse_safe": true,
+    "rss_mb": null,
+    "sample_index": 6,
+    "scenario_name": "default",
+    "schema_version": 1,
+    "state_before": "contention_path",
+    "success": true,
+    "switch_ms": 0,
+    "system_cpu_ms": 0.0,
+    "timed_out": false,
+    "to_object_id": "contention:synthetic:con-008",
+    "transition_class": "contention_path",
+    "user_cpu_ms": 87.72699999997258,
+    "wall_ms": 86.42113,
+    "workload_origin": "synthetic",
+    "write_bytes": 0
+  },
+  {
+    "benchmark_id": "CON-009",
+    "cache_hit": false,
+    "cleanup_ms": 0,
+    "cost_class": "DIAGNOSTIC",
+    "details": {
+      "levels": [
+        {
+          "concurrency": 1,
+          "success": true,
+          "wall_ms": 0.193122
+        },
+        {
+          "concurrency": 2,
+          "success": true,
+          "wall_ms": 0.395788
+        },
+        {
+          "concurrency": 4,
+          "success": true,
+          "wall_ms": 1.188057
+        },
+        {
+          "concurrency": 8,
+          "success": true,
+          "wall_ms": 1.193646
+        }
+      ]
+    },
+    "error": null,
+    "exit_code": 0,
+    "files_created": 0,
+    "from_object_id": null,
+    "inodes_created": 0,
+    "invalidates": [],
+    "invalidation_ms": 0,
+    "measurement_environment_id": "env:7a9cda66bc6b151a7886",
+    "network_bytes": 0,
+    "observation_key": "env:7a9cda66bc6b151a7886|CON-009|default|cold|contention:synthetic:con-009|contention_path|0",
+    "peak_rss_mb": null,
+    "pollution_check": "pass",
+    "read_bytes": 0,
+    "ready_ms": 3.002363,
+    "reset_ms": 0,
+    "resource_kind": "contention",
+    "reuse_safe": true,
+    "rss_mb": null,
+    "sample_index": 0,
+    "scenario_name": "default",
+    "schema_version": 1,
+    "state_before": "contention_path",
+    "success": true,
+    "switch_ms": 0,
+    "system_cpu_ms": 1.7069999998966523,
+    "timed_out": false,
+    "to_object_id": "contention:synthetic:con-009",
+    "transition_class": "contention_path",
+    "user_cpu_ms": 2.4690000000191503,
+    "wall_ms": 3.002363,
+    "workload_origin": "synthetic",
+    "write_bytes": 0
+  },
+  {
+    "benchmark_id": "CON-009",
+    "cache_hit": false,
+    "cleanup_ms": 0,
+    "cost_class": "DIAGNOSTIC",
+    "details": {
+      "levels": [
+        {
+          "concurrency": 1,
+          "success": true,
+          "wall_ms": 0.254114
+        },
+        {
+          "concurrency": 2,
+          "success": true,
+          "wall_ms": 0.664986
+        },
+        {
+          "concurrency": 4,
+          "success": true,
+          "wall_ms": 0.99801
+        },
+        {
+          "concurrency": 8,
+          "success": true,
+          "wall_ms": 1.805862
+        }
+      ]
+    },
+    "error": null,
+    "exit_code": 0,
+    "files_created": 0,
+    "from_object_id": null,
+    "inodes_created": 0,
+    "invalidates": [],
+    "invalidation_ms": 0,
+    "measurement_environment_id": "env:7a9cda66bc6b151a7886",
+    "network_bytes": 0,
+    "observation_key": "env:7a9cda66bc6b151a7886|CON-009|default|cold|contention:synthetic:con-009|contention_path|1",
+    "peak_rss_mb": null,
+    "pollution_check": "pass",
+    "read_bytes": 0,
+    "ready_ms": 3.762082,
+    "reset_ms": 0,
+    "resource_kind": "contention",
+    "reuse_safe": true,
+    "rss_mb": null,
+    "sample_index": 1,
+    "scenario_name": "default",
+    "schema_version": 1,
+    "state_before": "contention_path",
+    "success": true,
+    "switch_ms": 0,
+    "system_cpu_ms": 0.5550000000766886,
+    "timed_out": false,
+    "to_object_id": "contention:synthetic:con-009",
+    "transition_class": "contention_path",
+    "user_cpu_ms": 4.668000000037864,
+    "wall_ms": 3.762082,
+    "workload_origin": "synthetic",
+    "write_bytes": 0
+  },
+  {
+    "benchmark_id": "CON-009",
+    "cache_hit": false,
+    "cleanup_ms": 0,
+    "cost_class": "DIAGNOSTIC",
+    "details": {
+      "levels": [
+        {
+          "concurrency": 1,
+          "success": true,
+          "wall_ms": 0.269598
+        },
+        {
+          "concurrency": 2,
+          "success": true,
+          "wall_ms": 0.525385
+        },
+        {
+          "concurrency": 4,
+          "success": true,
+          "wall_ms": 0.808644
+        },
+        {
+          "concurrency": 8,
+          "success": true,
+          "wall_ms": 1.956801
+        }
+      ]
+    },
+    "error": null,
+    "exit_code": 0,
+    "files_created": 0,
+    "from_object_id": null,
+    "inodes_created": 0,
+    "invalidates": [],
+    "invalidation_ms": 0,
+    "measurement_environment_id": "env:7a9cda66bc6b151a7886",
+    "network_bytes": 0,
+    "observation_key": "env:7a9cda66bc6b151a7886|CON-009|default|cold|contention:synthetic:con-009|contention_path|2",
+    "peak_rss_mb": null,
+    "pollution_check": "pass",
+    "read_bytes": 0,
+    "ready_ms": 3.597202,
+    "reset_ms": 0,
+    "resource_kind": "contention",
+    "reuse_safe": true,
+    "rss_mb": null,
+    "sample_index": 2,
+    "scenario_name": "default",
+    "schema_version": 1,
+    "state_before": "contention_path",
+    "success": true,
+    "switch_ms": 0,
+    "system_cpu_ms": 3.3809999999903084,
+    "timed_out": false,
+    "to_object_id": "contention:synthetic:con-009",
+    "transition_class": "contention_path",
+    "user_cpu_ms": 1.646999999934451,
+    "wall_ms": 3.597202,
+    "workload_origin": "synthetic",
+    "write_bytes": 0
+  },
+  {
+    "benchmark_id": "CON-009",
+    "cache_hit": false,
+    "cleanup_ms": 0,
+    "cost_class": "DIAGNOSTIC",
+    "details": {
+      "levels": [
+        {
+          "concurrency": 1,
+          "success": true,
+          "wall_ms": 0.427627
+        },
+        {
+          "concurrency": 2,
+          "success": true,
+          "wall_ms": 0.69393
+        },
+        {
+          "concurrency": 4,
+          "success": true,
+          "wall_ms": 1.079453
+        },
+        {
+          "concurrency": 8,
+          "success": true,
+          "wall_ms": 1.7054
+        }
+      ]
+    },
+    "error": null,
+    "exit_code": 0,
+    "files_created": 0,
+    "from_object_id": null,
+    "inodes_created": 0,
+    "invalidates": [],
+    "invalidation_ms": 0,
+    "measurement_environment_id": "env:7a9cda66bc6b151a7886",
+    "network_bytes": 0,
+    "observation_key": "env:7a9cda66bc6b151a7886|CON-009|default|cold|contention:synthetic:con-009|contention_path|3",
+    "peak_rss_mb": null,
+    "pollution_check": "pass",
+    "read_bytes": 0,
+    "ready_ms": 3.944819,
+    "reset_ms": 0,
+    "resource_kind": "contention",
+    "reuse_safe": true,
+    "rss_mb": null,
+    "sample_index": 3,
+    "scenario_name": "default",
+    "schema_version": 1,
+    "state_before": "contention_path",
+    "success": true,
+    "switch_ms": 0,
+    "system_cpu_ms": 4.160999999839987,
+    "timed_out": false,
+    "to_object_id": "contention:synthetic:con-009",
+    "transition_class": "contention_path",
+    "user_cpu_ms": 1.4950000000908403,
+    "wall_ms": 3.944819,
+    "workload_origin": "synthetic",
+    "write_bytes": 0
+  },
+  {
+    "benchmark_id": "CON-009",
+    "cache_hit": false,
+    "cleanup_ms": 0,
+    "cost_class": "DIAGNOSTIC",
+    "details": {
+      "levels": [
+        {
+          "concurrency": 1,
+          "success": true,
+          "wall_ms": 0.249437
+        },
+        {
+          "concurrency": 2,
+          "success": true,
+          "wall_ms": 0.628511
+        },
+        {
+          "concurrency": 4,
+          "success": true,
+          "wall_ms": 0.846341
+        },
+        {
+          "concurrency": 8,
+          "success": true,
+          "wall_ms": 1.785432
+        }
+      ]
+    },
+    "error": null,
+    "exit_code": 0,
+    "files_created": 0,
+    "from_object_id": null,
+    "inodes_created": 0,
+    "invalidates": [],
+    "invalidation_ms": 0,
+    "measurement_environment_id": "env:7a9cda66bc6b151a7886",
+    "network_bytes": 0,
+    "observation_key": "env:7a9cda66bc6b151a7886|CON-009|default|cold|contention:synthetic:con-009|contention_path|4",
+    "peak_rss_mb": null,
+    "pollution_check": "pass",
+    "read_bytes": 0,
+    "ready_ms": 3.541458,
+    "reset_ms": 0,
+    "resource_kind": "contention",
+    "reuse_safe": true,
+    "rss_mb": null,
+    "sample_index": 4,
+    "scenario_name": "default",
+    "schema_version": 1,
+    "state_before": "contention_path",
+    "success": true,
+    "switch_ms": 0,
+    "system_cpu_ms": 5.075999999917258,
+    "timed_out": false,
+    "to_object_id": "contention:synthetic:con-009",
+    "transition_class": "contention_path",
+    "user_cpu_ms": 0.0,
+    "wall_ms": 3.541458,
+    "workload_origin": "synthetic",
+    "write_bytes": 0
+  },
+  {
+    "benchmark_id": "CON-009",
+    "cache_hit": false,
+    "cleanup_ms": 0,
+    "cost_class": "DIAGNOSTIC",
+    "details": {
+      "levels": [
+        {
+          "concurrency": 1,
+          "success": true,
+          "wall_ms": 0.394657
+        },
+        {
+          "concurrency": 2,
+          "success": true,
+          "wall_ms": 0.755954
+        },
+        {
+          "concurrency": 4,
+          "success": true,
+          "wall_ms": 0.79941
+        },
+        {
+          "concurrency": 8,
+          "success": true,
+          "wall_ms": 1.626511
+        }
+      ]
+    },
+    "error": null,
+    "exit_code": 0,
+    "files_created": 0,
+    "from_object_id": null,
+    "inodes_created": 0,
+    "invalidates": [],
+    "invalidation_ms": 0,
+    "measurement_environment_id": "env:7a9cda66bc6b151a7886",
+    "network_bytes": 0,
+    "observation_key": "env:7a9cda66bc6b151a7886|CON-009|default|cold|contention:synthetic:con-009|contention_path|5",
+    "peak_rss_mb": null,
+    "pollution_check": "pass",
+    "read_bytes": 0,
+    "ready_ms": 3.612075,
+    "reset_ms": 0,
+    "resource_kind": "contention",
+    "reuse_safe": true,
+    "rss_mb": null,
+    "sample_index": 5,
+    "scenario_name": "default",
+    "schema_version": 1,
+    "state_before": "contention_path",
+    "success": true,
+    "switch_ms": 0,
+    "system_cpu_ms": 2.9690000001210137,
+    "timed_out": false,
+    "to_object_id": "contention:synthetic:con-009",
+    "transition_class": "contention_path",
+    "user_cpu_ms": 2.1219999999857464,
+    "wall_ms": 3.612075,
+    "workload_origin": "synthetic",
+    "write_bytes": 0
+  },
+  {
+    "benchmark_id": "CON-009",
+    "cache_hit": false,
+    "cleanup_ms": 0,
+    "cost_class": "DIAGNOSTIC",
+    "details": {
+      "levels": [
+        {
+          "concurrency": 1,
+          "success": true,
+          "wall_ms": 0.210098
+        },
+        {
+          "concurrency": 2,
+          "success": true,
+          "wall_ms": 0.539536
+        },
+        {
+          "concurrency": 4,
+          "success": true,
+          "wall_ms": 1.320488
+        },
+        {
+          "concurrency": 8,
+          "success": true,
+          "wall_ms": 1.683217
+        }
+      ]
+    },
+    "error": null,
+    "exit_code": 0,
+    "files_created": 0,
+    "from_object_id": null,
+    "inodes_created": 0,
+    "invalidates": [],
+    "invalidation_ms": 0,
+    "measurement_environment_id": "env:7a9cda66bc6b151a7886",
+    "network_bytes": 0,
+    "observation_key": "env:7a9cda66bc6b151a7886|CON-009|default|cold|contention:synthetic:con-009|contention_path|6",
+    "peak_rss_mb": null,
+    "pollution_check": "pass",
+    "read_bytes": 0,
+    "ready_ms": 3.786428,
+    "reset_ms": 0,
+    "resource_kind": "contention",
+    "reuse_safe": true,
+    "rss_mb": null,
+    "sample_index": 6,
+    "scenario_name": "default",
+    "schema_version": 1,
+    "state_before": "contention_path",
+    "success": true,
+    "switch_ms": 0,
+    "system_cpu_ms": 3.9090000000214786,
+    "timed_out": false,
+    "to_object_id": "contention:synthetic:con-009",
+    "transition_class": "contention_path",
+    "user_cpu_ms": 1.4660000000503715,
+    "wall_ms": 3.786428,
+    "workload_origin": "synthetic",
+    "write_bytes": 0
+  },
+  {
+    "benchmark_id": "CON-010",
+    "cache_hit": false,
+    "cleanup_ms": 0,
+    "cost_class": "DIAGNOSTIC",
+    "details": {
+      "levels": [
+        {
+          "concurrency": 1,
+          "success": true,
+          "wall_ms": 0.202236
+        },
+        {
+          "concurrency": 2,
+          "success": true,
+          "wall_ms": 0.227665
+        },
+        {
+          "concurrency": 4,
+          "success": true,
+          "wall_ms": 0.630814
+        },
+        {
+          "concurrency": 8,
+          "success": true,
+          "wall_ms": 0.930718
+        }
+      ]
+    },
+    "error": null,
+    "exit_code": 0,
+    "files_created": 0,
+    "from_object_id": null,
+    "inodes_created": 0,
+    "invalidates": [],
+    "invalidation_ms": 0,
+    "measurement_environment_id": "env:7a9cda66bc6b151a7886",
+    "network_bytes": 0,
+    "observation_key": "env:7a9cda66bc6b151a7886|CON-010|default|cold|contention:synthetic:con-010|contention_path|0",
+    "peak_rss_mb": null,
+    "pollution_check": "pass",
+    "read_bytes": 0,
+    "ready_ms": 2.018244,
+    "reset_ms": 0,
+    "resource_kind": "contention",
+    "reuse_safe": true,
+    "rss_mb": null,
+    "sample_index": 0,
+    "scenario_name": "default",
+    "schema_version": 1,
+    "state_before": "contention_path",
+    "success": true,
+    "switch_ms": 0,
+    "system_cpu_ms": 1.3550000001032458,
+    "timed_out": false,
+    "to_object_id": "contention:synthetic:con-010",
+    "transition_class": "contention_path",
+    "user_cpu_ms": 1.2199999999893407,
+    "wall_ms": 2.018244,
+    "workload_origin": "synthetic",
+    "write_bytes": 0
+  },
+  {
+    "benchmark_id": "CON-010",
+    "cache_hit": false,
+    "cleanup_ms": 0,
+    "cost_class": "DIAGNOSTIC",
+    "details": {
+      "levels": [
+        {
+          "concurrency": 1,
+          "success": true,
+          "wall_ms": 0.180584
+        },
+        {
+          "concurrency": 2,
+          "success": true,
+          "wall_ms": 0.234215
+        },
+        {
+          "concurrency": 4,
+          "success": true,
+          "wall_ms": 0.457983
+        },
+        {
+          "concurrency": 8,
+          "success": true,
+          "wall_ms": 0.85282
+        }
+      ]
+    },
+    "error": null,
+    "exit_code": 0,
+    "files_created": 0,
+    "from_object_id": null,
+    "inodes_created": 0,
+    "invalidates": [],
+    "invalidation_ms": 0,
+    "measurement_environment_id": "env:7a9cda66bc6b151a7886",
+    "network_bytes": 0,
+    "observation_key": "env:7a9cda66bc6b151a7886|CON-010|default|cold|contention:synthetic:con-010|contention_path|1",
+    "peak_rss_mb": null,
+    "pollution_check": "pass",
+    "read_bytes": 0,
+    "ready_ms": 1.759081,
+    "reset_ms": 0,
+    "resource_kind": "contention",
+    "reuse_safe": true,
+    "rss_mb": null,
+    "sample_index": 1,
+    "scenario_name": "default",
+    "schema_version": 1,
+    "state_before": "contention_path",
+    "success": true,
+    "switch_ms": 0,
+    "system_cpu_ms": 2.181999999947948,
+    "timed_out": false,
+    "to_object_id": "contention:synthetic:con-010",
+    "transition_class": "contention_path",
+    "user_cpu_ms": 0.040000000012696546,
+    "wall_ms": 1.759081,
+    "workload_origin": "synthetic",
+    "write_bytes": 0
+  },
+  {
+    "benchmark_id": "CON-010",
+    "cache_hit": false,
+    "cleanup_ms": 0,
+    "cost_class": "DIAGNOSTIC",
+    "details": {
+      "levels": [
+        {
+          "concurrency": 1,
+          "success": true,
+          "wall_ms": 0.172862
+        },
+        {
+          "concurrency": 2,
+          "success": true,
+          "wall_ms": 0.221585
+        },
+        {
+          "concurrency": 4,
+          "success": true,
+          "wall_ms": 0.481669
+        },
+        {
+          "concurrency": 8,
+          "success": true,
+          "wall_ms": 0.814613
+        }
+      ]
+    },
+    "error": null,
+    "exit_code": 0,
+    "files_created": 0,
+    "from_object_id": null,
+    "inodes_created": 0,
+    "invalidates": [],
+    "invalidation_ms": 0,
+    "measurement_environment_id": "env:7a9cda66bc6b151a7886",
+    "network_bytes": 0,
+    "observation_key": "env:7a9cda66bc6b151a7886|CON-010|default|cold|contention:synthetic:con-010|contention_path|2",
+    "peak_rss_mb": null,
+    "pollution_check": "pass",
+    "read_bytes": 0,
+    "ready_ms": 1.715215,
+    "reset_ms": 0,
+    "resource_kind": "contention",
+    "reuse_safe": true,
+    "rss_mb": null,
+    "sample_index": 2,
+    "scenario_name": "default",
+    "schema_version": 1,
+    "state_before": "contention_path",
+    "success": true,
+    "switch_ms": 0,
+    "system_cpu_ms": 1.0859999999865977,
+    "timed_out": false,
+    "to_object_id": "contention:synthetic:con-010",
+    "transition_class": "contention_path",
+    "user_cpu_ms": 1.071000000024469,
+    "wall_ms": 1.715215,
+    "workload_origin": "synthetic",
+    "write_bytes": 0
+  },
+  {
+    "benchmark_id": "CON-010",
+    "cache_hit": false,
+    "cleanup_ms": 0,
+    "cost_class": "DIAGNOSTIC",
+    "details": {
+      "levels": [
+        {
+          "concurrency": 1,
+          "success": true,
+          "wall_ms": 0.198741
+        },
+        {
+          "concurrency": 2,
+          "success": true,
+          "wall_ms": 0.23162
+        },
+        {
+          "concurrency": 4,
+          "success": true,
+          "wall_ms": 0.521589
+        },
+        {
+          "concurrency": 8,
+          "success": true,
+          "wall_ms": 1.281018
+        }
+      ]
+    },
+    "error": null,
+    "exit_code": 0,
+    "files_created": 0,
+    "from_object_id": null,
+    "inodes_created": 0,
+    "invalidates": [],
+    "invalidation_ms": 0,
+    "measurement_environment_id": "env:7a9cda66bc6b151a7886",
+    "network_bytes": 0,
+    "observation_key": "env:7a9cda66bc6b151a7886|CON-010|default|cold|contention:synthetic:con-010|contention_path|3",
+    "peak_rss_mb": null,
+    "pollution_check": "pass",
+    "read_bytes": 0,
+    "ready_ms": 2.259058,
+    "reset_ms": 0,
+    "resource_kind": "contention",
+    "reuse_safe": true,
+    "rss_mb": null,
+    "sample_index": 3,
+    "scenario_name": "default",
+    "schema_version": 1,
+    "state_before": "contention_path",
+    "success": true,
+    "switch_ms": 0,
+    "system_cpu_ms": 1.8880000000081054,
+    "timed_out": false,
+    "to_object_id": "contention:synthetic:con-010",
+    "transition_class": "contention_path",
+    "user_cpu_ms": 0.9329999999181382,
+    "wall_ms": 2.259058,
+    "workload_origin": "synthetic",
+    "write_bytes": 0
+  },
+  {
+    "benchmark_id": "CON-010",
+    "cache_hit": false,
+    "cleanup_ms": 0,
+    "cost_class": "DIAGNOSTIC",
+    "details": {
+      "levels": [
+        {
+          "concurrency": 1,
+          "success": true,
+          "wall_ms": 0.307625
+        },
+        {
+          "concurrency": 2,
+          "success": true,
+          "wall_ms": 0.255306
+        },
+        {
+          "concurrency": 4,
+          "success": true,
+          "wall_ms": 0.592476
+        },
+        {
+          "concurrency": 8,
+          "success": true,
+          "wall_ms": 0.964048
+        }
+      ]
+    },
+    "error": null,
+    "exit_code": 0,
+    "files_created": 0,
+    "from_object_id": null,
+    "inodes_created": 0,
+    "invalidates": [],
+    "invalidation_ms": 0,
+    "measurement_environment_id": "env:7a9cda66bc6b151a7886",
+    "network_bytes": 0,
+    "observation_key": "env:7a9cda66bc6b151a7886|CON-010|default|cold|contention:synthetic:con-010|contention_path|4",
+    "peak_rss_mb": null,
+    "pollution_check": "pass",
+    "read_bytes": 0,
+    "ready_ms": 2.146017,
+    "reset_ms": 0,
+    "resource_kind": "contention",
+    "reuse_safe": true,
+    "rss_mb": null,
+    "sample_index": 4,
+    "scenario_name": "default",
+    "schema_version": 1,
+    "state_before": "contention_path",
+    "success": true,
+    "switch_ms": 0,
+    "system_cpu_ms": 1.5000000000782165,
+    "timed_out": false,
+    "to_object_id": "contention:synthetic:con-010",
+    "transition_class": "contention_path",
+    "user_cpu_ms": 1.301000000012209,
+    "wall_ms": 2.146017,
+    "workload_origin": "synthetic",
+    "write_bytes": 0
+  },
+  {
+    "benchmark_id": "CON-010",
+    "cache_hit": false,
+    "cleanup_ms": 0,
+    "cost_class": "DIAGNOSTIC",
+    "details": {
+      "levels": [
+        {
+          "concurrency": 1,
+          "success": true,
+          "wall_ms": 0.209186
+        },
+        {
+          "concurrency": 2,
+          "success": true,
+          "wall_ms": 0.227915
+        },
+        {
+          "concurrency": 4,
+          "success": true,
+          "wall_ms": 0.526106
+        },
+        {
+          "concurrency": 8,
+          "success": true,
+          "wall_ms": 0.730915
+        }
+      ]
+    },
+    "error": null,
+    "exit_code": 0,
+    "files_created": 0,
+    "from_object_id": null,
+    "inodes_created": 0,
+    "invalidates": [],
+    "invalidation_ms": 0,
+    "measurement_environment_id": "env:7a9cda66bc6b151a7886",
+    "network_bytes": 0,
+    "observation_key": "env:7a9cda66bc6b151a7886|CON-010|default|cold|contention:synthetic:con-010|contention_path|5",
+    "peak_rss_mb": null,
+    "pollution_check": "pass",
+    "read_bytes": 0,
+    "ready_ms": 1.71864,
+    "reset_ms": 0,
+    "resource_kind": "contention",
+    "reuse_safe": true,
+    "rss_mb": null,
+    "sample_index": 5,
+    "scenario_name": "default",
+    "schema_version": 1,
+    "state_before": "contention_path",
+    "success": true,
+    "switch_ms": 0,
+    "system_cpu_ms": 1.7709999999624415,
+    "timed_out": false,
+    "to_object_id": "contention:synthetic:con-010",
+    "transition_class": "contention_path",
+    "user_cpu_ms": 0.3970000000208529,
+    "wall_ms": 1.71864,
+    "workload_origin": "synthetic",
+    "write_bytes": 0
+  },
+  {
+    "benchmark_id": "CON-010",
+    "cache_hit": false,
+    "cleanup_ms": 0,
+    "cost_class": "DIAGNOSTIC",
+    "details": {
+      "levels": [
+        {
+          "concurrency": 1,
+          "success": true,
+          "wall_ms": 0.279112
+        },
+        {
+          "concurrency": 2,
+          "success": true,
+          "wall_ms": 0.33027
+        },
+        {
+          "concurrency": 4,
+          "success": true,
+          "wall_ms": 0.538585
+        },
+        {
+          "concurrency": 8,
+          "success": true,
+          "wall_ms": 0.854723
+        }
+      ]
+    },
+    "error": null,
+    "exit_code": 0,
+    "files_created": 0,
+    "from_object_id": null,
+    "inodes_created": 0,
+    "invalidates": [],
+    "invalidation_ms": 0,
+    "measurement_environment_id": "env:7a9cda66bc6b151a7886",
+    "network_bytes": 0,
+    "observation_key": "env:7a9cda66bc6b151a7886|CON-010|default|cold|contention:synthetic:con-010|contention_path|6",
+    "peak_rss_mb": null,
+    "pollution_check": "pass",
+    "read_bytes": 0,
+    "ready_ms": 2.031053,
+    "reset_ms": 0,
+    "resource_kind": "contention",
+    "reuse_safe": true,
+    "rss_mb": null,
+    "sample_index": 6,
+    "scenario_name": "default",
+    "schema_version": 1,
+    "state_before": "contention_path",
+    "success": true,
+    "switch_ms": 0,
+    "system_cpu_ms": 0.9840000000167493,
+    "timed_out": false,
+    "to_object_id": "contention:synthetic:con-010",
+    "transition_class": "contention_path",
+    "user_cpu_ms": 1.5979999999444772,
+    "wall_ms": 2.031053,
+    "workload_origin": "synthetic",
+    "write_bytes": 0
+  }
+]

@@ -1,0 +1,4159 @@
+[
+  {
+    "benchmark_id": "CTL-001",
+    "cost_class": "CONTROL",
+    "description": "CONTROL | 加载 resources/requirements/invalidation rules | 启动成本，不进入 profile edge",
+    "document_row": [
+      "P0",
+      "CONTROL",
+      "加载 resources/requirements/invalidation rules",
+      "启动成本，不进入 profile edge"
+    ],
+    "group": "control",
+    "prefix": "CTL",
+    "priority": "P0"
+  },
+  {
+    "benchmark_id": "CTL-002",
+    "cost_class": "CONTROL",
+    "description": "CONTROL | 11,105 tasks 聚合为 Environment Groups | 初始化成本",
+    "document_row": [
+      "P0",
+      "CONTROL",
+      "11,105 tasks 聚合为 Environment Groups",
+      "初始化成本"
+    ],
+    "group": "control",
+    "prefix": "CTL",
+    "priority": "P0"
+  },
+  {
+    "benchmark_id": "CTL-003",
+    "cost_class": "CONTROL",
+    "description": "CONTROL | 单轮 candidate enumeration | 每轮 overhead",
+    "document_row": [
+      "P0",
+      "CONTROL",
+      "单轮 candidate enumeration",
+      "每轮 overhead"
+    ],
+    "group": "control",
+    "prefix": "CTL",
+    "priority": "P0"
+  },
+  {
+    "benchmark_id": "CTL-004",
+    "cost_class": "CONTROL",
+    "description": "CONTROL | 单 candidate compatibility matching | planner overhead",
+    "document_row": [
+      "P0",
+      "CONTROL",
+      "单 candidate compatibility matching",
+      "planner overhead"
+    ],
+    "group": "control",
+    "prefix": "CTL",
+    "priority": "P0"
+  },
+  {
+    "benchmark_id": "CTL-005",
+    "cost_class": "CONTROL",
+    "description": "CONTROL | 单 candidate transition planning | planner overhead",
+    "document_row": [
+      "P0",
+      "CONTROL",
+      "单 candidate transition planning",
+      "planner overhead"
+    ],
+    "group": "control",
+    "prefix": "CTL",
+    "priority": "P0"
+  },
+  {
+    "benchmark_id": "CTL-006",
+    "cost_class": "CONTROL",
+    "description": "CONTROL | invalidation graph 传播 | 不重复记资源重建时间",
+    "document_row": [
+      "P0",
+      "CONTROL",
+      "invalidation graph 传播",
+      "不重复记资源重建时间"
+    ],
+    "group": "control",
+    "prefix": "CTL",
+    "priority": "P0"
+  },
+  {
+    "benchmark_id": "CTL-007",
+    "cost_class": "CONTROL",
+    "description": "CONTROL | greedy selection/tie-break | 每轮 overhead",
+    "document_row": [
+      "P0",
+      "CONTROL",
+      "greedy selection/tie-break",
+      "每轮 overhead"
+    ],
+    "group": "control",
+    "prefix": "CTL",
+    "priority": "P0"
+  },
+  {
+    "benchmark_id": "CTL-008",
+    "cost_class": "CONTROL",
+    "description": "CONTROL | NodeState 写盘、恢复、更新 | action 后实测",
+    "document_row": [
+      "P0",
+      "CONTROL",
+      "NodeState 写盘、恢复、更新",
+      "action 后实测"
+    ],
+    "group": "control",
+    "prefix": "CTL",
+    "priority": "P0"
+  },
+  {
+    "benchmark_id": "CTL-009",
+    "cost_class": "CONTROL",
+    "description": "CONTROL | action executor dispatch | 与 action 本身分开",
+    "document_row": [
+      "P0",
+      "CONTROL",
+      "action executor dispatch",
+      "与 action 本身分开"
+    ],
+    "group": "control",
+    "prefix": "CTL",
+    "priority": "P0"
+  },
+  {
+    "benchmark_id": "CTL-010",
+    "cost_class": "CONTROL",
+    "description": "CONTROL | JSONL logging/report aggregation | 诊断 overhead",
+    "document_row": [
+      "P1",
+      "CONTROL",
+      "JSONL logging/report aggregation",
+      "诊断 overhead"
+    ],
+    "group": "control",
+    "prefix": "CTL",
+    "priority": "P1"
+  },
+  {
+    "benchmark_id": "CTL-011",
+    "cost_class": "CONTROL",
+    "description": "CONTROL | state lock/并发等待 | contention",
+    "document_row": [
+      "P1",
+      "CONTROL",
+      "state lock/并发等待",
+      "contention"
+    ],
+    "group": "control",
+    "prefix": "CTL",
+    "priority": "P1"
+  },
+  {
+    "benchmark_id": "CTL-012",
+    "cost_class": "CONTROL",
+    "description": "CONTROL | 多节点 placement scoring | 未来接口",
+    "document_row": [
+      "P1",
+      "CONTROL",
+      "多节点 placement scoring",
+      "未来接口"
+    ],
+    "group": "control",
+    "prefix": "CTL",
+    "priority": "P1"
+  },
+  {
+    "benchmark_id": "PRE-001",
+    "cost_class": "PREP",
+    "description": "读取/校验 profile IDs | cold FS、warm、重复运行",
+    "document_row": [
+      "P0-64",
+      "读取/校验 profile IDs",
+      "cold FS、warm、重复运行"
+    ],
+    "group": "prep",
+    "prefix": "PRE",
+    "priority": "P0-64"
+  },
+  {
+    "benchmark_id": "PRE-002",
+    "cost_class": "PREP",
+    "description": "official profile lookup | remote cold、local cache、missing ID",
+    "document_row": [
+      "P0-64",
+      "official profile lookup",
+      "remote cold、local cache、missing ID"
+    ],
+    "group": "prep",
+    "prefix": "PRE",
+    "priority": "P0-64"
+  },
+  {
+    "benchmark_id": "PRE-003",
+    "cost_class": "PREP",
+    "description": "Dockerfile fetch/parse | cold/warm、remote failure",
+    "document_row": [
+      "P0-64",
+      "Dockerfile fetch/parse",
+      "cold/warm、remote failure"
+    ],
+    "group": "prep",
+    "prefix": "PRE",
+    "priority": "P0-64"
+  },
+  {
+    "benchmark_id": "PRE-004",
+    "cost_class": "PREP",
+    "description": "manifest/config/lock discovery | single root、多 root、large monorepo",
+    "document_row": [
+      "P0-64",
+      "manifest/config/lock discovery",
+      "single root、多 root、large monorepo"
+    ],
+    "group": "prep",
+    "prefix": "PRE",
+    "priority": "P0-64"
+  },
+  {
+    "benchmark_id": "PRE-005",
+    "cost_class": "PREP",
+    "description": "source hash/fingerprint | small/large lock、cache hit",
+    "document_row": [
+      "P0-64",
+      "source hash/fingerprint",
+      "small/large lock、cache hit"
+    ],
+    "group": "prep",
+    "prefix": "PRE",
+    "priority": "P0-64"
+  },
+  {
+    "benchmark_id": "PRE-006",
+    "cost_class": "PREP",
+    "description": "lock authority classification | strict/frozen/immutable/mutable/edited/missing",
+    "document_row": [
+      "P0-64",
+      "lock authority classification",
+      "strict/frozen/immutable/mutable/edited/missing"
+    ],
+    "group": "prep",
+    "prefix": "PRE",
+    "priority": "P0-64"
+  },
+  {
+    "benchmark_id": "PRE-007",
+    "cost_class": "PREP",
+    "description": "exact-commit temporary checkout | object cold/warm、submodules",
+    "document_row": [
+      "P0-64",
+      "exact-commit temporary checkout",
+      "object cold/warm、submodules"
+    ],
+    "group": "prep",
+    "prefix": "PRE",
+    "priority": "P0-64"
+  },
+  {
+    "benchmark_id": "PRE-008",
+    "cost_class": "PREP",
+    "description": "manifest transformation replay | zero/single/workspace edits",
+    "document_row": [
+      "P0-64",
+      "manifest transformation replay",
+      "zero/single/workspace edits"
+    ],
+    "group": "prep",
+    "prefix": "PRE",
+    "priority": "P0-64"
+  },
+  {
+    "benchmark_id": "PRE-009",
+    "cost_class": "PREP",
+    "description": "npm lock-only resolution | existing/missing、peer conflict、legacy flags",
+    "document_row": [
+      "P0-64",
+      "npm lock-only resolution",
+      "existing/missing、peer conflict、legacy flags"
+    ],
+    "group": "prep",
+    "prefix": "PRE",
+    "priority": "P0-64"
+  },
+  {
+    "benchmark_id": "PRE-010",
+    "cost_class": "PREP",
+    "description": "pnpm lock-only resolution | v9/v10/v11、frozen/no-frozen",
+    "document_row": [
+      "P0-64",
+      "pnpm lock-only resolution",
+      "v9/v10/v11、frozen/no-frozen"
+    ],
+    "group": "prep",
+    "prefix": "PRE",
+    "priority": "P0-64"
+  },
+  {
+    "benchmark_id": "PRE-011",
+    "cost_class": "PREP",
+    "description": "Yarn Classic resolution | existing/missing lock、node_modules cleanup",
+    "document_row": [
+      "P0-64",
+      "Yarn Classic resolution",
+      "existing/missing lock、node_modules cleanup"
+    ],
+    "group": "prep",
+    "prefix": "PRE",
+    "priority": "P0-64"
+  },
+  {
+    "benchmark_id": "PRE-012",
+    "cost_class": "PREP",
+    "description": "Yarn Berry update-lockfile | v3/v4、project-local、linker mode",
+    "document_row": [
+      "P0-64",
+      "Yarn Berry update-lockfile",
+      "v3/v4、project-local、linker mode"
+    ],
+    "group": "prep",
+    "prefix": "PRE",
+    "priority": "P0-64"
+  },
+  {
+    "benchmark_id": "PRE-013",
+    "cost_class": "PREP",
+    "description": "Bun lock resolution | 1.2/1.3、format difference",
+    "document_row": [
+      "P0-64",
+      "Bun lock resolution",
+      "1.2/1.3、format difference"
+    ],
+    "group": "prep",
+    "prefix": "PRE",
+    "priority": "P0-64"
+  },
+  {
+    "benchmark_id": "PRE-014",
+    "cost_class": "PREP",
+    "description": "source/resolved lock diff/hash/save | unchanged/changed/large",
+    "document_row": [
+      "P0-64",
+      "source/resolved lock diff/hash/save",
+      "unchanged/changed/large"
+    ],
+    "group": "prep",
+    "prefix": "PRE",
+    "priority": "P0-64"
+  },
+  {
+    "benchmark_id": "PRE-015",
+    "cost_class": "PREP",
+    "description": "npm lock parse | v1/v2/v3、invalid JSON/conflict markers",
+    "document_row": [
+      "P0-64",
+      "npm lock parse",
+      "v1/v2/v3、invalid JSON/conflict markers"
+    ],
+    "group": "prep",
+    "prefix": "PRE",
+    "priority": "P0-64"
+  },
+  {
+    "benchmark_id": "PRE-016",
+    "cost_class": "PREP",
+    "description": "pnpm lock parse | schema/version/workspace snapshots",
+    "document_row": [
+      "P0-64",
+      "pnpm lock parse",
+      "schema/version/workspace snapshots"
+    ],
+    "group": "prep",
+    "prefix": "PRE",
+    "priority": "P0-64"
+  },
+  {
+    "benchmark_id": "PRE-017",
+    "cost_class": "PREP",
+    "description": "Yarn Classic lock parse | registry/Git/file/link aliases",
+    "document_row": [
+      "P0-64",
+      "Yarn Classic lock parse",
+      "registry/Git/file/link aliases"
+    ],
+    "group": "prep",
+    "prefix": "PRE",
+    "priority": "P0-64"
+  },
+  {
+    "benchmark_id": "PRE-018",
+    "cost_class": "PREP",
+    "description": "Yarn Berry lock parse | workspace/link/patch/virtual/locator",
+    "document_row": [
+      "P0-64",
+      "Yarn Berry lock parse",
+      "workspace/link/patch/virtual/locator"
+    ],
+    "group": "prep",
+    "prefix": "PRE",
+    "priority": "P0-64"
+  },
+  {
+    "benchmark_id": "PRE-019",
+    "cost_class": "PREP",
+    "description": "Bun lock parse | supported text/binary variants",
+    "document_row": [
+      "P0-64",
+      "Bun lock parse",
+      "supported text/binary variants"
+    ],
+    "group": "prep",
+    "prefix": "PRE",
+    "priority": "P0-64"
+  },
+  {
+    "benchmark_id": "PRE-020",
+    "cost_class": "PREP",
+    "description": "normalized manifest generation | registry/Git/http/workspace/local/patch/unknown",
+    "document_row": [
+      "P0-64",
+      "normalized manifest generation",
+      "registry/Git/http/workspace/local/patch/unknown"
+    ],
+    "group": "prep",
+    "prefix": "PRE",
+    "priority": "P0-64"
+  },
+  {
+    "benchmark_id": "PRE-021",
+    "cost_class": "PREP",
+    "description": "global union/dedup/index | 1k/10k/102,051 references",
+    "document_row": [
+      "P0-64",
+      "global union/dedup/index",
+      "1k/10k/102,051 references"
+    ],
+    "group": "prep",
+    "prefix": "PRE",
+    "priority": "P0-64"
+  },
+  {
+    "benchmark_id": "PRE-022",
+    "cost_class": "PREP",
+    "description": "reports/CSV generation | cold/warm、large JSON",
+    "document_row": [
+      "P1",
+      "reports/CSV generation",
+      "cold/warm、large JSON"
+    ],
+    "group": "prep",
+    "prefix": "PRE",
+    "priority": "P1"
+  },
+  {
+    "benchmark_id": "PRE-023",
+    "cost_class": "PREP",
+    "description": "stage reuse check | hit、fingerprint changed、output corrupt/missing",
+    "document_row": [
+      "P0",
+      "stage reuse check",
+      "hit、fingerprint changed、output corrupt/missing"
+    ],
+    "group": "prep",
+    "prefix": "PRE",
+    "priority": "P0"
+  },
+  {
+    "benchmark_id": "PRE-024",
+    "cost_class": "PREP",
+    "description": "partial-stage resume | one/many/no failures",
+    "document_row": [
+      "P0",
+      "partial-stage resume",
+      "one/many/no failures"
+    ],
+    "group": "prep",
+    "prefix": "PRE",
+    "priority": "P0"
+  },
+  {
+    "benchmark_id": "SRC-001",
+    "cost_class": "TRANSITION",
+    "description": "global/node | Git clone/fetch | network cold、object hit、shallow/full | PREP/PLACEMENT",
+    "document_row": [
+      "P0-64",
+      "global/node",
+      "Git clone/fetch",
+      "network cold、object hit、shallow/full",
+      "PREP/PLACEMENT"
+    ],
+    "group": "source",
+    "prefix": "SRC",
+    "priority": "P0-64"
+  },
+  {
+    "benchmark_id": "SRC-002",
+    "cost_class": "TRANSITION",
+    "description": "node | exact commit checkout | object cold/warm、repo size | TRANSITION",
+    "document_row": [
+      "P0-64",
+      "node",
+      "exact commit checkout",
+      "object cold/warm、repo size",
+      "TRANSITION"
+    ],
+    "group": "source",
+    "prefix": "SRC",
+    "priority": "P0-64"
+  },
+  {
+    "benchmark_id": "SRC-003",
+    "cost_class": "TRANSITION",
+    "description": "node | worktree create/remove | first/repeated/concurrent | TRANSITION/CLEANUP",
+    "document_row": [
+      "P0-64",
+      "node",
+      "worktree create/remove",
+      "first/repeated/concurrent",
+      "TRANSITION/CLEANUP"
+    ],
+    "group": "source",
+    "prefix": "SRC",
+    "priority": "P0-64"
+  },
+  {
+    "benchmark_id": "SRC-004",
+    "cost_class": "TRANSITION",
+    "description": "node | submodule init/update | cached/network cold/recursive | PREP/TRANSITION",
+    "document_row": [
+      "P0-64",
+      "node",
+      "submodule init/update",
+      "cached/network cold/recursive",
+      "PREP/TRANSITION"
+    ],
+    "group": "source",
+    "prefix": "SRC",
+    "priority": "P0-64"
+  },
+  {
+    "benchmark_id": "SRC-005",
+    "cost_class": "TRANSITION",
+    "description": "node | baseline snapshot create/attach | tar/overlay/btrfs/tmpfs | PREP/TRANSITION",
+    "document_row": [
+      "P0",
+      "node",
+      "baseline snapshot create/attach",
+      "tar/overlay/btrfs/tmpfs",
+      "PREP/TRANSITION"
+    ],
+    "group": "source",
+    "prefix": "SRC",
+    "priority": "P0"
+  },
+  {
+    "benchmark_id": "SRC-006",
+    "cost_class": "TRANSITION",
+    "description": "task | writable overlay create | tree size/inodes | TRANSITION",
+    "document_row": [
+      "P0",
+      "task",
+      "writable overlay create",
+      "tree size/inodes",
+      "TRANSITION"
+    ],
+    "group": "source",
+    "prefix": "SRC",
+    "priority": "P0"
+  },
+  {
+    "benchmark_id": "SRC-007",
+    "cost_class": "TRANSITION",
+    "description": "task | SWE task patch apply | clean/conflict/large patch | TRANSITION",
+    "document_row": [
+      "P0",
+      "task",
+      "SWE task patch apply",
+      "clean/conflict/large patch",
+      "TRANSITION"
+    ],
+    "group": "source",
+    "prefix": "SRC",
+    "priority": "P0"
+  },
+  {
+    "benchmark_id": "SRC-008",
+    "cost_class": "CLEANUP",
+    "description": "task | dirty-tree scan | clean/few/many files | CLEANUP",
+    "document_row": [
+      "P0",
+      "task",
+      "dirty-tree scan",
+      "clean/few/many files",
+      "CLEANUP"
+    ],
+    "group": "source",
+    "prefix": "SRC",
+    "priority": "P0"
+  },
+  {
+    "benchmark_id": "SRC-009",
+    "cost_class": "CLEANUP",
+    "description": "task | overlay discard/reset | bytes/inodes/open handles | CLEANUP",
+    "document_row": [
+      "P0",
+      "task",
+      "overlay discard/reset",
+      "bytes/inodes/open handles",
+      "CLEANUP"
+    ],
+    "group": "source",
+    "prefix": "SRC",
+    "priority": "P0"
+  },
+  {
+    "benchmark_id": "SRC-010",
+    "cost_class": "TRANSITION",
+    "description": "node/task | dependency root attach | root/nested/two-root profile | TRANSITION",
+    "document_row": [
+      "P0-64",
+      "node/task",
+      "dependency root attach",
+      "root/nested/two-root profile",
+      "TRANSITION"
+    ],
+    "group": "source",
+    "prefix": "SRC",
+    "priority": "P0-64"
+  },
+  {
+    "benchmark_id": "SRC-011",
+    "cost_class": "DIAGNOSTIC",
+    "description": "node | repo page-cache effect | logical/physical cold | DIAGNOSTIC",
+    "document_row": [
+      "P1",
+      "node",
+      "repo page-cache effect",
+      "logical/physical cold",
+      "DIAGNOSTIC"
+    ],
+    "group": "source",
+    "prefix": "SRC",
+    "priority": "P1"
+  },
+  {
+    "benchmark_id": "SRC-012",
+    "cost_class": "CLEANUP",
+    "description": "task | generated output cleanup | build/codegen/untracked | CLEANUP",
+    "document_row": [
+      "P1",
+      "task",
+      "generated output cleanup",
+      "build/codegen/untracked",
+      "CLEANUP"
+    ],
+    "group": "source",
+    "prefix": "SRC",
+    "priority": "P1"
+  },
+  {
+    "benchmark_id": "SRC-013",
+    "cost_class": "TRANSITION",
+    "description": "task | symlink safety/cleanup | internal/escaping/broken | CLEANUP/RISK",
+    "document_row": [
+      "P0",
+      "task",
+      "symlink safety/cleanup",
+      "internal/escaping/broken",
+      "CLEANUP/RISK"
+    ],
+    "group": "source",
+    "prefix": "SRC",
+    "priority": "P0"
+  },
+  {
+    "benchmark_id": "ART-001",
+    "cost_class": "PREP",
+    "description": "registry packument lookup | DNS/TLS cold、keep-alive、metadata hit",
+    "document_row": [
+      "P0-64",
+      "registry packument lookup",
+      "DNS/TLS cold、keep-alive、metadata hit"
+    ],
+    "group": "artifact",
+    "prefix": "ART",
+    "priority": "P0-64"
+  },
+  {
+    "benchmark_id": "ART-002",
+    "cost_class": "PREP",
+    "description": "registry tarball download | size buckets、retry、timeout、404、5xx",
+    "document_row": [
+      "P0-64",
+      "registry tarball download",
+      "size buckets、retry、timeout、404、5xx"
+    ],
+    "group": "artifact",
+    "prefix": "ART",
+    "priority": "P0-64"
+  },
+  {
+    "benchmark_id": "ART-003",
+    "cost_class": "PREP",
+    "description": "GitHub codeload archive | exact commit、redirect、rate limit",
+    "document_row": [
+      "P0-64",
+      "GitHub codeload archive",
+      "exact commit、redirect、rate limit"
+    ],
+    "group": "artifact",
+    "prefix": "ART",
+    "priority": "P0-64"
+  },
+  {
+    "benchmark_id": "ART-004",
+    "cost_class": "PREP",
+    "description": "generic Git archive fallback | cached repo、unsupported host、SSH/HTTPS",
+    "document_row": [
+      "P0-64",
+      "generic Git archive fallback",
+      "cached repo、unsupported host、SSH/HTTPS"
+    ],
+    "group": "artifact",
+    "prefix": "ART",
+    "priority": "P0-64"
+  },
+  {
+    "benchmark_id": "ART-005",
+    "cost_class": "PREP",
+    "description": "direct HTTP tarball | immutable/no-integrity/404",
+    "document_row": [
+      "P0-64",
+      "direct HTTP tarball",
+      "immutable/no-integrity/404"
+    ],
+    "group": "artifact",
+    "prefix": "ART",
+    "priority": "P0-64"
+  },
+  {
+    "benchmark_id": "ART-006",
+    "cost_class": "PREP",
+    "description": "browser/Electron binary download | network cold、tool cache、CAS replay",
+    "document_row": [
+      "P0",
+      "browser/Electron binary download",
+      "network cold、tool cache、CAS replay"
+    ],
+    "group": "artifact",
+    "prefix": "ART",
+    "priority": "P0"
+  },
+  {
+    "benchmark_id": "ART-007",
+    "cost_class": "PREP",
+    "description": "system package download | apt index/package cold/warm",
+    "document_row": [
+      "P1",
+      "system package download",
+      "apt index/package cold/warm"
+    ],
+    "group": "artifact",
+    "prefix": "ART",
+    "priority": "P1"
+  },
+  {
+    "benchmark_id": "ART-008",
+    "cost_class": "PREP",
+    "description": "retry/backoff/final failure | refused、DNS、404、timeout",
+    "document_row": [
+      "P0",
+      "retry/backoff/final failure",
+      "refused、DNS、404、timeout"
+    ],
+    "group": "artifact",
+    "prefix": "ART",
+    "priority": "P0"
+  },
+  {
+    "benchmark_id": "CAS-001",
+    "cost_class": "PREP",
+    "description": "artifact index lookup | cold/warm、32k artifacts",
+    "document_row": [
+      "P0-64",
+      "artifact index lookup",
+      "cold/warm、32k artifacts"
+    ],
+    "group": "artifact",
+    "prefix": "CAS",
+    "priority": "P0-64"
+  },
+  {
+    "benchmark_id": "CAS-002",
+    "cost_class": "PREP",
+    "description": "blob stat/existence | metadata warm、concurrent readers",
+    "document_row": [
+      "P0-64",
+      "blob stat/existence",
+      "metadata warm、concurrent readers"
+    ],
+    "group": "artifact",
+    "prefix": "CAS",
+    "priority": "P0-64"
+  },
+  {
+    "benchmark_id": "CAS-003",
+    "cost_class": "PREP",
+    "description": "blob read | 1KB/100KB/1MB/10MB/100MB",
+    "document_row": [
+      "P0-64",
+      "blob read",
+      "1KB/100KB/1MB/10MB/100MB"
+    ],
+    "group": "artifact",
+    "prefix": "CAS",
+    "priority": "P0-64"
+  },
+  {
+    "benchmark_id": "CAS-004",
+    "cost_class": "PREP",
+    "description": "SHA-256 validation | size、page-cache cold/warm",
+    "document_row": [
+      "P0-64",
+      "SHA-256 validation",
+      "size、page-cache cold/warm"
+    ],
+    "group": "artifact",
+    "prefix": "CAS",
+    "priority": "P0-64"
+  },
+  {
+    "benchmark_id": "CAS-005",
+    "cost_class": "PREP",
+    "description": "SHA-512/SRI validation | valid/invalid、size",
+    "document_row": [
+      "P0-64",
+      "SHA-512/SRI validation",
+      "valid/invalid、size"
+    ],
+    "group": "artifact",
+    "prefix": "CAS",
+    "priority": "P0-64"
+  },
+  {
+    "benchmark_id": "CAS-006",
+    "cost_class": "PREP",
+    "description": "atomic write/rename/fsync | local/overlay、disk failure",
+    "document_row": [
+      "P0-64",
+      "atomic write/rename/fsync",
+      "local/overlay、disk failure"
+    ],
+    "group": "artifact",
+    "prefix": "CAS",
+    "priority": "P0-64"
+  },
+  {
+    "benchmark_id": "CAS-007",
+    "cost_class": "PREP",
+    "description": "metadata read/write | first/reuse、large references",
+    "document_row": [
+      "P0-64",
+      "metadata read/write",
+      "first/reuse、large references"
+    ],
+    "group": "artifact",
+    "prefix": "CAS",
+    "priority": "P0-64"
+  },
+  {
+    "benchmark_id": "CAS-008",
+    "cost_class": "PREP",
+    "description": "duplicate fetch coalescing | 2/8/32 callers",
+    "document_row": [
+      "P0-64",
+      "duplicate fetch coalescing",
+      "2/8/32 callers"
+    ],
+    "group": "artifact",
+    "prefix": "CAS",
+    "priority": "P0-64"
+  },
+  {
+    "benchmark_id": "CAS-009",
+    "cost_class": "PREP",
+    "description": "corrupt hit detection/repair | zero/wrong hash/truncated",
+    "document_row": [
+      "P0",
+      "corrupt hit detection/repair",
+      "zero/wrong hash/truncated"
+    ],
+    "group": "artifact",
+    "prefix": "CAS",
+    "priority": "P0"
+  },
+  {
+    "benchmark_id": "CAS-010",
+    "cost_class": "PREP",
+    "description": "retention/garbage scan | 32k/100k/1M blobs",
+    "document_row": [
+      "P1",
+      "retention/garbage scan",
+      "32k/100k/1M blobs"
+    ],
+    "group": "artifact",
+    "prefix": "CAS",
+    "priority": "P1"
+  },
+  {
+    "benchmark_id": "REG-001",
+    "cost_class": "PREP",
+    "description": "registry startup-ready | cold/restart/port conflict",
+    "document_row": [
+      "P0-64",
+      "registry startup-ready",
+      "cold/restart/port conflict"
+    ],
+    "group": "artifact",
+    "prefix": "REG",
+    "priority": "P0-64"
+  },
+  {
+    "benchmark_id": "REG-002",
+    "cost_class": "PREP",
+    "description": "unscoped packument GET | single/concurrent/hit",
+    "document_row": [
+      "P0-64",
+      "unscoped packument GET",
+      "single/concurrent/hit"
+    ],
+    "group": "artifact",
+    "prefix": "REG",
+    "priority": "P0-64"
+  },
+  {
+    "benchmark_id": "REG-003",
+    "cost_class": "PREP",
+    "description": "scoped packument GET | encoding/single/concurrent",
+    "document_row": [
+      "P0-64",
+      "scoped packument GET",
+      "encoding/single/concurrent"
+    ],
+    "group": "artifact",
+    "prefix": "REG",
+    "priority": "P0-64"
+  },
+  {
+    "benchmark_id": "REG-004",
+    "cost_class": "PREP",
+    "description": "local tarball GET | size/concurrency/page-cache",
+    "document_row": [
+      "P0-64",
+      "local tarball GET",
+      "size/concurrency/page-cache"
+    ],
+    "group": "artifact",
+    "prefix": "REG",
+    "priority": "P0-64"
+  },
+  {
+    "benchmark_id": "REG-005",
+    "cost_class": "PREP",
+    "description": "lock/package URL rewrite | npm JSON、pnpm/Yarn text、large lock",
+    "document_row": [
+      "P0-64",
+      "lock/package URL rewrite",
+      "npm JSON、pnpm/Yarn text、large lock"
+    ],
+    "group": "artifact",
+    "prefix": "REG",
+    "priority": "P0-64"
+  },
+  {
+    "benchmark_id": "REG-006",
+    "cost_class": "PREP",
+    "description": "outbound proxy startup | cold/port conflict",
+    "document_row": [
+      "P0",
+      "outbound proxy startup",
+      "cold/port conflict"
+    ],
+    "group": "artifact",
+    "prefix": "REG",
+    "priority": "P0"
+  },
+  {
+    "benchmark_id": "REG-007",
+    "cost_class": "PREP",
+    "description": "HTTP/CONNECT record-and-block | single/burst/concurrent",
+    "document_row": [
+      "P0",
+      "HTTP/CONNECT record-and-block",
+      "single/burst/concurrent"
+    ],
+    "group": "artifact",
+    "prefix": "REG",
+    "priority": "P0"
+  },
+  {
+    "benchmark_id": "REG-008",
+    "cost_class": "PREP",
+    "description": "expected miss classification | CAS/external/Git/unknown",
+    "document_row": [
+      "P0",
+      "expected miss classification",
+      "CAS/external/Git/unknown"
+    ],
+    "group": "artifact",
+    "prefix": "REG",
+    "priority": "P0"
+  },
+  {
+    "benchmark_id": "REG-009",
+    "cost_class": "PREP",
+    "description": "connection-refused recovery | Bun observed path",
+    "document_row": [
+      "P0",
+      "connection-refused recovery",
+      "Bun observed path"
+    ],
+    "group": "artifact",
+    "prefix": "REG",
+    "priority": "P0"
+  },
+  {
+    "benchmark_id": "RUN-001",
+    "cost_class": "TRANSITION",
+    "description": "Node binary | exact+ABI+OS/arch/libc | resolve/load、page-cache cold/warm",
+    "document_row": [
+      "P0-64",
+      "Node binary",
+      "exact+ABI+OS/arch/libc",
+      "resolve/load、page-cache cold/warm"
+    ],
+    "group": "runtime",
+    "prefix": "RUN",
+    "priority": "P0-64"
+  },
+  {
+    "benchmark_id": "RUN-002",
+    "cost_class": "TRANSITION",
+    "description": "Node selector | selector+target | direct PATH、nvm、associated switch",
+    "document_row": [
+      "P0-64",
+      "Node selector",
+      "selector+target",
+      "direct PATH、nvm、associated switch"
+    ],
+    "group": "runtime",
+    "prefix": "RUN",
+    "priority": "P0-64"
+  },
+  {
+    "benchmark_id": "RUN-003",
+    "cost_class": "TRANSITION",
+    "description": "Node process | Node key+env | spawn/exit、module loader startup",
+    "document_row": [
+      "P0-64",
+      "Node process",
+      "Node key+env",
+      "spawn/exit、module loader startup"
+    ],
+    "group": "runtime",
+    "prefix": "RUN",
+    "priority": "P0-64"
+  },
+  {
+    "benchmark_id": "RUN-004",
+    "cost_class": "TRANSITION",
+    "description": "Node ABI switch | old/new ABI+native set | direct switch与invalidation分开",
+    "document_row": [
+      "P0-64",
+      "Node ABI switch",
+      "old/new ABI+native set",
+      "direct switch与invalidation分开"
+    ],
+    "group": "runtime",
+    "prefix": "RUN",
+    "priority": "P0-64"
+  },
+  {
+    "benchmark_id": "RUN-005",
+    "cost_class": "TRANSITION",
+    "description": "Bun runtime | exact+platform | runtime/PM spawn、1.2<->1.3",
+    "document_row": [
+      "P0-64",
+      "Bun runtime",
+      "exact+platform",
+      "runtime/PM spawn、1.2<->1.3"
+    ],
+    "group": "runtime",
+    "prefix": "RUN",
+    "priority": "P0-64"
+  },
+  {
+    "benchmark_id": "RUN-006",
+    "cost_class": "TRANSITION",
+    "description": "Deno | exact+cache+platform | spawn、compile/dependency cache",
+    "document_row": [
+      "P1",
+      "Deno",
+      "exact+cache+platform",
+      "spawn、compile/dependency cache"
+    ],
+    "group": "runtime",
+    "prefix": "RUN",
+    "priority": "P1"
+  },
+  {
+    "benchmark_id": "RUN-007",
+    "cost_class": "TRANSITION",
+    "description": "Java/JVM | JDK+JVM args | JVM、Gradle daemon attach/switch",
+    "document_row": [
+      "P1",
+      "Java/JVM",
+      "JDK+JVM args",
+      "JVM、Gradle daemon attach/switch"
+    ],
+    "group": "runtime",
+    "prefix": "RUN",
+    "priority": "P1"
+  },
+  {
+    "benchmark_id": "RUN-008",
+    "cost_class": "TRANSITION",
+    "description": "Python | exact+venv/site hash | interpreter、venv switch",
+    "document_row": [
+      "P1",
+      "Python",
+      "exact+venv/site hash",
+      "interpreter、venv switch"
+    ],
+    "group": "runtime",
+    "prefix": "RUN",
+    "priority": "P1"
+  },
+  {
+    "benchmark_id": "RUN-009",
+    "cost_class": "TRANSITION",
+    "description": "shell | bash/dash+env | process、login/non-login",
+    "document_row": [
+      "P1",
+      "shell",
+      "bash/dash+env",
+      "process、login/non-login"
+    ],
+    "group": "runtime",
+    "prefix": "RUN",
+    "priority": "P1"
+  },
+  {
+    "benchmark_id": "RUN-010",
+    "cost_class": "TRANSITION",
+    "description": "environment block | PATH/env/config hash | build、sanitize、restore",
+    "document_row": [
+      "P1",
+      "environment block",
+      "PATH/env/config hash",
+      "build、sanitize、restore"
+    ],
+    "group": "runtime",
+    "prefix": "RUN",
+    "priority": "P1"
+  },
+  {
+    "benchmark_id": "PM-001",
+    "cost_class": "TRANSITION",
+    "description": "npm CLI startup | npm 10.9.8 + Node 18/20/22",
+    "document_row": [
+      "P0-64",
+      "npm CLI startup",
+      "npm 10.9.8 + Node 18/20/22"
+    ],
+    "group": "pm",
+    "prefix": "PM",
+    "priority": "P0-64"
+  },
+  {
+    "benchmark_id": "PM-002",
+    "cost_class": "TRANSITION",
+    "description": "pnpm CLI startup | exact v9/v10/v11 policies",
+    "document_row": [
+      "P0-64",
+      "pnpm CLI startup",
+      "exact v9/v10/v11 policies"
+    ],
+    "group": "pm",
+    "prefix": "PM",
+    "priority": "P0-64"
+  },
+  {
+    "benchmark_id": "PM-003",
+    "cost_class": "TRANSITION",
+    "description": "Yarn Classic startup | 1.22.21/1.22.22",
+    "document_row": [
+      "P0-64",
+      "Yarn Classic startup",
+      "1.22.21/1.22.22"
+    ],
+    "group": "pm",
+    "prefix": "PM",
+    "priority": "P0-64"
+  },
+  {
+    "benchmark_id": "PM-004",
+    "cost_class": "TRANSITION",
+    "description": "Yarn Berry startup | project `.cjs`/Corepack、v3/v4",
+    "document_row": [
+      "P0-64",
+      "Yarn Berry startup",
+      "project `.cjs`/Corepack、v3/v4"
+    ],
+    "group": "pm",
+    "prefix": "PM",
+    "priority": "P0-64"
+  },
+  {
+    "benchmark_id": "PM-005",
+    "cost_class": "TRANSITION",
+    "description": "Bun PM startup | 1.2.18/1.3.7",
+    "document_row": [
+      "P0-64",
+      "Bun PM startup",
+      "1.2.18/1.3.7"
+    ],
+    "group": "pm",
+    "prefix": "PM",
+    "priority": "P0-64"
+  },
+  {
+    "benchmark_id": "PM-006",
+    "cost_class": "TRANSITION",
+    "description": "Corepack enable/prepare | active/switch/offline cache",
+    "document_row": [
+      "P0-64",
+      "Corepack enable/prepare",
+      "active/switch/offline cache"
+    ],
+    "group": "pm",
+    "prefix": "PM",
+    "priority": "P0-64"
+  },
+  {
+    "benchmark_id": "PM-007",
+    "cost_class": "TRANSITION",
+    "description": "global PM install | `npm install -g pnpm@...` cold/warm",
+    "document_row": [
+      "P1",
+      "global PM install",
+      "`npm install -g pnpm@...` cold/warm"
+    ],
+    "group": "pm",
+    "prefix": "PM",
+    "priority": "P1"
+  },
+  {
+    "benchmark_id": "PM-008",
+    "cost_class": "TRANSITION",
+    "description": "incompatible PM switch | cache format/linker changes",
+    "document_row": [
+      "P0",
+      "incompatible PM switch",
+      "cache format/linker changes"
+    ],
+    "group": "pm",
+    "prefix": "PM",
+    "priority": "P0"
+  },
+  {
+    "benchmark_id": "PMC-001",
+    "cost_class": "TRANSITION",
+    "description": "npm cache population | empty/partial/full/corrupt",
+    "document_row": [
+      "P0-64",
+      "npm cache population",
+      "empty/partial/full/corrupt"
+    ],
+    "group": "pm",
+    "prefix": "PMC",
+    "priority": "P0-64"
+  },
+  {
+    "benchmark_id": "PMC-002",
+    "cost_class": "TRANSITION",
+    "description": "pnpm store population | empty/partial/full、v9/v10/v11",
+    "document_row": [
+      "P0-64",
+      "pnpm store population",
+      "empty/partial/full、v9/v10/v11"
+    ],
+    "group": "pm",
+    "prefix": "PMC",
+    "priority": "P0-64"
+  },
+  {
+    "benchmark_id": "PMC-003",
+    "cost_class": "TRANSITION",
+    "description": "Yarn Classic cache | empty/partial/full、1.22 versions",
+    "document_row": [
+      "P0-64",
+      "Yarn Classic cache",
+      "empty/partial/full、1.22 versions"
+    ],
+    "group": "pm",
+    "prefix": "PMC",
+    "priority": "P0-64"
+  },
+  {
+    "benchmark_id": "PMC-004",
+    "cost_class": "TRANSITION",
+    "description": "Yarn Berry zip cache | v3/v4、global/local",
+    "document_row": [
+      "P0-64",
+      "Yarn Berry zip cache",
+      "v3/v4、global/local"
+    ],
+    "group": "pm",
+    "prefix": "PMC",
+    "priority": "P0-64"
+  },
+  {
+    "benchmark_id": "PMC-005",
+    "cost_class": "TRANSITION",
+    "description": "Bun cache | 1.2/1.3、refused/retry",
+    "document_row": [
+      "P0-64",
+      "Bun cache",
+      "1.2/1.3、refused/retry"
+    ],
+    "group": "pm",
+    "prefix": "PMC",
+    "priority": "P0-64"
+  },
+  {
+    "benchmark_id": "PMC-006",
+    "cost_class": "TRANSITION",
+    "description": "cache validation/index | hit/partial/corrupt",
+    "document_row": [
+      "P0",
+      "cache validation/index",
+      "hit/partial/corrupt"
+    ],
+    "group": "pm",
+    "prefix": "PMC",
+    "priority": "P0"
+  },
+  {
+    "benchmark_id": "PMC-007",
+    "cost_class": "TRANSITION",
+    "description": "policy switch | exact/minor/major/Classic-Berry",
+    "document_row": [
+      "P0",
+      "policy switch",
+      "exact/minor/major/Classic-Berry"
+    ],
+    "group": "pm",
+    "prefix": "PMC",
+    "priority": "P0"
+  },
+  {
+    "benchmark_id": "PMC-008",
+    "cost_class": "TRANSITION",
+    "description": "disk pressure/eviction | normal/quota/inode pressure",
+    "document_row": [
+      "P1",
+      "disk pressure/eviction",
+      "normal/quota/inode pressure"
+    ],
+    "group": "pm",
+    "prefix": "PMC",
+    "priority": "P1"
+  },
+  {
+    "benchmark_id": "PMC-009",
+    "cost_class": "TRANSITION",
+    "description": "concurrent readers/writers | 2/8/32 installs",
+    "document_row": [
+      "P1",
+      "concurrent readers/writers",
+      "2/8/32 installs"
+    ],
+    "group": "pm",
+    "prefix": "PMC",
+    "priority": "P1"
+  },
+  {
+    "benchmark_id": "DEP-001",
+    "cost_class": "TRANSITION",
+    "description": "npm `node_modules` materialize | local registry、scripts off",
+    "document_row": [
+      "P0-64",
+      "npm `node_modules` materialize",
+      "local registry、scripts off"
+    ],
+    "group": "dependency",
+    "prefix": "DEP",
+    "priority": "P0-64"
+  },
+  {
+    "benchmark_id": "DEP-002",
+    "cost_class": "TRANSITION",
+    "description": "pnpm linked view | store hit、scripts off",
+    "document_row": [
+      "P0-64",
+      "pnpm linked view",
+      "store hit、scripts off"
+    ],
+    "group": "dependency",
+    "prefix": "DEP",
+    "priority": "P0-64"
+  },
+  {
+    "benchmark_id": "DEP-003",
+    "cost_class": "TRANSITION",
+    "description": "Yarn Classic view | cache hit、frozen lock",
+    "document_row": [
+      "P0-64",
+      "Yarn Classic view",
+      "cache hit、frozen lock"
+    ],
+    "group": "dependency",
+    "prefix": "DEP",
+    "priority": "P0-64"
+  },
+  {
+    "benchmark_id": "DEP-004",
+    "cost_class": "TRANSITION",
+    "description": "Yarn Berry node-modules | v3/v4、immutable/mutable",
+    "document_row": [
+      "P0-64",
+      "Yarn Berry node-modules",
+      "v3/v4、immutable/mutable"
+    ],
+    "group": "dependency",
+    "prefix": "DEP",
+    "priority": "P0-64"
+  },
+  {
+    "benchmark_id": "DEP-005",
+    "cost_class": "TRANSITION",
+    "description": "Yarn PnP view | `.pnp.cjs`、unplugged hit/miss",
+    "document_row": [
+      "P0",
+      "Yarn PnP view",
+      "`.pnp.cjs`、unplugged hit/miss"
+    ],
+    "group": "dependency",
+    "prefix": "DEP",
+    "priority": "P0"
+  },
+  {
+    "benchmark_id": "DEP-006",
+    "cost_class": "TRANSITION",
+    "description": "Bun view | cache hit/miss、1.2/1.3",
+    "document_row": [
+      "P0-64",
+      "Bun view",
+      "cache hit/miss、1.2/1.3"
+    ],
+    "group": "dependency",
+    "prefix": "DEP",
+    "priority": "P0-64"
+  },
+  {
+    "benchmark_id": "DEP-007",
+    "cost_class": "TRANSITION",
+    "description": "exact view reuse | same lock/PM/ABI/config",
+    "document_row": [
+      "P0-64",
+      "exact view reuse",
+      "same lock/PM/ABI/config"
+    ],
+    "group": "dependency",
+    "prefix": "DEP",
+    "priority": "P0-64"
+  },
+  {
+    "benchmark_id": "DEP-008",
+    "cost_class": "TRANSITION",
+    "description": "compatible attach/mount/link | existing view、新 overlay",
+    "document_row": [
+      "P0-64",
+      "compatible attach/mount/link",
+      "existing view、新 overlay"
+    ],
+    "group": "dependency",
+    "prefix": "DEP",
+    "priority": "P0-64"
+  },
+  {
+    "benchmark_id": "DEP-009",
+    "cost_class": "TRANSITION",
+    "description": "incompatible switch | lock/PM/linker/ABI change",
+    "document_row": [
+      "P0-64",
+      "incompatible switch",
+      "lock/PM/linker/ABI change"
+    ],
+    "group": "dependency",
+    "prefix": "DEP",
+    "priority": "P0-64"
+  },
+  {
+    "benchmark_id": "DEP-010",
+    "cost_class": "TRANSITION",
+    "description": "unmount/remove/reset | inode tree、open file",
+    "document_row": [
+      "P0-64",
+      "unmount/remove/reset",
+      "inode tree、open file"
+    ],
+    "group": "dependency",
+    "prefix": "DEP",
+    "priority": "P0-64"
+  },
+  {
+    "benchmark_id": "DEP-011",
+    "cost_class": "TRANSITION",
+    "description": "workspace links | 306 entries、monorepo size",
+    "document_row": [
+      "P0-64",
+      "workspace links",
+      "306 entries、monorepo size"
+    ],
+    "group": "dependency",
+    "prefix": "DEP",
+    "priority": "P0-64"
+  },
+  {
+    "benchmark_id": "DEP-012",
+    "cost_class": "TRANSITION",
+    "description": "local-file packages | 914 entries、copy/link/tar",
+    "document_row": [
+      "P0-64",
+      "local-file packages",
+      "914 entries、copy/link/tar"
+    ],
+    "group": "dependency",
+    "prefix": "DEP",
+    "priority": "P0-64"
+  },
+  {
+    "benchmark_id": "DEP-013",
+    "cost_class": "TRANSITION",
+    "description": "patch apply | 30 entries、hit/fail/reapply",
+    "document_row": [
+      "P0-64",
+      "patch apply",
+      "30 entries、hit/fail/reapply"
+    ],
+    "group": "dependency",
+    "prefix": "DEP",
+    "priority": "P0-64"
+  },
+  {
+    "benchmark_id": "DEP-014",
+    "cost_class": "TRANSITION",
+    "description": "Git dependency | 10 network Git artifacts",
+    "document_row": [
+      "P0-64",
+      "Git dependency",
+      "10 network Git artifacts"
+    ],
+    "group": "dependency",
+    "prefix": "DEP",
+    "priority": "P0-64"
+  },
+  {
+    "benchmark_id": "DEP-015",
+    "cost_class": "TRANSITION",
+    "description": "HTTP tarball | 6 artifacts、404",
+    "document_row": [
+      "P0-64",
+      "HTTP tarball",
+      "6 artifacts、404"
+    ],
+    "group": "dependency",
+    "prefix": "DEP",
+    "priority": "P0-64"
+  },
+  {
+    "benchmark_id": "DEP-016",
+    "cost_class": "TRANSITION",
+    "description": "optional/platform filter | compatible/incompatible",
+    "document_row": [
+      "P0-64",
+      "optional/platform filter",
+      "compatible/incompatible"
+    ],
+    "group": "dependency",
+    "prefix": "DEP",
+    "priority": "P0-64"
+  },
+  {
+    "benchmark_id": "DEP-017",
+    "cost_class": "TRANSITION",
+    "description": "unknown protocol | 30 unknown entries/manual review",
+    "document_row": [
+      "P0",
+      "unknown protocol",
+      "30 unknown entries/manual review"
+    ],
+    "group": "dependency",
+    "prefix": "DEP",
+    "priority": "P0"
+  },
+  {
+    "benchmark_id": "DEP-018",
+    "cost_class": "TRANSITION",
+    "description": "view validation | require/import/bin links",
+    "document_row": [
+      "P0",
+      "view validation",
+      "require/import/bin links"
+    ],
+    "group": "dependency",
+    "prefix": "DEP",
+    "priority": "P0"
+  },
+  {
+    "benchmark_id": "DEP-019",
+    "cost_class": "TRANSITION",
+    "description": "concurrent creation | shared store/separate overlay",
+    "document_row": [
+      "P1",
+      "concurrent creation",
+      "shared store/separate overlay"
+    ],
+    "group": "dependency",
+    "prefix": "DEP",
+    "priority": "P1"
+  },
+  {
+    "benchmark_id": "DEP-020",
+    "cost_class": "TRANSITION",
+    "description": "inode/page-cache effect | logical/physical cold",
+    "document_row": [
+      "P1",
+      "inode/page-cache effect",
+      "logical/physical cold"
+    ],
+    "group": "dependency",
+    "prefix": "DEP",
+    "priority": "P1"
+  },
+  {
+    "benchmark_id": "INS-001",
+    "cost_class": "TRANSITION",
+    "description": "strict install | npm ci/frozen/immutable",
+    "document_row": [
+      "P0-64",
+      "strict install",
+      "npm ci/frozen/immutable"
+    ],
+    "group": "dependency",
+    "prefix": "INS",
+    "priority": "P0-64"
+  },
+  {
+    "benchmark_id": "INS-002",
+    "cost_class": "TRANSITION",
+    "description": "mutable install | plain/no-frozen/lock update",
+    "document_row": [
+      "P0-64",
+      "mutable install",
+      "plain/no-frozen/lock update"
+    ],
+    "group": "dependency",
+    "prefix": "INS",
+    "priority": "P0-64"
+  },
+  {
+    "benchmark_id": "INS-003",
+    "cost_class": "TRANSITION",
+    "description": "scripts-disabled install | view/cache cold/warm",
+    "document_row": [
+      "P0-64",
+      "scripts-disabled install",
+      "view/cache cold/warm"
+    ],
+    "group": "dependency",
+    "prefix": "INS",
+    "priority": "P0-64"
+  },
+  {
+    "benchmark_id": "INS-004",
+    "cost_class": "TRANSITION",
+    "description": "`preinstall` | no-op/guard/tool setup",
+    "document_row": [
+      "P0-64",
+      "`preinstall`",
+      "no-op/guard/tool setup"
+    ],
+    "group": "dependency",
+    "prefix": "INS",
+    "priority": "P0-64"
+  },
+  {
+    "benchmark_id": "INS-005",
+    "cost_class": "TRANSITION",
+    "description": "`install` | native/download/no-op",
+    "document_row": [
+      "P0-64",
+      "`install`",
+      "native/download/no-op"
+    ],
+    "group": "dependency",
+    "prefix": "INS",
+    "priority": "P0-64"
+  },
+  {
+    "benchmark_id": "INS-006",
+    "cost_class": "TRANSITION",
+    "description": "`postinstall` | bootstrap/browser/binary/codegen",
+    "document_row": [
+      "P0-64",
+      "`postinstall`",
+      "bootstrap/browser/binary/codegen"
+    ],
+    "group": "dependency",
+    "prefix": "INS",
+    "priority": "P0-64"
+  },
+  {
+    "benchmark_id": "INS-007",
+    "cost_class": "TRANSITION",
+    "description": "`prepare` | husky/build/preconstruct/workspace",
+    "document_row": [
+      "P0-64",
+      "`prepare`",
+      "husky/build/preconstruct/workspace"
+    ],
+    "group": "dependency",
+    "prefix": "INS",
+    "priority": "P0-64"
+  },
+  {
+    "benchmark_id": "INS-008",
+    "cost_class": "TRANSITION",
+    "description": "peer conflict | default/legacy/failure detection",
+    "document_row": [
+      "P0-64",
+      "peer conflict",
+      "default/legacy/failure detection"
+    ],
+    "group": "dependency",
+    "prefix": "INS",
+    "priority": "P0-64"
+  },
+  {
+    "benchmark_id": "INS-009",
+    "cost_class": "TRANSITION",
+    "description": "partial install cleanup | view/lock/process cleanup",
+    "document_row": [
+      "P0",
+      "partial install cleanup",
+      "view/lock/process cleanup"
+    ],
+    "group": "dependency",
+    "prefix": "INS",
+    "priority": "P0"
+  },
+  {
+    "benchmark_id": "INS-010",
+    "cost_class": "TRANSITION",
+    "description": "identical reinstall | warm hit/unnecessary writes",
+    "document_row": [
+      "P0",
+      "identical reinstall",
+      "warm hit/unnecessary writes"
+    ],
+    "group": "dependency",
+    "prefix": "INS",
+    "priority": "P0"
+  },
+  {
+    "benchmark_id": "BLD-001",
+    "cost_class": "TRANSITION",
+    "description": "generic PM script | shell+PM dispatch",
+    "document_row": [
+      "P0-64",
+      "generic PM script",
+      "shell+PM dispatch"
+    ],
+    "group": "build",
+    "prefix": "BLD",
+    "priority": "P0-64"
+  },
+  {
+    "benchmark_id": "BLD-002",
+    "cost_class": "TRANSITION",
+    "description": "TypeScript `tsc` | cold、tsbuildinfo hit、source/config/ABI invalidation",
+    "document_row": [
+      "P0-64",
+      "TypeScript `tsc`",
+      "cold、tsbuildinfo hit、source/config/ABI invalidation"
+    ],
+    "group": "build",
+    "prefix": "BLD",
+    "priority": "P0-64"
+  },
+  {
+    "benchmark_id": "BLD-003",
+    "cost_class": "TRANSITION",
+    "description": "tsserver | ready、project load、reuse/reset、RSS",
+    "document_row": [
+      "P1",
+      "tsserver",
+      "ready、project load、reuse/reset、RSS"
+    ],
+    "group": "build",
+    "prefix": "BLD",
+    "priority": "P1"
+  },
+  {
+    "benchmark_id": "BLD-004",
+    "cost_class": "TRANSITION",
+    "description": "Babel | cold/cache/config invalidation",
+    "document_row": [
+      "P0-64",
+      "Babel",
+      "cold/cache/config invalidation"
+    ],
+    "group": "build",
+    "prefix": "BLD",
+    "priority": "P0-64"
+  },
+  {
+    "benchmark_id": "BLD-005",
+    "cost_class": "TRANSITION",
+    "description": "SWC | binding load/cache/ABI switch",
+    "document_row": [
+      "P0-64",
+      "SWC",
+      "binding load/cache/ABI switch"
+    ],
+    "group": "build",
+    "prefix": "BLD",
+    "priority": "P0-64"
+  },
+  {
+    "benchmark_id": "BLD-006",
+    "cost_class": "TRANSITION",
+    "description": "esbuild | binary/service startup、build、platform switch",
+    "document_row": [
+      "P0-64",
+      "esbuild",
+      "binary/service startup、build、platform switch"
+    ],
+    "group": "build",
+    "prefix": "BLD",
+    "priority": "P0-64"
+  },
+  {
+    "benchmark_id": "BLD-007",
+    "cost_class": "TRANSITION",
+    "description": "Rollup | graph cold/cache/plugin invalidation",
+    "document_row": [
+      "P0-64",
+      "Rollup",
+      "graph cold/cache/plugin invalidation"
+    ],
+    "group": "build",
+    "prefix": "BLD",
+    "priority": "P0-64"
+  },
+  {
+    "benchmark_id": "BLD-008",
+    "cost_class": "TRANSITION",
+    "description": "Webpack | compiler、FS cache、watch、config invalidation",
+    "document_row": [
+      "P0-64",
+      "Webpack",
+      "compiler、FS cache、watch、config invalidation"
+    ],
+    "group": "build",
+    "prefix": "BLD",
+    "priority": "P0-64"
+  },
+  {
+    "benchmark_id": "BLD-009",
+    "cost_class": "TRANSITION",
+    "description": "Vite | server ready、optimize-deps、depview/config invalidation",
+    "document_row": [
+      "P0-64",
+      "Vite",
+      "server ready、optimize-deps、depview/config invalidation"
+    ],
+    "group": "build",
+    "prefix": "BLD",
+    "priority": "P0-64"
+  },
+  {
+    "benchmark_id": "BLD-010",
+    "cost_class": "TRANSITION",
+    "description": "Next.js | dev/server ready、`.next/cache`、build invalidation",
+    "document_row": [
+      "P0",
+      "Next.js",
+      "dev/server ready、`.next/cache`、build invalidation"
+    ],
+    "group": "build",
+    "prefix": "BLD",
+    "priority": "P0"
+  },
+  {
+    "benchmark_id": "BLD-011",
+    "cost_class": "TRANSITION",
+    "description": "Nx | daemon、project graph、cache、reset",
+    "document_row": [
+      "P0-64",
+      "Nx",
+      "daemon、project graph、cache、reset"
+    ],
+    "group": "build",
+    "prefix": "BLD",
+    "priority": "P0-64"
+  },
+  {
+    "benchmark_id": "BLD-012",
+    "cost_class": "TRANSITION",
+    "description": "Turborepo | daemon若有、task graph、local cache",
+    "document_row": [
+      "P0-64",
+      "Turborepo",
+      "daemon若有、task graph、local cache"
+    ],
+    "group": "build",
+    "prefix": "BLD",
+    "priority": "P0-64"
+  },
+  {
+    "benchmark_id": "BLD-013",
+    "cost_class": "TRANSITION",
+    "description": "Gulp/Grunt | task graph、watch process",
+    "document_row": [
+      "P1",
+      "Gulp/Grunt",
+      "task graph、watch process"
+    ],
+    "group": "build",
+    "prefix": "BLD",
+    "priority": "P1"
+  },
+  {
+    "benchmark_id": "BLD-014",
+    "cost_class": "TRANSITION",
+    "description": "Lerna/preconstruct/manypkg | graph、bootstrap/link、cache",
+    "document_row": [
+      "P0-64",
+      "Lerna/preconstruct/manypkg",
+      "graph、bootstrap/link、cache"
+    ],
+    "group": "build",
+    "prefix": "BLD",
+    "priority": "P0-64"
+  },
+  {
+    "benchmark_id": "BLD-015",
+    "cost_class": "TRANSITION",
+    "description": "Changesets/Rush | graph/config change",
+    "document_row": [
+      "P1",
+      "Changesets/Rush",
+      "graph/config change"
+    ],
+    "group": "build",
+    "prefix": "BLD",
+    "priority": "P1"
+  },
+  {
+    "benchmark_id": "BLD-016",
+    "cost_class": "TRANSITION",
+    "description": "make/bootstrap/setup | startup、incremental output、cleanup",
+    "document_row": [
+      "P0-64",
+      "make/bootstrap/setup",
+      "startup、incremental output、cleanup"
+    ],
+    "group": "build",
+    "prefix": "BLD",
+    "priority": "P0-64"
+  },
+  {
+    "benchmark_id": "BLD-017",
+    "cost_class": "TRANSITION",
+    "description": "generic codegen/generate | cold、output cache、schema/config invalidation",
+    "document_row": [
+      "P0-64",
+      "generic codegen/generate",
+      "cold、output cache、schema/config invalidation"
+    ],
+    "group": "build",
+    "prefix": "BLD",
+    "priority": "P0-64"
+  },
+  {
+    "benchmark_id": "BLD-018",
+    "cost_class": "TRANSITION",
+    "description": "protobuf/protoc | binary/plugin/schema/output cache",
+    "document_row": [
+      "P1",
+      "protobuf/protoc",
+      "binary/plugin/schema/output cache"
+    ],
+    "group": "build",
+    "prefix": "BLD",
+    "priority": "P1"
+  },
+  {
+    "benchmark_id": "BLD-019",
+    "cost_class": "TRANSITION",
+    "description": "Prisma generate/migrate | engine、schema、binary/cache",
+    "document_row": [
+      "P1",
+      "Prisma generate/migrate",
+      "engine、schema、binary/cache"
+    ],
+    "group": "build",
+    "prefix": "BLD",
+    "priority": "P1"
+  },
+  {
+    "benchmark_id": "BLD-020",
+    "cost_class": "TRANSITION",
+    "description": "build cache attach | cold build/cache attach/verify",
+    "document_row": [
+      "P0",
+      "build cache attach",
+      "cold build/cache attach/verify"
+    ],
+    "group": "build",
+    "prefix": "BLD",
+    "priority": "P0"
+  },
+  {
+    "benchmark_id": "BLD-021",
+    "cost_class": "TRANSITION",
+    "description": "build cache invalidation | repo/depview/tool/config/env",
+    "document_row": [
+      "P0",
+      "build cache invalidation",
+      "repo/depview/tool/config/env"
+    ],
+    "group": "build",
+    "prefix": "BLD",
+    "priority": "P0"
+  },
+  {
+    "benchmark_id": "BLD-022",
+    "cost_class": "TRANSITION",
+    "description": "watch process reset | handles/children/ports/RSS",
+    "document_row": [
+      "P0",
+      "watch process reset",
+      "handles/children/ports/RSS"
+    ],
+    "group": "build",
+    "prefix": "BLD",
+    "priority": "P0"
+  },
+  {
+    "benchmark_id": "TST-001",
+    "cost_class": "TRANSITION",
+    "description": "Jest | discovery、transform cold/warm、workers、shutdown",
+    "document_row": [
+      "P0-64",
+      "Jest",
+      "discovery、transform cold/warm、workers、shutdown"
+    ],
+    "group": "test",
+    "prefix": "TST",
+    "priority": "P0-64"
+  },
+  {
+    "benchmark_id": "TST-002",
+    "cost_class": "TRANSITION",
+    "description": "Vitest | Vite server、transform、worker pool、watch mode",
+    "document_row": [
+      "P0-64",
+      "Vitest",
+      "Vite server、transform、worker pool、watch mode"
+    ],
+    "group": "test",
+    "prefix": "TST",
+    "priority": "P0-64"
+  },
+  {
+    "benchmark_id": "TST-003",
+    "cost_class": "TRANSITION",
+    "description": "Mocha | CLI/loader、discovery、workers",
+    "document_row": [
+      "P0-64",
+      "Mocha",
+      "CLI/loader、discovery、workers"
+    ],
+    "group": "test",
+    "prefix": "TST",
+    "priority": "P0-64"
+  },
+  {
+    "benchmark_id": "TST-004",
+    "cost_class": "TRANSITION",
+    "description": "AVA | worker pool、startup/reset",
+    "document_row": [
+      "P0",
+      "AVA",
+      "worker pool、startup/reset"
+    ],
+    "group": "test",
+    "prefix": "TST",
+    "priority": "P0"
+  },
+  {
+    "benchmark_id": "TST-005",
+    "cost_class": "TRANSITION",
+    "description": "Karma | server ready、browser launcher、cleanup",
+    "document_row": [
+      "P0-64",
+      "Karma",
+      "server ready、browser launcher、cleanup"
+    ],
+    "group": "test",
+    "prefix": "TST",
+    "priority": "P0-64"
+  },
+  {
+    "benchmark_id": "TST-006",
+    "cost_class": "TRANSITION",
+    "description": "Nightwatch | runner、driver/browser、shutdown",
+    "document_row": [
+      "P0-64",
+      "Nightwatch",
+      "runner、driver/browser、shutdown"
+    ],
+    "group": "test",
+    "prefix": "TST",
+    "priority": "P0-64"
+  },
+  {
+    "benchmark_id": "TST-007",
+    "cost_class": "TRANSITION",
+    "description": "Cypress | binary/cache check、launch、download miss",
+    "document_row": [
+      "P0-64",
+      "Cypress",
+      "binary/cache check、launch、download miss"
+    ],
+    "group": "test",
+    "prefix": "TST",
+    "priority": "P0-64"
+  },
+  {
+    "benchmark_id": "TST-008",
+    "cost_class": "TRANSITION",
+    "description": "Playwright | driver、browser/context、download miss",
+    "document_row": [
+      "P0-64",
+      "Playwright",
+      "driver、browser/context、download miss"
+    ],
+    "group": "test",
+    "prefix": "TST",
+    "priority": "P0-64"
+  },
+  {
+    "benchmark_id": "TST-009",
+    "cost_class": "TRANSITION",
+    "description": "Puppeteer | browser resolve、launch/context/close",
+    "document_row": [
+      "P1",
+      "Puppeteer",
+      "browser resolve、launch/context/close"
+    ],
+    "group": "test",
+    "prefix": "TST",
+    "priority": "P1"
+  },
+  {
+    "benchmark_id": "TST-010",
+    "cost_class": "TRANSITION",
+    "description": "Selenium/WebDriver | driver、handshake、shutdown",
+    "document_row": [
+      "P1",
+      "Selenium/WebDriver",
+      "driver、handshake、shutdown"
+    ],
+    "group": "test",
+    "prefix": "TST",
+    "priority": "P1"
+  },
+  {
+    "benchmark_id": "TST-011",
+    "cost_class": "TRANSITION",
+    "description": "transform cache | Jest/Vitest/Babel/SWC/ts-jest",
+    "document_row": [
+      "P0",
+      "transform cache",
+      "Jest/Vitest/Babel/SWC/ts-jest"
+    ],
+    "group": "test",
+    "prefix": "TST",
+    "priority": "P0"
+  },
+  {
+    "benchmark_id": "TST-012",
+    "cost_class": "TRANSITION",
+    "description": "worker pool | create/reuse/reset/leak",
+    "document_row": [
+      "P0",
+      "worker pool",
+      "create/reuse/reset/leak"
+    ],
+    "group": "test",
+    "prefix": "TST",
+    "priority": "P0"
+  },
+  {
+    "benchmark_id": "TST-013",
+    "cost_class": "TRANSITION",
+    "description": "test selection/discovery | full/target/changed files",
+    "document_row": [
+      "P0",
+      "test selection/discovery",
+      "full/target/changed files"
+    ],
+    "group": "test",
+    "prefix": "TST",
+    "priority": "P0"
+  },
+  {
+    "benchmark_id": "TST-014",
+    "cost_class": "TRANSITION",
+    "description": "coverage | V8/Istanbul、cold/warm、cleanup",
+    "document_row": [
+      "P1",
+      "coverage",
+      "V8/Istanbul、cold/warm、cleanup"
+    ],
+    "group": "test",
+    "prefix": "TST",
+    "priority": "P1"
+  },
+  {
+    "benchmark_id": "TST-015",
+    "cost_class": "TRANSITION",
+    "description": "failed/timeout cleanup | process/ports/tmp/coverage",
+    "document_row": [
+      "P0",
+      "failed/timeout cleanup",
+      "process/ports/tmp/coverage"
+    ],
+    "group": "test",
+    "prefix": "TST",
+    "priority": "P0"
+  },
+  {
+    "benchmark_id": "TST-016",
+    "cost_class": "TRANSITION",
+    "description": "isolated comparison | reordered vs fresh result parity",
+    "document_row": [
+      "P0",
+      "isolated comparison",
+      "reordered vs fresh result parity"
+    ],
+    "group": "test",
+    "prefix": "TST",
+    "priority": "P0"
+  },
+  {
+    "benchmark_id": "BRW-001",
+    "cost_class": "TRANSITION",
+    "description": "Chromium binary resolve/load | system/Playwright revision、page-cache cold/warm",
+    "document_row": [
+      "P0-64",
+      "Chromium binary resolve/load",
+      "system/Playwright revision、page-cache cold/warm"
+    ],
+    "group": "browser",
+    "prefix": "BRW",
+    "priority": "P0-64"
+  },
+  {
+    "benchmark_id": "BRW-002",
+    "cost_class": "TRANSITION",
+    "description": "Firefox binary resolve/load | exact revision、page-cache cold/warm",
+    "document_row": [
+      "P0",
+      "Firefox binary resolve/load",
+      "exact revision、page-cache cold/warm"
+    ],
+    "group": "browser",
+    "prefix": "BRW",
+    "priority": "P0"
+  },
+  {
+    "benchmark_id": "BRW-003",
+    "cost_class": "TRANSITION",
+    "description": "WebKit binary resolve/load | Playwright revision、platform deps",
+    "document_row": [
+      "P0",
+      "WebKit binary resolve/load",
+      "Playwright revision、platform deps"
+    ],
+    "group": "browser",
+    "prefix": "BRW",
+    "priority": "P0"
+  },
+  {
+    "benchmark_id": "BRW-004",
+    "cost_class": "TRANSITION",
+    "description": "Electron binary resolve/load | Electron/Chromium/Node ABI",
+    "document_row": [
+      "P0-64",
+      "Electron binary resolve/load",
+      "Electron/Chromium/Node ABI"
+    ],
+    "group": "browser",
+    "prefix": "BRW",
+    "priority": "P0-64"
+  },
+  {
+    "benchmark_id": "BRW-005",
+    "cost_class": "TRANSITION",
+    "description": "browser/Electron download | network cold、tool cache、CAS replay、mirror fallback",
+    "document_row": [
+      "P0-64",
+      "browser/Electron download",
+      "network cold、tool cache、CAS replay、mirror fallback"
+    ],
+    "group": "browser",
+    "prefix": "BRW",
+    "priority": "P0-64"
+  },
+  {
+    "benchmark_id": "BRW-006",
+    "cost_class": "TRANSITION",
+    "description": "browser install-deps check | packages present/missing",
+    "document_row": [
+      "P0-64",
+      "browser install-deps check",
+      "packages present/missing"
+    ],
+    "group": "browser",
+    "prefix": "BRW",
+    "priority": "P0-64"
+  },
+  {
+    "benchmark_id": "BRW-007",
+    "cost_class": "TRANSITION",
+    "description": "Chromium cold start-ready | flags/headless/GPU/extensions/profile",
+    "document_row": [
+      "P0-64",
+      "Chromium cold start-ready",
+      "flags/headless/GPU/extensions/profile"
+    ],
+    "group": "browser",
+    "prefix": "BRW",
+    "priority": "P0-64"
+  },
+  {
+    "benchmark_id": "BRW-008",
+    "cost_class": "TRANSITION",
+    "description": "Firefox cold start-ready | revision/flags/profile",
+    "document_row": [
+      "P0",
+      "Firefox cold start-ready",
+      "revision/flags/profile"
+    ],
+    "group": "browser",
+    "prefix": "BRW",
+    "priority": "P0"
+  },
+  {
+    "benchmark_id": "BRW-009",
+    "cost_class": "TRANSITION",
+    "description": "WebKit cold start-ready | revision/flags",
+    "document_row": [
+      "P0",
+      "WebKit cold start-ready",
+      "revision/flags"
+    ],
+    "group": "browser",
+    "prefix": "BRW",
+    "priority": "P0"
+  },
+  {
+    "benchmark_id": "BRW-010",
+    "cost_class": "TRANSITION",
+    "description": "warm process attach | reconnect/health check",
+    "document_row": [
+      "P0-64",
+      "warm process attach",
+      "reconnect/health check"
+    ],
+    "group": "browser",
+    "prefix": "BRW",
+    "priority": "P0-64"
+  },
+  {
+    "benchmark_id": "BRW-011",
+    "cost_class": "TRANSITION",
+    "description": "BrowserContext create | default/custom/storage state",
+    "document_row": [
+      "P0-64",
+      "BrowserContext create",
+      "default/custom/storage state"
+    ],
+    "group": "browser",
+    "prefix": "BRW",
+    "priority": "P0-64"
+  },
+  {
+    "benchmark_id": "BRW-012",
+    "cost_class": "TRANSITION",
+    "description": "BrowserContext close/reset | dirty pages/downloads/service workers",
+    "document_row": [
+      "P0-64",
+      "BrowserContext close/reset",
+      "dirty pages/downloads/service workers"
+    ],
+    "group": "browser",
+    "prefix": "BRW",
+    "priority": "P0-64"
+  },
+  {
+    "benchmark_id": "BRW-013",
+    "cost_class": "TRANSITION",
+    "description": "profile create | empty/template/large",
+    "document_row": [
+      "P0-64",
+      "profile create",
+      "empty/template/large"
+    ],
+    "group": "browser",
+    "prefix": "BRW",
+    "priority": "P0-64"
+  },
+  {
+    "benchmark_id": "BRW-014",
+    "cost_class": "TRANSITION",
+    "description": "profile reset/delete | cache/cookies/IndexedDB/workers",
+    "document_row": [
+      "P0-64",
+      "profile reset/delete",
+      "cache/cookies/IndexedDB/workers"
+    ],
+    "group": "browser",
+    "prefix": "BRW",
+    "priority": "P0-64"
+  },
+  {
+    "benchmark_id": "BRW-015",
+    "cost_class": "TRANSITION",
+    "description": "page/tab ready-close | blank/local app/blocked remote",
+    "document_row": [
+      "P0-64",
+      "page/tab ready-close",
+      "blank/local app/blocked remote"
+    ],
+    "group": "browser",
+    "prefix": "BRW",
+    "priority": "P0-64"
+  },
+  {
+    "benchmark_id": "BRW-016",
+    "cost_class": "TRANSITION",
+    "description": "browser process switch | flags/revision change",
+    "document_row": [
+      "P0",
+      "browser process switch",
+      "flags/revision change"
+    ],
+    "group": "browser",
+    "prefix": "BRW",
+    "priority": "P0"
+  },
+  {
+    "benchmark_id": "BRW-017",
+    "cost_class": "TRANSITION",
+    "description": "graceful/forced shutdown | normal/hung/child processes",
+    "document_row": [
+      "P0",
+      "graceful/forced shutdown",
+      "normal/hung/child processes"
+    ],
+    "group": "browser",
+    "prefix": "BRW",
+    "priority": "P0"
+  },
+  {
+    "benchmark_id": "BRW-018",
+    "cost_class": "TRANSITION",
+    "description": "Electron main/renderer ready | exact binary/config/profile",
+    "document_row": [
+      "P0-64",
+      "Electron main/renderer ready",
+      "exact binary/config/profile"
+    ],
+    "group": "browser",
+    "prefix": "BRW",
+    "priority": "P0-64"
+  },
+  {
+    "benchmark_id": "BRW-019",
+    "cost_class": "TRANSITION",
+    "description": "Electron reset/restart | window/renderer/main cleanup",
+    "document_row": [
+      "P0",
+      "Electron reset/restart",
+      "window/renderer/main cleanup"
+    ],
+    "group": "browser",
+    "prefix": "BRW",
+    "priority": "P0"
+  },
+  {
+    "benchmark_id": "GUI-001",
+    "cost_class": "TRANSITION",
+    "description": "Xvfb start-ready | display/screen/depth/port conflict",
+    "document_row": [
+      "P0",
+      "Xvfb start-ready",
+      "display/screen/depth/port conflict"
+    ],
+    "group": "browser",
+    "prefix": "GUI",
+    "priority": "P0"
+  },
+  {
+    "benchmark_id": "GUI-002",
+    "cost_class": "TRANSITION",
+    "description": "Xvfb reuse/reset/stop | stale clients/socket/lock",
+    "document_row": [
+      "P0",
+      "Xvfb reuse/reset/stop",
+      "stale clients/socket/lock"
+    ],
+    "group": "browser",
+    "prefix": "GUI",
+    "priority": "P0"
+  },
+  {
+    "benchmark_id": "GUI-003",
+    "cost_class": "TRANSITION",
+    "description": "D-Bus session start-ready/reset | clean/reused/socket cleanup",
+    "document_row": [
+      "P0",
+      "D-Bus session start-ready/reset",
+      "clean/reused/socket cleanup"
+    ],
+    "group": "browser",
+    "prefix": "GUI",
+    "priority": "P0"
+  },
+  {
+    "benchmark_id": "GUI-004",
+    "cost_class": "TRANSITION",
+    "description": "GTK/system GUI library load | page-cache/rootfs switch",
+    "document_row": [
+      "P1",
+      "GTK/system GUI library load",
+      "page-cache/rootfs switch"
+    ],
+    "group": "browser",
+    "prefix": "GUI",
+    "priority": "P1"
+  },
+  {
+    "benchmark_id": "GUI-005",
+    "cost_class": "TRANSITION",
+    "description": "WebGL/GPU/SwiftShader context | context/shader cache/flags",
+    "document_row": [
+      "P1",
+      "WebGL/GPU/SwiftShader context",
+      "context/shader cache/flags"
+    ],
+    "group": "browser",
+    "prefix": "GUI",
+    "priority": "P1"
+  },
+  {
+    "benchmark_id": "GUI-006",
+    "cost_class": "TRANSITION",
+    "description": "automation protocol handshake | Playwright/CDP/WebDriver compatibility",
+    "document_row": [
+      "P1",
+      "automation protocol handshake",
+      "Playwright/CDP/WebDriver compatibility"
+    ],
+    "group": "browser",
+    "prefix": "GUI",
+    "priority": "P1"
+  },
+  {
+    "benchmark_id": "DB-001",
+    "cost_class": "TRANSITION",
+    "description": "MongoDB | binary、daemon ready、connect、reset、shutdown",
+    "document_row": [
+      "P0-64",
+      "MongoDB",
+      "binary、daemon ready、connect、reset、shutdown"
+    ],
+    "group": "database",
+    "prefix": "DB",
+    "priority": "P0-64"
+  },
+  {
+    "benchmark_id": "DB-002",
+    "cost_class": "TRANSITION",
+    "description": "PostgreSQL | initdb/snapshot、ready、connect、reset、shutdown",
+    "document_row": [
+      "P0",
+      "PostgreSQL",
+      "initdb/snapshot、ready、connect、reset、shutdown"
+    ],
+    "group": "database",
+    "prefix": "DB",
+    "priority": "P0"
+  },
+  {
+    "benchmark_id": "DB-003",
+    "cost_class": "TRANSITION",
+    "description": "MySQL | datadir/snapshot、ready、auth、reset、shutdown",
+    "document_row": [
+      "P0",
+      "MySQL",
+      "datadir/snapshot、ready、auth、reset、shutdown"
+    ],
+    "group": "database",
+    "prefix": "DB",
+    "priority": "P0"
+  },
+  {
+    "benchmark_id": "DB-004",
+    "cost_class": "TRANSITION",
+    "description": "Redis | ready、PING、FLUSH/reset、snapshot、shutdown",
+    "document_row": [
+      "P0",
+      "Redis",
+      "ready、PING、FLUSH/reset、snapshot、shutdown"
+    ],
+    "group": "database",
+    "prefix": "DB",
+    "priority": "P0"
+  },
+  {
+    "benchmark_id": "DB-005",
+    "cost_class": "TRANSITION",
+    "description": "SQLite | file clone/open、schema baseline、reset、reopen",
+    "document_row": [
+      "P0-64",
+      "SQLite",
+      "file clone/open、schema baseline、reset、reopen"
+    ],
+    "group": "database",
+    "prefix": "DB",
+    "priority": "P0-64"
+  },
+  {
+    "benchmark_id": "DB-006",
+    "cost_class": "TRANSITION",
+    "description": "mongodb-memory-server | binary lookup/download、spawn、ready、cleanup",
+    "document_row": [
+      "P0-64",
+      "mongodb-memory-server",
+      "binary lookup/download、spawn、ready、cleanup"
+    ],
+    "group": "database",
+    "prefix": "DB",
+    "priority": "P0-64"
+  },
+  {
+    "benchmark_id": "DBS-001",
+    "cost_class": "TRANSITION",
+    "description": "daemon cold start-ready | local binary、clean data dir",
+    "document_row": [
+      "P0",
+      "daemon cold start-ready",
+      "local binary、clean data dir"
+    ],
+    "group": "database",
+    "prefix": "DBS",
+    "priority": "P0"
+  },
+  {
+    "benchmark_id": "DBS-002",
+    "cost_class": "TRANSITION",
+    "description": "warm attach/health | exact compatible daemon",
+    "document_row": [
+      "P0",
+      "warm attach/health",
+      "exact compatible daemon"
+    ],
+    "group": "database",
+    "prefix": "DBS",
+    "priority": "P0"
+  },
+  {
+    "benchmark_id": "DBS-003",
+    "cost_class": "TRANSITION",
+    "description": "connection/pool create | auth/TLS cold、daemon warm",
+    "document_row": [
+      "P0",
+      "connection/pool create",
+      "auth/TLS cold、daemon warm"
+    ],
+    "group": "database",
+    "prefix": "DBS",
+    "priority": "P0"
+  },
+  {
+    "benchmark_id": "DBS-004",
+    "cost_class": "TRANSITION",
+    "description": "connection/pool close | idle/transaction/cursor",
+    "document_row": [
+      "P0",
+      "connection/pool close",
+      "idle/transaction/cursor"
+    ],
+    "group": "database",
+    "prefix": "DBS",
+    "priority": "P0"
+  },
+  {
+    "benchmark_id": "DBS-005",
+    "cost_class": "TRANSITION",
+    "description": "clean snapshot create | schema/seed size",
+    "document_row": [
+      "P0",
+      "clean snapshot create",
+      "schema/seed size"
+    ],
+    "group": "database",
+    "prefix": "DBS",
+    "priority": "P0"
+  },
+  {
+    "benchmark_id": "DBS-006",
+    "cost_class": "TRANSITION",
+    "description": "snapshot clone/restore | copy/CoW/tmpfs/backend",
+    "document_row": [
+      "P0",
+      "snapshot clone/restore",
+      "copy/CoW/tmpfs/backend"
+    ],
+    "group": "database",
+    "prefix": "DBS",
+    "priority": "P0"
+  },
+  {
+    "benchmark_id": "DBS-007",
+    "cost_class": "TRANSITION",
+    "description": "task-private layer create | empty/template",
+    "document_row": [
+      "P0",
+      "task-private layer create",
+      "empty/template"
+    ],
+    "group": "database",
+    "prefix": "DBS",
+    "priority": "P0"
+  },
+  {
+    "benchmark_id": "DBS-008",
+    "cost_class": "TRANSITION",
+    "description": "private layer discard/reset | writes/locks/connections/jobs",
+    "document_row": [
+      "P0",
+      "private layer discard/reset",
+      "writes/locks/connections/jobs"
+    ],
+    "group": "database",
+    "prefix": "DBS",
+    "priority": "P0"
+  },
+  {
+    "benchmark_id": "DBS-009",
+    "cost_class": "TRANSITION",
+    "description": "migration | no-op/pending/failure rollback",
+    "document_row": [
+      "P0",
+      "migration",
+      "no-op/pending/failure rollback"
+    ],
+    "group": "database",
+    "prefix": "DBS",
+    "priority": "P0"
+  },
+  {
+    "benchmark_id": "DBS-010",
+    "cost_class": "TRANSITION",
+    "description": "seed/fixture load | size、transaction mode",
+    "document_row": [
+      "P0",
+      "seed/fixture load",
+      "size、transaction mode"
+    ],
+    "group": "database",
+    "prefix": "DBS",
+    "priority": "P0"
+  },
+  {
+    "benchmark_id": "DBS-011",
+    "cost_class": "TRANSITION",
+    "description": "same-version config switch | auth/extensions/config hash",
+    "document_row": [
+      "P0",
+      "same-version config switch",
+      "auth/extensions/config hash"
+    ],
+    "group": "database",
+    "prefix": "DBS",
+    "priority": "P0"
+  },
+  {
+    "benchmark_id": "DBS-012",
+    "cost_class": "TRANSITION",
+    "description": "DB version switch | daemon + snapshot invalidation",
+    "document_row": [
+      "P0",
+      "DB version switch",
+      "daemon + snapshot invalidation"
+    ],
+    "group": "database",
+    "prefix": "DBS",
+    "priority": "P0"
+  },
+  {
+    "benchmark_id": "DBS-013",
+    "cost_class": "TRANSITION",
+    "description": "graceful/forced shutdown | normal/open handles/hung",
+    "document_row": [
+      "P0",
+      "graceful/forced shutdown",
+      "normal/open handles/hung"
+    ],
+    "group": "database",
+    "prefix": "DBS",
+    "priority": "P0"
+  },
+  {
+    "benchmark_id": "NAT-001",
+    "cost_class": "TRANSITION",
+    "description": "prebuild selection | exact platform/ABI hit、fallback、unsupported",
+    "document_row": [
+      "P0",
+      "prebuild selection",
+      "exact platform/ABI hit、fallback、unsupported"
+    ],
+    "group": "native",
+    "prefix": "NAT",
+    "priority": "P0"
+  },
+  {
+    "benchmark_id": "NAT-002",
+    "cost_class": "TRANSITION",
+    "description": "native bundle attach/load | local cold/warm、page cache",
+    "document_row": [
+      "P0",
+      "native bundle attach/load",
+      "local cold/warm、page cache"
+    ],
+    "group": "native",
+    "prefix": "NAT",
+    "priority": "P0"
+  },
+  {
+    "benchmark_id": "NAT-003",
+    "cost_class": "TRANSITION",
+    "description": "canvas | prebuild/load、cairo stack、ABI rebuild",
+    "document_row": [
+      "P0-64",
+      "canvas",
+      "prebuild/load、cairo stack、ABI rebuild"
+    ],
+    "group": "native",
+    "prefix": "NAT",
+    "priority": "P0-64"
+  },
+  {
+    "benchmark_id": "NAT-004",
+    "cost_class": "TRANSITION",
+    "description": "SWC | binding lookup/load、ABI/platform switch",
+    "document_row": [
+      "P0-64",
+      "SWC",
+      "binding lookup/load、ABI/platform switch"
+    ],
+    "group": "native",
+    "prefix": "NAT",
+    "priority": "P0-64"
+  },
+  {
+    "benchmark_id": "NAT-005",
+    "cost_class": "TRANSITION",
+    "description": "esbuild | binary lookup/service startup",
+    "document_row": [
+      "P0-64",
+      "esbuild",
+      "binary lookup/service startup"
+    ],
+    "group": "native",
+    "prefix": "NAT",
+    "priority": "P0-64"
+  },
+  {
+    "benchmark_id": "NAT-006",
+    "cost_class": "TRANSITION",
+    "description": "sharp/libvips | prebuild/download/load、ABI/libc",
+    "document_row": [
+      "P0-64",
+      "sharp/libvips",
+      "prebuild/download/load、ABI/libc"
+    ],
+    "group": "native",
+    "prefix": "NAT",
+    "priority": "P0-64"
+  },
+  {
+    "benchmark_id": "NAT-007",
+    "cost_class": "TRANSITION",
+    "description": "sqlite3/@vscode/sqlite3 | prebuild/load/build、ABI",
+    "document_row": [
+      "P0-64",
+      "sqlite3/@vscode/sqlite3",
+      "prebuild/load/build、ABI"
+    ],
+    "group": "native",
+    "prefix": "NAT",
+    "priority": "P0-64"
+  },
+  {
+    "benchmark_id": "NAT-008",
+    "cost_class": "TRANSITION",
+    "description": "Prisma engine | lookup/download/load/generate",
+    "document_row": [
+      "P1",
+      "Prisma engine",
+      "lookup/download/load/generate"
+    ],
+    "group": "native",
+    "prefix": "NAT",
+    "priority": "P1"
+  },
+  {
+    "benchmark_id": "NAT-009",
+    "cost_class": "TRANSITION",
+    "description": "gRPC/native transport | binding或JS fallback",
+    "document_row": [
+      "P1",
+      "gRPC/native transport",
+      "binding或JS fallback"
+    ],
+    "group": "native",
+    "prefix": "NAT",
+    "priority": "P1"
+  },
+  {
+    "benchmark_id": "NAT-010",
+    "cost_class": "TRANSITION",
+    "description": "native bundle invalidation | ABI、OS/arch/libc/toolchain",
+    "document_row": [
+      "P0",
+      "native bundle invalidation",
+      "ABI、OS/arch/libc/toolchain"
+    ],
+    "group": "native",
+    "prefix": "NAT",
+    "priority": "P0"
+  },
+  {
+    "benchmark_id": "NTC-001",
+    "cost_class": "PREP",
+    "description": "node-gyp configure | headers hit/miss、Python/compiler",
+    "document_row": [
+      "P0-64",
+      "node-gyp configure",
+      "headers hit/miss、Python/compiler"
+    ],
+    "group": "native",
+    "prefix": "NTC",
+    "priority": "P0-64"
+  },
+  {
+    "benchmark_id": "NTC-002",
+    "cost_class": "PREP",
+    "description": "node-gyp build | cold/incremental/ABI change",
+    "document_row": [
+      "P0-64",
+      "node-gyp build",
+      "cold/incremental/ABI change"
+    ],
+    "group": "native",
+    "prefix": "NTC",
+    "priority": "P0-64"
+  },
+  {
+    "benchmark_id": "NTC-003",
+    "cost_class": "PREP",
+    "description": "make/GCC/G++ | startup、cold/incremental build",
+    "document_row": [
+      "P0-64",
+      "make/GCC/G++",
+      "startup、cold/incremental build"
+    ],
+    "group": "native",
+    "prefix": "NTC",
+    "priority": "P0-64"
+  },
+  {
+    "benchmark_id": "NTC-004",
+    "cost_class": "PREP",
+    "description": "Clang/LLVM | startup/build/tool switch",
+    "document_row": [
+      "P1",
+      "Clang/LLVM",
+      "startup/build/tool switch"
+    ],
+    "group": "native",
+    "prefix": "NTC",
+    "priority": "P1"
+  },
+  {
+    "benchmark_id": "NTC-005",
+    "cost_class": "PREP",
+    "description": "CMake configure | cold/cache/generator change",
+    "document_row": [
+      "P1",
+      "CMake configure",
+      "cold/cache/generator change"
+    ],
+    "group": "native",
+    "prefix": "NTC",
+    "priority": "P1"
+  },
+  {
+    "benchmark_id": "NTC-006",
+    "cost_class": "PREP",
+    "description": "Ninja | cold/incremental/graph change",
+    "document_row": [
+      "P1",
+      "Ninja",
+      "cold/incremental/graph change"
+    ],
+    "group": "native",
+    "prefix": "NTC",
+    "priority": "P1"
+  },
+  {
+    "benchmark_id": "NTC-007",
+    "cost_class": "PREP",
+    "description": "Rust/Cargo | registry/git cache、incremental、target",
+    "document_row": [
+      "P1",
+      "Rust/Cargo",
+      "registry/git cache、incremental、target"
+    ],
+    "group": "native",
+    "prefix": "NTC",
+    "priority": "P1"
+  },
+  {
+    "benchmark_id": "NTC-008",
+    "cost_class": "PREP",
+    "description": "Python subprocess | interpreter/venv cold/warm",
+    "document_row": [
+      "P1",
+      "Python subprocess",
+      "interpreter/venv cold/warm"
+    ],
+    "group": "native",
+    "prefix": "NTC",
+    "priority": "P1"
+  },
+  {
+    "benchmark_id": "NTC-009",
+    "cost_class": "PREP",
+    "description": "pkg-config | search path/rootfs switch",
+    "document_row": [
+      "P1",
+      "pkg-config",
+      "search path/rootfs switch"
+    ],
+    "group": "native",
+    "prefix": "NTC",
+    "priority": "P1"
+  },
+  {
+    "benchmark_id": "NTC-010",
+    "cost_class": "PREP",
+    "description": "headers/libs discovery | present/missing/version",
+    "document_row": [
+      "P1",
+      "headers/libs discovery",
+      "present/missing/version"
+    ],
+    "group": "native",
+    "prefix": "NTC",
+    "priority": "P1"
+  },
+  {
+    "benchmark_id": "NTC-011",
+    "cost_class": "PREP",
+    "description": "ccache/sccache if used | cold/warm/invalidate",
+    "document_row": [
+      "P1",
+      "ccache/sccache if used",
+      "cold/warm/invalidate"
+    ],
+    "group": "native",
+    "prefix": "NTC",
+    "priority": "P1"
+  },
+  {
+    "benchmark_id": "NTC-012",
+    "cost_class": "PREP",
+    "description": "failed native build cleanup | build dir/children/partial binary",
+    "document_row": [
+      "P0",
+      "failed native build cleanup",
+      "build dir/children/partial binary"
+    ],
+    "group": "native",
+    "prefix": "NTC",
+    "priority": "P0"
+  },
+  {
+    "benchmark_id": "SYS-001",
+    "cost_class": "PREP",
+    "description": "image/rootfs acquisition | remote/local | PREP",
+    "document_row": [
+      "P0",
+      "image/rootfs acquisition",
+      "remote/local",
+      "PREP"
+    ],
+    "group": "system",
+    "prefix": "SYS",
+    "priority": "P0"
+  },
+  {
+    "benchmark_id": "SYS-002",
+    "cost_class": "PREP",
+    "description": "unpack/snapshot | cold/reuse | PREP",
+    "document_row": [
+      "P0",
+      "unpack/snapshot",
+      "cold/reuse",
+      "PREP"
+    ],
+    "group": "system",
+    "prefix": "SYS",
+    "priority": "P0"
+  },
+  {
+    "benchmark_id": "SYS-003",
+    "cost_class": "TRANSITION",
+    "description": "mount/attach | exact/switch | TRANSITION",
+    "document_row": [
+      "P0",
+      "mount/attach",
+      "exact/switch",
+      "TRANSITION"
+    ],
+    "group": "system",
+    "prefix": "SYS",
+    "priority": "P0"
+  },
+  {
+    "benchmark_id": "SYS-004",
+    "cost_class": "CLEANUP",
+    "description": "unmount/reset | clean/dirty/open handle | CLEANUP",
+    "document_row": [
+      "P0",
+      "unmount/reset",
+      "clean/dirty/open handle",
+      "CLEANUP"
+    ],
+    "group": "system",
+    "prefix": "SYS",
+    "priority": "P0"
+  },
+  {
+    "benchmark_id": "SYS-005",
+    "cost_class": "PREP",
+    "description": "apt index refresh | network cold/hit | PREP",
+    "document_row": [
+      "P1",
+      "apt index refresh",
+      "network cold/hit",
+      "PREP"
+    ],
+    "group": "system",
+    "prefix": "SYS",
+    "priority": "P1"
+  },
+  {
+    "benchmark_id": "SYS-006",
+    "cost_class": "PREP",
+    "description": "apt package install | present/missing/diff | PREP",
+    "document_row": [
+      "P1",
+      "apt package install",
+      "present/missing/diff",
+      "PREP"
+    ],
+    "group": "system",
+    "prefix": "SYS",
+    "priority": "P1"
+  },
+  {
+    "benchmark_id": "SYS-007",
+    "cost_class": "DIAGNOSTIC",
+    "description": "system library load | GUI/cairo/OpenSSL/page-cache | DIAGNOSTIC",
+    "document_row": [
+      "P1",
+      "system library load",
+      "GUI/cairo/OpenSSL/page-cache",
+      "DIAGNOSTIC"
+    ],
+    "group": "system",
+    "prefix": "SYS",
+    "priority": "P1"
+  },
+  {
+    "benchmark_id": "SYS-008",
+    "cost_class": "PREP",
+    "description": "trust store/TLS init | hash switch/first TLS | COMPAT",
+    "document_row": [
+      "P1",
+      "trust store/TLS init",
+      "hash switch/first TLS",
+      "COMPAT"
+    ],
+    "group": "system",
+    "prefix": "SYS",
+    "priority": "P1"
+  },
+  {
+    "benchmark_id": "SYS-009",
+    "cost_class": "TRANSITION",
+    "description": "libc/rootfs switch | glibc/musl + invalidation | TRANSITION",
+    "document_row": [
+      "P1",
+      "libc/rootfs switch",
+      "glibc/musl + invalidation",
+      "TRANSITION"
+    ],
+    "group": "system",
+    "prefix": "SYS",
+    "priority": "P1"
+  },
+  {
+    "benchmark_id": "SYS-010",
+    "cost_class": "PREP",
+    "description": "arch/CPU placement | x86/arm/features | PLACEMENT",
+    "document_row": [
+      "P1",
+      "arch/CPU placement",
+      "x86/arm/features",
+      "PLACEMENT"
+    ],
+    "group": "system",
+    "prefix": "SYS",
+    "priority": "P1"
+  },
+  {
+    "benchmark_id": "SYS-011",
+    "cost_class": "PREP",
+    "description": "kernel/cgroup/seccomp check | host capabilities | PLACEMENT",
+    "document_row": [
+      "P1",
+      "kernel/cgroup/seccomp check",
+      "host capabilities",
+      "PLACEMENT"
+    ],
+    "group": "system",
+    "prefix": "SYS",
+    "priority": "P1"
+  },
+  {
+    "benchmark_id": "FS-001",
+    "cost_class": "TRANSITION",
+    "description": "overlay/tmpfs/btrfs layer create | backend/tree/inodes",
+    "document_row": [
+      "P0",
+      "overlay/tmpfs/btrfs layer create",
+      "backend/tree/inodes"
+    ],
+    "group": "filesystem",
+    "prefix": "FS",
+    "priority": "P0"
+  },
+  {
+    "benchmark_id": "FS-002",
+    "cost_class": "TRANSITION",
+    "description": "mount/attach | cold/warm/concurrent",
+    "document_row": [
+      "P0",
+      "mount/attach",
+      "cold/warm/concurrent"
+    ],
+    "group": "filesystem",
+    "prefix": "FS",
+    "priority": "P0"
+  },
+  {
+    "benchmark_id": "FS-003",
+    "cost_class": "TRANSITION",
+    "description": "discard/unmount | clean/dirty/open FD",
+    "document_row": [
+      "P0",
+      "discard/unmount",
+      "clean/dirty/open FD"
+    ],
+    "group": "filesystem",
+    "prefix": "FS",
+    "priority": "P0"
+  },
+  {
+    "benchmark_id": "FS-004",
+    "cost_class": "TRANSITION",
+    "description": "page/inode/dentry cache | logical/physical cold",
+    "document_row": [
+      "P1",
+      "page/inode/dentry cache",
+      "logical/physical cold"
+    ],
+    "group": "filesystem",
+    "prefix": "FS",
+    "priority": "P1"
+  },
+  {
+    "benchmark_id": "FS-005",
+    "cost_class": "TRANSITION",
+    "description": "HOME create/populate | empty/template/selective cache",
+    "document_row": [
+      "P0",
+      "HOME create/populate",
+      "empty/template/selective cache"
+    ],
+    "group": "filesystem",
+    "prefix": "FS",
+    "priority": "P0"
+  },
+  {
+    "benchmark_id": "FS-006",
+    "cost_class": "TRANSITION",
+    "description": "HOME cleanup/reset | size/hidden/open FD",
+    "document_row": [
+      "P0",
+      "HOME cleanup/reset",
+      "size/hidden/open FD"
+    ],
+    "group": "filesystem",
+    "prefix": "FS",
+    "priority": "P0"
+  },
+  {
+    "benchmark_id": "FS-007",
+    "cost_class": "TRANSITION",
+    "description": "tmp cleanup/reset | file count/size/socket/lock",
+    "document_row": [
+      "P0",
+      "tmp cleanup/reset",
+      "file count/size/socket/lock"
+    ],
+    "group": "filesystem",
+    "prefix": "FS",
+    "priority": "P0"
+  },
+  {
+    "benchmark_id": "FS-008",
+    "cost_class": "TRANSITION",
+    "description": "XDG reset | selective retain/purge",
+    "document_row": [
+      "P0",
+      "XDG reset",
+      "selective retain/purge"
+    ],
+    "group": "filesystem",
+    "prefix": "FS",
+    "priority": "P0"
+  },
+  {
+    "benchmark_id": "FS-009",
+    "cost_class": "TRANSITION",
+    "description": "environment/PATH restore | exact/changed/secrets",
+    "document_row": [
+      "P0",
+      "environment/PATH restore",
+      "exact/changed/secrets"
+    ],
+    "group": "filesystem",
+    "prefix": "FS",
+    "priority": "P0"
+  },
+  {
+    "benchmark_id": "FS-010",
+    "cost_class": "TRANSITION",
+    "description": "disk/inode pressure | normal/near-full/recovery",
+    "document_row": [
+      "P1",
+      "disk/inode pressure",
+      "normal/near-full/recovery"
+    ],
+    "group": "filesystem",
+    "prefix": "FS",
+    "priority": "P1"
+  },
+  {
+    "benchmark_id": "NET-001",
+    "cost_class": "TRANSITION",
+    "description": "network namespace create | cold/reuse/policy switch",
+    "document_row": [
+      "P0",
+      "network namespace create",
+      "cold/reuse/policy switch"
+    ],
+    "group": "network",
+    "prefix": "NET",
+    "priority": "P0"
+  },
+  {
+    "benchmark_id": "NET-002",
+    "cost_class": "TRANSITION",
+    "description": "namespace teardown | idle/open sockets/process",
+    "document_row": [
+      "P0",
+      "namespace teardown",
+      "idle/open sockets/process"
+    ],
+    "group": "network",
+    "prefix": "NET",
+    "priority": "P0"
+  },
+  {
+    "benchmark_id": "NET-003",
+    "cost_class": "TRANSITION",
+    "description": "port allocate/reserve | free/contention/exhaustion",
+    "document_row": [
+      "P0",
+      "port allocate/reserve",
+      "free/contention/exhaustion"
+    ],
+    "group": "network",
+    "prefix": "NET",
+    "priority": "P0"
+  },
+  {
+    "benchmark_id": "NET-004",
+    "cost_class": "TRANSITION",
+    "description": "stale socket cleanup | normal/TIME_WAIT/hung listener",
+    "document_row": [
+      "P0",
+      "stale socket cleanup",
+      "normal/TIME_WAIT/hung listener"
+    ],
+    "group": "network",
+    "prefix": "NET",
+    "priority": "P0"
+  },
+  {
+    "benchmark_id": "NET-005",
+    "cost_class": "TRANSITION",
+    "description": "DNS/proxy policy setup | offline/local/external",
+    "document_row": [
+      "P0",
+      "DNS/proxy policy setup",
+      "offline/local/external"
+    ],
+    "group": "network",
+    "prefix": "NET",
+    "priority": "P0"
+  },
+  {
+    "benchmark_id": "NET-006",
+    "cost_class": "TRANSITION",
+    "description": "proxy switch/reset | env + inherited process state",
+    "document_row": [
+      "P0",
+      "proxy switch/reset",
+      "env + inherited process state"
+    ],
+    "group": "network",
+    "prefix": "NET",
+    "priority": "P0"
+  },
+  {
+    "benchmark_id": "NET-007",
+    "cost_class": "TRANSITION",
+    "description": "first DNS/TLS | cold/warm pool",
+    "document_row": [
+      "P1",
+      "first DNS/TLS",
+      "cold/warm pool"
+    ],
+    "group": "network",
+    "prefix": "NET",
+    "priority": "P1"
+  },
+  {
+    "benchmark_id": "NET-008",
+    "cost_class": "TRANSITION",
+    "description": "process tree enumerate/terminate | normal/deep/orphan/daemonized",
+    "document_row": [
+      "P0",
+      "process tree enumerate/terminate",
+      "normal/deep/orphan/daemonized"
+    ],
+    "group": "network",
+    "prefix": "NET",
+    "priority": "P0"
+  },
+  {
+    "benchmark_id": "NET-009",
+    "cost_class": "TRANSITION",
+    "description": "TERM->KILL escalation | clean/hung",
+    "document_row": [
+      "P0",
+      "TERM->KILL escalation",
+      "clean/hung"
+    ],
+    "group": "network",
+    "prefix": "NET",
+    "priority": "P0"
+  },
+  {
+    "benchmark_id": "NET-010",
+    "cost_class": "TRANSITION",
+    "description": "FD/port/process leak validation | baseline vs after task",
+    "document_row": [
+      "P0",
+      "FD/port/process leak validation",
+      "baseline vs after task"
+    ],
+    "group": "network",
+    "prefix": "NET",
+    "priority": "P0"
+  },
+  {
+    "benchmark_id": "SRV-001",
+    "cost_class": "TRANSITION",
+    "description": "server cold start | repo/depview/config key",
+    "document_row": [
+      "P0",
+      "server cold start",
+      "repo/depview/config key"
+    ],
+    "group": "server",
+    "prefix": "SRV",
+    "priority": "P0"
+  },
+  {
+    "benchmark_id": "SRV-002",
+    "cost_class": "TRANSITION",
+    "description": "readiness probe | port + semantic request",
+    "document_row": [
+      "P0",
+      "readiness probe",
+      "port + semantic request"
+    ],
+    "group": "server",
+    "prefix": "SRV",
+    "priority": "P0"
+  },
+  {
+    "benchmark_id": "SRV-003",
+    "cost_class": "TRANSITION",
+    "description": "warm attach/health | exact hit",
+    "document_row": [
+      "P0",
+      "warm attach/health",
+      "exact hit"
+    ],
+    "group": "server",
+    "prefix": "SRV",
+    "priority": "P0"
+  },
+  {
+    "benchmark_id": "SRV-004",
+    "cost_class": "TRANSITION",
+    "description": "compatible reset | request/session/memory state",
+    "document_row": [
+      "P0",
+      "compatible reset",
+      "request/session/memory state"
+    ],
+    "group": "server",
+    "prefix": "SRV",
+    "priority": "P0"
+  },
+  {
+    "benchmark_id": "SRV-005",
+    "cost_class": "TRANSITION",
+    "description": "config/env/command switch | incompatible restart",
+    "document_row": [
+      "P0",
+      "config/env/command switch",
+      "incompatible restart"
+    ],
+    "group": "server",
+    "prefix": "SRV",
+    "priority": "P0"
+  },
+  {
+    "benchmark_id": "SRV-006",
+    "cost_class": "TRANSITION",
+    "description": "source-change reload | HMR/watch/incremental build",
+    "document_row": [
+      "P0",
+      "source-change reload",
+      "HMR/watch/incremental build"
+    ],
+    "group": "server",
+    "prefix": "SRV",
+    "priority": "P0"
+  },
+  {
+    "benchmark_id": "SRV-007",
+    "cost_class": "TRANSITION",
+    "description": "graceful shutdown | normal/open connection/job",
+    "document_row": [
+      "P0",
+      "graceful shutdown",
+      "normal/open connection/job"
+    ],
+    "group": "server",
+    "prefix": "SRV",
+    "priority": "P0"
+  },
+  {
+    "benchmark_id": "SRV-008",
+    "cost_class": "TRANSITION",
+    "description": "forced cleanup | hung/children/ports",
+    "document_row": [
+      "P0",
+      "forced cleanup",
+      "hung/children/ports"
+    ],
+    "group": "server",
+    "prefix": "SRV",
+    "priority": "P0"
+  },
+  {
+    "benchmark_id": "SRV-009",
+    "cost_class": "TRANSITION",
+    "description": "pollution test | singleton/files/ports/env/sessions",
+    "document_row": [
+      "P0",
+      "pollution test",
+      "singleton/files/ports/env/sessions"
+    ],
+    "group": "server",
+    "prefix": "SRV",
+    "priority": "P0"
+  },
+  {
+    "benchmark_id": "SRV-010",
+    "cost_class": "TRANSITION",
+    "description": "repeated-reuse memory trend | RSS/FD over many tasks",
+    "document_row": [
+      "P1",
+      "repeated-reuse memory trend",
+      "RSS/FD over many tasks"
+    ],
+    "group": "server",
+    "prefix": "SRV",
+    "priority": "P1"
+  },
+  {
+    "benchmark_id": "TSK-001",
+    "cost_class": "TRANSITION",
+    "description": "TRANSITION | 创建 rollout-private workspace",
+    "document_row": [
+      "P0",
+      "TRANSITION",
+      "创建 rollout-private workspace"
+    ],
+    "group": "task",
+    "prefix": "TSK",
+    "priority": "P0"
+  },
+  {
+    "benchmark_id": "TSK-002",
+    "cost_class": "TRANSITION",
+    "description": "TRANSITION | 注入 task metadata/patch/test selection",
+    "document_row": [
+      "P0",
+      "TRANSITION",
+      "注入 task metadata/patch/test selection"
+    ],
+    "group": "task",
+    "prefix": "TSK",
+    "priority": "P0"
+  },
+  {
+    "benchmark_id": "TSK-003",
+    "cost_class": "EXECUTION",
+    "description": "EXECUTION | evaluation harness startup",
+    "document_row": [
+      "P0",
+      "EXECUTION",
+      "evaluation harness startup"
+    ],
+    "group": "task",
+    "prefix": "TSK",
+    "priority": "P0"
+  },
+  {
+    "benchmark_id": "TSK-004",
+    "cost_class": "EXECUTION",
+    "description": "EXECUTION | task command/test execution",
+    "document_row": [
+      "P0",
+      "EXECUTION",
+      "task command/test execution"
+    ],
+    "group": "task",
+    "prefix": "TSK",
+    "priority": "P0"
+  },
+  {
+    "benchmark_id": "TSK-005",
+    "cost_class": "EXECUTION",
+    "description": "EXECUTION | result/patch/log collection",
+    "document_row": [
+      "P0",
+      "EXECUTION",
+      "result/patch/log collection"
+    ],
+    "group": "task",
+    "prefix": "TSK",
+    "priority": "P0"
+  },
+  {
+    "benchmark_id": "TSK-006",
+    "cost_class": "CLEANUP",
+    "description": "CLEANUP | terminate process tree",
+    "document_row": [
+      "P0",
+      "CLEANUP",
+      "terminate process tree"
+    ],
+    "group": "task",
+    "prefix": "TSK",
+    "priority": "P0"
+  },
+  {
+    "benchmark_id": "TSK-007",
+    "cost_class": "CLEANUP",
+    "description": "CLEANUP | discard source/FS overlay",
+    "document_row": [
+      "P0",
+      "CLEANUP",
+      "discard source/FS overlay"
+    ],
+    "group": "task",
+    "prefix": "TSK",
+    "priority": "P0"
+  },
+  {
+    "benchmark_id": "TSK-008",
+    "cost_class": "CLEANUP",
+    "description": "CLEANUP | reset HOME/tmp/XDG",
+    "document_row": [
+      "P0",
+      "CLEANUP",
+      "reset HOME/tmp/XDG"
+    ],
+    "group": "task",
+    "prefix": "TSK",
+    "priority": "P0"
+  },
+  {
+    "benchmark_id": "TSK-009",
+    "cost_class": "CLEANUP",
+    "description": "CLEANUP | reset browser context/profile",
+    "document_row": [
+      "P0",
+      "CLEANUP",
+      "reset browser context/profile"
+    ],
+    "group": "task",
+    "prefix": "TSK",
+    "priority": "P0"
+  },
+  {
+    "benchmark_id": "TSK-010",
+    "cost_class": "CLEANUP",
+    "description": "CLEANUP | reset DB layer/connections",
+    "document_row": [
+      "P0",
+      "CLEANUP",
+      "reset DB layer/connections"
+    ],
+    "group": "task",
+    "prefix": "TSK",
+    "priority": "P0"
+  },
+  {
+    "benchmark_id": "TSK-011",
+    "cost_class": "CLEANUP",
+    "description": "CLEANUP | release ports/network namespace",
+    "document_row": [
+      "P0",
+      "CLEANUP",
+      "release ports/network namespace"
+    ],
+    "group": "task",
+    "prefix": "TSK",
+    "priority": "P0"
+  },
+  {
+    "benchmark_id": "TSK-012",
+    "cost_class": "CLEANUP",
+    "description": "CLEANUP | verify no process/FD/socket/file leak",
+    "document_row": [
+      "P0",
+      "CLEANUP",
+      "verify no process/FD/socket/file leak"
+    ],
+    "group": "task",
+    "prefix": "TSK",
+    "priority": "P0"
+  },
+  {
+    "benchmark_id": "TSK-013",
+    "cost_class": "DIAGNOSTIC",
+    "description": "DIAGNOSTIC | compare fully isolated baseline",
+    "document_row": [
+      "P0",
+      "DIAGNOSTIC",
+      "compare fully isolated baseline"
+    ],
+    "group": "task",
+    "prefix": "TSK",
+    "priority": "P0"
+  },
+  {
+    "benchmark_id": "TSK-014",
+    "cost_class": "CONTROL",
+    "description": "CONTROL | update NodeState after success/failure/timeout",
+    "document_row": [
+      "P0",
+      "CONTROL",
+      "update NodeState after success/failure/timeout"
+    ],
+    "group": "task",
+    "prefix": "TSK",
+    "priority": "P0"
+  },
+  {
+    "benchmark_id": "FAIL-001",
+    "cost_class": "DIAGNOSTIC",
+    "description": "npm peer conflict | detect/log/cleanup/fallback",
+    "document_row": [
+      "P0-64",
+      "npm peer conflict",
+      "detect/log/cleanup/fallback"
+    ],
+    "group": "failure",
+    "prefix": "FAIL",
+    "priority": "P0-64"
+  },
+  {
+    "benchmark_id": "FAIL-002",
+    "cost_class": "DIAGNOSTIC",
+    "description": "invalid/conflicted lock | parse failure/manual review",
+    "document_row": [
+      "P0-64",
+      "invalid/conflicted lock",
+      "parse failure/manual review"
+    ],
+    "group": "failure",
+    "prefix": "FAIL",
+    "priority": "P0-64"
+  },
+  {
+    "benchmark_id": "FAIL-003",
+    "cost_class": "DIAGNOSTIC",
+    "description": "artifact 404 | retries/final detect/cleanup",
+    "document_row": [
+      "P0-64",
+      "artifact 404",
+      "retries/final detect/cleanup"
+    ],
+    "group": "failure",
+    "prefix": "FAIL",
+    "priority": "P0-64"
+  },
+  {
+    "benchmark_id": "FAIL-004",
+    "cost_class": "DIAGNOSTIC",
+    "description": "CAS integrity mismatch | detect/quarantine/refetch",
+    "document_row": [
+      "P0-64",
+      "CAS integrity mismatch",
+      "detect/quarantine/refetch"
+    ],
+    "group": "failure",
+    "prefix": "FAIL",
+    "priority": "P0-64"
+  },
+  {
+    "benchmark_id": "FAIL-005",
+    "cost_class": "DIAGNOSTIC",
+    "description": "missing PM/runtime | lookup/install/unsupported",
+    "document_row": [
+      "P0-64",
+      "missing PM/runtime",
+      "lookup/install/unsupported"
+    ],
+    "group": "failure",
+    "prefix": "FAIL",
+    "priority": "P0-64"
+  },
+  {
+    "benchmark_id": "FAIL-006",
+    "cost_class": "DIAGNOSTIC",
+    "description": "local registry refused | retry/no-fallback/cleanup",
+    "document_row": [
+      "P0-64",
+      "local registry refused",
+      "retry/no-fallback/cleanup"
+    ],
+    "group": "failure",
+    "prefix": "FAIL",
+    "priority": "P0-64"
+  },
+  {
+    "benchmark_id": "FAIL-007",
+    "cost_class": "DIAGNOSTIC",
+    "description": "platform optional mismatch | skip/no false failure",
+    "document_row": [
+      "P0-64",
+      "platform optional mismatch",
+      "skip/no false failure"
+    ],
+    "group": "failure",
+    "prefix": "FAIL",
+    "priority": "P0-64"
+  },
+  {
+    "benchmark_id": "FAIL-008",
+    "cost_class": "DIAGNOSTIC",
+    "description": "readiness timeout | timeout/kill/port cleanup",
+    "document_row": [
+      "P0",
+      "readiness timeout",
+      "timeout/kill/port cleanup"
+    ],
+    "group": "failure",
+    "prefix": "FAIL",
+    "priority": "P0"
+  },
+  {
+    "benchmark_id": "FAIL-009",
+    "cost_class": "DIAGNOSTIC",
+    "description": "hung install/build/test | escalation/partial cleanup",
+    "document_row": [
+      "P0",
+      "hung install/build/test",
+      "escalation/partial cleanup"
+    ],
+    "group": "failure",
+    "prefix": "FAIL",
+    "priority": "P0"
+  },
+  {
+    "benchmark_id": "FAIL-010",
+    "cost_class": "DIAGNOSTIC",
+    "description": "disk/inode full | detect/atomicity/recover",
+    "document_row": [
+      "P0",
+      "disk/inode full",
+      "detect/atomicity/recover"
+    ],
+    "group": "failure",
+    "prefix": "FAIL",
+    "priority": "P0"
+  },
+  {
+    "benchmark_id": "FAIL-011",
+    "cost_class": "DIAGNOSTIC",
+    "description": "cgroup OOM | detect/state reconcile",
+    "document_row": [
+      "P0",
+      "cgroup OOM",
+      "detect/state reconcile"
+    ],
+    "group": "failure",
+    "prefix": "FAIL",
+    "priority": "P0"
+  },
+  {
+    "benchmark_id": "FAIL-012",
+    "cost_class": "DIAGNOSTIC",
+    "description": "stale process/port | detect/cleanup/retry",
+    "document_row": [
+      "P0",
+      "stale process/port",
+      "detect/cleanup/retry"
+    ],
+    "group": "failure",
+    "prefix": "FAIL",
+    "priority": "P0"
+  },
+  {
+    "benchmark_id": "FAIL-013",
+    "cost_class": "DIAGNOSTIC",
+    "description": "pollution failure | validate/disable reuse",
+    "document_row": [
+      "P0",
+      "pollution failure",
+      "validate/disable reuse"
+    ],
+    "group": "failure",
+    "prefix": "FAIL",
+    "priority": "P0"
+  },
+  {
+    "benchmark_id": "FAIL-014",
+    "cost_class": "DIAGNOSTIC",
+    "description": "scheduler state corrupt | recover/rebuild",
+    "document_row": [
+      "P1",
+      "scheduler state corrupt",
+      "recover/rebuild"
+    ],
+    "group": "failure",
+    "prefix": "FAIL",
+    "priority": "P1"
+  },
+  {
+    "benchmark_id": "CON-001",
+    "cost_class": "DIAGNOSTIC",
+    "description": "1/2/4/8 concurrent registry clients",
+    "document_row": [
+      "P0",
+      "1/2/4/8 concurrent registry clients"
+    ],
+    "group": "contention",
+    "prefix": "CON",
+    "priority": "P0"
+  },
+  {
+    "benchmark_id": "CON-002",
+    "cost_class": "DIAGNOSTIC",
+    "description": "same CAS blob concurrent fetch/read",
+    "document_row": [
+      "P0",
+      "same CAS blob concurrent fetch/read"
+    ],
+    "group": "contention",
+    "prefix": "CON",
+    "priority": "P0"
+  },
+  {
+    "benchmark_id": "CON-003",
+    "cost_class": "DIAGNOSTIC",
+    "description": "multiple PM cache writers",
+    "document_row": [
+      "P0",
+      "multiple PM cache writers"
+    ],
+    "group": "contention",
+    "prefix": "CON",
+    "priority": "P0"
+  },
+  {
+    "benchmark_id": "CON-004",
+    "cost_class": "DIAGNOSTIC",
+    "description": "multiple dependency views",
+    "document_row": [
+      "P0",
+      "multiple dependency views"
+    ],
+    "group": "contention",
+    "prefix": "CON",
+    "priority": "P0"
+  },
+  {
+    "benchmark_id": "CON-005",
+    "cost_class": "DIAGNOSTIC",
+    "description": "concurrent worktrees/checkouts",
+    "document_row": [
+      "P1",
+      "concurrent worktrees/checkouts"
+    ],
+    "group": "contention",
+    "prefix": "CON",
+    "priority": "P1"
+  },
+  {
+    "benchmark_id": "CON-006",
+    "cost_class": "DIAGNOSTIC",
+    "description": "concurrent BrowserContexts",
+    "document_row": [
+      "P1",
+      "concurrent BrowserContexts"
+    ],
+    "group": "contention",
+    "prefix": "CON",
+    "priority": "P1"
+  },
+  {
+    "benchmark_id": "CON-007",
+    "cost_class": "DIAGNOSTIC",
+    "description": "DB connections/private resets",
+    "document_row": [
+      "P1",
+      "DB connections/private resets"
+    ],
+    "group": "contention",
+    "prefix": "CON",
+    "priority": "P1"
+  },
+  {
+    "benchmark_id": "CON-008",
+    "cost_class": "DIAGNOSTIC",
+    "description": "CPU/memory/disk saturation",
+    "document_row": [
+      "P1",
+      "CPU/memory/disk saturation"
+    ],
+    "group": "contention",
+    "prefix": "CON",
+    "priority": "P1"
+  },
+  {
+    "benchmark_id": "CON-009",
+    "cost_class": "DIAGNOSTIC",
+    "description": "port allocator contention",
+    "document_row": [
+      "P1",
+      "port allocator contention"
+    ],
+    "group": "contention",
+    "prefix": "CON",
+    "priority": "P1"
+  },
+  {
+    "benchmark_id": "CON-010",
+    "cost_class": "DIAGNOSTIC",
+    "description": "scheduler state lock contention",
+    "document_row": [
+      "P1",
+      "scheduler state lock contention"
+    ],
+    "group": "contention",
+    "prefix": "CON",
+    "priority": "P1"
+  }
+]

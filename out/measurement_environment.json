@@ -1,0 +1,19 @@
+{
+  "captured_at": "2026-08-28T08:00:51Z",
+  "container": false,
+  "cpu_count": 384,
+  "filesystem": "ext2/ext3",
+  "filesystem_block_size": 4096,
+  "hostname": "hydu8x5090gpu",
+  "libc": "glibc-2.39",
+  "machine": "x86_64",
+  "measurement_environment_id": "env:7a9cda66bc6b151a7886",
+  "network_policy": "local-first; explicit network benchmarks allowed",
+  "node": "v22.23.2",
+  "npm": "10.9.8",
+  "os": "linux",
+  "os_release": "7.0.0-29-generic",
+  "page_cache_policy": "logical_cold",
+  "processor": "x86_64",
+  "python": "3.12.3"
+}

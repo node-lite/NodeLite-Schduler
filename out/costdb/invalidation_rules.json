@@ -1,0 +1,138 @@
+[
+  {
+    "change_dimensions": [
+      "version",
+      "abi"
+    ],
+    "direct_cost_excludes_rebuild": true,
+    "invalidates": [
+      "dependency_view",
+      "native_binary_bundle",
+      "build_cache",
+      "test_transform_cache"
+    ],
+    "owner": "invalidated objects",
+    "rule_id": "node-exact-abi-change",
+    "source_kind": "node_runtime"
+  },
+  {
+    "change_dimensions": [
+      "manager",
+      "variant",
+      "version"
+    ],
+    "direct_cost_excludes_rebuild": true,
+    "invalidates": [
+      "pm_native_cache",
+      "dependency_view"
+    ],
+    "owner": "invalidated objects",
+    "rule_id": "pm-exact-major-change",
+    "source_kind": "package_manager"
+  },
+  {
+    "change_dimensions": [
+      "variant",
+      "linker"
+    ],
+    "direct_cost_excludes_rebuild": true,
+    "invalidates": [
+      "pm_native_cache",
+      "dependency_view",
+      "native_binary_bundle"
+    ],
+    "owner": "invalidated objects",
+    "rule_id": "yarn-classic-berry-linker",
+    "source_kind": "package_manager"
+  },
+  {
+    "change_dimensions": [
+      "lock_hash"
+    ],
+    "direct_cost_excludes_rebuild": true,
+    "invalidates": [
+      "dependency_view",
+      "build_cache",
+      "test_transform_cache"
+    ],
+    "owner": "invalidated objects",
+    "rule_id": "lock-hash-change",
+    "source_kind": "dependency_view"
+  },
+  {
+    "change_dimensions": [
+      "workspace_config_hash"
+    ],
+    "direct_cost_excludes_rebuild": true,
+    "invalidates": [
+      "dependency_view",
+      "build_cache"
+    ],
+    "owner": "invalidated objects",
+    "rule_id": "workspace-config-change",
+    "source_kind": "dependency_view"
+  },
+  {
+    "change_dimensions": [
+      "commit"
+    ],
+    "direct_cost_excludes_rebuild": true,
+    "invalidates": [
+      "source_overlay",
+      "build_cache",
+      "test_transform_cache"
+    ],
+    "owner": "invalidated objects",
+    "rule_id": "repo-commit-change",
+    "source_kind": "repo_baseline"
+  },
+  {
+    "change_dimensions": [
+      "version",
+      "flags",
+      "profile_mode"
+    ],
+    "direct_cost_excludes_rebuild": true,
+    "invalidates": [
+      "browser_context",
+      "browser_profile"
+    ],
+    "owner": "invalidated objects",
+    "rule_id": "browser-revision-flags-profile",
+    "source_kind": "browser_process"
+  },
+  {
+    "change_dimensions": [
+      "version",
+      "config_hash",
+      "schema_hash"
+    ],
+    "direct_cost_excludes_rebuild": true,
+    "invalidates": [
+      "database_clean_snapshot",
+      "database_private_layer"
+    ],
+    "owner": "invalidated objects",
+    "rule_id": "database-version-config-schema",
+    "source_kind": "database_daemon"
+  },
+  {
+    "change_dimensions": [
+      "rootfs_digest",
+      "libc",
+      "arch"
+    ],
+    "direct_cost_excludes_rebuild": true,
+    "invalidates": [
+      "node_runtime",
+      "dependency_view",
+      "native_binary_bundle",
+      "browser_binary",
+      "database_binary",
+      "system_toolchain"
+    ],
+    "owner": "invalidated objects",
+    "rule_id": "rootfs-libc-arch",
+    "source_kind": "rootfs"
+  }
+]
