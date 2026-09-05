@@ -88,6 +88,7 @@ def main(argv: list[str] | None = None) -> int:
             samples=args.samples,
             warmups=args.warmups,
             force=args.force,
+            retry_failed=args.retry_failed,
         )
         print(json.dumps(result, indent=2, sort_keys=True))
         return 0

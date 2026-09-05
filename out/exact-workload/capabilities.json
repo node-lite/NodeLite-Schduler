@@ -1,16 +1,30 @@
 {
-  "docker": null,
+  "docker": "/usr/bin/docker",
   "mount": "/usr/bin/mount",
+  "node_runtimes": {
+    "109": {
+      "path": "/usr/bin/node",
+      "version": "18.19.1"
+    },
+    "115": {
+      "path": "/root/.local/share/nodelite/toolchains/node-v20.19.1-linux-x64/bin/node",
+      "version": "20.19.1"
+    },
+    "127": {
+      "path": "/root/.local/share/nodelite/toolchains/node-v22.23.2-linux-x64/bin/node",
+      "version": "22.23.2"
+    }
+  },
   "source_download": {
     "attempted": true,
-    "available": false,
+    "available": true,
     "command": [
       "git",
       "ls-remote",
       "https://github.com/Automattic/mongoose.git",
       "HEAD"
     ],
-    "error": "fatal: unable to access 'https://github.com/Automattic/mongoose.git/': Could not resolve host: github.com",
-    "exit_code": 128
+    "error": null,
+    "exit_code": 0
   }
 }

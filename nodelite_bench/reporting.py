@@ -169,6 +169,7 @@ def build_matrix(summaries: list[dict[str, Any]]) -> dict[str, Any]:
 
 
 ZERO_START_BENCHMARKS_BY_KIND = {
+    "build_cache": {"EXACT-BUILD-CACHE-COLD"},
     "database_private_layer": {"DBS-007"},
     "dependency_view": {"DEP-001", "DEP-002", "DEP-003", "DEP-004", "DEP-006", "INS-001", "EXACT-DEP-MATERIALIZE"},
     "native_binary_bundle": {"EXACT-NATIVE-LOAD"},
@@ -176,8 +177,12 @@ ZERO_START_BENCHMARKS_BY_KIND = {
     "network_ports": {"NET-003"},
     "node_runtime": {"RUN-003", "RUN-007", "RUN-008", "RUN-009"},
     "package_manager": {"PM-007", "RUN-005"},
+    "repo_baseline": {"EXACT-REPO-MATERIALIZE"},
+    "rootfs": {"EXACT-ROOTFS-CREATE"},
+    "source_overlay": {"EXACT-SOURCE-MATERIALIZE"},
     "system_toolchain": set(),
     "task_harness": {"TSK-003"},
+    "test_transform_cache": {"EXACT-TEST-CACHE-COLD"},
 }
 
 ZERO_START_TRANSITION_CLASSES = {"artifact_cold", "network_cold", "process_cold"}

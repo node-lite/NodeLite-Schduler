@@ -22,5 +22,71 @@
     "description": "Resolve and load an exact profile native package under its required Node ABI",
     "resource_kind": "native_binary_bundle",
     "transition_class": "artifact_cold"
+  },
+  {
+    "benchmark_id": "EXACT-REPO-MATERIALIZE",
+    "description": "Materialize an exact Git commit from a locally prepared source archive",
+    "resource_kind": "repo_baseline",
+    "transition_class": "artifact_cold"
+  },
+  {
+    "benchmark_id": "EXACT-REPO-ATTACH",
+    "description": "Verify an exact materialized Git commit source tree",
+    "resource_kind": "repo_baseline",
+    "transition_class": "exact_hit"
+  },
+  {
+    "benchmark_id": "EXACT-SOURCE-MATERIALIZE",
+    "description": "Create a writable exact source view from the repository baseline",
+    "resource_kind": "source_overlay",
+    "transition_class": "artifact_cold"
+  },
+  {
+    "benchmark_id": "EXACT-SOURCE-RESET",
+    "description": "Discard a task-local source mutation without polluting the baseline",
+    "resource_kind": "source_overlay",
+    "transition_class": "dirty_reset"
+  },
+  {
+    "benchmark_id": "EXACT-BUILD-CACHE-COLD",
+    "description": "Run an exact project build command after clearing its project cache paths",
+    "resource_kind": "build_cache",
+    "transition_class": "artifact_cold"
+  },
+  {
+    "benchmark_id": "EXACT-BUILD-CACHE-HIT",
+    "description": "Repeat the exact project build command against its warm cache",
+    "resource_kind": "build_cache",
+    "transition_class": "exact_hit"
+  },
+  {
+    "benchmark_id": "EXACT-TEST-CACHE-COLD",
+    "description": "Run an exact project test command after clearing its project cache paths",
+    "resource_kind": "test_transform_cache",
+    "transition_class": "artifact_cold"
+  },
+  {
+    "benchmark_id": "EXACT-TEST-CACHE-HIT",
+    "description": "Repeat the exact project test command against its warm cache",
+    "resource_kind": "test_transform_cache",
+    "transition_class": "exact_hit"
+  },
+  {
+    "benchmark_id": "EXACT-ROOTFS-CREATE",
+    "description": "Create a stopped container from an exact pulled rootfs image",
+    "resource_kind": "rootfs",
+    "transition_class": "artifact_cold"
+  },
+  {
+    "benchmark_id": "EXACT-ROOTFS-ATTACH",
+    "description": "Inspect an already created exact rootfs container",
+    "resource_kind": "rootfs",
+    "transition_class": "exact_hit"
+  },
+  {
+    "benchmark_id": "EXACT-ROOTFS-RESET",
+    "description": "Remove a task-local exact rootfs container",
+    "resource_kind": "rootfs",
+    "transition_class": "dirty_reset"
   }
 ]

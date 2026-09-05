@@ -87,6 +87,8 @@ Phase 2 的真实 RepoProfile object 使用独立、可恢复的执行流程，�
   --samples 7
 ```
 
-执行器按 `measurement_environment_id` 保存 exact observation、object status、进度和独立 `direct_ms.json`。相同命令会跳过已经完成的 object；使用 `--force` 才会重测。
+执行器按 `measurement_environment_id` 保存 exact observation、object status、进度和独立 `direct_ms.json`。相同命令会从完整 target 集合中跳过已经完成的 object 并继续未完成项；`--retry-failed` 只重跑 `blocked`、`failed` 和 `unsupported` 项，`--force` 重测全部 target。
 
-`tools/export_phase2.py` 将 exact observation 合入 Phase 2 报告，但不同主机的 `direct_ms` 始终分开保存在 `direct_ms_by_environment.json` 指向的文件中，不做跨环境平均。无法下载 exact commit、缺少 Node ABI、Docker/rootfs 能力或精确 PM 版本时，对象会记录为 `blocked` 或 `manual_review`，不会写成零延迟。
+runner 会选择 ABI 109/115/127 对应的 exact Node 18/20/22，按需从在线 `npx` 补齐 exact PM，下载并验证 GitHub exact commit，并逐 profile 清理临时源码和 dependency workspace。repo baseline、source overlay、项目 build/test cache、native bundle 和 Docker rootfs lifecycle 均保留真实命令与失败证据；无法可靠归因到具体 cache tool 的 manifest script 会记为 `manual_review`，不会把整条 build/test pipeline 的延迟错误归给该 object。
+
+`tools/export_phase2.py` 将 exact observation 合入 Phase 2 报告，但不同主机的 `direct_ms` 始终分开保存在 `direct_ms_by_environment.json` 指向的文件中，不做跨环境平均。无法下载 exact commit、缺少 Node ABI、Docker/rootfs 能力、精确 PM 版本或外部运行依赖时，对象会记录为 `blocked`、`failed` 或 `manual_review`，不会写成零延迟。

@@ -3,6 +3,370 @@
   "ambiguous_objects": {},
   "definition": "direct_ms[object_id] is an oldest-to-newest sliding window of measured times to bring that object from zero to ready",
   "details": {
+    "build_cache:Effect-TS__effect.5df4da10:root:typescript:3936ee7940b9": {
+      "benchmark_id": "EXACT-BUILD-CACHE-COLD",
+      "failure_count": 0,
+      "latest_ms": 16499.729852,
+      "object_name": "typescript",
+      "p95_ms": 16782.6312697,
+      "resource_kind": "build_cache",
+      "sample_count": 7,
+      "scenario_name": "project-script:build",
+      "success_count": 7,
+      "version_config": "manifest-derived",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "build_cache:Shopify__draggable.8a1eed57:root:rollup:75fa7c4af02e": {
+      "benchmark_id": "EXACT-BUILD-CACHE-COLD",
+      "failure_count": 0,
+      "latest_ms": 5060.622381,
+      "object_name": "rollup",
+      "p95_ms": 5241.9432853,
+      "resource_kind": "build_cache",
+      "sample_count": 7,
+      "scenario_name": "project-script:build:production",
+      "success_count": 7,
+      "version_config": "manifest-derived",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "build_cache:Shopify__draggable.8a1eed57:root:typescript:75fa7c4af02e": {
+      "benchmark_id": "EXACT-BUILD-CACHE-COLD",
+      "failure_count": 0,
+      "latest_ms": 284.292814,
+      "object_name": "typescript",
+      "p95_ms": 285.7398096,
+      "resource_kind": "build_cache",
+      "sample_count": 7,
+      "scenario_name": "project-script:type-check",
+      "success_count": 7,
+      "version_config": "manifest-derived",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "build_cache:brianc__node-postgres.ecff60dc:root:typescript:f43ed1faaa9b": {
+      "benchmark_id": "EXACT-BUILD-CACHE-COLD",
+      "failure_count": 0,
+      "latest_ms": 274.781285,
+      "object_name": "typescript",
+      "p95_ms": 278.29023870000003,
+      "resource_kind": "build_cache",
+      "sample_count": 7,
+      "scenario_name": "project-script:build",
+      "success_count": 7,
+      "version_config": "manifest-derived",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "build_cache:foambubble__foam.2cac8162:root:lerna:2510f8df8165": {
+      "benchmark_id": "EXACT-BUILD-CACHE-COLD",
+      "failure_count": 0,
+      "latest_ms": 3245.388653,
+      "object_name": "lerna",
+      "p95_ms": 3443.0758583999996,
+      "resource_kind": "build_cache",
+      "sample_count": 7,
+      "scenario_name": "project-script:build",
+      "success_count": 7,
+      "version_config": "manifest-derived",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "build_cache:josdejong__jsoneditor.0319b213:root:gulp:be56cc981d38": {
+      "benchmark_id": "EXACT-BUILD-CACHE-COLD",
+      "failure_count": 0,
+      "latest_ms": 11257.797516,
+      "object_name": "gulp",
+      "p95_ms": 11493.5430137,
+      "resource_kind": "build_cache",
+      "sample_count": 7,
+      "scenario_name": "project-script:build",
+      "success_count": 7,
+      "version_config": "manifest-derived",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "build_cache:josdejong__mathjs.04e6e2d7:root:gulp:4c7f724eabb4": {
+      "benchmark_id": "EXACT-BUILD-CACHE-COLD",
+      "failure_count": 0,
+      "latest_ms": 22559.432936,
+      "object_name": "gulp",
+      "p95_ms": 22623.4189984,
+      "resource_kind": "build_cache",
+      "sample_count": 7,
+      "scenario_name": "project-script:build",
+      "success_count": 7,
+      "version_config": "manifest-derived",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "build_cache:josdejong__mathjs.04e6e2d7:root:typescript:4c7f724eabb4": {
+      "benchmark_id": "EXACT-BUILD-CACHE-COLD",
+      "failure_count": 0,
+      "latest_ms": 8413.023244,
+      "object_name": "typescript",
+      "p95_ms": 8443.5237232,
+      "resource_kind": "build_cache",
+      "sample_count": 7,
+      "scenario_name": "project-script:test:types",
+      "success_count": 7,
+      "version_config": "manifest-derived",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "build_cache:payloadcms__payload.8f660355:root:turbo:096d4a336345": {
+      "benchmark_id": "EXACT-BUILD-CACHE-COLD",
+      "failure_count": 0,
+      "latest_ms": 89601.621714,
+      "object_name": "turbo",
+      "p95_ms": 91869.6859184,
+      "resource_kind": "build_cache",
+      "sample_count": 5,
+      "scenario_name": "project-script:build:payload",
+      "success_count": 5,
+      "version_config": "manifest-derived",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "build_cache:refined-github__refined-github.d4a7c3fb:root:rollup:aa1f302ca640": {
+      "benchmark_id": "EXACT-BUILD-CACHE-COLD",
+      "failure_count": 0,
+      "latest_ms": 2998.649611,
+      "object_name": "rollup",
+      "p95_ms": 3021.6689488,
+      "resource_kind": "build_cache",
+      "sample_count": 7,
+      "scenario_name": "project-script:build:bundle",
+      "success_count": 7,
+      "version_config": "manifest-derived",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "build_cache:refined-github__refined-github.d4a7c3fb:root:typescript:aa1f302ca640": {
+      "benchmark_id": "EXACT-BUILD-CACHE-COLD",
+      "failure_count": 0,
+      "latest_ms": 3839.764191,
+      "object_name": "typescript",
+      "p95_ms": 3907.2345408,
+      "resource_kind": "build_cache",
+      "sample_count": 7,
+      "scenario_name": "project-script:build:typescript",
+      "success_count": 7,
+      "version_config": "manifest-derived",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "build_cache:tinacms__tinacms.dffb104f:root:turbo:765d0508e257": {
+      "benchmark_id": "EXACT-BUILD-CACHE-COLD",
+      "failure_count": 0,
+      "latest_ms": 15924.306211,
+      "object_name": "turbo",
+      "p95_ms": 16010.5275203,
+      "resource_kind": "build_cache",
+      "sample_count": 7,
+      "scenario_name": "project-script:build",
+      "success_count": 7,
+      "version_config": "manifest-derived",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "build_cache:trpc__trpc.2f40ba93:root:turbo:8fa8b4550448": {
+      "benchmark_id": "EXACT-BUILD-CACHE-COLD",
+      "failure_count": 0,
+      "latest_ms": 23082.374558,
+      "object_name": "turbo",
+      "p95_ms": 23313.632877,
+      "resource_kind": "build_cache",
+      "sample_count": 7,
+      "scenario_name": "project-script:build",
+      "success_count": 7,
+      "version_config": "manifest-derived",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "build_cache:ueberdosis__tiptap.2d6de06c:root:turbo:85ad102bc603": {
+      "benchmark_id": "EXACT-BUILD-CACHE-COLD",
+      "failure_count": 0,
+      "latest_ms": 68447.668403,
+      "object_name": "turbo",
+      "p95_ms": 69093.06934039999,
+      "resource_kind": "build_cache",
+      "sample_count": 5,
+      "scenario_name": "project-script:build",
+      "success_count": 5,
+      "version_config": "manifest-derived",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "build_cache:voideditor__void.17e7a5b1:root:typescript:0426f7949e03": {
+      "benchmark_id": "EXACT-BUILD-CACHE-COLD",
+      "failure_count": 0,
+      "latest_ms": 11447.800725,
+      "object_name": "typescript",
+      "p95_ms": 11570.8380953,
+      "resource_kind": "build_cache",
+      "sample_count": 7,
+      "scenario_name": "project-script:monaco-compile-check",
+      "success_count": 7,
+      "version_config": "manifest-derived",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "dependency_view:Effect-TS__effect.5df4da10:root:61e1a82d9173e1a4": {
+      "benchmark_id": "EXACT-DEP-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 2353.256425,
+      "object_name": "swesmith/Effect-TS__effect.5df4da10:.",
+      "p95_ms": 2475.4059717,
+      "resource_kind": "dependency_view",
+      "sample_count": 7,
+      "scenario_name": "ctdp-cas-offline-install",
+      "success_count": 7,
+      "version_config": "61e1a82d9173e1a4",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "dependency_view:FuelLabs__fuels-ts.b3f37c91:root:471ddc5c5a27de32": {
+      "benchmark_id": "EXACT-DEP-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 6518.34508,
+      "object_name": "swesmith/FuelLabs__fuels-ts.b3f37c91:.",
+      "p95_ms": 6630.4988410999995,
+      "resource_kind": "dependency_view",
+      "sample_count": 7,
+      "scenario_name": "ctdp-cas-offline-install",
+      "success_count": 7,
+      "version_config": "471ddc5c5a27de32",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "dependency_view:NativeScript__NativeScript.3d6a4392:root:085e1f7ccbe42f25": {
+      "benchmark_id": "EXACT-DEP-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 8734.23047,
+      "object_name": "swesmith/NativeScript__NativeScript.3d6a4392:.",
+      "p95_ms": 10177.710534999998,
+      "resource_kind": "dependency_view",
+      "sample_count": 7,
+      "scenario_name": "ctdp-cas-offline-install",
+      "success_count": 7,
+      "version_config": "085e1f7ccbe42f25",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "dependency_view:ReactiveX__rxjs.c15b37f8:root:c5fbb2e88b68c3b9": {
+      "benchmark_id": "EXACT-DEP-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 26502.239068,
+      "object_name": "swesmith/ReactiveX__rxjs.c15b37f8:.",
+      "p95_ms": 26895.2659755,
+      "resource_kind": "dependency_view",
+      "sample_count": 7,
+      "scenario_name": "ctdp-cas-offline-install",
+      "success_count": 7,
+      "version_config": "c5fbb2e88b68c3b9",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "dependency_view:Shopify__draggable.8a1eed57:root:5951b44524aa69b1": {
+      "benchmark_id": "EXACT-DEP-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 4341.950443,
+      "object_name": "swesmith/Shopify__draggable.8a1eed57:.",
+      "p95_ms": 4400.6886574,
+      "resource_kind": "dependency_view",
+      "sample_count": 7,
+      "scenario_name": "ctdp-cas-offline-install",
+      "success_count": 7,
+      "version_config": "5951b44524aa69b1",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "dependency_view:advplyr__audiobookshelf.626596b1:client:53df8633198c6f33": {
+      "benchmark_id": "EXACT-DEP-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 6664.384493,
+      "object_name": "swesmith/advplyr__audiobookshelf.626596b1:client",
+      "p95_ms": 6847.683661499999,
+      "resource_kind": "dependency_view",
+      "sample_count": 7,
+      "scenario_name": "ctdp-cas-offline-install",
+      "success_count": 7,
+      "version_config": "53df8633198c6f33",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "dependency_view:advplyr__audiobookshelf.626596b1:root:671774675e08f64e": {
+      "benchmark_id": "EXACT-DEP-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 2238.427621,
+      "object_name": "swesmith/advplyr__audiobookshelf.626596b1:.",
+      "p95_ms": 2297.7871421,
+      "resource_kind": "dependency_view",
+      "sample_count": 7,
+      "scenario_name": "ctdp-cas-offline-install",
+      "success_count": 7,
+      "version_config": "671774675e08f64e",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "dependency_view:brianc__node-postgres.ecff60dc:root:ac69cf7675d96f1d": {
+      "benchmark_id": "EXACT-DEP-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 6766.342831,
+      "object_name": "swesmith/brianc__node-postgres.ecff60dc:.",
+      "p95_ms": 7406.0705038999995,
+      "resource_kind": "dependency_view",
+      "sample_count": 7,
+      "scenario_name": "ctdp-cas-offline-install",
+      "success_count": 7,
+      "version_config": "ac69cf7675d96f1d",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "dependency_view:caolan__async.23dbf76a:root:579fe631d378a055": {
+      "benchmark_id": "EXACT-DEP-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 3035.550618,
+      "object_name": "swesmith/caolan__async.23dbf76a:.",
+      "p95_ms": 3197.9411419,
+      "resource_kind": "dependency_view",
+      "sample_count": 7,
+      "scenario_name": "ctdp-cas-offline-install",
+      "success_count": 7,
+      "version_config": "579fe631d378a055",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "dependency_view:coder__code-server.e90504b8:root:cc86648d271cc663": {
+      "benchmark_id": "EXACT-DEP-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 1796.624368,
+      "object_name": "swesmith/coder__code-server.e90504b8:.",
+      "p95_ms": 1926.9762716,
+      "resource_kind": "dependency_view",
+      "sample_count": 7,
+      "scenario_name": "ctdp-cas-offline-install",
+      "success_count": 7,
+      "version_config": "cc86648d271cc663",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "dependency_view:fabricjs__fabric.js.6742471c:root:56b6543f933cb2b3": {
+      "benchmark_id": "EXACT-DEP-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 3085.352742,
+      "object_name": "swesmith/fabricjs__fabric.js.6742471c:.",
+      "p95_ms": 3324.0072029,
+      "resource_kind": "dependency_view",
+      "sample_count": 7,
+      "scenario_name": "ctdp-cas-offline-install",
+      "success_count": 7,
+      "version_config": "56b6543f933cb2b3",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
     "dependency_view:foambubble__foam.2cac8162:root:8118db77d559a658": {
       "benchmark_id": "EXACT-DEP-MATERIALIZE",
       "failure_count": 0,
@@ -14,6 +378,48 @@
       "scenario_name": "ctdp-cas-offline-install",
       "success_count": 7,
       "version_config": "8118db77d559a658",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "dependency_view:homebridge__homebridge.3a341e08:root:5aba58d9ad81636b": {
+      "benchmark_id": "EXACT-DEP-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 2508.446885,
+      "object_name": "swesmith/homebridge__homebridge.3a341e08:.",
+      "p95_ms": 2722.9851718,
+      "resource_kind": "dependency_view",
+      "sample_count": 7,
+      "scenario_name": "ctdp-cas-offline-install",
+      "success_count": 7,
+      "version_config": "5aba58d9ad81636b",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "dependency_view:humanlayer__12-factor-agents.d20c7283:packages_walkthroughgen:231f2c674eecc38e": {
+      "benchmark_id": "EXACT-DEP-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 1722.880371,
+      "object_name": "swesmith/humanlayer__12-factor-agents.d20c7283:packages/walkthroughgen",
+      "p95_ms": 1854.8190524,
+      "resource_kind": "dependency_view",
+      "sample_count": 7,
+      "scenario_name": "ctdp-cas-offline-install",
+      "success_count": 7,
+      "version_config": "231f2c674eecc38e",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "dependency_view:iamkun__dayjs.c8a26460:root:c68f1e093a72eecf": {
+      "benchmark_id": "EXACT-DEP-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 6871.276027,
+      "object_name": "swesmith/iamkun__dayjs.c8a26460:.",
+      "p95_ms": 10185.2465167,
+      "resource_kind": "dependency_view",
+      "sample_count": 7,
+      "scenario_name": "ctdp-cas-offline-install",
+      "success_count": 7,
+      "version_config": "c68f1e093a72eecf",
       "window_length": 1,
       "workload_origin": "real"
     },
@@ -31,6 +437,90 @@
       "window_length": 1,
       "workload_origin": "real"
     },
+    "dependency_view:josdejong__jsoneditor.0319b213:root:fba013e11b2e4bd9": {
+      "benchmark_id": "EXACT-DEP-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 2580.54451,
+      "object_name": "swesmith/josdejong__jsoneditor.0319b213:.",
+      "p95_ms": 2692.3425554,
+      "resource_kind": "dependency_view",
+      "sample_count": 7,
+      "scenario_name": "ctdp-cas-offline-install",
+      "success_count": 7,
+      "version_config": "fba013e11b2e4bd9",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "dependency_view:josdejong__mathjs.04e6e2d7:root:653bb0be0a5e4b8c": {
+      "benchmark_id": "EXACT-DEP-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 3325.813514,
+      "object_name": "swesmith/josdejong__mathjs.04e6e2d7:.",
+      "p95_ms": 3369.9751676,
+      "resource_kind": "dependency_view",
+      "sample_count": 7,
+      "scenario_name": "ctdp-cas-offline-install",
+      "success_count": 7,
+      "version_config": "653bb0be0a5e4b8c",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "dependency_view:microsoft__vscode.4166e90a:root:ebafff009f16e711": {
+      "benchmark_id": "EXACT-DEP-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 4645.552895,
+      "object_name": "swesmith/microsoft__vscode.4166e90a:.",
+      "p95_ms": 4726.3252897,
+      "resource_kind": "dependency_view",
+      "sample_count": 7,
+      "scenario_name": "ctdp-cas-offline-install",
+      "success_count": 7,
+      "version_config": "ebafff009f16e711",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "dependency_view:nightwatchjs__nightwatch.54c8550c:root:4a947b8a3bf39687": {
+      "benchmark_id": "EXACT-DEP-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 4207.159821,
+      "object_name": "swesmith/nightwatchjs__nightwatch.54c8550c:.",
+      "p95_ms": 4353.5184397,
+      "resource_kind": "dependency_view",
+      "sample_count": 7,
+      "scenario_name": "ctdp-cas-offline-install",
+      "success_count": 7,
+      "version_config": "4a947b8a3bf39687",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "dependency_view:nock__nock.e7418da2:root:541f81ce3f744a6f": {
+      "benchmark_id": "EXACT-DEP-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 4012.562581,
+      "object_name": "swesmith/nock__nock.e7418da2:.",
+      "p95_ms": 4179.9806924,
+      "resource_kind": "dependency_view",
+      "sample_count": 7,
+      "scenario_name": "ctdp-cas-offline-install",
+      "success_count": 7,
+      "version_config": "541f81ce3f744a6f",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "dependency_view:payloadcms__payload.8f660355:root:a2f282bd4e00dd49": {
+      "benchmark_id": "EXACT-DEP-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 5676.722759,
+      "object_name": "swesmith/payloadcms__payload.8f660355:.",
+      "p95_ms": 5770.0872848,
+      "resource_kind": "dependency_view",
+      "sample_count": 7,
+      "scenario_name": "ctdp-cas-offline-install",
+      "success_count": 7,
+      "version_config": "a2f282bd4e00dd49",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
     "dependency_view:redux-saga__redux-saga.a4ace10d:root:c1bcbd93da3b0eeb": {
       "benchmark_id": "EXACT-DEP-MATERIALIZE",
       "failure_count": 0,
@@ -42,6 +532,34 @@
       "scenario_name": "ctdp-cas-offline-install",
       "success_count": 7,
       "version_config": "c1bcbd93da3b0eeb",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "dependency_view:refined-github__refined-github.d4a7c3fb:root:e375b9cbe15b1aee": {
+      "benchmark_id": "EXACT-DEP-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 2906.533769,
+      "object_name": "swesmith/refined-github__refined-github.d4a7c3fb:.",
+      "p95_ms": 3007.7465229,
+      "resource_kind": "dependency_view",
+      "sample_count": 7,
+      "scenario_name": "ctdp-cas-offline-install",
+      "success_count": 7,
+      "version_config": "e375b9cbe15b1aee",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "dependency_view:remy__nodemon.daad5c16:root:e2111c2b7033d511": {
+      "benchmark_id": "EXACT-DEP-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 2871.139184,
+      "object_name": "swesmith/remy__nodemon.daad5c16:.",
+      "p95_ms": 2981.4332264,
+      "resource_kind": "dependency_view",
+      "sample_count": 7,
+      "scenario_name": "ctdp-cas-offline-install",
+      "success_count": 7,
+      "version_config": "e2111c2b7033d511",
       "window_length": 1,
       "workload_origin": "real"
     },
@@ -58,36 +576,3518 @@
       "version_config": "b0c07bc3f3203c46",
       "window_length": 1,
       "workload_origin": "real"
+    },
+    "dependency_view:tinacms__tinacms.dffb104f:root:45f79d9b7f2dc887": {
+      "benchmark_id": "EXACT-DEP-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 7700.718404,
+      "object_name": "swesmith/tinacms__tinacms.dffb104f:.",
+      "p95_ms": 7896.6665108,
+      "resource_kind": "dependency_view",
+      "sample_count": 7,
+      "scenario_name": "ctdp-cas-offline-install",
+      "success_count": 7,
+      "version_config": "45f79d9b7f2dc887",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "dependency_view:trpc__trpc.2f40ba93:root:781fb8f3cbe882e8": {
+      "benchmark_id": "EXACT-DEP-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 9480.0724,
+      "object_name": "swesmith/trpc__trpc.2f40ba93:.",
+      "p95_ms": 9791.0829873,
+      "resource_kind": "dependency_view",
+      "sample_count": 7,
+      "scenario_name": "ctdp-cas-offline-install",
+      "success_count": 7,
+      "version_config": "781fb8f3cbe882e8",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "dependency_view:ueberdosis__tiptap.2d6de06c:root:0bd9814a60fd8695": {
+      "benchmark_id": "EXACT-DEP-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 1872.152781,
+      "object_name": "swesmith/ueberdosis__tiptap.2d6de06c:.",
+      "p95_ms": 1904.1716002,
+      "resource_kind": "dependency_view",
+      "sample_count": 7,
+      "scenario_name": "ctdp-cas-offline-install",
+      "success_count": 7,
+      "version_config": "0bd9814a60fd8695",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "dependency_view:vitejs__vite.8b47ff76:root:7fb655fa88697a9a": {
+      "benchmark_id": "EXACT-DEP-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 2247.363393,
+      "object_name": "swesmith/vitejs__vite.8b47ff76:.",
+      "p95_ms": 2645.9243798,
+      "resource_kind": "dependency_view",
+      "sample_count": 7,
+      "scenario_name": "ctdp-cas-offline-install",
+      "success_count": 7,
+      "version_config": "7fb655fa88697a9a",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "dependency_view:voideditor__void.17e7a5b1:root:6522748bd07c0bd9": {
+      "benchmark_id": "EXACT-DEP-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 10424.352446,
+      "object_name": "swesmith/voideditor__void.17e7a5b1:.",
+      "p95_ms": 10565.3254216,
+      "resource_kind": "dependency_view",
+      "sample_count": 7,
+      "scenario_name": "ctdp-cas-offline-install",
+      "success_count": 7,
+      "version_config": "6522748bd07c0bd9",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "dependency_view:webpack__webpack.24e3c2d2:root:2a4de1074e7ce9a8": {
+      "benchmark_id": "EXACT-DEP-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 7182.892504,
+      "object_name": "swesmith/webpack__webpack.24e3c2d2:.",
+      "p95_ms": 7255.1308751,
+      "resource_kind": "dependency_view",
+      "sample_count": 7,
+      "scenario_name": "ctdp-cas-offline-install",
+      "success_count": 7,
+      "version_config": "2a4de1074e7ce9a8",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "native_binary_bundle:NativeScript__NativeScript.3d6a4392:root:@swc_core:115": {
+      "benchmark_id": "EXACT-NATIVE-LOAD",
+      "failure_count": 0,
+      "latest_ms": 25.732004,
+      "object_name": "@swc/core",
+      "p95_ms": 62.37383299999996,
+      "resource_kind": "native_binary_bundle",
+      "sample_count": 7,
+      "scenario_name": "resolve-and-require",
+      "success_count": 7,
+      "version_config": "~1.12.7",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "native_binary_bundle:nightwatchjs__nightwatch.54c8550c:root:@swc_core:109": {
+      "benchmark_id": "EXACT-NATIVE-LOAD",
+      "failure_count": 0,
+      "latest_ms": 85.539285,
+      "object_name": "@swc/core",
+      "p95_ms": 88.57039999999999,
+      "resource_kind": "native_binary_bundle",
+      "sample_count": 7,
+      "scenario_name": "resolve-and-require",
+      "success_count": 7,
+      "version_config": "^1.3.67",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "native_binary_bundle:payloadcms__payload.8f660355:root:@swc_core:115": {
+      "benchmark_id": "EXACT-NATIVE-LOAD",
+      "failure_count": 0,
+      "latest_ms": 25.310727,
+      "object_name": "@swc/core",
+      "p95_ms": 25.8531176,
+      "resource_kind": "native_binary_bundle",
+      "sample_count": 7,
+      "scenario_name": "resolve-and-require",
+      "success_count": 7,
+      "version_config": "1.15.3",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "native_binary_bundle:payloadcms__payload.8f660355:root:node-gyp:115": {
+      "benchmark_id": "EXACT-NATIVE-LOAD",
+      "failure_count": 0,
+      "latest_ms": 24.593519,
+      "object_name": "node-gyp",
+      "p95_ms": 155.12946729999987,
+      "resource_kind": "native_binary_bundle",
+      "sample_count": 7,
+      "scenario_name": "resolve-and-require",
+      "success_count": 7,
+      "version_config": "12.2.0",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "native_binary_bundle:webpack__webpack.24e3c2d2:root:node-gyp:115": {
+      "benchmark_id": "EXACT-NATIVE-LOAD",
+      "failure_count": 0,
+      "latest_ms": 24.517015,
+      "object_name": "node-gyp",
+      "p95_ms": 26.150514299999998,
+      "resource_kind": "native_binary_bundle",
+      "sample_count": 7,
+      "scenario_name": "resolve-and-require",
+      "success_count": 7,
+      "version_config": "^12.1.0",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "repo_baseline:Automattic__mongoose:5f57a5bbb2e8dfed8d04be47cdd17728633c44c1": {
+      "benchmark_id": "EXACT-REPO-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 16.120936,
+      "object_name": "Automattic/mongoose",
+      "p95_ms": 16.3427511,
+      "resource_kind": "repo_baseline",
+      "sample_count": 7,
+      "scenario_name": "git-archive-materialize",
+      "success_count": 7,
+      "version_config": "5f57a5bbb2e8dfed8d04be47cdd17728633c44c1",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "repo_baseline:Effect-TS__effect:5df4da10de444f379a166f4b28721e75100bb838": {
+      "benchmark_id": "EXACT-REPO-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 52.463625,
+      "object_name": "Effect-TS/effect",
+      "p95_ms": 56.1322328,
+      "resource_kind": "repo_baseline",
+      "sample_count": 7,
+      "scenario_name": "git-archive-materialize",
+      "success_count": 7,
+      "version_config": "5df4da10de444f379a166f4b28721e75100bb838",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "repo_baseline:FuelLabs__fuels-ts:b3f37c91aca4aa9d5e4c0d3967f66237190826ea": {
+      "benchmark_id": "EXACT-REPO-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 49.79592,
+      "object_name": "FuelLabs/fuels-ts",
+      "p95_ms": 52.1204098,
+      "resource_kind": "repo_baseline",
+      "sample_count": 7,
+      "scenario_name": "git-archive-materialize",
+      "success_count": 7,
+      "version_config": "b3f37c91aca4aa9d5e4c0d3967f66237190826ea",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "repo_baseline:GitbookIO__gitbook:81f8ddcf27ec398a33b6f676a81e9a791b673ce2": {
+      "benchmark_id": "EXACT-REPO-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 20.550691,
+      "object_name": "GitbookIO/gitbook",
+      "p95_ms": 20.991426999999998,
+      "resource_kind": "repo_baseline",
+      "sample_count": 7,
+      "scenario_name": "git-archive-materialize",
+      "success_count": 7,
+      "version_config": "81f8ddcf27ec398a33b6f676a81e9a791b673ce2",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "repo_baseline:NativeScript__NativeScript:3d6a4392f6008e4f43f8f5439a256c50e3707101": {
+      "benchmark_id": "EXACT-REPO-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 150.762442,
+      "object_name": "NativeScript/NativeScript",
+      "p95_ms": 154.794938,
+      "resource_kind": "repo_baseline",
+      "sample_count": 7,
+      "scenario_name": "git-archive-materialize",
+      "success_count": 7,
+      "version_config": "3d6a4392f6008e4f43f8f5439a256c50e3707101",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "repo_baseline:Netflix__falcor:39d64776cf9d87781b2791615dcbae73b2bcd2e1": {
+      "benchmark_id": "EXACT-REPO-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 11.871128,
+      "object_name": "Netflix/falcor",
+      "p95_ms": 12.0416769,
+      "resource_kind": "repo_baseline",
+      "sample_count": 7,
+      "scenario_name": "git-archive-materialize",
+      "success_count": 7,
+      "version_config": "39d64776cf9d87781b2791615dcbae73b2bcd2e1",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "repo_baseline:OpenCut-app__OpenCut:e84c0cfda6784abb9bcb72aae757233cd8951780": {
+      "benchmark_id": "EXACT-REPO-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 28.247618,
+      "object_name": "OpenCut-app/OpenCut",
+      "p95_ms": 29.1508579,
+      "resource_kind": "repo_baseline",
+      "sample_count": 7,
+      "scenario_name": "git-archive-materialize",
+      "success_count": 7,
+      "version_config": "e84c0cfda6784abb9bcb72aae757233cd8951780",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "repo_baseline:ReactiveX__rxjs:c15b37f81ba5f5abea8c872b0189a70b150df4cb": {
+      "benchmark_id": "EXACT-REPO-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 26.570542,
+      "object_name": "ReactiveX/rxjs",
+      "p95_ms": 27.024632800000003,
+      "resource_kind": "repo_baseline",
+      "sample_count": 7,
+      "scenario_name": "git-archive-materialize",
+      "success_count": 7,
+      "version_config": "c15b37f81ba5f5abea8c872b0189a70b150df4cb",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "repo_baseline:Redocly__redoc:d41fd46f7cbee86bf83dc17b7ec51baf54f72a54": {
+      "benchmark_id": "EXACT-REPO-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 10.15202,
+      "object_name": "Redocly/redoc",
+      "p95_ms": 10.3459295,
+      "resource_kind": "repo_baseline",
+      "sample_count": 7,
+      "scenario_name": "git-archive-materialize",
+      "success_count": 7,
+      "version_config": "d41fd46f7cbee86bf83dc17b7ec51baf54f72a54",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "repo_baseline:Shopify__draggable:8a1eed57f3ab2dff9371e8ce60fb39ac85871e8d": {
+      "benchmark_id": "EXACT-REPO-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 9.968129,
+      "object_name": "Shopify/draggable",
+      "p95_ms": 10.4630782,
+      "resource_kind": "repo_baseline",
+      "sample_count": 7,
+      "scenario_name": "git-archive-materialize",
+      "success_count": 7,
+      "version_config": "8a1eed57f3ab2dff9371e8ce60fb39ac85871e8d",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "repo_baseline:advplyr__audiobookshelf:626596b192013ba9f5a011dd110e288124c95ebe": {
+      "benchmark_id": "EXACT-REPO-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 28.15406,
+      "object_name": "advplyr/audiobookshelf",
+      "p95_ms": 28.5325664,
+      "resource_kind": "repo_baseline",
+      "sample_count": 7,
+      "scenario_name": "git-archive-materialize",
+      "success_count": 7,
+      "version_config": "626596b192013ba9f5a011dd110e288124c95ebe",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "repo_baseline:ajayyy__SponsorBlock:dfddffbc5128dbc55b4dc7c83cdcd18787f48ba4": {
+      "benchmark_id": "EXACT-REPO-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 6.37747,
+      "object_name": "ajayyy/SponsorBlock",
+      "p95_ms": 6.5480805,
+      "resource_kind": "repo_baseline",
+      "sample_count": 7,
+      "scenario_name": "git-archive-materialize",
+      "success_count": 7,
+      "version_config": "dfddffbc5128dbc55b4dc7c83cdcd18787f48ba4",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "repo_baseline:antvis__G6:91c0ac85e4e636a05bd1a3c5e56a4928d1242a9b": {
+      "benchmark_id": "EXACT-REPO-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 43.603911,
+      "object_name": "antvis/G6",
+      "p95_ms": 45.965067899999994,
+      "resource_kind": "repo_baseline",
+      "sample_count": 7,
+      "scenario_name": "git-archive-materialize",
+      "success_count": 7,
+      "version_config": "91c0ac85e4e636a05bd1a3c5e56a4928d1242a9b",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "repo_baseline:axios__axios:ef36347fb559383b04c755b07f1a8d11897fab7f": {
+      "benchmark_id": "EXACT-REPO-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 9.212693,
+      "object_name": "axios/axios",
+      "p95_ms": 9.3635971,
+      "resource_kind": "repo_baseline",
+      "sample_count": 7,
+      "scenario_name": "git-archive-materialize",
+      "success_count": 7,
+      "version_config": "ef36347fb559383b04c755b07f1a8d11897fab7f",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "repo_baseline:babel__babel:2ea3fc8f9b33a911840f17fbc407e7bfae2ed66f": {
+      "benchmark_id": "EXACT-REPO-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 878.30078,
+      "object_name": "babel/babel",
+      "p95_ms": 1017.1408772999999,
+      "resource_kind": "repo_baseline",
+      "sample_count": 7,
+      "scenario_name": "git-archive-materialize",
+      "success_count": 7,
+      "version_config": "2ea3fc8f9b33a911840f17fbc407e7bfae2ed66f",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "repo_baseline:balderdashy__sails:ffebacc58c27f878c9373702bc3a3f91a02bca0c": {
+      "benchmark_id": "EXACT-REPO-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 14.615229,
+      "object_name": "balderdashy/sails",
+      "p95_ms": 15.2139761,
+      "resource_kind": "repo_baseline",
+      "sample_count": 7,
+      "scenario_name": "git-archive-materialize",
+      "success_count": 7,
+      "version_config": "ffebacc58c27f878c9373702bc3a3f91a02bca0c",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "repo_baseline:bluesky-social__social-app:cbd48c855a57f1a294f4b7362eaadb505bf5f9f6": {
+      "benchmark_id": "EXACT-REPO-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 89.62678,
+      "object_name": "bluesky-social/social-app",
+      "p95_ms": 93.8074393,
+      "resource_kind": "repo_baseline",
+      "sample_count": 7,
+      "scenario_name": "git-archive-materialize",
+      "success_count": 7,
+      "version_config": "cbd48c855a57f1a294f4b7362eaadb505bf5f9f6",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "repo_baseline:bootstrap-vue__bootstrap-vue:9a246f45fc813f161df291fc7d6197febf8afaf4": {
+      "benchmark_id": "EXACT-REPO-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 21.381527,
+      "object_name": "bootstrap-vue/bootstrap-vue",
+      "p95_ms": 21.9935538,
+      "resource_kind": "repo_baseline",
+      "sample_count": 7,
+      "scenario_name": "git-archive-materialize",
+      "success_count": 7,
+      "version_config": "9a246f45fc813f161df291fc7d6197febf8afaf4",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "repo_baseline:bpampuch__pdfmake:719e73140cce75a792f7f419c27fc33a230e73d2": {
+      "benchmark_id": "EXACT-REPO-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 16.99834,
+      "object_name": "bpampuch/pdfmake",
+      "p95_ms": 17.2682711,
+      "resource_kind": "repo_baseline",
+      "sample_count": 7,
+      "scenario_name": "git-archive-materialize",
+      "success_count": 7,
+      "version_config": "719e73140cce75a792f7f419c27fc33a230e73d2",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "repo_baseline:brianc__node-postgres:ecff60dc8aa0bd1ad5ea8f4623af0756a86dc110": {
+      "benchmark_id": "EXACT-REPO-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 8.196057,
+      "object_name": "brianc/node-postgres",
+      "p95_ms": 8.2951313,
+      "resource_kind": "repo_baseline",
+      "sample_count": 7,
+      "scenario_name": "git-archive-materialize",
+      "success_count": 7,
+      "version_config": "ecff60dc8aa0bd1ad5ea8f4623af0756a86dc110",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "repo_baseline:caolan__async:23dbf76aeb04c7c3dd56276115b277e3fa9dd5cc": {
+      "benchmark_id": "EXACT-REPO-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 16.803842,
+      "object_name": "caolan/async",
+      "p95_ms": 17.0786999,
+      "resource_kind": "repo_baseline",
+      "sample_count": 7,
+      "scenario_name": "git-archive-materialize",
+      "success_count": 7,
+      "version_config": "23dbf76aeb04c7c3dd56276115b277e3fa9dd5cc",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "repo_baseline:coder__code-server:e90504b8cf1d73c36d902bbaaec7bab33f15c42e": {
+      "benchmark_id": "EXACT-REPO-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 7.482331,
+      "object_name": "coder/code-server",
+      "p95_ms": 7.5970251,
+      "resource_kind": "repo_baseline",
+      "sample_count": 7,
+      "scenario_name": "git-archive-materialize",
+      "success_count": 7,
+      "version_config": "e90504b8cf1d73c36d902bbaaec7bab33f15c42e",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "repo_baseline:directus__directus:ac922d18f6039582a18737a6dc6d1d9a08a194e8": {
+      "benchmark_id": "EXACT-REPO-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 63.412916,
+      "object_name": "directus/directus",
+      "p95_ms": 78.4523561,
+      "resource_kind": "repo_baseline",
+      "sample_count": 7,
+      "scenario_name": "git-archive-materialize",
+      "success_count": 7,
+      "version_config": "ac922d18f6039582a18737a6dc6d1d9a08a194e8",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "repo_baseline:emotion-js__emotion:b882bcba85132554992e4bd49e94c95939bbf810": {
+      "benchmark_id": "EXACT-REPO-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 19.461284,
+      "object_name": "emotion-js/emotion",
+      "p95_ms": 19.9196715,
+      "resource_kind": "repo_baseline",
+      "sample_count": 7,
+      "scenario_name": "git-archive-materialize",
+      "success_count": 7,
+      "version_config": "b882bcba85132554992e4bd49e94c95939bbf810",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "repo_baseline:enzymejs__enzyme:61e1b47c4bdc4509b2ac286c0d3ae3df172d26f0": {
+      "benchmark_id": "EXACT-REPO-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 8.653181,
+      "object_name": "enzymejs/enzyme",
+      "p95_ms": 9.3296535,
+      "resource_kind": "repo_baseline",
+      "sample_count": 7,
+      "scenario_name": "git-archive-materialize",
+      "success_count": 7,
+      "version_config": "61e1b47c4bdc4509b2ac286c0d3ae3df172d26f0",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "repo_baseline:fabricjs__fabric.js:6742471c23e5fd8afbb1282246b4b785455c8c17": {
+      "benchmark_id": "EXACT-REPO-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 44.700546,
+      "object_name": "fabricjs/fabric.js",
+      "p95_ms": 45.4888819,
+      "resource_kind": "repo_baseline",
+      "sample_count": 7,
+      "scenario_name": "git-archive-materialize",
+      "success_count": 7,
+      "version_config": "6742471c23e5fd8afbb1282246b4b785455c8c17",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "repo_baseline:foambubble__foam:2cac816272157f3a964b30adf4f29c0b2973cce8": {
+      "benchmark_id": "EXACT-REPO-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 50.935313,
+      "object_name": "foambubble/foam",
+      "p95_ms": 51.9849987,
+      "resource_kind": "repo_baseline",
+      "sample_count": 7,
+      "scenario_name": "git-archive-materialize",
+      "success_count": 7,
+      "version_config": "2cac816272157f3a964b30adf4f29c0b2973cce8",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "repo_baseline:foliojs__pdfkit:d0108157f13d763ad5287a2293436b5a1aecf055": {
+      "benchmark_id": "EXACT-REPO-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 28.129223,
+      "object_name": "foliojs/pdfkit",
+      "p95_ms": 28.8597051,
+      "resource_kind": "repo_baseline",
+      "sample_count": 7,
+      "scenario_name": "git-archive-materialize",
+      "success_count": 7,
+      "version_config": "d0108157f13d763ad5287a2293436b5a1aecf055",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "repo_baseline:homebridge__homebridge:3a341e0838c99abfdf7a2d76e5e1e2a2af7ccb09": {
+      "benchmark_id": "EXACT-REPO-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 4.089689,
+      "object_name": "homebridge/homebridge",
+      "p95_ms": 4.1137683,
+      "resource_kind": "repo_baseline",
+      "sample_count": 7,
+      "scenario_name": "git-archive-materialize",
+      "success_count": 7,
+      "version_config": "3a341e0838c99abfdf7a2d76e5e1e2a2af7ccb09",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "repo_baseline:humanlayer__12-factor-agents:d20c728368bf9c189d6d7aab704744decb6ec0cc": {
+      "benchmark_id": "EXACT-REPO-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 38.383188,
+      "object_name": "humanlayer/12-factor-agents",
+      "p95_ms": 38.636840299999996,
+      "resource_kind": "repo_baseline",
+      "sample_count": 7,
+      "scenario_name": "git-archive-materialize",
+      "success_count": 7,
+      "version_config": "d20c728368bf9c189d6d7aab704744decb6ec0cc",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "repo_baseline:iamkun__dayjs:c8a26460d89a2ee9a7d3b9cafa124ea856ee883f": {
+      "benchmark_id": "EXACT-REPO-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 8.672761,
+      "object_name": "iamkun/dayjs",
+      "p95_ms": 9.7671385,
+      "resource_kind": "repo_baseline",
+      "sample_count": 7,
+      "scenario_name": "git-archive-materialize",
+      "success_count": 7,
+      "version_config": "c8a26460d89a2ee9a7d3b9cafa124ea856ee883f",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "repo_baseline:jantimon__html-webpack-plugin:9a39db807c09d8e6145e5047cfe2ec5e928e1dee": {
+      "benchmark_id": "EXACT-REPO-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 7.165495,
+      "object_name": "jantimon/html-webpack-plugin",
+      "p95_ms": 7.4786806,
+      "resource_kind": "repo_baseline",
+      "sample_count": 7,
+      "scenario_name": "git-archive-materialize",
+      "success_count": 7,
+      "version_config": "9a39db807c09d8e6145e5047cfe2ec5e928e1dee",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "repo_baseline:jaredpalmer__formik:91475adbf33579561e580eceea0c031f4ec2e992": {
+      "benchmark_id": "EXACT-REPO-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 11.750531,
+      "object_name": "jaredpalmer/formik",
+      "p95_ms": 11.8533826,
+      "resource_kind": "repo_baseline",
+      "sample_count": 7,
+      "scenario_name": "git-archive-materialize",
+      "success_count": 7,
+      "version_config": "91475adbf33579561e580eceea0c031f4ec2e992",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "repo_baseline:josdejong__jsoneditor:0319b2131df47f1220d74e3ff174d5c02973ec7d": {
+      "benchmark_id": "EXACT-REPO-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 5.977656,
+      "object_name": "josdejong/jsoneditor",
+      "p95_ms": 6.0818888,
+      "resource_kind": "repo_baseline",
+      "sample_count": 7,
+      "scenario_name": "git-archive-materialize",
+      "success_count": 7,
+      "version_config": "0319b2131df47f1220d74e3ff174d5c02973ec7d",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "repo_baseline:josdejong__mathjs:04e6e2d7a949d6ddc7d7139bf1e3a88e6fe5365b": {
+      "benchmark_id": "EXACT-REPO-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 22.246254,
+      "object_name": "josdejong/mathjs",
+      "p95_ms": 23.702615899999998,
+      "resource_kind": "repo_baseline",
+      "sample_count": 7,
+      "scenario_name": "git-archive-materialize",
+      "success_count": 7,
+      "version_config": "04e6e2d7a949d6ddc7d7139bf1e3a88e6fe5365b",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "repo_baseline:marko-js__marko:24b9402cd54c3a74f200da0f79dd19350995a9ba": {
+      "benchmark_id": "EXACT-REPO-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 198.030576,
+      "object_name": "marko-js/marko",
+      "p95_ms": 238.17052209999994,
+      "resource_kind": "repo_baseline",
+      "sample_count": 7,
+      "scenario_name": "git-archive-materialize",
+      "success_count": 7,
+      "version_config": "24b9402cd54c3a74f200da0f79dd19350995a9ba",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "repo_baseline:marmelab__react-admin:823caa0b6489fc8133685525e22d30ddf57643fa": {
+      "benchmark_id": "EXACT-REPO-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 154.615148,
+      "object_name": "marmelab/react-admin",
+      "p95_ms": 159.174672,
+      "resource_kind": "repo_baseline",
+      "sample_count": 7,
+      "scenario_name": "git-archive-materialize",
+      "success_count": 7,
+      "version_config": "823caa0b6489fc8133685525e22d30ddf57643fa",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "repo_baseline:mholt__PapaParse:b10b87ef8686c6f88299b50dd25e83606e9c36d4": {
+      "benchmark_id": "EXACT-REPO-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 33.507949,
+      "object_name": "mholt/PapaParse",
+      "p95_ms": 34.8112494,
+      "resource_kind": "repo_baseline",
+      "sample_count": 7,
+      "scenario_name": "git-archive-materialize",
+      "success_count": 7,
+      "version_config": "b10b87ef8686c6f88299b50dd25e83606e9c36d4",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "repo_baseline:microsoft__vscode:4166e90ac290db7f77800a4f6702903ea4eed476": {
+      "benchmark_id": "EXACT-REPO-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 219.998712,
+      "object_name": "microsoft/vscode",
+      "p95_ms": 228.7534613,
+      "resource_kind": "repo_baseline",
+      "sample_count": 7,
+      "scenario_name": "git-archive-materialize",
+      "success_count": 7,
+      "version_config": "4166e90ac290db7f77800a4f6702903ea4eed476",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "repo_baseline:mochajs__mocha:410ce0d2a0f799aaca2c0bc627294d70c62dd3f4": {
+      "benchmark_id": "EXACT-REPO-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 14.94503,
+      "object_name": "mochajs/mocha",
+      "p95_ms": 15.8086459,
+      "resource_kind": "repo_baseline",
+      "sample_count": 7,
+      "scenario_name": "git-archive-materialize",
+      "success_count": 7,
+      "version_config": "410ce0d2a0f799aaca2c0bc627294d70c62dd3f4",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "repo_baseline:necolas__react-native-web:a9de220ba9e65bdea540fb5322ffb1da2b0bf442": {
+      "benchmark_id": "EXACT-REPO-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 14.777225,
+      "object_name": "necolas/react-native-web",
+      "p95_ms": 15.4263185,
+      "resource_kind": "repo_baseline",
+      "sample_count": 7,
+      "scenario_name": "git-archive-materialize",
+      "success_count": 7,
+      "version_config": "a9de220ba9e65bdea540fb5322ffb1da2b0bf442",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "repo_baseline:nestjs__nest:346c9543120c692f314bdbf55fc9956d2fa6d87e": {
+      "benchmark_id": "EXACT-REPO-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 36.974713,
+      "object_name": "nestjs/nest",
+      "p95_ms": 37.4129108,
+      "resource_kind": "repo_baseline",
+      "sample_count": 7,
+      "scenario_name": "git-archive-materialize",
+      "success_count": 7,
+      "version_config": "346c9543120c692f314bdbf55fc9956d2fa6d87e",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "repo_baseline:nightwatchjs__nightwatch:54c8550c75a16c61827c0bad043c7ffa073a52e6": {
+      "benchmark_id": "EXACT-REPO-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 22.361142,
+      "object_name": "nightwatchjs/nightwatch",
+      "p95_ms": 23.379475199999998,
+      "resource_kind": "repo_baseline",
+      "sample_count": 7,
+      "scenario_name": "git-archive-materialize",
+      "success_count": 7,
+      "version_config": "54c8550c75a16c61827c0bad043c7ffa073a52e6",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "repo_baseline:nock__nock:e7418da29feb4a7bf0aa1612bfb9d32a4051651e": {
+      "benchmark_id": "EXACT-REPO-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 5.26976,
+      "object_name": "nock/nock",
+      "p95_ms": 5.4798109,
+      "resource_kind": "repo_baseline",
+      "sample_count": 7,
+      "scenario_name": "git-archive-materialize",
+      "success_count": 7,
+      "version_config": "e7418da29feb4a7bf0aa1612bfb9d32a4051651e",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "repo_baseline:novnc__noVNC:d44f7e04fc456844836c7c5ac911d0f4e8dd06e6": {
+      "benchmark_id": "EXACT-REPO-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 7.698641,
+      "object_name": "novnc/noVNC",
+      "p95_ms": 7.8920401,
+      "resource_kind": "repo_baseline",
+      "sample_count": 7,
+      "scenario_name": "git-archive-materialize",
+      "success_count": 7,
+      "version_config": "d44f7e04fc456844836c7c5ac911d0f4e8dd06e6",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "repo_baseline:payloadcms__payload:8f66035522f568d42098a7ad525e7bf700662b9a": {
+      "benchmark_id": "EXACT-REPO-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 185.497681,
+      "object_name": "payloadcms/payload",
+      "p95_ms": 320.9690358999999,
+      "resource_kind": "repo_baseline",
+      "sample_count": 7,
+      "scenario_name": "git-archive-materialize",
+      "success_count": 7,
+      "version_config": "8f66035522f568d42098a7ad525e7bf700662b9a",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "repo_baseline:react-hook-form__react-hook-form:3adba2b816dd50bbca460bbe61df64b50bc6b1da": {
+      "benchmark_id": "EXACT-REPO-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 12.234287,
+      "object_name": "react-hook-form/react-hook-form",
+      "p95_ms": 12.5091948,
+      "resource_kind": "repo_baseline",
+      "sample_count": 7,
+      "scenario_name": "git-archive-materialize",
+      "success_count": 7,
+      "version_config": "3adba2b816dd50bbca460bbe61df64b50bc6b1da",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "repo_baseline:reactjs__react-transition-group:2989b5b87b4b4d1001f21c8efa503049ffb4fe8d": {
+      "benchmark_id": "EXACT-REPO-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 4.000713,
+      "object_name": "reactjs/react-transition-group",
+      "p95_ms": 4.1476751,
+      "resource_kind": "repo_baseline",
+      "sample_count": 7,
+      "scenario_name": "git-archive-materialize",
+      "success_count": 7,
+      "version_config": "2989b5b87b4b4d1001f21c8efa503049ffb4fe8d",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "repo_baseline:redux-saga__redux-saga:a4ace10dc3ff182828cd3ee7469f6667e08ceb62": {
+      "benchmark_id": "EXACT-REPO-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 10.306318,
+      "object_name": "redux-saga/redux-saga",
+      "p95_ms": 10.5357401,
+      "resource_kind": "repo_baseline",
+      "sample_count": 7,
+      "scenario_name": "git-archive-materialize",
+      "success_count": 7,
+      "version_config": "a4ace10dc3ff182828cd3ee7469f6667e08ceb62",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "repo_baseline:refined-github__refined-github:d4a7c3fbfebff5f39a3760effbea7273dea0d01c": {
+      "benchmark_id": "EXACT-REPO-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 11.026255,
+      "object_name": "refined-github/refined-github",
+      "p95_ms": 11.1300387,
+      "resource_kind": "repo_baseline",
+      "sample_count": 7,
+      "scenario_name": "git-archive-materialize",
+      "success_count": 7,
+      "version_config": "d4a7c3fbfebff5f39a3760effbea7273dea0d01c",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "repo_baseline:remy__nodemon:daad5c162919fa6abff53be16832bdf55f2204ad": {
+      "benchmark_id": "EXACT-REPO-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 10.41693,
+      "object_name": "remy/nodemon",
+      "p95_ms": 10.5390702,
+      "resource_kind": "repo_baseline",
+      "sample_count": 7,
+      "scenario_name": "git-archive-materialize",
+      "success_count": 7,
+      "version_config": "daad5c162919fa6abff53be16832bdf55f2204ad",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "repo_baseline:segmentio__evergreen:9b774aee2d794f6cf2f73a054bd33066ca5898a9": {
+      "benchmark_id": "EXACT-REPO-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 28.664554,
+      "object_name": "segmentio/evergreen",
+      "p95_ms": 31.3564253,
+      "resource_kind": "repo_baseline",
+      "sample_count": 7,
+      "scenario_name": "git-archive-materialize",
+      "success_count": 7,
+      "version_config": "9b774aee2d794f6cf2f73a054bd33066ca5898a9",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "repo_baseline:strapi__strapi:e5b87a54008c9de2b3286a4774635dcf69895d9b": {
+      "benchmark_id": "EXACT-REPO-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 131.579653,
+      "object_name": "strapi/strapi",
+      "p95_ms": 168.14718029999997,
+      "resource_kind": "repo_baseline",
+      "sample_count": 7,
+      "scenario_name": "git-archive-materialize",
+      "success_count": 7,
+      "version_config": "e5b87a54008c9de2b3286a4774635dcf69895d9b",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "repo_baseline:sveltejs__svelte:6c9717a91f2f6ae10641d1cf502ba13d227fbe45": {
+      "benchmark_id": "EXACT-REPO-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 157.196151,
+      "object_name": "sveltejs/svelte",
+      "p95_ms": 305.1807462999999,
+      "resource_kind": "repo_baseline",
+      "sample_count": 7,
+      "scenario_name": "git-archive-materialize",
+      "success_count": 7,
+      "version_config": "6c9717a91f2f6ae10641d1cf502ba13d227fbe45",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "repo_baseline:svg__svgo:c06d8f6899788defae9594537063c2f4307803e4": {
+      "benchmark_id": "EXACT-REPO-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 12.831145,
+      "object_name": "svg/svgo",
+      "p95_ms": 13.0971965,
+      "resource_kind": "repo_baseline",
+      "sample_count": 7,
+      "scenario_name": "git-archive-materialize",
+      "success_count": 7,
+      "version_config": "c06d8f6899788defae9594537063c2f4307803e4",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "repo_baseline:tinacms__tinacms:dffb104f1850cabc15f495a5868a33a66295965a": {
+      "benchmark_id": "EXACT-REPO-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 47.502903,
+      "object_name": "tinacms/tinacms",
+      "p95_ms": 49.041359,
+      "resource_kind": "repo_baseline",
+      "sample_count": 7,
+      "scenario_name": "git-archive-materialize",
+      "success_count": 7,
+      "version_config": "dffb104f1850cabc15f495a5868a33a66295965a",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "repo_baseline:trpc__trpc:2f40ba935ad7f7d29eec3f9c45d353450b43e852": {
+      "benchmark_id": "EXACT-REPO-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 27.212923,
+      "object_name": "trpc/trpc",
+      "p95_ms": 28.5726676,
+      "resource_kind": "repo_baseline",
+      "sample_count": 7,
+      "scenario_name": "git-archive-materialize",
+      "success_count": 7,
+      "version_config": "2f40ba935ad7f7d29eec3f9c45d353450b43e852",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "repo_baseline:ueberdosis__tiptap:2d6de06c34c239e78fedd6bd2a0bcea42d0fdbfa": {
+      "benchmark_id": "EXACT-REPO-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 42.35141,
+      "object_name": "ueberdosis/tiptap",
+      "p95_ms": 44.5171085,
+      "resource_kind": "repo_baseline",
+      "sample_count": 7,
+      "scenario_name": "git-archive-materialize",
+      "success_count": 7,
+      "version_config": "2d6de06c34c239e78fedd6bd2a0bcea42d0fdbfa",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "repo_baseline:umijs__qiankun:693cdde75049830820ff9490dd267f9701db25e6": {
+      "benchmark_id": "EXACT-REPO-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 10.566858,
+      "object_name": "umijs/qiankun",
+      "p95_ms": 10.655787,
+      "resource_kind": "repo_baseline",
+      "sample_count": 7,
+      "scenario_name": "git-archive-materialize",
+      "success_count": 7,
+      "version_config": "693cdde75049830820ff9490dd267f9701db25e6",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "repo_baseline:vitejs__vite:8b47ff76d28630b4dc39c77fbd2762b4c36ad23d": {
+      "benchmark_id": "EXACT-REPO-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 58.22541,
+      "object_name": "vitejs/vite",
+      "p95_ms": 81.55861759999998,
+      "resource_kind": "repo_baseline",
+      "sample_count": 7,
+      "scenario_name": "git-archive-materialize",
+      "success_count": 7,
+      "version_config": "8b47ff76d28630b4dc39c77fbd2762b4c36ad23d",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "repo_baseline:voideditor__void:17e7a5b1524345b19ab4ee38ec4f9b1b75a1bd00": {
+      "benchmark_id": "EXACT-REPO-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 220.09014,
+      "object_name": "voideditor/void",
+      "p95_ms": 277.34649970000004,
+      "resource_kind": "repo_baseline",
+      "sample_count": 7,
+      "scenario_name": "git-archive-materialize",
+      "success_count": 7,
+      "version_config": "17e7a5b1524345b19ab4ee38ec4f9b1b75a1bd00",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "repo_baseline:webpack__webpack:24e3c2d2c9f8c6d60810302b2ea70ed86e2863dc": {
+      "benchmark_id": "EXACT-REPO-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 182.773584,
+      "object_name": "webpack/webpack",
+      "p95_ms": 267.34348439999997,
+      "resource_kind": "repo_baseline",
+      "sample_count": 7,
+      "scenario_name": "git-archive-materialize",
+      "success_count": 7,
+      "version_config": "24e3c2d2c9f8c6d60810302b2ea70ed86e2863dc",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "repo_baseline:websockets__ws:726c3732b3e5319219ed73cac4826fd36917e2e1": {
+      "benchmark_id": "EXACT-REPO-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 3.567675,
+      "object_name": "websockets/ws",
+      "p95_ms": 3.7012956,
+      "resource_kind": "repo_baseline",
+      "sample_count": 7,
+      "scenario_name": "git-archive-materialize",
+      "success_count": 7,
+      "version_config": "726c3732b3e5319219ed73cac4826fd36917e2e1",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "repo_baseline:welldone-software__why-did-you-render:3ec3512d750c49448fe2241e26d05db9e42f0c21": {
+      "benchmark_id": "EXACT-REPO-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 5.62904,
+      "object_name": "welldone-software/why-did-you-render",
+      "p95_ms": 5.810917099999999,
+      "resource_kind": "repo_baseline",
+      "sample_count": 7,
+      "scenario_name": "git-archive-materialize",
+      "success_count": 7,
+      "version_config": "3ec3512d750c49448fe2241e26d05db9e42f0c21",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "rootfs:node_18": {
+      "benchmark_id": "EXACT-ROOTFS-CREATE",
+      "failure_count": 0,
+      "latest_ms": 58.38964,
+      "object_name": "node:18",
+      "p95_ms": 91.76197039999998,
+      "resource_kind": "rootfs",
+      "sample_count": 7,
+      "scenario_name": "docker-create-from-local-image",
+      "success_count": 7,
+      "version_config": "node:18",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "rootfs:node_18-bullseye": {
+      "benchmark_id": "EXACT-ROOTFS-CREATE",
+      "failure_count": 0,
+      "latest_ms": 44.268223,
+      "object_name": "node:18-bullseye",
+      "p95_ms": 194.37886479999995,
+      "resource_kind": "rootfs",
+      "sample_count": 7,
+      "scenario_name": "docker-create-from-local-image",
+      "success_count": 7,
+      "version_config": "node:18-bullseye",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "rootfs:node_18-bullseye-slim": {
+      "benchmark_id": "EXACT-ROOTFS-CREATE",
+      "failure_count": 0,
+      "latest_ms": 43.310586,
+      "object_name": "node:18-bullseye-slim",
+      "p95_ms": 45.9601512,
+      "resource_kind": "rootfs",
+      "sample_count": 7,
+      "scenario_name": "docker-create-from-local-image",
+      "success_count": 7,
+      "version_config": "node:18-bullseye-slim",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "rootfs:node_18-slim": {
+      "benchmark_id": "EXACT-ROOTFS-CREATE",
+      "failure_count": 0,
+      "latest_ms": 45.598942,
+      "object_name": "node:18-slim",
+      "p95_ms": 52.83391449999999,
+      "resource_kind": "rootfs",
+      "sample_count": 7,
+      "scenario_name": "docker-create-from-local-image",
+      "success_count": 7,
+      "version_config": "node:18-slim",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "rootfs:node_20": {
+      "benchmark_id": "EXACT-ROOTFS-CREATE",
+      "failure_count": 0,
+      "latest_ms": 44.605714,
+      "object_name": "node:20",
+      "p95_ms": 51.7166879,
+      "resource_kind": "rootfs",
+      "sample_count": 7,
+      "scenario_name": "docker-create-from-local-image",
+      "success_count": 7,
+      "version_config": "node:20",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "rootfs:node_20-bookworm": {
+      "benchmark_id": "EXACT-ROOTFS-CREATE",
+      "failure_count": 0,
+      "latest_ms": 45.935614,
+      "object_name": "node:20-bookworm",
+      "p95_ms": 53.16096159999999,
+      "resource_kind": "rootfs",
+      "sample_count": 7,
+      "scenario_name": "docker-create-from-local-image",
+      "success_count": 7,
+      "version_config": "node:20-bookworm",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "rootfs:node_20-bullseye": {
+      "benchmark_id": "EXACT-ROOTFS-CREATE",
+      "failure_count": 0,
+      "latest_ms": 44.566008,
+      "object_name": "node:20-bullseye",
+      "p95_ms": 50.244978599999996,
+      "resource_kind": "rootfs",
+      "sample_count": 7,
+      "scenario_name": "docker-create-from-local-image",
+      "success_count": 7,
+      "version_config": "node:20-bullseye",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "rootfs:node_20-bullseye-slim": {
+      "benchmark_id": "EXACT-ROOTFS-CREATE",
+      "failure_count": 0,
+      "latest_ms": 42.636647,
+      "object_name": "node:20-bullseye-slim",
+      "p95_ms": 46.162713000000004,
+      "resource_kind": "rootfs",
+      "sample_count": 7,
+      "scenario_name": "docker-create-from-local-image",
+      "success_count": 7,
+      "version_config": "node:20-bullseye-slim",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "rootfs:node_20-slim": {
+      "benchmark_id": "EXACT-ROOTFS-CREATE",
+      "failure_count": 0,
+      "latest_ms": 47.126407,
+      "object_name": "node:20-slim",
+      "p95_ms": 50.810638,
+      "resource_kind": "rootfs",
+      "sample_count": 7,
+      "scenario_name": "docker-create-from-local-image",
+      "success_count": 7,
+      "version_config": "node:20-slim",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "rootfs:node_22": {
+      "benchmark_id": "EXACT-ROOTFS-CREATE",
+      "failure_count": 0,
+      "latest_ms": 43.171882,
+      "object_name": "node:22",
+      "p95_ms": 47.0101208,
+      "resource_kind": "rootfs",
+      "sample_count": 7,
+      "scenario_name": "docker-create-from-local-image",
+      "success_count": 7,
+      "version_config": "node:22",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "rootfs:node_22-bookworm": {
+      "benchmark_id": "EXACT-ROOTFS-CREATE",
+      "failure_count": 0,
+      "latest_ms": 42.158439,
+      "object_name": "node:22-bookworm",
+      "p95_ms": 44.9040379,
+      "resource_kind": "rootfs",
+      "sample_count": 7,
+      "scenario_name": "docker-create-from-local-image",
+      "success_count": 7,
+      "version_config": "node:22-bookworm",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "rootfs:node_22-bookworm-slim": {
+      "benchmark_id": "EXACT-ROOTFS-CREATE",
+      "failure_count": 0,
+      "latest_ms": 46.949642,
+      "object_name": "node:22-bookworm-slim",
+      "p95_ms": 48.7935914,
+      "resource_kind": "rootfs",
+      "sample_count": 7,
+      "scenario_name": "docker-create-from-local-image",
+      "success_count": 7,
+      "version_config": "node:22-bookworm-slim",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "rootfs:node_22-bullseye-slim": {
+      "benchmark_id": "EXACT-ROOTFS-CREATE",
+      "failure_count": 0,
+      "latest_ms": 44.046309,
+      "object_name": "node:22-bullseye-slim",
+      "p95_ms": 107.23381529999995,
+      "resource_kind": "rootfs",
+      "sample_count": 7,
+      "scenario_name": "docker-create-from-local-image",
+      "success_count": 7,
+      "version_config": "node:22-bullseye-slim",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "rootfs:node_22-slim": {
+      "benchmark_id": "EXACT-ROOTFS-CREATE",
+      "failure_count": 0,
+      "latest_ms": 43.850828,
+      "object_name": "node:22-slim",
+      "p95_ms": 45.5671887,
+      "resource_kind": "rootfs",
+      "sample_count": 7,
+      "scenario_name": "docker-create-from-local-image",
+      "success_count": 7,
+      "version_config": "node:22-slim",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "source_overlay:Automattic__mongoose.5f57a5bb:root": {
+      "benchmark_id": "EXACT-SOURCE-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 18.731268,
+      "object_name": "swesmith/Automattic__mongoose.5f57a5bb:.",
+      "p95_ms": 19.7894371,
+      "resource_kind": "source_overlay",
+      "sample_count": 7,
+      "scenario_name": "directory-copy-reflink-auto",
+      "success_count": 7,
+      "version_config": "5f57a5bbb2e8",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "source_overlay:Effect-TS__effect.5df4da10:root": {
+      "benchmark_id": "EXACT-SOURCE-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 50.541087,
+      "object_name": "swesmith/Effect-TS__effect.5df4da10:.",
+      "p95_ms": 55.727774,
+      "resource_kind": "source_overlay",
+      "sample_count": 7,
+      "scenario_name": "directory-copy-reflink-auto",
+      "success_count": 7,
+      "version_config": "5df4da10de44",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "source_overlay:FuelLabs__fuels-ts.b3f37c91:root": {
+      "benchmark_id": "EXACT-SOURCE-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 52.272567,
+      "object_name": "swesmith/FuelLabs__fuels-ts.b3f37c91:.",
+      "p95_ms": 54.9004331,
+      "resource_kind": "source_overlay",
+      "sample_count": 7,
+      "scenario_name": "directory-copy-reflink-auto",
+      "success_count": 7,
+      "version_config": "b3f37c91aca4",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "source_overlay:GitbookIO__gitbook.81f8ddcf:root": {
+      "benchmark_id": "EXACT-SOURCE-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 25.620705,
+      "object_name": "swesmith/GitbookIO__gitbook.81f8ddcf:.",
+      "p95_ms": 26.2687138,
+      "resource_kind": "source_overlay",
+      "sample_count": 7,
+      "scenario_name": "directory-copy-reflink-auto",
+      "success_count": 7,
+      "version_config": "81f8ddcf27ec",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "source_overlay:NativeScript__NativeScript.3d6a4392:root": {
+      "benchmark_id": "EXACT-SOURCE-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 127.443577,
+      "object_name": "swesmith/NativeScript__NativeScript.3d6a4392:.",
+      "p95_ms": 130.6479949,
+      "resource_kind": "source_overlay",
+      "sample_count": 7,
+      "scenario_name": "directory-copy-reflink-auto",
+      "success_count": 7,
+      "version_config": "3d6a4392f600",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "source_overlay:Netflix__falcor.39d64776:root": {
+      "benchmark_id": "EXACT-SOURCE-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 10.81877,
+      "object_name": "swesmith/Netflix__falcor.39d64776:.",
+      "p95_ms": 11.3662657,
+      "resource_kind": "source_overlay",
+      "sample_count": 7,
+      "scenario_name": "directory-copy-reflink-auto",
+      "success_count": 7,
+      "version_config": "39d64776cf9d",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "source_overlay:OpenCut-app__OpenCut.e84c0cfd:root": {
+      "benchmark_id": "EXACT-SOURCE-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 23.820214,
+      "object_name": "swesmith/OpenCut-app__OpenCut.e84c0cfd:.",
+      "p95_ms": 24.4292665,
+      "resource_kind": "source_overlay",
+      "sample_count": 7,
+      "scenario_name": "directory-copy-reflink-auto",
+      "success_count": 7,
+      "version_config": "e84c0cfda678",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "source_overlay:ReactiveX__rxjs.c15b37f8:root": {
+      "benchmark_id": "EXACT-SOURCE-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 27.624398,
+      "object_name": "swesmith/ReactiveX__rxjs.c15b37f8:.",
+      "p95_ms": 30.4872189,
+      "resource_kind": "source_overlay",
+      "sample_count": 7,
+      "scenario_name": "directory-copy-reflink-auto",
+      "success_count": 7,
+      "version_config": "c15b37f81ba5",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "source_overlay:Redocly__redoc.d41fd46f:root": {
+      "benchmark_id": "EXACT-SOURCE-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 11.201125,
+      "object_name": "swesmith/Redocly__redoc.d41fd46f:.",
+      "p95_ms": 11.4193059,
+      "resource_kind": "source_overlay",
+      "sample_count": 7,
+      "scenario_name": "directory-copy-reflink-auto",
+      "success_count": 7,
+      "version_config": "d41fd46f7cbe",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "source_overlay:Shopify__draggable.8a1eed57:root": {
+      "benchmark_id": "EXACT-SOURCE-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 11.147153,
+      "object_name": "swesmith/Shopify__draggable.8a1eed57:.",
+      "p95_ms": 11.8055494,
+      "resource_kind": "source_overlay",
+      "sample_count": 7,
+      "scenario_name": "directory-copy-reflink-auto",
+      "success_count": 7,
+      "version_config": "8a1eed57f3ab",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "source_overlay:advplyr__audiobookshelf.626596b1:client": {
+      "benchmark_id": "EXACT-SOURCE-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 26.309827,
+      "object_name": "swesmith/advplyr__audiobookshelf.626596b1:client",
+      "p95_ms": 28.1322248,
+      "resource_kind": "source_overlay",
+      "sample_count": 7,
+      "scenario_name": "directory-copy-reflink-auto",
+      "success_count": 7,
+      "version_config": "626596b19201",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "source_overlay:advplyr__audiobookshelf.626596b1:root": {
+      "benchmark_id": "EXACT-SOURCE-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 25.074935,
+      "object_name": "swesmith/advplyr__audiobookshelf.626596b1:.",
+      "p95_ms": 27.562614599999996,
+      "resource_kind": "source_overlay",
+      "sample_count": 7,
+      "scenario_name": "directory-copy-reflink-auto",
+      "success_count": 7,
+      "version_config": "626596b19201",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "source_overlay:ajayyy__SponsorBlock.dfddffbc:root": {
+      "benchmark_id": "EXACT-SOURCE-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 7.000183,
+      "object_name": "swesmith/ajayyy__SponsorBlock.dfddffbc:.",
+      "p95_ms": 7.1492736,
+      "resource_kind": "source_overlay",
+      "sample_count": 7,
+      "scenario_name": "directory-copy-reflink-auto",
+      "success_count": 7,
+      "version_config": "dfddffbc5128",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "source_overlay:antvis__G6.91c0ac85:root": {
+      "benchmark_id": "EXACT-SOURCE-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 49.622831,
+      "object_name": "swesmith/antvis__G6.91c0ac85:.",
+      "p95_ms": 51.709976999999995,
+      "resource_kind": "source_overlay",
+      "sample_count": 7,
+      "scenario_name": "directory-copy-reflink-auto",
+      "success_count": 7,
+      "version_config": "91c0ac85e4e6",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "source_overlay:axios__axios.ef36347f:root": {
+      "benchmark_id": "EXACT-SOURCE-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 8.853416,
+      "object_name": "swesmith/axios__axios.ef36347f:.",
+      "p95_ms": 9.5022684,
+      "resource_kind": "source_overlay",
+      "sample_count": 7,
+      "scenario_name": "directory-copy-reflink-auto",
+      "success_count": 7,
+      "version_config": "ef36347fb559",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "source_overlay:babel__babel.2ea3fc8f:root": {
+      "benchmark_id": "EXACT-SOURCE-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 1049.110106,
+      "object_name": "swesmith/babel__babel.2ea3fc8f:.",
+      "p95_ms": 1241.7774299,
+      "resource_kind": "source_overlay",
+      "sample_count": 7,
+      "scenario_name": "directory-copy-reflink-auto",
+      "success_count": 7,
+      "version_config": "2ea3fc8f9b33",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "source_overlay:balderdashy__sails.ffebacc5:root": {
+      "benchmark_id": "EXACT-SOURCE-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 18.59991,
+      "object_name": "swesmith/balderdashy__sails.ffebacc5:.",
+      "p95_ms": 18.8608284,
+      "resource_kind": "source_overlay",
+      "sample_count": 7,
+      "scenario_name": "directory-copy-reflink-auto",
+      "success_count": 7,
+      "version_config": "ffebacc58c27",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "source_overlay:bluesky-social__social-app.cbd48c85:root": {
+      "benchmark_id": "EXACT-SOURCE-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 79.55701,
+      "object_name": "swesmith/bluesky-social__social-app.cbd48c85:.",
+      "p95_ms": 82.46824059999999,
+      "resource_kind": "source_overlay",
+      "sample_count": 7,
+      "scenario_name": "directory-copy-reflink-auto",
+      "success_count": 7,
+      "version_config": "cbd48c855a57",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "source_overlay:bootstrap-vue__bootstrap-vue.9a246f45:root": {
+      "benchmark_id": "EXACT-SOURCE-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 25.354116,
+      "object_name": "swesmith/bootstrap-vue__bootstrap-vue.9a246f45:.",
+      "p95_ms": 25.8330346,
+      "resource_kind": "source_overlay",
+      "sample_count": 7,
+      "scenario_name": "directory-copy-reflink-auto",
+      "success_count": 7,
+      "version_config": "9a246f45fc81",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "source_overlay:bpampuch__pdfmake.719e7314:root": {
+      "benchmark_id": "EXACT-SOURCE-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 14.714374,
+      "object_name": "swesmith/bpampuch__pdfmake.719e7314:.",
+      "p95_ms": 14.8837163,
+      "resource_kind": "source_overlay",
+      "sample_count": 7,
+      "scenario_name": "directory-copy-reflink-auto",
+      "success_count": 7,
+      "version_config": "719e73140cce",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "source_overlay:brianc__node-postgres.ecff60dc:root": {
+      "benchmark_id": "EXACT-SOURCE-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 9.963111,
+      "object_name": "swesmith/brianc__node-postgres.ecff60dc:.",
+      "p95_ms": 9.992460999999999,
+      "resource_kind": "source_overlay",
+      "sample_count": 7,
+      "scenario_name": "directory-copy-reflink-auto",
+      "success_count": 7,
+      "version_config": "ecff60dc8aa0",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "source_overlay:caolan__async.23dbf76a:root": {
+      "benchmark_id": "EXACT-SOURCE-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 16.553592,
+      "object_name": "swesmith/caolan__async.23dbf76a:.",
+      "p95_ms": 17.7920618,
+      "resource_kind": "source_overlay",
+      "sample_count": 7,
+      "scenario_name": "directory-copy-reflink-auto",
+      "success_count": 7,
+      "version_config": "23dbf76aeb04",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "source_overlay:coder__code-server.e90504b8:root": {
+      "benchmark_id": "EXACT-SOURCE-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 8.299462,
+      "object_name": "swesmith/coder__code-server.e90504b8:.",
+      "p95_ms": 8.6321865,
+      "resource_kind": "source_overlay",
+      "sample_count": 7,
+      "scenario_name": "directory-copy-reflink-auto",
+      "success_count": 7,
+      "version_config": "e90504b8cf1d",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "source_overlay:directus__directus.ac922d18:root": {
+      "benchmark_id": "EXACT-SOURCE-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 78.011861,
+      "object_name": "swesmith/directus__directus.ac922d18:.",
+      "p95_ms": 84.9490979,
+      "resource_kind": "source_overlay",
+      "sample_count": 7,
+      "scenario_name": "directory-copy-reflink-auto",
+      "success_count": 7,
+      "version_config": "ac922d18f603",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "source_overlay:emotion-js__emotion.b882bcba:root": {
+      "benchmark_id": "EXACT-SOURCE-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 23.544671,
+      "object_name": "swesmith/emotion-js__emotion.b882bcba:.",
+      "p95_ms": 24.0795924,
+      "resource_kind": "source_overlay",
+      "sample_count": 7,
+      "scenario_name": "directory-copy-reflink-auto",
+      "success_count": 7,
+      "version_config": "b882bcba8513",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "source_overlay:enzymejs__enzyme.61e1b47c:root": {
+      "benchmark_id": "EXACT-SOURCE-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 10.202735,
+      "object_name": "swesmith/enzymejs__enzyme.61e1b47c:.",
+      "p95_ms": 10.3414579,
+      "resource_kind": "source_overlay",
+      "sample_count": 7,
+      "scenario_name": "directory-copy-reflink-auto",
+      "success_count": 7,
+      "version_config": "61e1b47c4bdc",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "source_overlay:fabricjs__fabric.js.6742471c:root": {
+      "benchmark_id": "EXACT-SOURCE-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 39.643337,
+      "object_name": "swesmith/fabricjs__fabric.js.6742471c:.",
+      "p95_ms": 44.8233472,
+      "resource_kind": "source_overlay",
+      "sample_count": 7,
+      "scenario_name": "directory-copy-reflink-auto",
+      "success_count": 7,
+      "version_config": "6742471c23e5",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "source_overlay:foambubble__foam.2cac8162:root": {
+      "benchmark_id": "EXACT-SOURCE-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 38.79295,
+      "object_name": "swesmith/foambubble__foam.2cac8162:.",
+      "p95_ms": 41.1937389,
+      "resource_kind": "source_overlay",
+      "sample_count": 7,
+      "scenario_name": "directory-copy-reflink-auto",
+      "success_count": 7,
+      "version_config": "2cac81627215",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "source_overlay:foliojs__pdfkit.d0108157:root": {
+      "benchmark_id": "EXACT-SOURCE-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 24.396858,
+      "object_name": "swesmith/foliojs__pdfkit.d0108157:.",
+      "p95_ms": 25.1908136,
+      "resource_kind": "source_overlay",
+      "sample_count": 7,
+      "scenario_name": "directory-copy-reflink-auto",
+      "success_count": 7,
+      "version_config": "d0108157f13d",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "source_overlay:homebridge__homebridge.3a341e08:root": {
+      "benchmark_id": "EXACT-SOURCE-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 4.190178,
+      "object_name": "swesmith/homebridge__homebridge.3a341e08:.",
+      "p95_ms": 4.3088742,
+      "resource_kind": "source_overlay",
+      "sample_count": 7,
+      "scenario_name": "directory-copy-reflink-auto",
+      "success_count": 7,
+      "version_config": "3a341e0838c9",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "source_overlay:humanlayer__12-factor-agents.d20c7283:packages_walkthroughgen": {
+      "benchmark_id": "EXACT-SOURCE-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 33.662305,
+      "object_name": "swesmith/humanlayer__12-factor-agents.d20c7283:packages/walkthroughgen",
+      "p95_ms": 34.091212399999996,
+      "resource_kind": "source_overlay",
+      "sample_count": 7,
+      "scenario_name": "directory-copy-reflink-auto",
+      "success_count": 7,
+      "version_config": "d20c728368bf",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "source_overlay:iamkun__dayjs.c8a26460:root": {
+      "benchmark_id": "EXACT-SOURCE-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 9.939878,
+      "object_name": "swesmith/iamkun__dayjs.c8a26460:.",
+      "p95_ms": 12.523878,
+      "resource_kind": "source_overlay",
+      "sample_count": 7,
+      "scenario_name": "directory-copy-reflink-auto",
+      "success_count": 7,
+      "version_config": "c8a26460d89a",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "source_overlay:jantimon__html-webpack-plugin.9a39db80:root": {
+      "benchmark_id": "EXACT-SOURCE-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 7.681868,
+      "object_name": "swesmith/jantimon__html-webpack-plugin.9a39db80:.",
+      "p95_ms": 7.793039,
+      "resource_kind": "source_overlay",
+      "sample_count": 7,
+      "scenario_name": "directory-copy-reflink-auto",
+      "success_count": 7,
+      "version_config": "9a39db807c09",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "source_overlay:jaredpalmer__formik.91475adb:root": {
+      "benchmark_id": "EXACT-SOURCE-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 12.029495,
+      "object_name": "swesmith/jaredpalmer__formik.91475adb:.",
+      "p95_ms": 12.068804,
+      "resource_kind": "source_overlay",
+      "sample_count": 7,
+      "scenario_name": "directory-copy-reflink-auto",
+      "success_count": 7,
+      "version_config": "91475adbf335",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "source_overlay:josdejong__jsoneditor.0319b213:root": {
+      "benchmark_id": "EXACT-SOURCE-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 6.172457,
+      "object_name": "swesmith/josdejong__jsoneditor.0319b213:.",
+      "p95_ms": 6.3348329,
+      "resource_kind": "source_overlay",
+      "sample_count": 7,
+      "scenario_name": "directory-copy-reflink-auto",
+      "success_count": 7,
+      "version_config": "0319b2131df4",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "source_overlay:josdejong__mathjs.04e6e2d7:root": {
+      "benchmark_id": "EXACT-SOURCE-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 24.45876,
+      "object_name": "swesmith/josdejong__mathjs.04e6e2d7:.",
+      "p95_ms": 30.5371185,
+      "resource_kind": "source_overlay",
+      "sample_count": 7,
+      "scenario_name": "directory-copy-reflink-auto",
+      "success_count": 7,
+      "version_config": "04e6e2d7a949",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "source_overlay:marko-js__marko.24b9402c:root": {
+      "benchmark_id": "EXACT-SOURCE-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 266.726539,
+      "object_name": "swesmith/marko-js__marko.24b9402c:.",
+      "p95_ms": 289.00840569999997,
+      "resource_kind": "source_overlay",
+      "sample_count": 7,
+      "scenario_name": "directory-copy-reflink-auto",
+      "success_count": 7,
+      "version_config": "24b9402cd54c",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "source_overlay:marmelab__react-admin.823caa0b:root": {
+      "benchmark_id": "EXACT-SOURCE-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 121.885319,
+      "object_name": "swesmith/marmelab__react-admin.823caa0b:.",
+      "p95_ms": 125.1077947,
+      "resource_kind": "source_overlay",
+      "sample_count": 7,
+      "scenario_name": "directory-copy-reflink-auto",
+      "success_count": 7,
+      "version_config": "823caa0b6489",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "source_overlay:mholt__PapaParse.b10b87ef:root": {
+      "benchmark_id": "EXACT-SOURCE-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 23.710307,
+      "object_name": "swesmith/mholt__PapaParse.b10b87ef:.",
+      "p95_ms": 24.9009828,
+      "resource_kind": "source_overlay",
+      "sample_count": 7,
+      "scenario_name": "directory-copy-reflink-auto",
+      "success_count": 7,
+      "version_config": "b10b87ef8686",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "source_overlay:microsoft__vscode.4166e90a:root": {
+      "benchmark_id": "EXACT-SOURCE-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 248.588763,
+      "object_name": "swesmith/microsoft__vscode.4166e90a:.",
+      "p95_ms": 252.2788695,
+      "resource_kind": "source_overlay",
+      "sample_count": 7,
+      "scenario_name": "directory-copy-reflink-auto",
+      "success_count": 7,
+      "version_config": "4166e90ac290",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "source_overlay:mochajs__mocha.410ce0d2:root": {
+      "benchmark_id": "EXACT-SOURCE-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 18.974459,
+      "object_name": "swesmith/mochajs__mocha.410ce0d2:.",
+      "p95_ms": 19.384155,
+      "resource_kind": "source_overlay",
+      "sample_count": 7,
+      "scenario_name": "directory-copy-reflink-auto",
+      "success_count": 7,
+      "version_config": "410ce0d2a0f7",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "source_overlay:necolas__react-native-web.a9de220b:root": {
+      "benchmark_id": "EXACT-SOURCE-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 16.608263,
+      "object_name": "swesmith/necolas__react-native-web.a9de220b:.",
+      "p95_ms": 17.5636966,
+      "resource_kind": "source_overlay",
+      "sample_count": 7,
+      "scenario_name": "directory-copy-reflink-auto",
+      "success_count": 7,
+      "version_config": "a9de220ba9e6",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "source_overlay:nestjs__nest.346c9543:root": {
+      "benchmark_id": "EXACT-SOURCE-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 47.376016,
+      "object_name": "swesmith/nestjs__nest.346c9543:.",
+      "p95_ms": 48.2676426,
+      "resource_kind": "source_overlay",
+      "sample_count": 7,
+      "scenario_name": "directory-copy-reflink-auto",
+      "success_count": 7,
+      "version_config": "346c9543120c",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "source_overlay:nightwatchjs__nightwatch.54c8550c:root": {
+      "benchmark_id": "EXACT-SOURCE-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 26.551107,
+      "object_name": "swesmith/nightwatchjs__nightwatch.54c8550c:.",
+      "p95_ms": 28.2423365,
+      "resource_kind": "source_overlay",
+      "sample_count": 7,
+      "scenario_name": "directory-copy-reflink-auto",
+      "success_count": 7,
+      "version_config": "54c8550c75a1",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "source_overlay:nock__nock.e7418da2:root": {
+      "benchmark_id": "EXACT-SOURCE-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 5.533525,
+      "object_name": "swesmith/nock__nock.e7418da2:.",
+      "p95_ms": 5.6190824,
+      "resource_kind": "source_overlay",
+      "sample_count": 7,
+      "scenario_name": "directory-copy-reflink-auto",
+      "success_count": 7,
+      "version_config": "e7418da29feb",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "source_overlay:novnc__noVNC.d44f7e04:root": {
+      "benchmark_id": "EXACT-SOURCE-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 7.914463,
+      "object_name": "swesmith/novnc__noVNC.d44f7e04:.",
+      "p95_ms": 8.1224594,
+      "resource_kind": "source_overlay",
+      "sample_count": 7,
+      "scenario_name": "directory-copy-reflink-auto",
+      "success_count": 7,
+      "version_config": "d44f7e04fc45",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "source_overlay:payloadcms__payload.8f660355:root": {
+      "benchmark_id": "EXACT-SOURCE-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 205.873875,
+      "object_name": "swesmith/payloadcms__payload.8f660355:.",
+      "p95_ms": 208.02455650000002,
+      "resource_kind": "source_overlay",
+      "sample_count": 7,
+      "scenario_name": "directory-copy-reflink-auto",
+      "success_count": 7,
+      "version_config": "8f66035522f5",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "source_overlay:react-hook-form__react-hook-form.3adba2b8:root": {
+      "benchmark_id": "EXACT-SOURCE-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 13.869488,
+      "object_name": "swesmith/react-hook-form__react-hook-form.3adba2b8:.",
+      "p95_ms": 13.9693085,
+      "resource_kind": "source_overlay",
+      "sample_count": 7,
+      "scenario_name": "directory-copy-reflink-auto",
+      "success_count": 7,
+      "version_config": "3adba2b816dd",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "source_overlay:reactjs__react-transition-group.2989b5b8:root": {
+      "benchmark_id": "EXACT-SOURCE-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 3.929588,
+      "object_name": "swesmith/reactjs__react-transition-group.2989b5b8:.",
+      "p95_ms": 3.9591148,
+      "resource_kind": "source_overlay",
+      "sample_count": 7,
+      "scenario_name": "directory-copy-reflink-auto",
+      "success_count": 7,
+      "version_config": "2989b5b87b4b",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "source_overlay:redux-saga__redux-saga.a4ace10d:root": {
+      "benchmark_id": "EXACT-SOURCE-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 12.235298,
+      "object_name": "swesmith/redux-saga__redux-saga.a4ace10d:.",
+      "p95_ms": 12.6631474,
+      "resource_kind": "source_overlay",
+      "sample_count": 7,
+      "scenario_name": "directory-copy-reflink-auto",
+      "success_count": 7,
+      "version_config": "a4ace10dc3ff",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "source_overlay:refined-github__refined-github.d4a7c3fb:root": {
+      "benchmark_id": "EXACT-SOURCE-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 12.859804,
+      "object_name": "swesmith/refined-github__refined-github.d4a7c3fb:.",
+      "p95_ms": 13.0062587,
+      "resource_kind": "source_overlay",
+      "sample_count": 7,
+      "scenario_name": "directory-copy-reflink-auto",
+      "success_count": 7,
+      "version_config": "d4a7c3fbfebf",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "source_overlay:remy__nodemon.daad5c16:root": {
+      "benchmark_id": "EXACT-SOURCE-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 12.597245,
+      "object_name": "swesmith/remy__nodemon.daad5c16:.",
+      "p95_ms": 12.955845,
+      "resource_kind": "source_overlay",
+      "sample_count": 7,
+      "scenario_name": "directory-copy-reflink-auto",
+      "success_count": 7,
+      "version_config": "daad5c162919",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "source_overlay:segmentio__evergreen.9b774aee:root": {
+      "benchmark_id": "EXACT-SOURCE-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 30.120652,
+      "object_name": "swesmith/segmentio__evergreen.9b774aee:.",
+      "p95_ms": 33.0034025,
+      "resource_kind": "source_overlay",
+      "sample_count": 7,
+      "scenario_name": "directory-copy-reflink-auto",
+      "success_count": 7,
+      "version_config": "9b774aee2d79",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "source_overlay:strapi__strapi.e5b87a54:root": {
+      "benchmark_id": "EXACT-SOURCE-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 151.994464,
+      "object_name": "swesmith/strapi__strapi.e5b87a54:.",
+      "p95_ms": 155.326422,
+      "resource_kind": "source_overlay",
+      "sample_count": 7,
+      "scenario_name": "directory-copy-reflink-auto",
+      "success_count": 7,
+      "version_config": "e5b87a54008c",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "source_overlay:sveltejs__svelte.6c9717a9:root": {
+      "benchmark_id": "EXACT-SOURCE-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 194.41387,
+      "object_name": "swesmith/sveltejs__svelte.6c9717a9:.",
+      "p95_ms": 229.82719579999997,
+      "resource_kind": "source_overlay",
+      "sample_count": 7,
+      "scenario_name": "directory-copy-reflink-auto",
+      "success_count": 7,
+      "version_config": "6c9717a91f2f",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "source_overlay:svg__svgo.c06d8f68:root": {
+      "benchmark_id": "EXACT-SOURCE-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 15.276297,
+      "object_name": "swesmith/svg__svgo.c06d8f68:.",
+      "p95_ms": 15.865262,
+      "resource_kind": "source_overlay",
+      "sample_count": 7,
+      "scenario_name": "directory-copy-reflink-auto",
+      "success_count": 7,
+      "version_config": "c06d8f689978",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "source_overlay:tinacms__tinacms.dffb104f:root": {
+      "benchmark_id": "EXACT-SOURCE-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 47.241255,
+      "object_name": "swesmith/tinacms__tinacms.dffb104f:.",
+      "p95_ms": 49.161878699999995,
+      "resource_kind": "source_overlay",
+      "sample_count": 7,
+      "scenario_name": "directory-copy-reflink-auto",
+      "success_count": 7,
+      "version_config": "dffb104f1850",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "source_overlay:trpc__trpc.2f40ba93:root": {
+      "benchmark_id": "EXACT-SOURCE-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 30.258514,
+      "object_name": "swesmith/trpc__trpc.2f40ba93:.",
+      "p95_ms": 35.29680689999999,
+      "resource_kind": "source_overlay",
+      "sample_count": 7,
+      "scenario_name": "directory-copy-reflink-auto",
+      "success_count": 7,
+      "version_config": "2f40ba935ad7",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "source_overlay:ueberdosis__tiptap.2d6de06c:root": {
+      "benchmark_id": "EXACT-SOURCE-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 48.18394,
+      "object_name": "swesmith/ueberdosis__tiptap.2d6de06c:.",
+      "p95_ms": 50.6487028,
+      "resource_kind": "source_overlay",
+      "sample_count": 7,
+      "scenario_name": "directory-copy-reflink-auto",
+      "success_count": 7,
+      "version_config": "2d6de06c34c2",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "source_overlay:umijs__qiankun.693cdde7:root": {
+      "benchmark_id": "EXACT-SOURCE-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 12.905097,
+      "object_name": "swesmith/umijs__qiankun.693cdde7:.",
+      "p95_ms": 12.986011099999999,
+      "resource_kind": "source_overlay",
+      "sample_count": 7,
+      "scenario_name": "directory-copy-reflink-auto",
+      "success_count": 7,
+      "version_config": "693cdde75049",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "source_overlay:vitejs__vite.8b47ff76:root": {
+      "benchmark_id": "EXACT-SOURCE-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 60.439445,
+      "object_name": "swesmith/vitejs__vite.8b47ff76:.",
+      "p95_ms": 62.824974,
+      "resource_kind": "source_overlay",
+      "sample_count": 7,
+      "scenario_name": "directory-copy-reflink-auto",
+      "success_count": 7,
+      "version_config": "8b47ff76d286",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "source_overlay:voideditor__void.17e7a5b1:root": {
+      "benchmark_id": "EXACT-SOURCE-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 245.776511,
+      "object_name": "swesmith/voideditor__void.17e7a5b1:.",
+      "p95_ms": 255.2808046,
+      "resource_kind": "source_overlay",
+      "sample_count": 7,
+      "scenario_name": "directory-copy-reflink-auto",
+      "success_count": 7,
+      "version_config": "17e7a5b15243",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "source_overlay:webpack__webpack.24e3c2d2:root": {
+      "benchmark_id": "EXACT-SOURCE-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 221.72356,
+      "object_name": "swesmith/webpack__webpack.24e3c2d2:.",
+      "p95_ms": 241.13991979999997,
+      "resource_kind": "source_overlay",
+      "sample_count": 7,
+      "scenario_name": "directory-copy-reflink-auto",
+      "success_count": 7,
+      "version_config": "24e3c2d2c9f8",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "source_overlay:websockets__ws.726c3732:root": {
+      "benchmark_id": "EXACT-SOURCE-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 3.612976,
+      "object_name": "swesmith/websockets__ws.726c3732:.",
+      "p95_ms": 3.7036556,
+      "resource_kind": "source_overlay",
+      "sample_count": 7,
+      "scenario_name": "directory-copy-reflink-auto",
+      "success_count": 7,
+      "version_config": "726c3732b3e5",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "source_overlay:welldone-software__why-did-you-render.3ec3512d:root": {
+      "benchmark_id": "EXACT-SOURCE-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 5.731826,
+      "object_name": "swesmith/welldone-software__why-did-you-render.3ec3512d:.",
+      "p95_ms": 6.1741404,
+      "resource_kind": "source_overlay",
+      "sample_count": 7,
+      "scenario_name": "directory-copy-reflink-auto",
+      "success_count": 7,
+      "version_config": "3ec3512d750c",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "test_transform_cache:Shopify__draggable.8a1eed57:root:jest:75fa7c4af02e": {
+      "benchmark_id": "EXACT-TEST-CACHE-COLD",
+      "failure_count": 0,
+      "latest_ms": 1212.481966,
+      "object_name": "jest",
+      "p95_ms": 1262.2851335,
+      "resource_kind": "test_transform_cache",
+      "sample_count": 7,
+      "scenario_name": "project-script:test",
+      "success_count": 7,
+      "version_config": "manifest-derived",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "test_transform_cache:advplyr__audiobookshelf.626596b1:root:mocha:12f5a03dadc2": {
+      "benchmark_id": "EXACT-TEST-CACHE-COLD",
+      "failure_count": 0,
+      "latest_ms": 1085.347828,
+      "object_name": "mocha",
+      "p95_ms": 1099.3348522000001,
+      "resource_kind": "test_transform_cache",
+      "sample_count": 7,
+      "scenario_name": "project-script:test",
+      "success_count": 7,
+      "version_config": "manifest-derived",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "test_transform_cache:homebridge__homebridge.3a341e08:root:jest:cb88c6110fb6": {
+      "benchmark_id": "EXACT-TEST-CACHE-COLD",
+      "failure_count": 0,
+      "latest_ms": 1790.880827,
+      "object_name": "jest",
+      "p95_ms": 1825.7417742,
+      "resource_kind": "test_transform_cache",
+      "sample_count": 7,
+      "scenario_name": "project-script:test",
+      "success_count": 7,
+      "version_config": "manifest-derived",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "test_transform_cache:iamkun__dayjs.c8a26460:root:jest:9ed6e5f7fd04": {
+      "benchmark_id": "EXACT-TEST-CACHE-COLD",
+      "failure_count": 0,
+      "latest_ms": 6548.671915,
+      "object_name": "jest",
+      "p95_ms": 7734.4671581,
+      "resource_kind": "test_transform_cache",
+      "sample_count": 7,
+      "scenario_name": "project-script:test",
+      "success_count": 7,
+      "version_config": "manifest-derived",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "test_transform_cache:josdejong__jsoneditor.0319b213:root:mocha:be56cc981d38": {
+      "benchmark_id": "EXACT-TEST-CACHE-COLD",
+      "failure_count": 0,
+      "latest_ms": 2111.43726,
+      "object_name": "mocha",
+      "p95_ms": 2134.7972683999997,
+      "resource_kind": "test_transform_cache",
+      "sample_count": 7,
+      "scenario_name": "project-script:test",
+      "success_count": 7,
+      "version_config": "manifest-derived",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "test_transform_cache:nock__nock.e7418da2:root:jest:bf94886cefe6": {
+      "benchmark_id": "EXACT-TEST-CACHE-COLD",
+      "failure_count": 0,
+      "latest_ms": 668.322496,
+      "object_name": "jest",
+      "p95_ms": 724.2787423,
+      "resource_kind": "test_transform_cache",
+      "sample_count": 7,
+      "scenario_name": "project-script:test:jest",
+      "success_count": 7,
+      "version_config": "manifest-derived",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "test_transform_cache:sveltejs__svelte.6c9717a9:root:vitest:85b839d59475": {
+      "benchmark_id": "EXACT-TEST-CACHE-COLD",
+      "failure_count": 0,
+      "latest_ms": 2665.860558,
+      "object_name": "vitest",
+      "p95_ms": 2748.5276390999998,
+      "resource_kind": "test_transform_cache",
+      "sample_count": 7,
+      "scenario_name": "project-script:test",
+      "success_count": 7,
+      "version_config": "manifest-derived",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "test_transform_cache:ueberdosis__tiptap.2d6de06c:root:vitest:85ad102bc603": {
+      "benchmark_id": "EXACT-TEST-CACHE-COLD",
+      "failure_count": 0,
+      "latest_ms": 3982.47277,
+      "object_name": "vitest",
+      "p95_ms": 4089.8944409,
+      "resource_kind": "test_transform_cache",
+      "sample_count": 7,
+      "scenario_name": "project-script:test:unit",
+      "success_count": 7,
+      "version_config": "manifest-derived",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "test_transform_cache:webpack__webpack.24e3c2d2:root:jest:8138d968425d": {
+      "benchmark_id": "EXACT-TEST-CACHE-COLD",
+      "failure_count": 0,
+      "latest_ms": 2020.378614,
+      "object_name": "jest",
+      "p95_ms": 2059.9005405999997,
+      "resource_kind": "test_transform_cache",
+      "sample_count": 7,
+      "scenario_name": "project-script:test:base",
+      "success_count": 7,
+      "version_config": "manifest-derived",
+      "window_length": 1,
+      "workload_origin": "real"
     }
   },
   "direct_ms": {
+    "build_cache:Effect-TS__effect.5df4da10:root:typescript:3936ee7940b9": [
+      16499.729852
+    ],
+    "build_cache:Shopify__draggable.8a1eed57:root:rollup:75fa7c4af02e": [
+      5060.622381
+    ],
+    "build_cache:Shopify__draggable.8a1eed57:root:typescript:75fa7c4af02e": [
+      284.292814
+    ],
+    "build_cache:brianc__node-postgres.ecff60dc:root:typescript:f43ed1faaa9b": [
+      274.781285
+    ],
+    "build_cache:foambubble__foam.2cac8162:root:lerna:2510f8df8165": [
+      3245.388653
+    ],
+    "build_cache:josdejong__jsoneditor.0319b213:root:gulp:be56cc981d38": [
+      11257.797516
+    ],
+    "build_cache:josdejong__mathjs.04e6e2d7:root:gulp:4c7f724eabb4": [
+      22559.432936
+    ],
+    "build_cache:josdejong__mathjs.04e6e2d7:root:typescript:4c7f724eabb4": [
+      8413.023244
+    ],
+    "build_cache:payloadcms__payload.8f660355:root:turbo:096d4a336345": [
+      89601.621714
+    ],
+    "build_cache:refined-github__refined-github.d4a7c3fb:root:rollup:aa1f302ca640": [
+      2998.649611
+    ],
+    "build_cache:refined-github__refined-github.d4a7c3fb:root:typescript:aa1f302ca640": [
+      3839.764191
+    ],
+    "build_cache:tinacms__tinacms.dffb104f:root:turbo:765d0508e257": [
+      15924.306211
+    ],
+    "build_cache:trpc__trpc.2f40ba93:root:turbo:8fa8b4550448": [
+      23082.374558
+    ],
+    "build_cache:ueberdosis__tiptap.2d6de06c:root:turbo:85ad102bc603": [
+      68447.668403
+    ],
+    "build_cache:voideditor__void.17e7a5b1:root:typescript:0426f7949e03": [
+      11447.800725
+    ],
+    "dependency_view:Effect-TS__effect.5df4da10:root:61e1a82d9173e1a4": [
+      2353.256425
+    ],
+    "dependency_view:FuelLabs__fuels-ts.b3f37c91:root:471ddc5c5a27de32": [
+      6518.34508
+    ],
+    "dependency_view:NativeScript__NativeScript.3d6a4392:root:085e1f7ccbe42f25": [
+      8734.23047
+    ],
+    "dependency_view:ReactiveX__rxjs.c15b37f8:root:c5fbb2e88b68c3b9": [
+      26502.239068
+    ],
+    "dependency_view:Shopify__draggable.8a1eed57:root:5951b44524aa69b1": [
+      4341.950443
+    ],
+    "dependency_view:advplyr__audiobookshelf.626596b1:client:53df8633198c6f33": [
+      6664.384493
+    ],
+    "dependency_view:advplyr__audiobookshelf.626596b1:root:671774675e08f64e": [
+      2238.427621
+    ],
+    "dependency_view:brianc__node-postgres.ecff60dc:root:ac69cf7675d96f1d": [
+      6766.342831
+    ],
+    "dependency_view:caolan__async.23dbf76a:root:579fe631d378a055": [
+      3035.550618
+    ],
+    "dependency_view:coder__code-server.e90504b8:root:cc86648d271cc663": [
+      1796.624368
+    ],
+    "dependency_view:fabricjs__fabric.js.6742471c:root:56b6543f933cb2b3": [
+      3085.352742
+    ],
     "dependency_view:foambubble__foam.2cac8162:root:8118db77d559a658": [
       5856.183836
+    ],
+    "dependency_view:homebridge__homebridge.3a341e08:root:5aba58d9ad81636b": [
+      2508.446885
+    ],
+    "dependency_view:humanlayer__12-factor-agents.d20c7283:packages_walkthroughgen:231f2c674eecc38e": [
+      1722.880371
+    ],
+    "dependency_view:iamkun__dayjs.c8a26460:root:c68f1e093a72eecf": [
+      6871.276027
     ],
     "dependency_view:jaredpalmer__formik.91475adb:root:0ea1f56b0c1e2753": [
       5837.946796
     ],
+    "dependency_view:josdejong__jsoneditor.0319b213:root:fba013e11b2e4bd9": [
+      2580.54451
+    ],
+    "dependency_view:josdejong__mathjs.04e6e2d7:root:653bb0be0a5e4b8c": [
+      3325.813514
+    ],
+    "dependency_view:microsoft__vscode.4166e90a:root:ebafff009f16e711": [
+      4645.552895
+    ],
+    "dependency_view:nightwatchjs__nightwatch.54c8550c:root:4a947b8a3bf39687": [
+      4207.159821
+    ],
+    "dependency_view:nock__nock.e7418da2:root:541f81ce3f744a6f": [
+      4012.562581
+    ],
+    "dependency_view:payloadcms__payload.8f660355:root:a2f282bd4e00dd49": [
+      5676.722759
+    ],
     "dependency_view:redux-saga__redux-saga.a4ace10d:root:c1bcbd93da3b0eeb": [
       9529.210058
     ],
+    "dependency_view:refined-github__refined-github.d4a7c3fb:root:e375b9cbe15b1aee": [
+      2906.533769
+    ],
+    "dependency_view:remy__nodemon.daad5c16:root:e2111c2b7033d511": [
+      2871.139184
+    ],
     "dependency_view:sveltejs__svelte.6c9717a9:root:b0c07bc3f3203c46": [
       1802.468041
+    ],
+    "dependency_view:tinacms__tinacms.dffb104f:root:45f79d9b7f2dc887": [
+      7700.718404
+    ],
+    "dependency_view:trpc__trpc.2f40ba93:root:781fb8f3cbe882e8": [
+      9480.0724
+    ],
+    "dependency_view:ueberdosis__tiptap.2d6de06c:root:0bd9814a60fd8695": [
+      1872.152781
+    ],
+    "dependency_view:vitejs__vite.8b47ff76:root:7fb655fa88697a9a": [
+      2247.363393
+    ],
+    "dependency_view:voideditor__void.17e7a5b1:root:6522748bd07c0bd9": [
+      10424.352446
+    ],
+    "dependency_view:webpack__webpack.24e3c2d2:root:2a4de1074e7ce9a8": [
+      7182.892504
+    ],
+    "native_binary_bundle:NativeScript__NativeScript.3d6a4392:root:@swc_core:115": [
+      25.732004
+    ],
+    "native_binary_bundle:nightwatchjs__nightwatch.54c8550c:root:@swc_core:109": [
+      85.539285
+    ],
+    "native_binary_bundle:payloadcms__payload.8f660355:root:@swc_core:115": [
+      25.310727
+    ],
+    "native_binary_bundle:payloadcms__payload.8f660355:root:node-gyp:115": [
+      24.593519
+    ],
+    "native_binary_bundle:webpack__webpack.24e3c2d2:root:node-gyp:115": [
+      24.517015
+    ],
+    "repo_baseline:Automattic__mongoose:5f57a5bbb2e8dfed8d04be47cdd17728633c44c1": [
+      16.120936
+    ],
+    "repo_baseline:Effect-TS__effect:5df4da10de444f379a166f4b28721e75100bb838": [
+      52.463625
+    ],
+    "repo_baseline:FuelLabs__fuels-ts:b3f37c91aca4aa9d5e4c0d3967f66237190826ea": [
+      49.79592
+    ],
+    "repo_baseline:GitbookIO__gitbook:81f8ddcf27ec398a33b6f676a81e9a791b673ce2": [
+      20.550691
+    ],
+    "repo_baseline:NativeScript__NativeScript:3d6a4392f6008e4f43f8f5439a256c50e3707101": [
+      150.762442
+    ],
+    "repo_baseline:Netflix__falcor:39d64776cf9d87781b2791615dcbae73b2bcd2e1": [
+      11.871128
+    ],
+    "repo_baseline:OpenCut-app__OpenCut:e84c0cfda6784abb9bcb72aae757233cd8951780": [
+      28.247618
+    ],
+    "repo_baseline:ReactiveX__rxjs:c15b37f81ba5f5abea8c872b0189a70b150df4cb": [
+      26.570542
+    ],
+    "repo_baseline:Redocly__redoc:d41fd46f7cbee86bf83dc17b7ec51baf54f72a54": [
+      10.15202
+    ],
+    "repo_baseline:Shopify__draggable:8a1eed57f3ab2dff9371e8ce60fb39ac85871e8d": [
+      9.968129
+    ],
+    "repo_baseline:advplyr__audiobookshelf:626596b192013ba9f5a011dd110e288124c95ebe": [
+      28.15406
+    ],
+    "repo_baseline:ajayyy__SponsorBlock:dfddffbc5128dbc55b4dc7c83cdcd18787f48ba4": [
+      6.37747
+    ],
+    "repo_baseline:antvis__G6:91c0ac85e4e636a05bd1a3c5e56a4928d1242a9b": [
+      43.603911
+    ],
+    "repo_baseline:axios__axios:ef36347fb559383b04c755b07f1a8d11897fab7f": [
+      9.212693
+    ],
+    "repo_baseline:babel__babel:2ea3fc8f9b33a911840f17fbc407e7bfae2ed66f": [
+      878.30078
+    ],
+    "repo_baseline:balderdashy__sails:ffebacc58c27f878c9373702bc3a3f91a02bca0c": [
+      14.615229
+    ],
+    "repo_baseline:bluesky-social__social-app:cbd48c855a57f1a294f4b7362eaadb505bf5f9f6": [
+      89.62678
+    ],
+    "repo_baseline:bootstrap-vue__bootstrap-vue:9a246f45fc813f161df291fc7d6197febf8afaf4": [
+      21.381527
+    ],
+    "repo_baseline:bpampuch__pdfmake:719e73140cce75a792f7f419c27fc33a230e73d2": [
+      16.99834
+    ],
+    "repo_baseline:brianc__node-postgres:ecff60dc8aa0bd1ad5ea8f4623af0756a86dc110": [
+      8.196057
+    ],
+    "repo_baseline:caolan__async:23dbf76aeb04c7c3dd56276115b277e3fa9dd5cc": [
+      16.803842
+    ],
+    "repo_baseline:coder__code-server:e90504b8cf1d73c36d902bbaaec7bab33f15c42e": [
+      7.482331
+    ],
+    "repo_baseline:directus__directus:ac922d18f6039582a18737a6dc6d1d9a08a194e8": [
+      63.412916
+    ],
+    "repo_baseline:emotion-js__emotion:b882bcba85132554992e4bd49e94c95939bbf810": [
+      19.461284
+    ],
+    "repo_baseline:enzymejs__enzyme:61e1b47c4bdc4509b2ac286c0d3ae3df172d26f0": [
+      8.653181
+    ],
+    "repo_baseline:fabricjs__fabric.js:6742471c23e5fd8afbb1282246b4b785455c8c17": [
+      44.700546
+    ],
+    "repo_baseline:foambubble__foam:2cac816272157f3a964b30adf4f29c0b2973cce8": [
+      50.935313
+    ],
+    "repo_baseline:foliojs__pdfkit:d0108157f13d763ad5287a2293436b5a1aecf055": [
+      28.129223
+    ],
+    "repo_baseline:homebridge__homebridge:3a341e0838c99abfdf7a2d76e5e1e2a2af7ccb09": [
+      4.089689
+    ],
+    "repo_baseline:humanlayer__12-factor-agents:d20c728368bf9c189d6d7aab704744decb6ec0cc": [
+      38.383188
+    ],
+    "repo_baseline:iamkun__dayjs:c8a26460d89a2ee9a7d3b9cafa124ea856ee883f": [
+      8.672761
+    ],
+    "repo_baseline:jantimon__html-webpack-plugin:9a39db807c09d8e6145e5047cfe2ec5e928e1dee": [
+      7.165495
+    ],
+    "repo_baseline:jaredpalmer__formik:91475adbf33579561e580eceea0c031f4ec2e992": [
+      11.750531
+    ],
+    "repo_baseline:josdejong__jsoneditor:0319b2131df47f1220d74e3ff174d5c02973ec7d": [
+      5.977656
+    ],
+    "repo_baseline:josdejong__mathjs:04e6e2d7a949d6ddc7d7139bf1e3a88e6fe5365b": [
+      22.246254
+    ],
+    "repo_baseline:marko-js__marko:24b9402cd54c3a74f200da0f79dd19350995a9ba": [
+      198.030576
+    ],
+    "repo_baseline:marmelab__react-admin:823caa0b6489fc8133685525e22d30ddf57643fa": [
+      154.615148
+    ],
+    "repo_baseline:mholt__PapaParse:b10b87ef8686c6f88299b50dd25e83606e9c36d4": [
+      33.507949
+    ],
+    "repo_baseline:microsoft__vscode:4166e90ac290db7f77800a4f6702903ea4eed476": [
+      219.998712
+    ],
+    "repo_baseline:mochajs__mocha:410ce0d2a0f799aaca2c0bc627294d70c62dd3f4": [
+      14.94503
+    ],
+    "repo_baseline:necolas__react-native-web:a9de220ba9e65bdea540fb5322ffb1da2b0bf442": [
+      14.777225
+    ],
+    "repo_baseline:nestjs__nest:346c9543120c692f314bdbf55fc9956d2fa6d87e": [
+      36.974713
+    ],
+    "repo_baseline:nightwatchjs__nightwatch:54c8550c75a16c61827c0bad043c7ffa073a52e6": [
+      22.361142
+    ],
+    "repo_baseline:nock__nock:e7418da29feb4a7bf0aa1612bfb9d32a4051651e": [
+      5.26976
+    ],
+    "repo_baseline:novnc__noVNC:d44f7e04fc456844836c7c5ac911d0f4e8dd06e6": [
+      7.698641
+    ],
+    "repo_baseline:payloadcms__payload:8f66035522f568d42098a7ad525e7bf700662b9a": [
+      185.497681
+    ],
+    "repo_baseline:react-hook-form__react-hook-form:3adba2b816dd50bbca460bbe61df64b50bc6b1da": [
+      12.234287
+    ],
+    "repo_baseline:reactjs__react-transition-group:2989b5b87b4b4d1001f21c8efa503049ffb4fe8d": [
+      4.000713
+    ],
+    "repo_baseline:redux-saga__redux-saga:a4ace10dc3ff182828cd3ee7469f6667e08ceb62": [
+      10.306318
+    ],
+    "repo_baseline:refined-github__refined-github:d4a7c3fbfebff5f39a3760effbea7273dea0d01c": [
+      11.026255
+    ],
+    "repo_baseline:remy__nodemon:daad5c162919fa6abff53be16832bdf55f2204ad": [
+      10.41693
+    ],
+    "repo_baseline:segmentio__evergreen:9b774aee2d794f6cf2f73a054bd33066ca5898a9": [
+      28.664554
+    ],
+    "repo_baseline:strapi__strapi:e5b87a54008c9de2b3286a4774635dcf69895d9b": [
+      131.579653
+    ],
+    "repo_baseline:sveltejs__svelte:6c9717a91f2f6ae10641d1cf502ba13d227fbe45": [
+      157.196151
+    ],
+    "repo_baseline:svg__svgo:c06d8f6899788defae9594537063c2f4307803e4": [
+      12.831145
+    ],
+    "repo_baseline:tinacms__tinacms:dffb104f1850cabc15f495a5868a33a66295965a": [
+      47.502903
+    ],
+    "repo_baseline:trpc__trpc:2f40ba935ad7f7d29eec3f9c45d353450b43e852": [
+      27.212923
+    ],
+    "repo_baseline:ueberdosis__tiptap:2d6de06c34c239e78fedd6bd2a0bcea42d0fdbfa": [
+      42.35141
+    ],
+    "repo_baseline:umijs__qiankun:693cdde75049830820ff9490dd267f9701db25e6": [
+      10.566858
+    ],
+    "repo_baseline:vitejs__vite:8b47ff76d28630b4dc39c77fbd2762b4c36ad23d": [
+      58.22541
+    ],
+    "repo_baseline:voideditor__void:17e7a5b1524345b19ab4ee38ec4f9b1b75a1bd00": [
+      220.09014
+    ],
+    "repo_baseline:webpack__webpack:24e3c2d2c9f8c6d60810302b2ea70ed86e2863dc": [
+      182.773584
+    ],
+    "repo_baseline:websockets__ws:726c3732b3e5319219ed73cac4826fd36917e2e1": [
+      3.567675
+    ],
+    "repo_baseline:welldone-software__why-did-you-render:3ec3512d750c49448fe2241e26d05db9e42f0c21": [
+      5.62904
+    ],
+    "rootfs:node_18": [
+      58.38964
+    ],
+    "rootfs:node_18-bullseye": [
+      44.268223
+    ],
+    "rootfs:node_18-bullseye-slim": [
+      43.310586
+    ],
+    "rootfs:node_18-slim": [
+      45.598942
+    ],
+    "rootfs:node_20": [
+      44.605714
+    ],
+    "rootfs:node_20-bookworm": [
+      45.935614
+    ],
+    "rootfs:node_20-bullseye": [
+      44.566008
+    ],
+    "rootfs:node_20-bullseye-slim": [
+      42.636647
+    ],
+    "rootfs:node_20-slim": [
+      47.126407
+    ],
+    "rootfs:node_22": [
+      43.171882
+    ],
+    "rootfs:node_22-bookworm": [
+      42.158439
+    ],
+    "rootfs:node_22-bookworm-slim": [
+      46.949642
+    ],
+    "rootfs:node_22-bullseye-slim": [
+      44.046309
+    ],
+    "rootfs:node_22-slim": [
+      43.850828
+    ],
+    "source_overlay:Automattic__mongoose.5f57a5bb:root": [
+      18.731268
+    ],
+    "source_overlay:Effect-TS__effect.5df4da10:root": [
+      50.541087
+    ],
+    "source_overlay:FuelLabs__fuels-ts.b3f37c91:root": [
+      52.272567
+    ],
+    "source_overlay:GitbookIO__gitbook.81f8ddcf:root": [
+      25.620705
+    ],
+    "source_overlay:NativeScript__NativeScript.3d6a4392:root": [
+      127.443577
+    ],
+    "source_overlay:Netflix__falcor.39d64776:root": [
+      10.81877
+    ],
+    "source_overlay:OpenCut-app__OpenCut.e84c0cfd:root": [
+      23.820214
+    ],
+    "source_overlay:ReactiveX__rxjs.c15b37f8:root": [
+      27.624398
+    ],
+    "source_overlay:Redocly__redoc.d41fd46f:root": [
+      11.201125
+    ],
+    "source_overlay:Shopify__draggable.8a1eed57:root": [
+      11.147153
+    ],
+    "source_overlay:advplyr__audiobookshelf.626596b1:client": [
+      26.309827
+    ],
+    "source_overlay:advplyr__audiobookshelf.626596b1:root": [
+      25.074935
+    ],
+    "source_overlay:ajayyy__SponsorBlock.dfddffbc:root": [
+      7.000183
+    ],
+    "source_overlay:antvis__G6.91c0ac85:root": [
+      49.622831
+    ],
+    "source_overlay:axios__axios.ef36347f:root": [
+      8.853416
+    ],
+    "source_overlay:babel__babel.2ea3fc8f:root": [
+      1049.110106
+    ],
+    "source_overlay:balderdashy__sails.ffebacc5:root": [
+      18.59991
+    ],
+    "source_overlay:bluesky-social__social-app.cbd48c85:root": [
+      79.55701
+    ],
+    "source_overlay:bootstrap-vue__bootstrap-vue.9a246f45:root": [
+      25.354116
+    ],
+    "source_overlay:bpampuch__pdfmake.719e7314:root": [
+      14.714374
+    ],
+    "source_overlay:brianc__node-postgres.ecff60dc:root": [
+      9.963111
+    ],
+    "source_overlay:caolan__async.23dbf76a:root": [
+      16.553592
+    ],
+    "source_overlay:coder__code-server.e90504b8:root": [
+      8.299462
+    ],
+    "source_overlay:directus__directus.ac922d18:root": [
+      78.011861
+    ],
+    "source_overlay:emotion-js__emotion.b882bcba:root": [
+      23.544671
+    ],
+    "source_overlay:enzymejs__enzyme.61e1b47c:root": [
+      10.202735
+    ],
+    "source_overlay:fabricjs__fabric.js.6742471c:root": [
+      39.643337
+    ],
+    "source_overlay:foambubble__foam.2cac8162:root": [
+      38.79295
+    ],
+    "source_overlay:foliojs__pdfkit.d0108157:root": [
+      24.396858
+    ],
+    "source_overlay:homebridge__homebridge.3a341e08:root": [
+      4.190178
+    ],
+    "source_overlay:humanlayer__12-factor-agents.d20c7283:packages_walkthroughgen": [
+      33.662305
+    ],
+    "source_overlay:iamkun__dayjs.c8a26460:root": [
+      9.939878
+    ],
+    "source_overlay:jantimon__html-webpack-plugin.9a39db80:root": [
+      7.681868
+    ],
+    "source_overlay:jaredpalmer__formik.91475adb:root": [
+      12.029495
+    ],
+    "source_overlay:josdejong__jsoneditor.0319b213:root": [
+      6.172457
+    ],
+    "source_overlay:josdejong__mathjs.04e6e2d7:root": [
+      24.45876
+    ],
+    "source_overlay:marko-js__marko.24b9402c:root": [
+      266.726539
+    ],
+    "source_overlay:marmelab__react-admin.823caa0b:root": [
+      121.885319
+    ],
+    "source_overlay:mholt__PapaParse.b10b87ef:root": [
+      23.710307
+    ],
+    "source_overlay:microsoft__vscode.4166e90a:root": [
+      248.588763
+    ],
+    "source_overlay:mochajs__mocha.410ce0d2:root": [
+      18.974459
+    ],
+    "source_overlay:necolas__react-native-web.a9de220b:root": [
+      16.608263
+    ],
+    "source_overlay:nestjs__nest.346c9543:root": [
+      47.376016
+    ],
+    "source_overlay:nightwatchjs__nightwatch.54c8550c:root": [
+      26.551107
+    ],
+    "source_overlay:nock__nock.e7418da2:root": [
+      5.533525
+    ],
+    "source_overlay:novnc__noVNC.d44f7e04:root": [
+      7.914463
+    ],
+    "source_overlay:payloadcms__payload.8f660355:root": [
+      205.873875
+    ],
+    "source_overlay:react-hook-form__react-hook-form.3adba2b8:root": [
+      13.869488
+    ],
+    "source_overlay:reactjs__react-transition-group.2989b5b8:root": [
+      3.929588
+    ],
+    "source_overlay:redux-saga__redux-saga.a4ace10d:root": [
+      12.235298
+    ],
+    "source_overlay:refined-github__refined-github.d4a7c3fb:root": [
+      12.859804
+    ],
+    "source_overlay:remy__nodemon.daad5c16:root": [
+      12.597245
+    ],
+    "source_overlay:segmentio__evergreen.9b774aee:root": [
+      30.120652
+    ],
+    "source_overlay:strapi__strapi.e5b87a54:root": [
+      151.994464
+    ],
+    "source_overlay:sveltejs__svelte.6c9717a9:root": [
+      194.41387
+    ],
+    "source_overlay:svg__svgo.c06d8f68:root": [
+      15.276297
+    ],
+    "source_overlay:tinacms__tinacms.dffb104f:root": [
+      47.241255
+    ],
+    "source_overlay:trpc__trpc.2f40ba93:root": [
+      30.258514
+    ],
+    "source_overlay:ueberdosis__tiptap.2d6de06c:root": [
+      48.18394
+    ],
+    "source_overlay:umijs__qiankun.693cdde7:root": [
+      12.905097
+    ],
+    "source_overlay:vitejs__vite.8b47ff76:root": [
+      60.439445
+    ],
+    "source_overlay:voideditor__void.17e7a5b1:root": [
+      245.776511
+    ],
+    "source_overlay:webpack__webpack.24e3c2d2:root": [
+      221.72356
+    ],
+    "source_overlay:websockets__ws.726c3732:root": [
+      3.612976
+    ],
+    "source_overlay:welldone-software__why-did-you-render.3ec3512d:root": [
+      5.731826
+    ],
+    "test_transform_cache:Shopify__draggable.8a1eed57:root:jest:75fa7c4af02e": [
+      1212.481966
+    ],
+    "test_transform_cache:advplyr__audiobookshelf.626596b1:root:mocha:12f5a03dadc2": [
+      1085.347828
+    ],
+    "test_transform_cache:homebridge__homebridge.3a341e08:root:jest:cb88c6110fb6": [
+      1790.880827
+    ],
+    "test_transform_cache:iamkun__dayjs.c8a26460:root:jest:9ed6e5f7fd04": [
+      6548.671915
+    ],
+    "test_transform_cache:josdejong__jsoneditor.0319b213:root:mocha:be56cc981d38": [
+      2111.43726
+    ],
+    "test_transform_cache:nock__nock.e7418da2:root:jest:bf94886cefe6": [
+      668.322496
+    ],
+    "test_transform_cache:sveltejs__svelte.6c9717a9:root:vitest:85b839d59475": [
+      2665.860558
+    ],
+    "test_transform_cache:ueberdosis__tiptap.2d6de06c:root:vitest:85ad102bc603": [
+      3982.47277
+    ],
+    "test_transform_cache:webpack__webpack.24e3c2d2:root:jest:8138d968425d": [
+      2020.378614
     ]
   },
-  "measured_object_count": 4,
+  "measured_object_count": 204,
   "measurement_environment_id": "env:0fd7b54e0a2a55d4208d",
   "measurement_ids": {
+    "build_cache:Effect-TS__effect.5df4da10:root:typescript:3936ee7940b9": [
+      "f99ca30eb7f5438d40a6e61414cc77dc4d685ce6b8acefc694bca7de2274f4c3"
+    ],
+    "build_cache:Shopify__draggable.8a1eed57:root:rollup:75fa7c4af02e": [
+      "786a150b5a951e44a84a6be587321f6737f092a767c177d4e51eb44bc6760936"
+    ],
+    "build_cache:Shopify__draggable.8a1eed57:root:typescript:75fa7c4af02e": [
+      "bb5e70f7b0881f9456a7ee94064f8f61f22bdcebf879ba4301055896ef0f2ded"
+    ],
+    "build_cache:brianc__node-postgres.ecff60dc:root:typescript:f43ed1faaa9b": [
+      "01d84b19590cb246dba540ace6437d6606cf016b715195f318be76851fd7df7b"
+    ],
+    "build_cache:foambubble__foam.2cac8162:root:lerna:2510f8df8165": [
+      "9478740ee1a80a9a9dfee7df6aadab055d6dd981c4b7246666e2b0118d8ded61"
+    ],
+    "build_cache:josdejong__jsoneditor.0319b213:root:gulp:be56cc981d38": [
+      "dff6e8215e40e0958f501e5aac5c1a3c28203e25eb347a420006cf4b11a6a9f3"
+    ],
+    "build_cache:josdejong__mathjs.04e6e2d7:root:gulp:4c7f724eabb4": [
+      "449819dfb572279023afa483835be814e7b5eca2f73863aa134d78c233d19eb9"
+    ],
+    "build_cache:josdejong__mathjs.04e6e2d7:root:typescript:4c7f724eabb4": [
+      "7682f41cc6f032c1cfa01737ada8337188fc9120100b46639fb31e09ff3cbc9d"
+    ],
+    "build_cache:payloadcms__payload.8f660355:root:turbo:096d4a336345": [
+      "267a7f25287aa857a18b4b6660572756e716ffbbb88b16b301d47e0f975f5f70"
+    ],
+    "build_cache:refined-github__refined-github.d4a7c3fb:root:rollup:aa1f302ca640": [
+      "820e9e6fbd602693486f5a5f2f2313549b674d03cc4e0f5adab0e6b3df34e6a9"
+    ],
+    "build_cache:refined-github__refined-github.d4a7c3fb:root:typescript:aa1f302ca640": [
+      "5b84ebcc652dc3ac6d6c07bdcdb36e115b2bb94ae8e90a5bf992cdbde1671f27"
+    ],
+    "build_cache:tinacms__tinacms.dffb104f:root:turbo:765d0508e257": [
+      "8f1428f85c18db6a0bef6855b3b82b3b38705b5b15f6acd345b34370c2039b2f"
+    ],
+    "build_cache:trpc__trpc.2f40ba93:root:turbo:8fa8b4550448": [
+      "a7f01f713985e05a510f4c59161d2e5264b4979efe8afd50e42dcd40e62e8582"
+    ],
+    "build_cache:ueberdosis__tiptap.2d6de06c:root:turbo:85ad102bc603": [
+      "b3a572c9af0d82653f3c0fc4d2ad78a166e17dff515f26d1d0dfe5c38be988a6"
+    ],
+    "build_cache:voideditor__void.17e7a5b1:root:typescript:0426f7949e03": [
+      "67205bbca192a0d386a2fb0fdc67cb002c6e592ac75afe163310d2ecb3a63a39"
+    ],
+    "dependency_view:Effect-TS__effect.5df4da10:root:61e1a82d9173e1a4": [
+      "d128c594ac583f22d4dd0f15c45d3cf1e624a466e93a576231c5364affb88c65"
+    ],
+    "dependency_view:FuelLabs__fuels-ts.b3f37c91:root:471ddc5c5a27de32": [
+      "0c4131cf07b6b1cc594ee97b254bc3255cfc2c015dc7c206d88c33092643e079"
+    ],
+    "dependency_view:NativeScript__NativeScript.3d6a4392:root:085e1f7ccbe42f25": [
+      "18e029eccf500fea8c35e6d645e158899ace1d6eec5137294ba6472d54aea90a"
+    ],
+    "dependency_view:ReactiveX__rxjs.c15b37f8:root:c5fbb2e88b68c3b9": [
+      "bcc6f23b21bd42e5644a122ca7a9122b4b4f2bedc29aa3a4c0e2ed69c8129496"
+    ],
+    "dependency_view:Shopify__draggable.8a1eed57:root:5951b44524aa69b1": [
+      "ae5ccf2a8a573c044ac0b3fb8087e62c458dd9c9cb65ae00256a6f431bb172f0"
+    ],
+    "dependency_view:advplyr__audiobookshelf.626596b1:client:53df8633198c6f33": [
+      "1e88330dbabf2c39db3cfb3fbcfd1d6d1d2f8768029eb9222c27ce867a98a08e"
+    ],
+    "dependency_view:advplyr__audiobookshelf.626596b1:root:671774675e08f64e": [
+      "8448ad088b9b2f97ca0052d06c3a2b94937ea3eacf749101c142fcb971dec250"
+    ],
+    "dependency_view:brianc__node-postgres.ecff60dc:root:ac69cf7675d96f1d": [
+      "809c34cfbe05a5ba704af59a3018494ecfeb5d43470f2bfb7a83a862d0ea8ace"
+    ],
+    "dependency_view:caolan__async.23dbf76a:root:579fe631d378a055": [
+      "11f6ca10b64585ba8c92b0f3f5905f8944156d68007947eb9e572116002e079d"
+    ],
+    "dependency_view:coder__code-server.e90504b8:root:cc86648d271cc663": [
+      "5137408486b94dc2fe7a844c1cd8139efaf80b6b3416f7667ad137f4df3f8aee"
+    ],
+    "dependency_view:fabricjs__fabric.js.6742471c:root:56b6543f933cb2b3": [
+      "d6258bdc55b02bbb550ec9d0206b9904f7eda0cc41ac57a8e201e2e5edfe4f3d"
+    ],
     "dependency_view:foambubble__foam.2cac8162:root:8118db77d559a658": [
       "a6b6a29e6e9efa2d81afafe322aa5cf3fda31af3cd7425e51da1e2460186ac75"
+    ],
+    "dependency_view:homebridge__homebridge.3a341e08:root:5aba58d9ad81636b": [
+      "84929e229399e5738e1ad0b1d5e47fe9bd56c19f12781de43498e5a006a6b154"
+    ],
+    "dependency_view:humanlayer__12-factor-agents.d20c7283:packages_walkthroughgen:231f2c674eecc38e": [
+      "f48b12ed90ef28d00fc71fa1394554eda800254134bbf41dfceedeae9ee4772f"
+    ],
+    "dependency_view:iamkun__dayjs.c8a26460:root:c68f1e093a72eecf": [
+      "1526a23ae81d92791bab9595e8ec1ccb25e9a9a842541b8ac827f82a7e8bfd10"
     ],
     "dependency_view:jaredpalmer__formik.91475adb:root:0ea1f56b0c1e2753": [
       "11eb26d17da0c13063b31f5bded7cd7284da80c36833ba04205632a89aa80be7"
     ],
+    "dependency_view:josdejong__jsoneditor.0319b213:root:fba013e11b2e4bd9": [
+      "4e217295f407dc4e1c0c947527557967287bffe633f7c78667d3063196948424"
+    ],
+    "dependency_view:josdejong__mathjs.04e6e2d7:root:653bb0be0a5e4b8c": [
+      "a6ad04806a2b2449bcc8753a0457b8a123fc129e07a5066c37e44f57cf892fea"
+    ],
+    "dependency_view:microsoft__vscode.4166e90a:root:ebafff009f16e711": [
+      "8a0ec4fd2a5cfdbc93c72fcdf349476e1113050f333ea8d52bfe04765d7e514c"
+    ],
+    "dependency_view:nightwatchjs__nightwatch.54c8550c:root:4a947b8a3bf39687": [
+      "c63c2aadd90dd0f55eaea83405c2bf904185966592e72ca06aeb96692260e4df"
+    ],
+    "dependency_view:nock__nock.e7418da2:root:541f81ce3f744a6f": [
+      "e301ea2ed62f60661d076a495ac7e10dde61efdc2fc7124694955b9d16225e7f"
+    ],
+    "dependency_view:payloadcms__payload.8f660355:root:a2f282bd4e00dd49": [
+      "c484abee6f515d4eb35ec6250555ac4bbecd0b48a659056bceecb60eda2fb0d8"
+    ],
     "dependency_view:redux-saga__redux-saga.a4ace10d:root:c1bcbd93da3b0eeb": [
       "7afd43aa53c97cb64c81b423147108bfc94193a7be687999cf1209dc44deef5d"
     ],
+    "dependency_view:refined-github__refined-github.d4a7c3fb:root:e375b9cbe15b1aee": [
+      "49b5fcfb49004a44645f0959e1b4bdca28df18c71e040da42fa68d660cb557ba"
+    ],
+    "dependency_view:remy__nodemon.daad5c16:root:e2111c2b7033d511": [
+      "16853ef0512536e11a9ae76b2aab2ab6646bf03812f4c311cf9a3c2316a90b67"
+    ],
     "dependency_view:sveltejs__svelte.6c9717a9:root:b0c07bc3f3203c46": [
       "fb2155d5dd63edfa37faff317e1d48dc8321a8eb9389fb0dfc05f5c0f2f570cf"
+    ],
+    "dependency_view:tinacms__tinacms.dffb104f:root:45f79d9b7f2dc887": [
+      "8a53c9f19deb360eebebab34a18eebc732a3b52bd4d0000fe8f235c2af2f8b6b"
+    ],
+    "dependency_view:trpc__trpc.2f40ba93:root:781fb8f3cbe882e8": [
+      "29a2d62fd0c8615e40e995f8b00f54b05bb4bd3af229497ddec3ee64ba18eaca"
+    ],
+    "dependency_view:ueberdosis__tiptap.2d6de06c:root:0bd9814a60fd8695": [
+      "040225e843d188b329036eeb88f393ebbdcc59de9e7685d9b25567c13d3ab6a9"
+    ],
+    "dependency_view:vitejs__vite.8b47ff76:root:7fb655fa88697a9a": [
+      "3959bf0522e520a9e9311cce1d322fddd28e4380cf55d4617cce8e1f99904709"
+    ],
+    "dependency_view:voideditor__void.17e7a5b1:root:6522748bd07c0bd9": [
+      "23138319202ba4e61e392ffc8be33e062b268b5d7227b326c5a5cfe258c5b311"
+    ],
+    "dependency_view:webpack__webpack.24e3c2d2:root:2a4de1074e7ce9a8": [
+      "6227e3ddb212083dceb5d117b4d182ae84169d0b8e4856851eb39daefb93a764"
+    ],
+    "native_binary_bundle:NativeScript__NativeScript.3d6a4392:root:@swc_core:115": [
+      "48abaacbae7b279c9a9bc3982cb8de72680a0dcd18f4ace81897fa224577ccc8"
+    ],
+    "native_binary_bundle:nightwatchjs__nightwatch.54c8550c:root:@swc_core:109": [
+      "3ec13fb52fd6e68f88913c55c022ff28d7fd04b9d04c981603185ad2494dc477"
+    ],
+    "native_binary_bundle:payloadcms__payload.8f660355:root:@swc_core:115": [
+      "2703a345a256f9c19e6ac78a3f9b430f952339a85918efcd0da7c987826c950e"
+    ],
+    "native_binary_bundle:payloadcms__payload.8f660355:root:node-gyp:115": [
+      "a2e4f4c8830cff7a2ddcbc77e77c3ebe0f068cc6f2182cec1262682a4ae21b46"
+    ],
+    "native_binary_bundle:webpack__webpack.24e3c2d2:root:node-gyp:115": [
+      "f9dd9752b032328f5f6f294dde511e4e5d9598bc383dacedbc646d770f07b715"
+    ],
+    "repo_baseline:Automattic__mongoose:5f57a5bbb2e8dfed8d04be47cdd17728633c44c1": [
+      "5211e7a54e145780382cf5e64b99dda6c9aaeb25d31ae900b65fe1dd5c3bdfed"
+    ],
+    "repo_baseline:Effect-TS__effect:5df4da10de444f379a166f4b28721e75100bb838": [
+      "23431e1537ac8bd223dce95f113c57e83906798288a895f6ee1857957f8d1b9d"
+    ],
+    "repo_baseline:FuelLabs__fuels-ts:b3f37c91aca4aa9d5e4c0d3967f66237190826ea": [
+      "69301b3fd4d3808e7a6e80720b49845c783e60d57fd510c7d260f1c3856660d4"
+    ],
+    "repo_baseline:GitbookIO__gitbook:81f8ddcf27ec398a33b6f676a81e9a791b673ce2": [
+      "9f3c1bc8a5a43b259d53ba17eb615843918b37a7d72ef0de6683640d5e22ec53"
+    ],
+    "repo_baseline:NativeScript__NativeScript:3d6a4392f6008e4f43f8f5439a256c50e3707101": [
+      "fbc6a00eadf1688af77b6fc5eb991ada5a4593cf100cf3699ac2ebdc4185163a"
+    ],
+    "repo_baseline:Netflix__falcor:39d64776cf9d87781b2791615dcbae73b2bcd2e1": [
+      "0f3e425adb1adfaccbabbcab2fe422882219da5357b564c4154387b01febbcb2"
+    ],
+    "repo_baseline:OpenCut-app__OpenCut:e84c0cfda6784abb9bcb72aae757233cd8951780": [
+      "883e70f74854e942041c646aaef733645c336e34fdffc2b72dfc1331c85bffb9"
+    ],
+    "repo_baseline:ReactiveX__rxjs:c15b37f81ba5f5abea8c872b0189a70b150df4cb": [
+      "21a360758a148761d19b6c2e1b4c63453df8597e900b707ff5c4298ffafe2a3a"
+    ],
+    "repo_baseline:Redocly__redoc:d41fd46f7cbee86bf83dc17b7ec51baf54f72a54": [
+      "f3f0a49386292141c0be5a0f404d60da1bbbc5cbe9019af6373786dc7406e3fe"
+    ],
+    "repo_baseline:Shopify__draggable:8a1eed57f3ab2dff9371e8ce60fb39ac85871e8d": [
+      "4241a5a17e002c9e0ddfda4680e523ca082c7e21fb09bd38e23e12a092da6fa2"
+    ],
+    "repo_baseline:advplyr__audiobookshelf:626596b192013ba9f5a011dd110e288124c95ebe": [
+      "bca8e2a82328608ade285a66456104743181ed37e7e4edf38983df06890db247"
+    ],
+    "repo_baseline:ajayyy__SponsorBlock:dfddffbc5128dbc55b4dc7c83cdcd18787f48ba4": [
+      "eb51aea3db51434457dfff957fba666c980c7c0ca9455ec3f766d16a6449b67a"
+    ],
+    "repo_baseline:antvis__G6:91c0ac85e4e636a05bd1a3c5e56a4928d1242a9b": [
+      "997ff32cdc670907ed2dc1d1a5168abb318c811a608e77a9fe4fce9e3b4ba8ff"
+    ],
+    "repo_baseline:axios__axios:ef36347fb559383b04c755b07f1a8d11897fab7f": [
+      "03aaf9debea92b9c49ca3636a0cf8cbae6293464fd9405736eff3bec8878aee2"
+    ],
+    "repo_baseline:babel__babel:2ea3fc8f9b33a911840f17fbc407e7bfae2ed66f": [
+      "04a1588c6738574cecb051bd6d0932644bda345f591c204b94c39534b545a8a5"
+    ],
+    "repo_baseline:balderdashy__sails:ffebacc58c27f878c9373702bc3a3f91a02bca0c": [
+      "494ea6f667841c3d7657f2b2764f4bafe4a905835a9d6702332c5c9516c226dd"
+    ],
+    "repo_baseline:bluesky-social__social-app:cbd48c855a57f1a294f4b7362eaadb505bf5f9f6": [
+      "8269a9bee03cbf89f07cc2c64fb91d616e60999bb64cef7b2f2d220fc3b9742a"
+    ],
+    "repo_baseline:bootstrap-vue__bootstrap-vue:9a246f45fc813f161df291fc7d6197febf8afaf4": [
+      "365f83e8ba4d4dfdd626dce4aeb5bd96070f4fae77458fdc7d429217e46e13a2"
+    ],
+    "repo_baseline:bpampuch__pdfmake:719e73140cce75a792f7f419c27fc33a230e73d2": [
+      "3652af46dfb18fbd6f60e4203543e9866944c4644364b32533af0c98ccaf5cce"
+    ],
+    "repo_baseline:brianc__node-postgres:ecff60dc8aa0bd1ad5ea8f4623af0756a86dc110": [
+      "5e0b43ad73b6c1bfc4a2e03be9eb71224fa7b158279b1c94b3206821eba74948"
+    ],
+    "repo_baseline:caolan__async:23dbf76aeb04c7c3dd56276115b277e3fa9dd5cc": [
+      "ff2d489c99ea4680a3c93d42eef895a1fec9a2ddcbd40277efe87c02cac25176"
+    ],
+    "repo_baseline:coder__code-server:e90504b8cf1d73c36d902bbaaec7bab33f15c42e": [
+      "4fbcc9b305cda9d7f60e962e7772f82bee7c126f47df6cb38b14e0ac112103b7"
+    ],
+    "repo_baseline:directus__directus:ac922d18f6039582a18737a6dc6d1d9a08a194e8": [
+      "ba6dfe5dac716ee1d5325228db09f3387ce3ff2a01f0b2661e9c0a2d96d2b610"
+    ],
+    "repo_baseline:emotion-js__emotion:b882bcba85132554992e4bd49e94c95939bbf810": [
+      "27eaf15d2c3bb567ea9829d3d6241316a9131b234a619779d0850b6ca7dce2cb"
+    ],
+    "repo_baseline:enzymejs__enzyme:61e1b47c4bdc4509b2ac286c0d3ae3df172d26f0": [
+      "576e4664accadbbbf9032ec27d5ad0ce32ef6a36439933d7806a7596f3920683"
+    ],
+    "repo_baseline:fabricjs__fabric.js:6742471c23e5fd8afbb1282246b4b785455c8c17": [
+      "86335207f262135546f5927b85ea050775bbf4e277729839c40d78fa630c7ebd"
+    ],
+    "repo_baseline:foambubble__foam:2cac816272157f3a964b30adf4f29c0b2973cce8": [
+      "44617c173c6e06a401d4800de59152d045f2980fac2f23fa1f7856bc09c52f67"
+    ],
+    "repo_baseline:foliojs__pdfkit:d0108157f13d763ad5287a2293436b5a1aecf055": [
+      "07612bf388de545745b82005e1d5a8857f4771b63defba770a2f93a8ca1b6a88"
+    ],
+    "repo_baseline:homebridge__homebridge:3a341e0838c99abfdf7a2d76e5e1e2a2af7ccb09": [
+      "44acaad7d082b54c534a8969e200741b1fee5782868bda5d88c2ee05cc75a586"
+    ],
+    "repo_baseline:humanlayer__12-factor-agents:d20c728368bf9c189d6d7aab704744decb6ec0cc": [
+      "324368074a6c44042a4e5cad413d082bf20b3dd21acdf5581b8f4d5f246a252b"
+    ],
+    "repo_baseline:iamkun__dayjs:c8a26460d89a2ee9a7d3b9cafa124ea856ee883f": [
+      "b2750b7c864dcd4499948cd70b4cf3c06d26800ca6509774f46b6faa2b131340"
+    ],
+    "repo_baseline:jantimon__html-webpack-plugin:9a39db807c09d8e6145e5047cfe2ec5e928e1dee": [
+      "d8b4ae30e2c981ee3e98e0d4d1f434de5ac88aa8cbe95659d95b102564413153"
+    ],
+    "repo_baseline:jaredpalmer__formik:91475adbf33579561e580eceea0c031f4ec2e992": [
+      "b7a256b3715ed863286c4da6544cad27d9f86fac309fbc9e2d311c90363874a4"
+    ],
+    "repo_baseline:josdejong__jsoneditor:0319b2131df47f1220d74e3ff174d5c02973ec7d": [
+      "9ecf25931d4045e97a7b32df691053d2ceae4e5d5625167bf646fe01ab8f16f0"
+    ],
+    "repo_baseline:josdejong__mathjs:04e6e2d7a949d6ddc7d7139bf1e3a88e6fe5365b": [
+      "15b150f0d3e4b00de8599105b0a671d650e97a0079edd0663b99a8438a8ed9f5"
+    ],
+    "repo_baseline:marko-js__marko:24b9402cd54c3a74f200da0f79dd19350995a9ba": [
+      "399f4fa7ce215bd5440e11636008f2e55a9c6c39980c1d74f6241a2778d64a1f"
+    ],
+    "repo_baseline:marmelab__react-admin:823caa0b6489fc8133685525e22d30ddf57643fa": [
+      "6597c1af4cf8fbd60d1ba45663b045a5a5bd43b6084cbb54db58ac93374e0992"
+    ],
+    "repo_baseline:mholt__PapaParse:b10b87ef8686c6f88299b50dd25e83606e9c36d4": [
+      "ba1b77883210a0c9c683080cd24867ba726c088a11e5d47bb2fe42780fff2771"
+    ],
+    "repo_baseline:microsoft__vscode:4166e90ac290db7f77800a4f6702903ea4eed476": [
+      "a07451316701a869e9ba554b436ef7ace3b4b5020dd562dd4d6c46af35dff706"
+    ],
+    "repo_baseline:mochajs__mocha:410ce0d2a0f799aaca2c0bc627294d70c62dd3f4": [
+      "d737dd735e15c939037df619ed1c45e71f11f9c52167d45fa47f27092edb3008"
+    ],
+    "repo_baseline:necolas__react-native-web:a9de220ba9e65bdea540fb5322ffb1da2b0bf442": [
+      "f723949485a1c1b36c0766b3c4049d96f2ce47b71cacd788185e8b735ba4dd2a"
+    ],
+    "repo_baseline:nestjs__nest:346c9543120c692f314bdbf55fc9956d2fa6d87e": [
+      "d203c18d5c577a2ef89f7aa64ca6cce864d80cbb9dac94d317d6dadcf025f041"
+    ],
+    "repo_baseline:nightwatchjs__nightwatch:54c8550c75a16c61827c0bad043c7ffa073a52e6": [
+      "1357099863b5f60e59a4a0d990ea3bde15581986caae557ebb318f7f8c51a342"
+    ],
+    "repo_baseline:nock__nock:e7418da29feb4a7bf0aa1612bfb9d32a4051651e": [
+      "77bb740295c3d66f47d40e29eaff3a20f57b650e5dea0efe660e36736b5d8714"
+    ],
+    "repo_baseline:novnc__noVNC:d44f7e04fc456844836c7c5ac911d0f4e8dd06e6": [
+      "d2a407fed59773881cd5ee512d28ec2a6db1d61dcdc52f5dd91e4d6c8abeb787"
+    ],
+    "repo_baseline:payloadcms__payload:8f66035522f568d42098a7ad525e7bf700662b9a": [
+      "896ef745fc208a6dacb6aff3936d0a6fac6bcf4290a5ff8036c4a5e2be3b2df1"
+    ],
+    "repo_baseline:react-hook-form__react-hook-form:3adba2b816dd50bbca460bbe61df64b50bc6b1da": [
+      "9a059fe92edf188802e2b620cf243a8e0e1a925750356a89037dbe703af75cef"
+    ],
+    "repo_baseline:reactjs__react-transition-group:2989b5b87b4b4d1001f21c8efa503049ffb4fe8d": [
+      "acd78e451f62925018267c64f15c91a0ff9c03ee00e7aa6edc08b4dad57874d5"
+    ],
+    "repo_baseline:redux-saga__redux-saga:a4ace10dc3ff182828cd3ee7469f6667e08ceb62": [
+      "cdec8e9411414e3f1fc6d9c541953d16679cfaafc31059115e92e0ef29a2ab65"
+    ],
+    "repo_baseline:refined-github__refined-github:d4a7c3fbfebff5f39a3760effbea7273dea0d01c": [
+      "5fdd8ec255105fb934daf1c9516e810cd4c5b36135cc12a5d9bdac35884c8801"
+    ],
+    "repo_baseline:remy__nodemon:daad5c162919fa6abff53be16832bdf55f2204ad": [
+      "849d748a38e6195cf5f4d80835eeb68dabddddba2f47ff7382c3e0175b043c49"
+    ],
+    "repo_baseline:segmentio__evergreen:9b774aee2d794f6cf2f73a054bd33066ca5898a9": [
+      "bed6c250956359f552db655ca889cfa59d7d8d91a6d0d4e47dabda2b204c216d"
+    ],
+    "repo_baseline:strapi__strapi:e5b87a54008c9de2b3286a4774635dcf69895d9b": [
+      "0e8f898d4388bcae712281fe1f3ad8fda93c2ba24802ca2685bfd745f8abfbe4"
+    ],
+    "repo_baseline:sveltejs__svelte:6c9717a91f2f6ae10641d1cf502ba13d227fbe45": [
+      "236fb21eae094694c7d9bfdef25244c93541a37c720debfb8da27c1cd21fb6d4"
+    ],
+    "repo_baseline:svg__svgo:c06d8f6899788defae9594537063c2f4307803e4": [
+      "3a60308739ae899ac6e4d3d151400f9bd5034190fb460223f9587ff69ff6f9a3"
+    ],
+    "repo_baseline:tinacms__tinacms:dffb104f1850cabc15f495a5868a33a66295965a": [
+      "e9dd458142f693a4186fb38ddc96adc3cb42f6bf6fbc2e992f0ce16753347fd1"
+    ],
+    "repo_baseline:trpc__trpc:2f40ba935ad7f7d29eec3f9c45d353450b43e852": [
+      "3b5bc33de61bebb1083fd4b8b26dd8f44f5f0bf0e9a36fdf6544c91a3c3146e5"
+    ],
+    "repo_baseline:ueberdosis__tiptap:2d6de06c34c239e78fedd6bd2a0bcea42d0fdbfa": [
+      "5946f1e57ca7a3aa7c5cebb2e5a8f1bdd896672052e8d675153d77eaf65765cb"
+    ],
+    "repo_baseline:umijs__qiankun:693cdde75049830820ff9490dd267f9701db25e6": [
+      "777369feadabaa16520ca92b96d4ccbda42488892c6a3bcbf0d48c44a2235664"
+    ],
+    "repo_baseline:vitejs__vite:8b47ff76d28630b4dc39c77fbd2762b4c36ad23d": [
+      "4398e4fd3adcdd68906b463e125fbe1a8276219453b644bbdcc82ce5141abd53"
+    ],
+    "repo_baseline:voideditor__void:17e7a5b1524345b19ab4ee38ec4f9b1b75a1bd00": [
+      "2308fdfbd0f1e5313306c1e03cd530331a165b81aec93b8a44261bcbaeab4ea5"
+    ],
+    "repo_baseline:webpack__webpack:24e3c2d2c9f8c6d60810302b2ea70ed86e2863dc": [
+      "80f6ce485d5cceb59acbc4e3b4c9079a39d536c53875d93a1a92d74356a0848e"
+    ],
+    "repo_baseline:websockets__ws:726c3732b3e5319219ed73cac4826fd36917e2e1": [
+      "790ac1e3034d2f7118783771d990e459bc7aac3a55060c5b4a7004f74c37f2b1"
+    ],
+    "repo_baseline:welldone-software__why-did-you-render:3ec3512d750c49448fe2241e26d05db9e42f0c21": [
+      "5835b36030e2f2131ba4280e5c73a7aad38a417270918a4d8fa5d355374a6632"
+    ],
+    "rootfs:node_18": [
+      "470e5ced494e8568dc11a56a55874fc5e6bf9202777275b2199a2ef19d4fe05b"
+    ],
+    "rootfs:node_18-bullseye": [
+      "6dbd86fe32d8aaa086d7321db015f6d9567f589c40dbb9850074765b63b45410"
+    ],
+    "rootfs:node_18-bullseye-slim": [
+      "39583b4a7f76c3e584b506050bab462e25b32d78502615d7f57e2b46e395d77f"
+    ],
+    "rootfs:node_18-slim": [
+      "963b7d656e12e2bcbca5f8b2c8fd228a923c21843c8b294414a617bb6e18a35e"
+    ],
+    "rootfs:node_20": [
+      "417d46e44bd4b77054cb65b2eb19ec51408b76b9f2a2f84fdc18341487fd74cf"
+    ],
+    "rootfs:node_20-bookworm": [
+      "1874c14be0e00fcb6d08de0f0882d35c10d12c6512e9018ba9da0b6103734c0c"
+    ],
+    "rootfs:node_20-bullseye": [
+      "c69fb32350baee94d834aba5125108fd3479fd30524fbbecca52b07635813117"
+    ],
+    "rootfs:node_20-bullseye-slim": [
+      "5915ea7421ce8f01656cc98be4049f55b944a0b50098f9db06783c3e12e06666"
+    ],
+    "rootfs:node_20-slim": [
+      "ff2a56a4c1c55cb4b8e9561756bdf6e8119d87f5e481af8139ea175748b15c6e"
+    ],
+    "rootfs:node_22": [
+      "b9a7c5b5dd394d1083d8c038ab16f85f5e824ea9c88d7aa63f56e184175614c2"
+    ],
+    "rootfs:node_22-bookworm": [
+      "986b6cfc91b73428ea15cbd3a5c4d5cc6de9f67132d52d9a05f1038ad6f97831"
+    ],
+    "rootfs:node_22-bookworm-slim": [
+      "d0288a061fa85339ce1a9ce508b2a2926f17c38eb7a7de16612dc1f9ed239c81"
+    ],
+    "rootfs:node_22-bullseye-slim": [
+      "f664d2b702f943c39cdc8299d6e39645ae64fa3c3bccdc70eef17ce396b82d30"
+    ],
+    "rootfs:node_22-slim": [
+      "0cb34b57b36597d60e76bbcf2655116ff1a97f62a7a1c3d21b0622373da4f39d"
+    ],
+    "source_overlay:Automattic__mongoose.5f57a5bb:root": [
+      "083e5f062b82c9c8a4607d6023f9467f246790e607ffbed09e0bc0e812b710d5"
+    ],
+    "source_overlay:Effect-TS__effect.5df4da10:root": [
+      "fce68e3f08a7af035ae528b006498e04e8ac031256f3eee7f9da8741841e70af"
+    ],
+    "source_overlay:FuelLabs__fuels-ts.b3f37c91:root": [
+      "892a45f1bc9f7477b56e079f34be7b527f46cdb3f1f17d9f8422ff83d3ce30dd"
+    ],
+    "source_overlay:GitbookIO__gitbook.81f8ddcf:root": [
+      "0c0943ff0ea946c3b6009b8ea8832d5d13ba456705d3e9290deb9df4b2efa459"
+    ],
+    "source_overlay:NativeScript__NativeScript.3d6a4392:root": [
+      "cb66301aad0748fd896f0f063ba893f16e7209853db50dc633f5cb34c0c88759"
+    ],
+    "source_overlay:Netflix__falcor.39d64776:root": [
+      "2c433e354280b41c3da5e6270424dadc4d6f0d9c4da0f8da9bf2d520774b4ebb"
+    ],
+    "source_overlay:OpenCut-app__OpenCut.e84c0cfd:root": [
+      "42c7f11eda580568286142ed23902445b7ab06972679e762fe04e749ff5776e0"
+    ],
+    "source_overlay:ReactiveX__rxjs.c15b37f8:root": [
+      "9956e086ea664dc4f70c56063bc47a2e9196c08b97abaa85bbd0f9aee7f94f96"
+    ],
+    "source_overlay:Redocly__redoc.d41fd46f:root": [
+      "e539a6f1e6a77f6966173b98836b38a1962a8a7ce3bf0a91a085677e20682c45"
+    ],
+    "source_overlay:Shopify__draggable.8a1eed57:root": [
+      "25fc801faae68777d40d514a1fe94e7c3b0542a86cae5f9a2fe8616dac5c1301"
+    ],
+    "source_overlay:advplyr__audiobookshelf.626596b1:client": [
+      "8f4c7e4d4c1bc05d718d21bb7dcf0c020bedbb55c2c9244b2297e2f3480671e4"
+    ],
+    "source_overlay:advplyr__audiobookshelf.626596b1:root": [
+      "5868229a412b3f7deeda171341b08b4646546495c1fbaf443899ff699550b682"
+    ],
+    "source_overlay:ajayyy__SponsorBlock.dfddffbc:root": [
+      "cc86e8d31836f0e20909987c138f9d44a65a8ffa6269975138cc3497a79a12ec"
+    ],
+    "source_overlay:antvis__G6.91c0ac85:root": [
+      "94264586593549977c7edf7aef81f27868a29a0445d63dd57ffcea2051b0e449"
+    ],
+    "source_overlay:axios__axios.ef36347f:root": [
+      "3f5a5d905f4aa920c4c3122c84a29935a337de77d25995c929610a64a7c24690"
+    ],
+    "source_overlay:babel__babel.2ea3fc8f:root": [
+      "40e431450dabb677598e2b8ff19d6990ed4719ec95090c2e898c67c9d14c816f"
+    ],
+    "source_overlay:balderdashy__sails.ffebacc5:root": [
+      "8a13fbfc95cdf6cdf111c539f2a7fed06e9ab8eed830dd030de40419b790b227"
+    ],
+    "source_overlay:bluesky-social__social-app.cbd48c85:root": [
+      "533d7c6e7265b8ece1a347da2cba4328c4780a60690d0adb1c52d89a54f002d5"
+    ],
+    "source_overlay:bootstrap-vue__bootstrap-vue.9a246f45:root": [
+      "2d75fc45b86c1b98460fd38c320944a573ec0b78628eee8141adea1dd671fe8a"
+    ],
+    "source_overlay:bpampuch__pdfmake.719e7314:root": [
+      "70d22dc80dcb16fbef2d33d84ba7d4780fe8ec6d38afaf3a221d6556b722c02f"
+    ],
+    "source_overlay:brianc__node-postgres.ecff60dc:root": [
+      "011d902405b032d34a31feeb574a475efdbf622c0e208c64cce7650a6360d77d"
+    ],
+    "source_overlay:caolan__async.23dbf76a:root": [
+      "8725d23b3797dc51ea71340a959e20c8ee59ed8b35893277e8e1e6e63bd6b9c7"
+    ],
+    "source_overlay:coder__code-server.e90504b8:root": [
+      "5781dc5cceac3ac5a5af1f46bef7a7a0378b08b42f52c47b256ca0aa3a1d12b9"
+    ],
+    "source_overlay:directus__directus.ac922d18:root": [
+      "8e3b529f25445188219813edb9563686a41e62ada09ef4c67ef356de279ce9bf"
+    ],
+    "source_overlay:emotion-js__emotion.b882bcba:root": [
+      "ef5ec3333d172f60589aa9a9e2269d0c484a0c87065c3ef396aaee767193b88b"
+    ],
+    "source_overlay:enzymejs__enzyme.61e1b47c:root": [
+      "30515274f43a110d966010ebe859f2b2626973a952d00b62fd3716b57094877b"
+    ],
+    "source_overlay:fabricjs__fabric.js.6742471c:root": [
+      "7acfeac77c86409269c2b30e70c4dc2d65c3c787873d33dc07de181bf9a5a0e6"
+    ],
+    "source_overlay:foambubble__foam.2cac8162:root": [
+      "6c7430005d353752da6314382dfb7121f954787602f6ed6638fb316b5ad20eb4"
+    ],
+    "source_overlay:foliojs__pdfkit.d0108157:root": [
+      "3d5597e2a6b7489f69b9048b1a4350ba6d3bb36c7d4a06396004b98c6e54769e"
+    ],
+    "source_overlay:homebridge__homebridge.3a341e08:root": [
+      "65f402b84ff1be6aeb78feac274992e7aa51cb7443677eab5688c24f8a818097"
+    ],
+    "source_overlay:humanlayer__12-factor-agents.d20c7283:packages_walkthroughgen": [
+      "16e4edcba08098fcad0c84b241699b9f524f7ff0dd308df4c904d5999be98689"
+    ],
+    "source_overlay:iamkun__dayjs.c8a26460:root": [
+      "5a12bb0feb33f3d1bdfbafece159755b42313fb30c4132cbbab8ba3c32428f57"
+    ],
+    "source_overlay:jantimon__html-webpack-plugin.9a39db80:root": [
+      "e7b6b3acfd9279ba981d675adf140e34886789a23a778a85667d2d4e41a006d6"
+    ],
+    "source_overlay:jaredpalmer__formik.91475adb:root": [
+      "ad735cb0c5a8c56ef70b2dcd657a0842d53bcd6dd849c1c2a70299a5ee3bd59c"
+    ],
+    "source_overlay:josdejong__jsoneditor.0319b213:root": [
+      "65d39d53956b664ff32bd9765cb08fe72c0b3f11d333d33f276d649b3027f2f3"
+    ],
+    "source_overlay:josdejong__mathjs.04e6e2d7:root": [
+      "e688a90eabd4583796195a056af8207a35400c42b07e75eacfc846c5ab71ec39"
+    ],
+    "source_overlay:marko-js__marko.24b9402c:root": [
+      "c1b18b0e168bd06fe896a844c63365499395d936fcd94c2d7e74d7614afd0e81"
+    ],
+    "source_overlay:marmelab__react-admin.823caa0b:root": [
+      "98c0c8c0dfd7e3bbdbc89f2bd3c2f7bf32bd1672899c0e837c509848e254e41d"
+    ],
+    "source_overlay:mholt__PapaParse.b10b87ef:root": [
+      "bc74239835cd6d68d60eb77f21daf22efda57369cbf0c994cc24b640728e46c7"
+    ],
+    "source_overlay:microsoft__vscode.4166e90a:root": [
+      "6c7f0051dfbdd0c33147254808d5988ca6dd5d94fa71d1190eb2bb68d8229603"
+    ],
+    "source_overlay:mochajs__mocha.410ce0d2:root": [
+      "e798fbab78197db358df557063d5839e76fabc46c792064b2adace60a011c9a0"
+    ],
+    "source_overlay:necolas__react-native-web.a9de220b:root": [
+      "1a0daa18f78f62b36e362633ed0a12ce483b2f06fda9608f1721dc82edf477de"
+    ],
+    "source_overlay:nestjs__nest.346c9543:root": [
+      "adab5fde5d45f4f3f80dd3b493b68f4c3531150bdd392c70febe897dd75737cd"
+    ],
+    "source_overlay:nightwatchjs__nightwatch.54c8550c:root": [
+      "bb04855d25655e0d9db5eec6086e834a9564b408b846b8864a0ed9482f0a8420"
+    ],
+    "source_overlay:nock__nock.e7418da2:root": [
+      "8f2c954507abe62971045b6e6d3c9ba4606060936f815e9cdaa4d71c444f86de"
+    ],
+    "source_overlay:novnc__noVNC.d44f7e04:root": [
+      "0bc0e182ea9d921abd58c81b2658cbbea52005146695946a98d1063513f7d21f"
+    ],
+    "source_overlay:payloadcms__payload.8f660355:root": [
+      "2017db6fd6e1f6fc1b3edd9f4ae22833ae4a91f94d319b1091cebf80c572ed02"
+    ],
+    "source_overlay:react-hook-form__react-hook-form.3adba2b8:root": [
+      "89fb8b51a2c5b5174e5ea6d33c4145a0b4d68f2c5ad5196a356ecc2deff94468"
+    ],
+    "source_overlay:reactjs__react-transition-group.2989b5b8:root": [
+      "0acea547c62842196da60e377d6bed8d1c173fc458f252361260c5cc03f58541"
+    ],
+    "source_overlay:redux-saga__redux-saga.a4ace10d:root": [
+      "831ff274346961ab957c6e9b1a193ac5c2736f807723bc8b7d4308dfa5413532"
+    ],
+    "source_overlay:refined-github__refined-github.d4a7c3fb:root": [
+      "6354da33128be9588489d3f3efe531b25dd342a2ccf3ef0003d601ac8849dee1"
+    ],
+    "source_overlay:remy__nodemon.daad5c16:root": [
+      "17faa587c76cc7d713cb24b5ae3cc13fef47609e757361212a0f94b2a5d103a9"
+    ],
+    "source_overlay:segmentio__evergreen.9b774aee:root": [
+      "31dc587523e103ed367966147c60454d80c215dc6fb5a22e0e6541caa6bfeeba"
+    ],
+    "source_overlay:strapi__strapi.e5b87a54:root": [
+      "467bd956ddbc7531563a5b44bf881508ff6e0244409110aba2c1a6682b0cbabc"
+    ],
+    "source_overlay:sveltejs__svelte.6c9717a9:root": [
+      "b5e7787532435e1cccc2ec29ab3d83109b5a9f5753576879115488cf93681537"
+    ],
+    "source_overlay:svg__svgo.c06d8f68:root": [
+      "4b4e320e6dbe75fbb9c190c264767b80a7d5196b6d4789d000db8a6e40c0b65c"
+    ],
+    "source_overlay:tinacms__tinacms.dffb104f:root": [
+      "fed26b65671b3a8fb23fe5b780eb3e74ede15623caac83ddd7fea914260c1d2f"
+    ],
+    "source_overlay:trpc__trpc.2f40ba93:root": [
+      "62d14227353cc1d6bbe51f779ac73bd3f09474747ef2743a63ba8095f5b2a0ec"
+    ],
+    "source_overlay:ueberdosis__tiptap.2d6de06c:root": [
+      "20983c2b431495483de496a8849820cc6e4d00918e51b1e982628c31ab16dabc"
+    ],
+    "source_overlay:umijs__qiankun.693cdde7:root": [
+      "8abb31443d8d65be22fb522514d8759d096e2800b0d66dfd6b3a8c6e3e624a8a"
+    ],
+    "source_overlay:vitejs__vite.8b47ff76:root": [
+      "8ee1ba174e6ea79b0123e5799d8fbe49072824ce030ffd60e021f643dd0579e8"
+    ],
+    "source_overlay:voideditor__void.17e7a5b1:root": [
+      "797d019c126da782ebe6cd0c612048601dbbafd9e68e8e45a77118d24a5aa2ef"
+    ],
+    "source_overlay:webpack__webpack.24e3c2d2:root": [
+      "33594a5a2e989cd4fbae9850854c4c57596377c519c9c7581b6006b6220a3e54"
+    ],
+    "source_overlay:websockets__ws.726c3732:root": [
+      "bc03d486a0bb0fa6d65811c0fbfb3ae3952bc75e8e2dd149d2efdf759ddf87cd"
+    ],
+    "source_overlay:welldone-software__why-did-you-render.3ec3512d:root": [
+      "8f9e93f42e2ff12dea3436f70abc0e20e124376e7d0518597ac871f002e0defd"
+    ],
+    "test_transform_cache:Shopify__draggable.8a1eed57:root:jest:75fa7c4af02e": [
+      "8d15e264d90d3693bf4f056aa77b83e0eec399de0f12d92a086758b2078b47de"
+    ],
+    "test_transform_cache:advplyr__audiobookshelf.626596b1:root:mocha:12f5a03dadc2": [
+      "09cd00bb17ad36ff3a7d67a5f937260fbc83c4eb4afe3810ef32266633e323d4"
+    ],
+    "test_transform_cache:homebridge__homebridge.3a341e08:root:jest:cb88c6110fb6": [
+      "6f99a0780e9e9d5ac953d484dba1ce3c8bc7c9a8337d6f84467c7672abd9e3b6"
+    ],
+    "test_transform_cache:iamkun__dayjs.c8a26460:root:jest:9ed6e5f7fd04": [
+      "31ab02eecbd94e6e05e43db79daaf4cd4a5a71dde7f080524c76fff0d1f90a2f"
+    ],
+    "test_transform_cache:josdejong__jsoneditor.0319b213:root:mocha:be56cc981d38": [
+      "26697a182e1d922fa3de5938b0d879384fcc1ae5307938fe6da44ff0a2c0517c"
+    ],
+    "test_transform_cache:nock__nock.e7418da2:root:jest:bf94886cefe6": [
+      "a65ef6381e45079d241d6303d3a98ff020c3ae97992c238ce09d8f2591cd7b22"
+    ],
+    "test_transform_cache:sveltejs__svelte.6c9717a9:root:vitest:85b839d59475": [
+      "fcf32f8c0a9699fa72061e7cf525527c007fa36e41ff5c4bd3d1cbb56f0cdf4f"
+    ],
+    "test_transform_cache:ueberdosis__tiptap.2d6de06c:root:vitest:85ad102bc603": [
+      "e2c3251fbfa03e59fe10e5f26cf2e12f51f89b756d55ac783419be2ce2a2400c"
+    ],
+    "test_transform_cache:webpack__webpack.24e3c2d2:root:jest:8138d968425d": [
+      "2ece54d60eb4199da379aec76d90f6160df7ede2a80e471923866f5988a2619d"
     ]
   },
   "missing_value_semantics": "missing means unmeasured or not uniquely defined, never zero",
@@ -102,38 +4102,37 @@
     "browser_context": 3,
     "browser_process": 3,
     "browser_profile": 3,
-    "build_cache": 97,
+    "build_cache": 82,
     "contention": 10,
     "control_plane": 12,
     "database_binary": 5,
     "database_clean_snapshot": 5,
     "database_daemon": 4,
     "database_private_layer": 5,
-    "dependency_view": 86,
+    "dependency_view": 58,
     "discovery_resolution": 18,
     "display_service": 3,
     "failure_recovery": 12,
     "filesystem_overlay": 1,
     "home_tmp_xdg": 2,
     "local_registry": 9,
-    "native_binary_bundle": 22,
+    "native_binary_bundle": 17,
     "network_ports": 1,
     "node_runtime": 7,
     "package_manager": 24,
     "pm_native_cache": 24,
     "project_server": 3,
     "raw_cas": 32502,
-    "repo_baseline": 64,
-    "rootfs": 16,
-    "source_overlay": 77,
+    "rootfs": 2,
+    "source_overlay": 12,
     "system_toolchain": 1,
     "task_harness": 1,
-    "test_transform_cache": 80
+    "test_transform_cache": 71
   },
-  "unmeasured_object_count": 33110,
+  "unmeasured_object_count": 32910,
   "window_order": "oldest_to_newest",
   "window_policy": "append one median for each new measurement batch and evict the oldest value with FIFO when full",
   "window_size": 5,
-  "window_value_count": 4,
+  "window_value_count": 204,
   "zero_state": "the object is absent, not running, or not materialized"
 }
