@@ -8,6 +8,7 @@ from pathlib import Path
 from . import __version__
 from .catalog import GROUP_BY_PREFIX, catalog_by_id, load_catalog
 from .context import RunContext
+from .exact_workload import run_exact_workload
 from .inventory import build_inventory
 from .reporting import DEFAULT_DIRECT_MS_WINDOW_SIZE, generate_reports
 from .runners import run_specs
@@ -44,8 +45,12 @@ def build_parser() -> argparse.ArgumentParser:
     run_transition.add_argument("benchmark_id")
     run_transition.add_argument("--from", dest="from_object_id")
     run_transition.add_argument("--to", dest="to_object_id")
+    exact = subparsers.add_parser("run-exact-workload")
+    exact.add_argument("--inventory", type=Path, default=repo / "out" / "inventory.json")
+    exact.add_argument("--gaps", type=Path, default=repo.parent / "experiment_result" / "phase2" / "unmeasured_objects.json")
+    exact.add_argument("--exact-out", type=Path, default=repo / "out" / "exact-workload")
     report = subparsers.add_parser("report")
-    for command_parser in (run, run_all, run_one, run_transition):
+    for command_parser in (run, run_all, run_one, run_transition, exact):
         command_parser.add_argument("--samples", type=int, default=7)
         command_parser.add_argument("--warmups", type=int, default=2)
         command_parser.add_argument("--force", action="store_true")
@@ -73,6 +78,19 @@ def main(argv: list[str] | None = None) -> int:
     write_json(args.out / "benchmarks" / "registry.json", [item.to_dict() for item in catalog])
     inventory = _ensure_inventory(args)
     environment = environment_record(repo)
+    if args.command == "run-exact-workload":
+        result = run_exact_workload(
+            inventory_path=args.inventory.resolve(),
+            gap_path=args.gaps.resolve(),
+            ctdp_out=args.ctdp_out.resolve(),
+            output=args.exact_out.resolve(),
+            environment=environment,
+            samples=args.samples,
+            warmups=args.warmups,
+            force=args.force,
+        )
+        print(json.dumps(result, indent=2, sort_keys=True))
+        return 0
     if args.command == "inventory":
         print(json.dumps({"catalog_count": len(catalog), "profile_coverage": f"{inventory['profile_coverage_count']}/{inventory['profile_input_count']}", "object_count": len(inventory["objects"])}, indent=2))
         return 0

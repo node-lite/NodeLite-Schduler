@@ -1,0 +1,16 @@
+{
+  "docker": null,
+  "mount": "/usr/bin/mount",
+  "source_download": {
+    "attempted": true,
+    "available": false,
+    "command": [
+      "git",
+      "ls-remote",
+      "https://github.com/Automattic/mongoose.git",
+      "HEAD"
+    ],
+    "error": "fatal: unable to access 'https://github.com/Automattic/mongoose.git/': Could not resolve host: github.com",
+    "exit_code": 128
+  }
+}

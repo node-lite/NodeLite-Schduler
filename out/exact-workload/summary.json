@@ -1,0 +1,44 @@
+{
+  "accounted_count": 380,
+  "direct_ms_object_count": 4,
+  "measurement_environment_id": "env:0fd7b54e0a2a55d4208d",
+  "observation_count": 84,
+  "samples": 7,
+  "schema_version": 1,
+  "status_counts": {
+    "blocked": 363,
+    "manual_review": 13,
+    "measured": 4
+  },
+  "status_counts_by_resource_kind": {
+    "build_cache": {
+      "blocked": 85
+    },
+    "dependency_view": {
+      "blocked": 48,
+      "manual_review": 12,
+      "measured": 4
+    },
+    "native_binary_bundle": {
+      "blocked": 16
+    },
+    "node_runtime": {
+      "manual_review": 1
+    },
+    "repo_baseline": {
+      "blocked": 64
+    },
+    "rootfs": {
+      "blocked": 15
+    },
+    "source_overlay": {
+      "blocked": 65
+    },
+    "test_transform_cache": {
+      "blocked": 70
+    }
+  },
+  "target_count": 380,
+  "transition_summary_count": 12,
+  "warmups": 2
+}

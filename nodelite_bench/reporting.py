@@ -25,6 +25,7 @@ SUMMARY_FIELDS = [
     "success_count",
     "failure_count",
     "timeout_count",
+    "measurement_environment_id",
     "workload_origin",
     "benchmark_id",
     "from_object_id",
@@ -169,7 +170,8 @@ def build_matrix(summaries: list[dict[str, Any]]) -> dict[str, Any]:
 
 ZERO_START_BENCHMARKS_BY_KIND = {
     "database_private_layer": {"DBS-007"},
-    "dependency_view": {"DEP-001", "DEP-002", "DEP-003", "DEP-004", "DEP-006", "INS-001"},
+    "dependency_view": {"DEP-001", "DEP-002", "DEP-003", "DEP-004", "DEP-006", "INS-001", "EXACT-DEP-MATERIALIZE"},
+    "native_binary_bundle": {"EXACT-NATIVE-LOAD"},
     "home_tmp_xdg": {"FS-005"},
     "network_ports": {"NET-003"},
     "node_runtime": {"RUN-003", "RUN-007", "RUN-008", "RUN-009"},

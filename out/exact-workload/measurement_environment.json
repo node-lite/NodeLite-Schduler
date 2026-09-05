@@ -1,0 +1,19 @@
+{
+  "captured_at": "2026-09-05T09:37:35Z",
+  "container": false,
+  "cpu_count": 16,
+  "filesystem": "ext2/ext3",
+  "filesystem_block_size": 4096,
+  "hostname": "ecs-troy-d0b3",
+  "libc": "glibc-2.39",
+  "machine": "x86_64",
+  "measurement_environment_id": "env:0fd7b54e0a2a55d4208d",
+  "network_policy": "local-first; explicit network benchmarks allowed",
+  "node": "v18.19.1",
+  "npm": "9.2.0",
+  "os": "linux",
+  "os_release": "6.8.0-136-generic",
+  "page_cache_policy": "logical_cold",
+  "processor": "x86_64",
+  "python": "3.12.3"
+}

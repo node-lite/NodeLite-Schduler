@@ -1,0 +1,26 @@
+[
+  {
+    "benchmark_id": "EXACT-DEP-MATERIALIZE",
+    "description": "Materialize an exact profile dependency view from its resolved lock and CTDP cache/CAS",
+    "resource_kind": "dependency_view",
+    "transition_class": "artifact_cold"
+  },
+  {
+    "benchmark_id": "EXACT-DEP-ATTACH",
+    "description": "Attach to and verify an already materialized exact profile dependency view",
+    "resource_kind": "dependency_view",
+    "transition_class": "exact_hit"
+  },
+  {
+    "benchmark_id": "EXACT-DEP-RESET",
+    "description": "Discard a task-local mutation from an exact profile dependency view",
+    "resource_kind": "dependency_view",
+    "transition_class": "dirty_reset"
+  },
+  {
+    "benchmark_id": "EXACT-NATIVE-LOAD",
+    "description": "Resolve and load an exact profile native package under its required Node ABI",
+    "resource_kind": "native_binary_bundle",
+    "transition_class": "artifact_cold"
+  }
+]

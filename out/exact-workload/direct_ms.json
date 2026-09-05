@@ -1,0 +1,139 @@
+{
+  "ambiguous_object_count": 0,
+  "ambiguous_objects": {},
+  "definition": "direct_ms[object_id] is an oldest-to-newest sliding window of measured times to bring that object from zero to ready",
+  "details": {
+    "dependency_view:foambubble__foam.2cac8162:root:8118db77d559a658": {
+      "benchmark_id": "EXACT-DEP-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 5856.183836,
+      "object_name": "swesmith/foambubble__foam.2cac8162:.",
+      "p95_ms": 6505.0737444999995,
+      "resource_kind": "dependency_view",
+      "sample_count": 7,
+      "scenario_name": "ctdp-cas-offline-install",
+      "success_count": 7,
+      "version_config": "8118db77d559a658",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "dependency_view:jaredpalmer__formik.91475adb:root:0ea1f56b0c1e2753": {
+      "benchmark_id": "EXACT-DEP-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 5837.946796,
+      "object_name": "swesmith/jaredpalmer__formik.91475adb:.",
+      "p95_ms": 8137.201068699997,
+      "resource_kind": "dependency_view",
+      "sample_count": 7,
+      "scenario_name": "ctdp-cas-offline-install",
+      "success_count": 7,
+      "version_config": "0ea1f56b0c1e2753",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "dependency_view:redux-saga__redux-saga.a4ace10d:root:c1bcbd93da3b0eeb": {
+      "benchmark_id": "EXACT-DEP-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 9529.210058,
+      "object_name": "swesmith/redux-saga__redux-saga.a4ace10d:.",
+      "p95_ms": 10090.261441199998,
+      "resource_kind": "dependency_view",
+      "sample_count": 7,
+      "scenario_name": "ctdp-cas-offline-install",
+      "success_count": 7,
+      "version_config": "c1bcbd93da3b0eeb",
+      "window_length": 1,
+      "workload_origin": "real"
+    },
+    "dependency_view:sveltejs__svelte.6c9717a9:root:b0c07bc3f3203c46": {
+      "benchmark_id": "EXACT-DEP-MATERIALIZE",
+      "failure_count": 0,
+      "latest_ms": 1802.468041,
+      "object_name": "swesmith/sveltejs__svelte.6c9717a9:.",
+      "p95_ms": 1824.5755505,
+      "resource_kind": "dependency_view",
+      "sample_count": 7,
+      "scenario_name": "ctdp-cas-offline-install",
+      "success_count": 7,
+      "version_config": "b0c07bc3f3203c46",
+      "window_length": 1,
+      "workload_origin": "real"
+    }
+  },
+  "direct_ms": {
+    "dependency_view:foambubble__foam.2cac8162:root:8118db77d559a658": [
+      5856.183836
+    ],
+    "dependency_view:jaredpalmer__formik.91475adb:root:0ea1f56b0c1e2753": [
+      5837.946796
+    ],
+    "dependency_view:redux-saga__redux-saga.a4ace10d:root:c1bcbd93da3b0eeb": [
+      9529.210058
+    ],
+    "dependency_view:sveltejs__svelte.6c9717a9:root:b0c07bc3f3203c46": [
+      1802.468041
+    ]
+  },
+  "measured_object_count": 4,
+  "measurement_environment_id": "env:0fd7b54e0a2a55d4208d",
+  "measurement_ids": {
+    "dependency_view:foambubble__foam.2cac8162:root:8118db77d559a658": [
+      "a6b6a29e6e9efa2d81afafe322aa5cf3fda31af3cd7425e51da1e2460186ac75"
+    ],
+    "dependency_view:jaredpalmer__formik.91475adb:root:0ea1f56b0c1e2753": [
+      "11eb26d17da0c13063b31f5bded7cd7284da80c36833ba04205632a89aa80be7"
+    ],
+    "dependency_view:redux-saga__redux-saga.a4ace10d:root:c1bcbd93da3b0eeb": [
+      "7afd43aa53c97cb64c81b423147108bfc94193a7be687999cf1209dc44deef5d"
+    ],
+    "dependency_view:sveltejs__svelte.6c9717a9:root:b0c07bc3f3203c46": [
+      "fb2155d5dd63edfa37faff317e1d48dc8321a8eb9389fb0dfc05f5c0f2f570cf"
+    ]
+  },
+  "missing_value_semantics": "missing means unmeasured or not uniquely defined, never zero",
+  "object_count": 33114,
+  "schema_version": 2,
+  "statistic": "median_per_measurement_batch",
+  "transition_costs_path": "object_cost_matrix.json",
+  "unit": "ms",
+  "unmeasured_counts_by_resource_kind": {
+    "artifact_acquisition": 7,
+    "browser_binary": 3,
+    "browser_context": 3,
+    "browser_process": 3,
+    "browser_profile": 3,
+    "build_cache": 97,
+    "contention": 10,
+    "control_plane": 12,
+    "database_binary": 5,
+    "database_clean_snapshot": 5,
+    "database_daemon": 4,
+    "database_private_layer": 5,
+    "dependency_view": 86,
+    "discovery_resolution": 18,
+    "display_service": 3,
+    "failure_recovery": 12,
+    "filesystem_overlay": 1,
+    "home_tmp_xdg": 2,
+    "local_registry": 9,
+    "native_binary_bundle": 22,
+    "network_ports": 1,
+    "node_runtime": 7,
+    "package_manager": 24,
+    "pm_native_cache": 24,
+    "project_server": 3,
+    "raw_cas": 32502,
+    "repo_baseline": 64,
+    "rootfs": 16,
+    "source_overlay": 77,
+    "system_toolchain": 1,
+    "task_harness": 1,
+    "test_transform_cache": 80
+  },
+  "unmeasured_object_count": 33110,
+  "window_order": "oldest_to_newest",
+  "window_policy": "append one median for each new measurement batch and evict the oldest value with FIFO when full",
+  "window_size": 5,
+  "window_value_count": 4,
+  "zero_state": "the object is absent, not running, or not materialized"
+}

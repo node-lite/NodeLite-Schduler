@@ -71,3 +71,22 @@ priority = Σ(max(cold_ms - warm_ms, 0) × 后续需求量) + 等待时间奖励
 ```
 
 缺少 cold/warm 实测值的 object 不参与收益评分，也不会被当作 `0 ms`。
+
+## Exact RepoProfile Workload
+
+Phase 2 的真实 RepoProfile object 使用独立、可恢复的执行流程，避免把 synthetic fixture 误算成 exact object：
+
+```bash
+./nodelite-bench \
+  --ctdp-out /root/experiment_result/phase1/ctdp \
+  run-exact-workload \
+  --inventory out/inventory.json \
+  --gaps /root/experiment_result/phase2/unmeasured_objects.json \
+  --exact-out out/exact-workload \
+  --warmups 2 \
+  --samples 7
+```
+
+执行器按 `measurement_environment_id` 保存 exact observation、object status、进度和独立 `direct_ms.json`。相同命令会跳过已经完成的 object；使用 `--force` 才会重测。
+
+`tools/export_phase2.py` 将 exact observation 合入 Phase 2 报告，但不同主机的 `direct_ms` 始终分开保存在 `direct_ms_by_environment.json` 指向的文件中，不做跨环境平均。无法下载 exact commit、缺少 Node ABI、Docker/rootfs 能力或精确 PM 版本时，对象会记录为 `blocked` 或 `manual_review`，不会写成零延迟。
